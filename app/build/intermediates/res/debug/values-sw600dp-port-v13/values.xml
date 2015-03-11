@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw600dp-port/dimensions.xml -->
+    <eat-comment/>
+    <dimen name="setup_padding_left">32dip</dimen>
+    <dimen name="setup_padding_right">32dip</dimen>
+    <dimen name="setup_padding_top">32dip</dimen>
+</resources>

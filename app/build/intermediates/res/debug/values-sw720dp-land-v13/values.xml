@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-sw720dp-land/constants.xml -->
+    <eat-comment/>
+    <bool name="show_two_pane_search_results">true</bool>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-sw720dp-land/dimen.xml -->
+    <eat-comment/>
+    <dimen name="compose_scrollview_width">900dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw720dp-land/dimensions.xml -->
+    <eat-comment/>
+    <dimen name="setup_padding_left">128dip</dimen>
+    <dimen name="setup_padding_right">128dip</dimen>
+    <dimen name="setup_padding_top">16dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-sw720dp-land/dimen.xml -->
+    <eat-comment/>
+    <dimen name="spinner_frame_width">260dip</dimen>
+</resources>

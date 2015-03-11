@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-w592dp/constants.xml -->
+    <eat-comment/>
+    <integer name="actionbar_max_items">4</integer>
+</resources>

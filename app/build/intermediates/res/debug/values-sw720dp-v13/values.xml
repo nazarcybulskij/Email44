@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-sw720dp/constants.xml -->
+    <eat-comment/>
+    <bool name="show_two_pane_search_results">false</bool>
+    <bool name="use_expansive_tablet_ui">true</bool>
+    <integer name="conversation_list_search_header_mode">0</integer>
+    <integer name="use_folder_list_fragment_transition">0</integer>
+</resources>

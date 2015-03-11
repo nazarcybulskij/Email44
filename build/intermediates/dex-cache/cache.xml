@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/nazar/adt-bundle-linux/sdk/extras/android/m2repository/com/android/support/support-v4/19.0.0/support-v4-19.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="afee690af14bd2c32d400cdf78e746fd45c386fa">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/emailcommon/build/intermediates/pre-dexed/debug/support-v4-19.0.0-a5c1e234adaae9fa1045d5c6c699a4fedd5df446.jar" />
+    </item>
+    <item
+        jar="/home/nazar/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/ed727a8d9f247e2050281cb083f1c77b09dcb5cd/guava-15.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ed727a8d9f247e2050281cb083f1c77b09dcb5cd">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/emailcommon/build/intermediates/pre-dexed/debug/guava-15.0-750b5553099eb9381686664167e4f0a1a88efd96.jar" />
+    </item>
+
+</items>

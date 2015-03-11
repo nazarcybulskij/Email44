@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-land/dimen.xml -->
+    <eat-comment/>
+    <dimen name="chip_height">26dip</dimen>
+</resources>

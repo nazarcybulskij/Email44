@@ -1,0 +1,2166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/accountprovider.xml -->
+    <eat-comment/>
+    <string-array name="account_providers" translatable="false">
+        <!-- email account list -->
+        <item>content://com.android.email.provider/uiaccts</item>
+    </string-array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="account_settings_check_frequency_entries">
+        <item>@string/account_setup_options_mail_check_frequency_never</item>
+        <item>@string/account_setup_options_mail_check_frequency_5min</item>
+        <item>@string/account_setup_options_mail_check_frequency_10min</item>
+        <item>@string/account_setup_options_mail_check_frequency_15min</item>
+        <item>@string/account_setup_options_mail_check_frequency_30min</item>
+        <item>@string/account_setup_options_mail_check_frequency_1hour</item>
+    </string-array>
+    <string-array name="account_settings_check_frequency_entries_push">
+        <item>@string/account_setup_options_mail_check_frequency_push</item>
+        <item>@string/account_setup_options_mail_check_frequency_never</item>
+        <item>@string/account_setup_options_mail_check_frequency_5min</item>
+        <item>@string/account_setup_options_mail_check_frequency_10min</item>
+        <item>@string/account_setup_options_mail_check_frequency_15min</item>
+        <item>@string/account_setup_options_mail_check_frequency_30min</item>
+        <item>@string/account_setup_options_mail_check_frequency_1hour</item>
+    </string-array>
+    <string-array name="account_settings_check_frequency_values" translatable="false">
+        <item>-1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="account_settings_check_frequency_values_push" translatable="false">
+        <item>-2</item>
+        <item>-1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="account_settings_mail_window_entries">
+        <item>@string/account_setup_options_mail_window_1day</item>
+        <item>@string/account_setup_options_mail_window_3days</item>
+        <item>@string/account_setup_options_mail_window_1week</item>
+        <item>@string/account_setup_options_mail_window_2weeks</item>
+        <item>@string/account_setup_options_mail_window_1month</item>
+        <item>@string/account_setup_options_mail_window_all</item>
+    </string-array>
+    <string-array name="account_settings_mail_window_entries_with_default">
+        <item>@string/account_setup_options_mail_window_default</item>
+        <item>@string/account_setup_options_mail_window_1day</item>
+        <item>@string/account_setup_options_mail_window_3days</item>
+        <item>@string/account_setup_options_mail_window_1week</item>
+        <item>@string/account_setup_options_mail_window_2weeks</item>
+        <item>@string/account_setup_options_mail_window_1month</item>
+        <item>@string/account_setup_options_mail_window_all</item>
+    </string-array>
+    <string-array name="account_settings_mail_window_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="account_settings_mail_window_values_with_default" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <array name="combined_view_account_colors" translatable="false">
+        <item>@color/combined_view_account_color_1</item>
+        <item>@color/combined_view_account_color_2</item>
+        <item>@color/combined_view_account_color_3</item>
+        <item>@color/combined_view_account_color_4</item>
+        <item>@color/combined_view_account_color_5</item>
+        <item>@color/combined_view_account_color_6</item>
+        <item>@color/combined_view_account_color_7</item>
+        <item>@color/combined_view_account_color_8</item>
+        <item>@color/combined_view_account_color_9</item>
+    </array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="compose_modes">
+        <!-- Reply -->
+        <item>Reply</item>
+        <!-- Reply all -->
+        <item>Reply all</item>
+        <!-- Forward -->
+        <item>Forward</item>
+    </string-array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="default_quick_responses">
+        <item>@string/quick_1</item>
+        <item>@string/quick_2</item>
+        <item>@string/quick_3</item>
+        <item>@string/quick_4</item>
+    </string-array>
+    <string-array name="general_preference_text_zoom_entries">
+        <item>@string/general_preference_text_zoom_tiny</item>
+        <item>@string/general_preference_text_zoom_small</item>
+        <item>@string/general_preference_text_zoom_normal</item>
+        <item>@string/general_preference_text_zoom_large</item>
+        <item>@string/general_preference_text_zoom_huge</item>
+    </string-array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="general_preference_text_zoom_size" translatable="false">
+        <item>0.8</item>
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.2</item>
+        <item>1.5</item>
+    </string-array>
+    <string-array name="general_preference_text_zoom_summary_array">
+        <item>Tiny text</item>
+        <item>Small text</item>
+        <item>Normal-sized text</item>
+        <item>Large text</item>
+        <item>Huge text</item>
+    </string-array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="general_preference_text_zoom_values" translatable="false">
+        <item>tiny</item>
+        <item>small</item>
+        <item>normal</item>
+        <item>large</item>
+        <item>huge</item>
+    </string-array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/colors.xml -->
+    <eat-comment/>
+    <array name="letter_tile_colors">
+        <item>#f16364</item>
+        <item>#f58559</item>
+        <item>#f9a43e</item>
+        <item>#e4c62e</item>
+        <item>#67bf74</item>
+        <item>#59a2be</item>
+        <item>#2093cd</item>
+        <item>#ad62a7</item>
+    </array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="moveto_folder_sections">
+        <item>System</item>
+        <item>Frequently Used</item>
+        <item>All Folders</item>
+    </string-array>
+    <string-array name="prefEntries_autoAdvance">
+        <!-- Newer conversation -->
+        <item>Newer</item>
+        <!-- Older conversation -->
+        <item>Older</item>
+        <!-- Conversation list -->
+        <item>Conversation list</item>
+    </string-array>
+    <string-array name="prefEntries_removal_action">
+        <item>Show archive only</item>
+        <item>Show delete only</item>
+        <item>Show archive &amp; delete</item>
+    </string-array>
+    <string-array name="prefSummaries_autoAdvance">
+        <!-- Newer conversation -->
+        <item>Show newer conversation after you delete</item>
+        <!-- Older conversation -->
+        <item>Show older conversation after you delete</item>
+        <!-- Conversation list -->
+        <item>Show conversation list after you delete</item>
+    </string-array>
+    <string-array name="prefSummaries_removal_action_summary">
+        <item>Show archive only</item>
+        <item>Show delete only</item>
+        <item>Show archive &amp; delete</item>
+    </string-array>
+    <string-array name="prefValues_autoAdvance" translatable="false">
+        <item>newer</item>
+        <item>older</item>
+        <item>list</item>
+    </string-array>
+    <string-array name="prefValues_removal_action" translatable="false">
+        <item>archive</item>
+        <item>delete</item>
+        <item>archive-and-delete</item>
+    </string-array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/arrays.xml -->
+    <eat-comment/>
+    <integer-array name="senders_lengths">
+        <item>27</item>
+        <item>27</item>
+    </integer-array>
+    <integer-array name="senders_with_attachment_lengths">
+        <item>25</item>
+        <item>25</item>
+    </integer-array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="smtp_host_prefixes" translatable="false">
+        <item>pop3</item>
+        <item>pop</item>
+        <item>imap</item>
+    </string-array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="sync_status">
+        <item>Success</item>
+        <item>No connection.</item>
+        <item>Couldn\'t sign in.</item>
+        <item>Security error.</item>
+        <item>Couldn\'t sync.</item>
+        <item>Internal Error</item>
+    </string-array>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <bool name="display_folder_colors_in_widget">false</bool>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/constants.xml -->
+    <eat-comment/>
+    <bool name="feedback_supported">false</bool>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/config.xml -->
+    <eat-comment/>
+    <bool name="force_thumbnail_no_scaling">true</bool>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <bool name="list_collapsible">true</bool>
+    <bool name="show_disabled_archive_menu_item">false</bool>
+    <bool name="show_two_pane_search_results">false</bool>
+    <bool name="veiled_address_enabled">false</bool>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/colors.xml -->
+    <eat-comment/>
+    <color name="account_item_selected_text_color">@color/mail_app_blue</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="account_setup_divider_color">#CCCCCC</color>
+    <color name="account_setup_headline_color">#5E802B</color>
+    <color name="account_setup_info_text_color">#000000</color>
+    <color name="account_setup_label_text_color">#666666</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/colors.xml -->
+    <eat-comment/>
+    <color name="ap_background_color">#fff1f1f2</color>
+    <color name="ap_overflow_badge_color">#cceeeeee</color>
+    <color name="ap_overflow_text_color">#ff4f4c4c</color>
+    <color name="attachment_bg_color">#ffdddddd</color>
+    <color name="attachment_image_background_color">#E5E5E5</color>
+    <color name="attachment_tile_shadow_box_color">#7F000000</color>
+    <color name="attachment_tile_subtitle_color">#999999</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="button_text_color">#777777</color>
+    <color name="button_text_disabled_color">#cccccc</color>
+    <color name="combined_view_account_color_1">#ff71aea7</color>
+    <color name="combined_view_account_color_2">#ff621919</color>
+    <color name="combined_view_account_color_3">#ff18462f</color>
+    <color name="combined_view_account_color_4">#ffbf8e52</color>
+    <color name="combined_view_account_color_5">#ff001f79</color>
+    <color name="combined_view_account_color_6">#ffa8afc2</color>
+    <color name="combined_view_account_color_7">#ff6b64c4</color>
+    <color name="combined_view_account_color_8">#ff738359</color>
+    <color name="combined_view_account_color_9">#ff9d50a4</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/colors.xml -->
+    <eat-comment/>
+    <color name="compose_background_color">@android:color/white</color>
+    <color name="compose_label_text">#aaaaaa</color>
+    <color name="conv_header_add_label_background">#eeeeee</color>
+    <color name="conv_header_add_label_text">@android:color/black</color>
+    <color name="conv_header_text_dark">@color/dark_gray_text_color</color>
+    <color name="conv_header_text_light">#a6a8ab</color>
+    <color name="conv_header_text_link_blue">#35b4e3</color>
+    <color name="conversation_view_border_color">#eeeeee</color>
+    <color name="dark_gray_text_color">#58585b</color>
+    <color name="date_text_color">@color/dark_gray_text_color</color>
+    <color name="default_folder_background_color">#dddddd</color>
+    <color name="default_folder_foreground_color">@color/gray_text_color</color>
+    <color name="drafts">#ff990000</color>
+    <color name="folder_disabled_drop_target_text_color">#999999</color>
+    <color name="folder_list_heading_text_color">@color/dark_gray_text_color</color>
+    <color name="folder_teaser_count_text">@android:color/black</color>
+    <color name="folder_teaser_icon_background">#eeeeee</color>
+    <color name="folder_teaser_senders_text">#58585b</color>
+    <color name="gray_text_color">#777777</color>
+    <color name="hierarchical_folder_parent_color">@color/gray_text_color</color>
+    <color name="high_spam_color">#CC0000</color>
+    <color name="holo_light_background_color">#ffe8e8e8</color>
+    <color name="letter_tile_default_color">#d66161</color>
+    <color name="letter_tile_font_color">#ffffff</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="list_background_color">#eeeeee</color>
+    <color name="mail_app_blue">@android:color/holo_blue_light</color>
+    <color name="message_border_gradient_color">#ebebeb</color>
+    <color name="message_header_background_color">@android:color/white</color>
+    <color name="message_info_text_color">@color/gray_text_color</color>
+    <color name="notification_template_icon_low_bg">#0cffffff</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/colors.xml -->
+    <eat-comment/>
+    <color name="photo_crop_dim_color">#cc000000</color>
+    <color name="photo_crop_highlight_color">#fff</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/colors.xml -->
+    <eat-comment/>
+    <color name="quotedTextColor">@color/gray_text_color</color>
+    <color name="quoted_text_color">@color/gray_text_color</color>
+    <color name="senders_text_color_read">@color/senders_text_color_unread</color>
+    <color name="senders_text_color_unread">@color/dark_gray_text_color</color>
+    <color name="snippet_text_color_read">@color/snippet_text_color_unread</color>
+    <color name="snippet_text_color_unread">#777777</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/colors.xml -->
+    <eat-comment/>
+    <color name="solid_black">#ff000000</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/colors.xml -->
+    <eat-comment/>
+    <color name="subject_text_color_read">@color/subject_text_color_unread</color>
+    <color name="subject_text_color_unread">@color/dark_gray_text_color</color>
+    <color name="swipe_to_refresh_text_color">#0099cc</color>
+    <color name="swiped_bg_color">#ff999999</color>
+    <color name="teaser_main_text">@color/dark_gray_text_color</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="text_secondary_color">#666666</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/colors.xml -->
+    <eat-comment/>
+    <color name="tile_divider_color">#ffffff</color>
+    <declare-styleable name="ButteryProgressBar"><attr format="color" name="barColor"/><attr format="dimension" name="barHeight"/><attr format="dimension" name="detentWidth"/></declare-styleable>
+    <declare-styleable name="EmailServiceInfo"><attr format="string" name="protocol"/><attr format="string" name="name"/><attr format="boolean" name="hide"/><attr format="string" name="accountType"/><attr format="string" name="serviceClass"/><attr format="string" name="intent"/><attr format="string" name="intentPackage"/><attr format="integer" name="port"/><attr format="integer" name="portSsl"/><attr format="boolean" name="defaultSsl"/><attr format="boolean" name="offerTls"/><attr format="boolean" name="offerCerts"/><attr format="boolean" name="offerLocalDeletes"/><attr format="integer" name="defaultLocalDeletes"/><attr format="boolean" name="offerPrefix"/><attr format="boolean" name="usesSmtp"/><attr format="boolean" name="syncChanges"/><attr format="boolean" name="syncContacts"/><attr format="boolean" name="syncCalendar"/><attr format="boolean" name="usesAutodiscover"/><attr format="boolean" name="offerLookback"/><attr format="boolean" name="offerLoadMore"/><attr format="boolean" name="offerMoveTo"/><attr name="defaultLookback"><enum name="auto" value="-2"/><enum name="days1" value="1"/><enum name="days3" value="2"/><enum name="weeks1" value="3"/><enum name="weeks2" value="4"/><enum name="months1" value="5"/><enum name="all" value="6"/></attr><attr format="boolean" name="offerAttachmentPreload"/><attr format="reference" name="syncIntervalStrings"/><attr format="reference" name="syncIntervals"/><attr name="defaultSyncInterval"><enum name="push" value="-2"/><enum name="never" value="-1"/><enum name="mins5" value="5"/><enum name="mins10" value="10"/><enum name="mins15" value="15"/><enum name="mins30" value="30"/><enum name="mins60" value="60"/></attr><attr format="string" name="inferPrefix"/><attr format="boolean" name="requiresSetup"/></declare-styleable>
+    <declare-styleable name="FolderItemViewDrawableState"><attr format="boolean" name="state_drag_mode"/></declare-styleable>
+    <declare-styleable name="GridLayout"><attr name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr format="integer" name="rowCount"/><attr format="integer" name="columnCount"/><attr format="boolean" name="useDefaultMargins"/><attr name="alignmentMode"><enum name="alignBounds" value="0"/><enum name="alignMargins" value="1"/></attr><attr format="boolean" name="rowOrderPreserved"/><attr format="boolean" name="columnOrderPreserved"/></declare-styleable>
+    <declare-styleable name="GridLayout_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_margin"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginRight"/><attr name="android:layout_marginBottom"/><attr format="integer" name="layout_row"/><attr format="integer" min="1" name="layout_rowSpan"/><attr format="integer" name="layout_column"/><attr format="integer" min="1" name="layout_columnSpan"/><attr name="layout_gravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
+    <declare-styleable name="RecipientEditTextView"><attr format="reference" name="invalidChipBackground"/><attr format="reference" name="chipBackground"/><attr format="reference" name="chipBackgroundPressed"/><attr format="reference" name="chipDelete"/><attr format="reference" name="chipAlternatesLayout"/><attr format="reference" name="chipPadding"/><attr format="reference" name="chipHeight"/><attr format="reference" name="chipFontSize"/></declare-styleable>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="account_item_folder_color_width">36dip</dimen>
+    <dimen name="account_item_left_margin">14dp</dimen>
+    <dimen name="account_item_minimum_height">48dip</dimen>
+    <dimen name="account_item_right_margin">8dp</dimen>
+    <dimen name="account_item_swatch_height">8dip</dimen>
+    <dimen name="ap_margin_side">4dp</dimen>
+    <dimen name="ap_overflow_count_diameter">20dp</dimen>
+    <dimen name="attachment_icon_padding">5dip</dimen>
+    <dimen name="attachment_margin_side">16dip</dimen>
+    <dimen name="attachment_preview_height_short">28dip</dimen>
+    <dimen name="attachment_preview_height_tall">124dip</dimen>
+    <dimen name="attachment_preview_height_tall_wide">168dip</dimen>
+    <dimen name="attachment_preview_margin_bottom">4dp</dimen>
+    <dimen name="attachment_preview_margin_bottom_wide">8dp</dimen>
+    <dimen name="attachment_preview_margin_side">16dip</dimen>
+    <dimen name="attachment_preview_margin_top">-4dip</dimen>
+    <dimen name="attachment_preview_margin_top_spacious">-8dip</dimen>
+    <dimen name="attachment_preview_margin_top_wide">2dip</dimen>
+    <dimen name="attachment_tile_max_size">164dp</dimen>
+    <dimen name="attachment_tile_min_size">120dp</dimen>
+    <dimen name="attachment_toast_yoffset">-100dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/dimensions.xml -->
+    <eat-comment/>
+    <dimen name="button_minWidth">100sp</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="checked_text_padding">16dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="chip_height">32dip</dimen>
+    <dimen name="chip_padding">8dip</dimen>
+    <dimen name="chip_text_size">14sp</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="color_block_height">6dip</dimen>
+    <dimen name="color_block_width">32dip</dimen>
+    <dimen name="compose_scrollview_width">700dp</dimen>
+    <dimen name="conversation_folder_font_size">12sp</dimen>
+    <dimen name="conversation_folder_padding">1dip</dimen>
+    <dimen name="conversation_folder_padding_above">4dip</dimen>
+    <dimen name="conversation_folder_padding_before">8dip</dimen>
+    <dimen name="conversation_folder_padding_extra_width">14dip</dimen>
+    <dimen name="conversation_header_font_size">18sp</dimen>
+    <dimen name="conversation_header_font_size_condensed">14sp</dimen>
+    <dimen name="conversation_header_margin_side">0dp</dimen>
+    <dimen name="conversation_header_side_padding">18dip</dimen>
+    <dimen name="conversation_header_vertical_padding">16dip</dimen>
+    <dimen name="conversation_header_vertical_padding_condensed">12dip</dimen>
+    <dimen name="conversation_message_content_margin_side">10dp</dimen>
+    <dimen name="conversation_page_gutter">16dp</dimen>
+    <dimen name="conversation_view_margin_side">8dp</dimen>
+    <dimen name="conversation_view_margin_side_minus_gradient">7dp</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/gridlayout_dir/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="default_gap">16dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/dimensions.xml -->
+    <eat-comment/>
+    <dimen name="dialog_padding_left">10sp</dimen>
+    <dimen name="dialog_padding_other">4sp</dimen>
+    <dimen name="dialog_text_size">10sp</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="dismiss_button_padding_end">28dip</dimen>
+    <dimen name="dismiss_button_padding_start">20dip</dimen>
+    <dimen name="dismiss_separator_padding">16dip</dimen>
+    <dimen name="drawer_width">300dp</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/two_pane_dimen.xml -->
+    <eat-comment/>
+    <dimen name="empty_view_top_padding">38dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="folder_cell_width">32dip</dimen>
+    <dimen name="folder_list_folder_color_width">36dip</dimen>
+    <dimen name="folder_list_heading_padding_bottom">3dp</dimen>
+    <dimen name="folder_list_heading_padding_side">16dp</dimen>
+    <dimen name="folder_list_item_end_margin">8dp</dimen>
+    <dimen name="folder_list_item_left_offset">9dp</dimen>
+    <dimen name="folder_list_item_minimum_height">48dip</dimen>
+    <dimen name="folder_list_item_start_margin">7dp</dimen>
+    <dimen name="folder_list_popup_width">200dip</dimen>
+    <dimen name="folder_minimum_width">48dip</dimen>
+    <dimen name="folder_swatch_height">6dip</dimen>
+    <dimen name="folder_teaser_count_textview_minwidth">68dp</dimen>
+    <dimen name="folders_left_padding">8dip</dimen>
+    <dimen name="folders_text_bottom_padding">4dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="line_spacing_extra">4dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="list_min_width_is_wide">720dp</dimen>
+    <dimen name="list_normal_mode_min_width_is_spacious">600dp</dimen>
+    <dimen name="message_border_height">8dp</dimen>
+    <dimen name="message_border_height_collapsed">1dp</dimen>
+    <dimen name="message_details_header_padding_end">10dip</dimen>
+    <dimen name="message_details_header_padding_start">16dip</dimen>
+    <dimen name="message_details_header_padding_start_collapsed">68dip</dimen>
+    <dimen name="message_details_header_vertical_padding">7dp</dimen>
+    <dimen name="message_header_action_button_height">48dp</dimen>
+    <dimen name="message_header_action_button_width">48dp</dimen>
+    <dimen name="message_header_contact_photo_height">48sp</dimen>
+    <dimen name="message_header_contact_photo_width">48sp</dimen>
+    <dimen name="message_header_inner_side_padding">10dp</dimen>
+    <dimen name="message_header_padding_start">
+        @dimen/conversation_message_content_margin_side</dimen>
+    <dimen name="message_header_presence_top_margin">-4dp</dimen>
+    <dimen name="message_header_subtitle_text_size">12sp</dimen>
+    <dimen name="message_header_title_container_margin_end_collapsed">10dp</dimen>
+    <dimen name="message_sender_name_text_size">16sp</dimen>
+    <dimen name="message_show_pics_header_padding_end">14dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/animation_constants.xml -->
+    <eat-comment/>
+    <dimen name="min_swipe">10dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="notification_view_height">36dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="photo_crop_stroke_width">1dip</dimen>
+    <dimen name="photo_crop_width">280dip</dimen>
+    <dimen name="photo_page_margin">32dip</dimen>
+    <dimen name="photo_preview_size">200dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="recipient_summary_margin">16dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="retry_button_size">48dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="search_view_width">400dip</dimen>
+    <dimen name="send_mail_as_padding">8dip</dimen>
+    <dimen name="sender_image_touch_slop">8dip</dimen>
+    <dimen name="senders_font_size">18sp</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/dimensions.xml -->
+    <eat-comment/>
+    <dimen name="settings_buttons_padding_bottom">48dip</dimen>
+    <dimen name="settings_buttons_padding_top">48dip</dimen>
+    <dimen name="settings_fragment_padding_left">16dip</dimen>
+    <dimen name="settings_fragment_padding_right">16dip</dimen>
+    <dimen name="settings_fragment_padding_top">16dip</dimen>
+    <dimen name="setup_credentials_input_width">340dip</dimen>
+    <dimen name="setup_fragment_padding_left">16dip</dimen>
+    <dimen name="setup_fragment_padding_right">16dip</dimen>
+    <dimen name="setup_fragment_padding_top">16dip</dimen>
+    <dimen name="setup_item_inset_left">0dip</dimen>
+    <dimen name="setup_item_inset_right">0dip</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="spinner_frame_width">196dip</dimen>
+    <dimen name="standard_scaled_dimen">100sp</dimen>
+    <dimen name="star_touch_slop">16dip</dimen>
+    <dimen name="super_collapsed_height">30sp</dimen>
+    <dimen name="super_collapsed_text_size">14sp</dimen>
+    <dimen name="teaser_text_padding">16dip</dimen>
+    <dimen name="tile_divider_width">1dp</dimen>
+    <dimen name="tile_letter_font_size">33dp</dimen>
+    <dimen name="tile_letter_font_size_small">16dp</dimen>
+    <dimen name="undo_text_padding">16dip</dimen>
+    <dimen name="wait_padding">16dp</dimen>
+    <dimen name="widget_date_font_size">12sp</dimen>
+    <dimen name="widget_margin_bottom">0dip</dimen>
+    <dimen name="widget_margin_left">0dip</dimen>
+    <dimen name="widget_margin_right">0dip</dimen>
+    <dimen name="widget_margin_top">0dip</dimen>
+    <dimen name="widget_subject_font_size">13sp</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/ids.xml -->
+    <eat-comment/>
+    <item name="contact_image" type="id"/>
+    <item name="folder" type="id"/>
+    <item name="manage_folders_item" type="id"/>
+    <item name="move_folder" type="id"/>
+    <item name="personal_level" type="id"/>
+    <item name="reply_state" type="id"/>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <integer name="actionbar_hidden_non_cab_items_no_physical_button">1</integer>
+    <integer name="actionbar_max_items">3</integer>
+    <integer name="ap_fade_animation_duration">500</integer>
+    <integer name="ap_overflow_max_count">99</integer>
+    <integer name="ap_placeholder_animation_duration">1000</integer>
+    <integer name="ap_progress_animation_delay">2000</integer>
+    <integer name="ap_progress_animation_duration">4000</integer>
+    <integer name="attachment_preview_max_size">256</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/progress_dialog_values.xml -->
+    <eat-comment/>
+    <integer name="batch_progress_display_time">500</integer>
+    <integer name="batch_progress_wait_time">750</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values/dimen.xml -->
+    <eat-comment/>
+    <integer name="chips_max_lines">-1</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <integer name="config_image_cache_max_bitmaps">24</integer>
+    <integer name="config_image_cache_max_bytes">1500000</integer>
+    <integer name="conv_item_view_cab_anim_duration">350</integer>
+    <integer name="conversation_desired_font_size_px">14</integer>
+    <integer name="conversation_header_mode">1</integer>
+    <integer name="conversation_list_search_header_mode">1</integer>
+    <integer name="conversation_list_weight">1</integer>
+    <integer name="conversation_unstyled_font_size_px">13</integer>
+    <integer name="conversation_view_weight">1</integer>
+    <integer name="conversation_webview_viewport_px">980</integer>
+    <integer name="conversationview_min_show_loading">250</integer>
+    <integer name="conversationview_show_loading_delay">500</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/animation_constants.xml -->
+    <eat-comment/>
+    <integer name="dialog_animationDefaultDur">220</integer>
+    <integer name="dialog_animationShortDur">150</integer>
+    <integer name="dismiss_all_leavebehinds_long_delay">350</integer>
+    <integer name="dismiss_all_leavebehinds_short_delay">175</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <integer name="dismiss_undo_bar_delay_ms">300</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/animation_constants.xml -->
+    <eat-comment/>
+    <integer name="escape_animation_duration">200</integer>
+    <integer name="fade_duration">250</integer>
+    <integer name="fade_in_animation_duration">300</integer>
+    <integer name="fadein_cc_bcc_dur">150</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <integer name="folder_item_refresh_delay_ms">500</integer>
+    <integer name="folder_list_weight">1</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/progress_dialog_values.xml -->
+    <eat-comment/>
+    <integer name="html_conv_progress_display_time">600</integer>
+    <integer name="html_conv_progress_wait_time">600</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <integer name="leaveBehindSwipeScrollSlop">25</integer>
+    <integer name="maxUnreadCount">999</integer>
+    <integer name="max_auto_load_messages">20</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/animation_constants.xml -->
+    <eat-comment/>
+    <integer name="max_dismiss_velocity">2000</integer>
+    <integer name="max_escape_animation_duration">400</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <integer name="max_list_item_images">4</integer>
+    <integer name="max_num_notification_digest_items">10</integer>
+    <integer name="nested_folders_collapse_threshold">1</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/constants.xml -->
+    <eat-comment/>
+    <integer name="reenter_fullscreen_delay_time_in_millis">5000</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <integer name="show_undo_bar_delay_ms">200</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/animation_constants.xml -->
+    <eat-comment/>
+    <integer name="shrink_animation_duration">200</integer>
+    <integer name="slide_animation_duration">320</integer>
+    <integer name="snap_animation_duration">350</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <integer name="swipeScrollSlop">2</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/animation_constants.xml -->
+    <eat-comment/>
+    <integer name="swipe_escape_velocity">100</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/constants.xml -->
+    <eat-comment/>
+    <integer name="swipe_senders_length">25</integer>
+    <integer name="timestamp_update_interval">60000</integer>
+    <integer name="undo_notification_timeout">6000</integer>
+    <integer name="use_folder_list_fragment_transition">1</integer>
+    <integer name="use_tablet_ui">0</integer>
+    <integer name="webview_initial_delay">1000</integer>
+    <integer name="widget_account_unread_flip_ms">5000</integer>
+    <integer name="widget_folder_refresh_delay_ms">500</integer>
+    <integer name="widget_refresh_delay_ms">4000</integer>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <plurals name="actionbar_unread_messages">
+        <!-- String for the actionbar subtitle when messages are unread [CHAR LIMIT=30] -->
+        <item quantity="other"><ns1:g example="4" id="count">%1$d</ns1:g> unread</item>
+    </plurals>
+    <plurals name="confirm_archive_conversation">
+        <!-- Dialog message to confirm archival of one conversation -->
+        <item quantity="one">Archive this conversation?</item>
+        <!-- Dialog message to confirm archival of several conversations -->
+        <item quantity="other">Archive these <ns1:g id="count">%1$d</ns1:g> conversations?</item>
+    </plurals>
+    <plurals name="confirm_delete_conversation">
+        <!-- Dialog message to confirm deletion of one conversation -->
+        <item quantity="one">Delete this conversation?</item>
+        <!-- Dialog message to confirm deletion of several conversations -->
+        <item quantity="other">Delete these <ns1:g id="count">%1$d</ns1:g> conversations?</item>
+    </plurals>
+    <plurals name="confirm_discard_drafts_conversation">
+        <!-- Dialog message to confirm discarding drafts from one conversation [CHAR LIMIT=50] -->
+        <item quantity="one">Discard drafts from this conversation?</item>
+        <!-- Dialog message to confirm discarding drafts from several conversations [CHAR LIMIT=50] -->
+        <item quantity="other">Discard drafts from these <ns1:g id="count">%1$d</ns1:g> conversations?</item>
+    </plurals>
+    <plurals name="conversation_archived">
+        <!-- Displayed while archiving one conversation -->
+        <item quantity="one">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> archived.</item>
+        <!-- Displayed while archiving multiple conversations -->
+        <item quantity="other">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> archived.</item>
+    </plurals>
+    <plurals name="conversation_deleted">
+        <!-- Displayed while deleting one conversation -->
+        <item quantity="one">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> deleted.</item>
+        <!-- Displayed while deleting multiple conversations -->
+        <item quantity="other">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> deleted.</item>
+    </plurals>
+    <plurals name="conversation_folder_changed">
+        <!-- Displayed while adding and removing folders to a single conversation. [CHAR LIMIT=100] -->
+        <item quantity="one">Changed folder.</item>
+        <!-- Displayed while adding and removing folders to multiple conversations. [CHAR LIMIT=100] -->
+        <item quantity="other">Changed folders.</item>
+    </plurals>
+    <plurals name="conversation_muted">
+        <!-- Displayed while muting one conversation -->
+        <item quantity="one">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> muted.</item>
+        <!-- Displayed while muting several conversations -->
+        <item quantity="other">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> muted.</item>
+    </plurals>
+    <plurals name="conversation_not_important">
+        <!-- Displayed while reporting one conversation as not important in the important folder -->
+        <item quantity="one">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> marked not important.</item>
+        <!-- Displayed while reporting several conversations as not important in the important folder -->
+        <item quantity="other">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> marked not important.</item>
+    </plurals>
+    <plurals name="conversation_not_spam">
+        <!-- Displayed while reporting one conversation as not spam -->
+        <item quantity="one">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> reported as not spam.</item>
+        <!-- Displayed while reporting several conversations as not spam -->
+        <item quantity="other">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> reported as not spam.</item>
+    </plurals>
+    <plurals name="conversation_phished">
+        <!-- Displayed while reporting one conversation as phishing -->
+        <item quantity="one">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> reported as phishing.</item>
+        <!-- Displayed while reporting several conversations as phishing -->
+        <item quantity="other">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> reported as phishing.</item>
+    </plurals>
+    <plurals name="conversation_spammed">
+        <!-- Displayed while reporting one conversation as spam -->
+        <item quantity="one">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> reported as spam.</item>
+        <!-- Displayed while reporting several conversations as spam -->
+        <item quantity="other">&lt;b><ns1:g id="count">%1$d</ns1:g>&lt;/b> reported as spam.</item>
+    </plurals>
+    <plurals name="conversation_unstarred">
+        <item quantity="one">Unstarring <ns1:g id="count">%1$d</ns1:g> conversation.</item>
+        <item quantity="other">Unstarring <ns1:g id="count">%1$d</ns1:g> conversations.</item>
+    </plurals>
+    <plurals name="draft">
+        <!-- Title of the screen when there is exactly one draft -->
+        <item quantity="one">Draft</item>
+        <!-- Title of the screen when there are more than one draft -->
+        <item quantity="other">Drafts</item>
+    </plurals>
+    <plurals name="empty_folder_dialog_message">
+        <item quantity="one"><ns1:g id="count">%1$d</ns1:g> message will be permanently deleted.</item>
+        <item quantity="other"><ns1:g id="count">%1$d</ns1:g> messages will be permanently deleted.</item>
+    </plurals>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <plurals name="message_view_attachment_bytes">
+        <item quantity="one"><ns1:g example="1" id="size_in_bytes">%d</ns1:g>B</item>
+        <item quantity="other"><ns1:g example="279" id="size_in_bytes">%d</ns1:g>B</item>
+    </plurals>
+    <plurals name="message_view_attachment_gigabytes">
+        <item quantity="one"><ns1:g example="1" id="size_in_gigabytes">%d</ns1:g>GB</item>
+        <item quantity="other"><ns1:g example="279" id="size_in_gigabytes">%d</ns1:g>GB</item>
+    </plurals>
+    <plurals name="message_view_attachment_kilobytes">
+        <item quantity="one"><ns1:g example="1" id="size_in_kilobytes">%d</ns1:g>KB</item>
+        <item quantity="other"><ns1:g example="279" id="size_in_kilobytes">%d</ns1:g>KB</item>
+    </plurals>
+    <plurals name="message_view_attachment_megabytes">
+        <item quantity="one"><ns1:g example="1" id="size_in_megabytes">%d</ns1:g>MB</item>
+        <item quantity="other"><ns1:g example="279" id="size_in_megabytes">%d</ns1:g>MB</item>
+    </plurals>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <plurals name="move_conversation">
+        <!-- Move 1 conversation -->
+        <item quantity="one">Move conversation</item>
+        <!-- Move several conversations -->
+        <item quantity="other">Move <ns1:g>%1$d</ns1:g> conversations</item>
+    </plurals>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <plurals name="move_messages">
+        <item quantity="one">Move message</item>
+        <item quantity="other">Move messages</item>
+    </plurals>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <plurals name="new_incoming_messages_many">
+        <item quantity="other"><ns1:g id="count">%1$d</ns1:g> new messages. Show.</item>
+    </plurals>
+    <plurals name="show_messages_read">
+        <item quantity="other"><ns1:g example="4" id="count">%1$d</ns1:g> older messages</item>
+    </plurals>
+    <string name="account_cache_provider" translatable="false">Account Cache Provider</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="account_duplicate_dlg_message_fmt">
+        You\'re already using this username for the account \"<ns1:g id="duplicate">%s</ns1:g>\".
+    </string>
+    <string name="account_duplicate_dlg_title">Duplicate account</string>
+    <string name="account_folder_list_summary_drafts">Drafts</string>
+    <string name="account_folder_list_summary_inbox">Inbox</string>
+    <string name="account_folder_list_summary_outbox">Outbox</string>
+    <string name="account_folder_list_summary_starred">Starred</string>
+    <string name="account_manager_type_exchange" translatable="false">com.android.exchange</string>
+    <string name="account_manager_type_imap" translatable="false">com.android.email</string>
+    <string name="account_manager_type_legacy_imap" translatable="false">com.android.email</string>
+    <string name="account_manager_type_pop3" translatable="false">com.android.email</string>
+    <string name="account_password_spaces_error">This password starts or ends with one or more
+        space characters. Many servers don\'t support passwords with spaces.</string>
+    <string name="account_security_dialog_content_fmt">
+         <ns1:g id="account">%s</ns1:g> requires that you update your security
+         settings.</string>
+    <string name="account_security_dialog_title">Security update</string>
+    <string name="account_security_policy_explanation_fmt">
+         The server <ns1:g id="server">%s</ns1:g> requires that you allow it to remotely control
+         some security features of your Android device.</string>
+    <string name="account_security_title">Device security</string>
+    <string name="account_settings_action">Account settings</string>
+    <string name="account_settings_background_attachments_label">
+        Download attachments</string>
+    <string name="account_settings_background_attachments_summary">
+        Auto-download attachments to recent messages via Wi-Fi</string>
+    <string name="account_settings_data_usage">Data usage</string>
+    <string name="account_settings_description_label">Account name</string>
+    <string name="account_settings_edit_quick_responses_label">Quick responses</string>
+    <string name="account_settings_edit_quick_responses_summary">
+        Edit text that you frequently insert when composing email</string>
+    <string name="account_settings_enforced_label">Policies enforced</string>
+    <string name="account_settings_enforced_summary">None</string>
+    <string name="account_settings_exit_server_settings">Discard unsaved changes?</string>
+    <string name="account_settings_incoming_label">Incoming settings</string>
+    <string name="account_settings_incoming_summary">
+        Username, password, and other incoming server settings</string>
+    <string name="account_settings_login_dialog_content_fmt">
+         The username or password for <ns1:g id="account">%s</ns1:g> is incorrect.
+         Do you want to update them now?</string>
+    <string name="account_settings_login_dialog_reason_fmt">
+         Your login to <ns1:g id="account">%s</ns1:g> failed; the server said: <ns1:g id="reason">%s</ns1:g>
+         Do you want to update your username and/or password?</string>
+    <string name="account_settings_login_dialog_title">Couldn\'t sign in</string>
+    <string name="account_settings_mail_check_frequency_label">Sync frequency</string>
+    <string name="account_settings_name_label">Your name</string>
+    <string name="account_settings_notifications">Notification settings</string>
+    <string name="account_settings_notify_label">Email notifications</string>
+    <string name="account_settings_notify_summary">Send notification when email arrives</string>
+    <string name="account_settings_outgoing_label">Outgoing settings</string>
+    <string name="account_settings_outgoing_summary">
+        Username, password, and other outgoing server settings</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="account_settings_param">Account settings</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="account_settings_policies">Security policies</string>
+    <string name="account_settings_retry_label">Attempt sync</string>
+    <string name="account_settings_retry_summary">Touch here to sync this account</string>
+    <string name="account_settings_ringtone">Choose ringtone</string>
+    <string name="account_settings_servers">Server settings</string>
+    <string name="account_settings_summary">Sync frequency, notifications, etc.</string>
+    <string name="account_settings_sync_calendar_enable">Sync calendar</string>
+    <string name="account_settings_sync_calendar_summary">Sync calendar event for this account</string>
+    <string name="account_settings_sync_contacts_enable">Sync contacts</string>
+    <string name="account_settings_sync_contacts_summary">Sync contacts for this account</string>
+    <string name="account_settings_sync_email_enable">Sync email</string>
+    <string name="account_settings_sync_email_summary">Sync email for this account</string>
+    <string name="account_settings_unsupported_label">Unsupported policies</string>
+    <string name="account_settings_unsupported_summary">None</string>
+    <string name="account_settings_vibrate_when_label">Vibrate</string>
+    <string name="account_setup_account_type_headline">Account type</string>
+    <string name="account_setup_account_type_instructions">What type of account is this?</string>
+    <string name="account_setup_account_type_title">Account setup</string>
+    <string name="account_setup_autodiscover_dlg_authfail_message">Confirm username, password, and account settings are correct.</string>
+    <string name="account_setup_autodiscover_dlg_authfail_title">Problem with account setup</string>
+    <string name="account_setup_basics_email_label">Email address</string>
+    <string name="account_setup_basics_headline">Email account</string>
+    <string name="account_setup_basics_manual_setup_action">Manual setup</string>
+    <string name="account_setup_basics_password_label">Password</string>
+    <string name="account_setup_basics_title">Account setup</string>
+    <string name="account_setup_check_settings_check_incoming_msg">
+    Validating server settings\u2026</string>
+    <string name="account_setup_check_settings_check_outgoing_msg">
+    Validating smtp settings\u2026</string>
+    <string name="account_setup_check_settings_retr_info_msg">
+    Retrieving account information\u2026</string>
+    <string name="account_setup_creating_account_msg">
+    Creating account\u2026</string>
+    <string name="account_setup_exchange_certificate_title">Client certificate</string>
+    <string name="account_setup_exchange_device_id_label">Mobile Device ID</string>
+    <string name="account_setup_exchange_no_certificate">None</string>
+    <string name="account_setup_exchange_remove_certificate">Remove</string>
+    <string name="account_setup_exchange_select_certificate">Select</string>
+    <string name="account_setup_exchange_use_certificate">Use client certificate</string>
+    <string name="account_setup_failed_access_denied">
+         You don\'t have permission to sync with this server. Contact your server\'s
+         administrator for more information.</string>
+    <string name="account_setup_failed_auth_required">Authentication methods aren\'t supported by server.</string>
+    <string name="account_setup_failed_certificate_inaccessible">The certificate is invalid or inaccessible.</string>
+    <string name="account_setup_failed_certificate_required">A client certificate is required. Do you want to connect to the server with a client certificate?</string>
+    <string name="account_setup_failed_check_credentials_message">
+         The server responded with an error. Check your username and password, then try again.</string>
+    <string name="account_setup_failed_dlg_auth_message">Username or password is incorrect.</string>
+    <string name="account_setup_failed_dlg_auth_message_fmt">Login failed.\n(<ns1:g id="error">%s</ns1:g>)</string>
+    <string name="account_setup_failed_dlg_certificate_message">Can\'t safely connect to server.</string>
+    <string name="account_setup_failed_dlg_certificate_message_fmt">Can\'t safely connect to server.\n(<ns1:g id="error">%s</ns1:g>)</string>
+    <string name="account_setup_failed_dlg_edit_details_action">Edit details</string>
+    <string name="account_setup_failed_dlg_server_message">Can\'t connect to server.</string>
+    <string name="account_setup_failed_dlg_server_message_fmt">Can\'t connect to server.\n(<ns1:g id="error">%s</ns1:g>)</string>
+    <string name="account_setup_failed_dlg_title">Couldn\'t finish</string>
+    <string name="account_setup_failed_ioerror">Couldn\'t open connection to server.</string>
+    <string name="account_setup_failed_protocol_unsupported">
+         You typed an incorrect server address or the server requires a protocol version that
+         Email doesn\'t support.</string>
+    <string name="account_setup_failed_security">Couldn\'t open connection to server due to security error.</string>
+    <string name="account_setup_failed_security_policies_unsupported">
+         This server requires security features that your Android device doesn\'t support,
+          including: <ns1:g id="error">%s</ns1:g></string>
+    <string name="account_setup_failed_tls_required">TLS required but not supported by server.</string>
+    <string name="account_setup_incoming_delete_policy_delete_label">
+        When I delete from Inbox</string>
+    <string name="account_setup_incoming_delete_policy_label">Delete email from server</string>
+    <string name="account_setup_incoming_delete_policy_never_label">Never</string>
+    <string name="account_setup_incoming_headline">Incoming server settings</string>
+    <string name="account_setup_incoming_imap_path_prefix_hint">Optional</string>
+    <string name="account_setup_incoming_imap_path_prefix_label">IMAP path prefix</string>
+    <string name="account_setup_incoming_password_label">Password</string>
+    <string name="account_setup_incoming_port_label">Port</string>
+    <string name="account_setup_incoming_security_label">Security type</string>
+    <string name="account_setup_incoming_security_none_label">None</string>
+    <string name="account_setup_incoming_security_ssl_label">SSL/TLS</string>
+    <string name="account_setup_incoming_security_ssl_trust_certificates_label">
+        SSL/TLS (Accept all certificates)</string>
+    <string name="account_setup_incoming_security_tls_label">STARTTLS</string>
+    <string name="account_setup_incoming_security_tls_trust_certificates_label">
+        STARTTLS (accept all certificates)</string>
+    <string name="account_setup_incoming_server_label">Server</string>
+    <string name="account_setup_incoming_title">Account setup</string>
+    <string name="account_setup_incoming_username_label">Username</string>
+    <string name="account_setup_names_account_name_label">
+        Give this account a name (optional)</string>
+    <string name="account_setup_names_headline">
+        Your account is set up and email is on its way!</string>
+    <string name="account_setup_names_title">Account setup</string>
+    <string name="account_setup_names_user_name_empty_error">This field can\'t be blank.</string>
+    <string name="account_setup_names_user_name_label">
+        Your name (displayed on outgoing messages)</string>
+    <string name="account_setup_options_background_attachments_label">
+        Automatically download attachments when connected to Wi-Fi</string>
+    <string name="account_setup_options_headline">Account options</string>
+    <string name="account_setup_options_mail_check_frequency_10min">Every 10 minutes</string>
+    <string name="account_setup_options_mail_check_frequency_15min">Every 15 minutes</string>
+    <string name="account_setup_options_mail_check_frequency_1hour">Every hour</string>
+    <string name="account_setup_options_mail_check_frequency_30min">Every 30 minutes</string>
+    <string name="account_setup_options_mail_check_frequency_5min">Every 5 minutes</string>
+    <string name="account_setup_options_mail_check_frequency_label">Inbox checking frequency</string>
+    <string name="account_setup_options_mail_check_frequency_never">Never</string>
+    <string name="account_setup_options_mail_check_frequency_push">Automatic (Push)</string>
+    <string name="account_setup_options_mail_window_1day">Last day</string>
+    <string name="account_setup_options_mail_window_1month">Last month</string>
+    <string name="account_setup_options_mail_window_1week">Last week</string>
+    <string name="account_setup_options_mail_window_2weeks">Last two weeks</string>
+    <string name="account_setup_options_mail_window_3days">Last three days</string>
+    <string name="account_setup_options_mail_window_all">All</string>
+    <string name="account_setup_options_mail_window_auto">Automatic</string>
+    <string name="account_setup_options_mail_window_default">Use account default</string>
+    <string name="account_setup_options_mail_window_label">Days to sync</string>
+    <string name="account_setup_options_notify_label">Notify me when email arrives</string>
+    <string name="account_setup_options_sync_calendar_label">Sync calendar from this account</string>
+    <string name="account_setup_options_sync_contacts_label">Sync contacts from this account</string>
+    <string name="account_setup_options_sync_email_label">Sync email from this account</string>
+    <string name="account_setup_options_title">Account settings</string>
+    <string name="account_setup_outgoing_headline">Outgoing server settings</string>
+    <string name="account_setup_outgoing_password_label">Password</string>
+    <string name="account_setup_outgoing_port_label">Port</string>
+    <string name="account_setup_outgoing_require_login_label">Require signin</string>
+    <string name="account_setup_outgoing_security_label">Security type</string>
+    <string name="account_setup_outgoing_smtp_server_label">SMTP server</string>
+    <string name="account_setup_outgoing_title">Account setup</string>
+    <string name="account_setup_outgoing_username_label">Username</string>
+    <string name="account_setup_security_policies_required_fmt">
+         The server <ns1:g id="server">%s</ns1:g> requires that you allow it to remotely control
+         some security features of your Android device. Do you want to finish setting up this
+         account?</string>
+    <string name="account_setup_security_required_title">Remote security administration</string>
+    <string name="account_setup_username_password_toast">
+        Type a valid email address and password.</string>
+    <string name="account_setup_username_uneditable_error">You can\'t change an account\'s username.
+         To add an account with a different username, touch Add Account.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="account_sync_off">Account sync is off.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="account_waiting_for_folders_msg">Loading folder list…</string>
+    <string name="accounts_welcome">You can set up your account in just a few steps.
+        </string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="actionbar_large_unread_count"><ns1:g id="count">%1$d</ns1:g>+ unread</string>
+    <string name="activity_folder_selection">Choose folder</string>
+    <string name="activity_mailbox_selection">Choose account</string>
+    <string name="add_account">Add account</string>
+    <string name="add_bcc_label">Add Bcc</string>
+    <string name="add_cc_label">Add Cc/Bcc</string>
+    <string name="add_file_attachment">Attach file</string>
+    <string name="add_label">Add folder</string>
+    <string name="add_photo_attachment">Attach picture</string>
+    <string name="add_star">Add star</string>
+    <string name="add_video_attachment">Attach video</string>
+    <string name="address_display_format"><ns1:g id="name">%1$s</ns1:g> <ns1:g id="email">%2$s</ns1:g></string>
+    <string name="address_display_format_with_via_domain"><ns1:g id="name">%1$s</ns1:g> <ns1:g id="email">%2$s</ns1:g> via <ns1:g id="via_domain">%3$s</ns1:g></string>
+    <string name="all_folders_heading">All folders</string>
+    <string name="always_show_images">Always show pictures from this sender</string>
+    <string name="always_show_images_toast">Pictures from this sender will be shown automatically.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Email</string>
+    <string name="application_mime_type" translatable="false">application/email-ls</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="archive">Archive</string>
+    <string name="archived">Archived</string>
+    <string name="attached_message">Attached message</string>
+    <string name="attachment_application_msword">Document</string>
+    <string name="attachment_application_pdf">PDF</string>
+    <string name="attachment_application_vnd_ms_excel">Spreadsheet</string>
+    <string name="attachment_application_vnd_ms_powerpoint">Presentation</string>
+    <string name="attachment_audio">Audio</string>
+    <string name="attachment_image">Image</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="attachment_not_found">Couldn\'t download the attachment.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="attachment_text">Text</string>
+    <string name="attachment_type_blocked">Unfortunately, you can\'t save or open this type of attachment.</string>
+    <string name="attachment_unknown"><ns1:g id="attachmentExtension">%s</ns1:g> File</string>
+    <string name="attachment_video">Video</string>
+    <string name="attachments_header">Attachments</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="authority_account_cache_provider" translatable="false">com.android.email.accountcache</string>
+    <string name="authority_conversation_provider" translatable="false">com.android.email.conversation.provider</string>
+    <string name="authority_email_provider" translatable="false">com.android.email.provider</string>
+    <string name="authority_suggestions_provider" translatable="false">com.android.email.suggestionsprovider</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="auto_advance_help_title">Set auto-advance preference\n(after you delete, etc.)</string>
+    <string name="auto_advance_label">Auto-advance</string>
+    <string name="auto_advance_summary">Choose which screen to show after you
+         delete a message</string>
+    <string name="auto_sync_off">Auto-sync is off.</string>
+    <string name="bcc">Bcc</string>
+    <string name="bcc_heading">Bcc:\u0020</string>
+    <string name="body_hint">Compose email</string>
+    <string name="bytes"><ns1:g id="count">%s</ns1:g> B</string>
+    <string name="cancel">Cancel</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="cancel_action">Cancel</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="cancel_attachment">Cancel</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="cannot_move_multiple_accounts_toast">Can\'t move because selection contains multiple
+        accounts.</string>
+    <string name="cannot_move_protocol_not_supported_toast">Move isn\'t supported on POP3 accounts.
+        </string>
+    <string name="cannot_move_special_mailboxes_toast">Messages in Drafts, Outbox, and Sent can\'t be
+        moved.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="cant_move_or_change_labels">Can\'t move because selection contains multiple
+        accounts.</string>
+    <string name="cc">Cc</string>
+    <string name="cc_attribution">Cc: <ns1:g id="cc">%1$s</ns1:g>&lt;br></string>
+    <string name="cc_heading">Cc:\u0020</string>
+    <string name="change_folders_selection_dialog_title">Change folders</string>
+    <string name="change_sync_settings">Change sync settings</string>
+    <string name="checking_for_mail">Checking for mail</string>
+    <string name="choosertitle_sharevia">Share via</string>
+    <string name="clear">Clear</string>
+    <string name="clear_display_images_whitelist_dialog_message">Stop displaying inline images from senders you previously allowed.</string>
+    <string name="clear_display_images_whitelist_dialog_title">Clear picture approvals?</string>
+    <string name="clear_display_images_whitelist_title">Clear picture approvals</string>
+    <string name="collapse_recipient_details">Collapse recipient details</string>
+    <string name="compose">Compose</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/helpcontext.xml -->
+    <eat-comment/>
+    <string name="compose_help_context" translatable="false">compose</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="confirm_discard_text">Discard this message?</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="confirm_response">Sending response…</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="confirm_send_message">Send this message?</string>
+    <string name="confirm_send_message_with_no_body">There\'s no text in the message body.</string>
+    <string name="confirm_send_message_with_no_subject">There\'s no text in the message subject.</string>
+    <string name="confirm_send_title">Send message?</string>
+    <string name="contact_info_string">Show contact information for <ns1:g id="name">%1$s</ns1:g></string>
+    <string name="contact_info_string_default">Show contact information</string>
+    <string name="content_description"><ns1:g id="sender">%1$s</ns1:g> about <ns1:g id="subject">%2$s</ns1:g>, <ns1:g id="snippet">%3$s</ns1:g> on <ns1:g id="date">%4$s</ns1:g>, <ns1:g id="readstate">%5$s</ns1:g></string>
+    <string name="content_description_today"><ns1:g id="sender">%1$s</ns1:g> about <ns1:g id="subject">%2$s</ns1:g>, <ns1:g id="snippet">%3$s</ns1:g> at <ns1:g id="time">%4$s</ns1:g>, <ns1:g id="readstate">%5$s</ns1:g></string>
+    <string name="contextmenu_add_contact">Add contact</string>
+    <string name="contextmenu_copy">Copy</string>
+    <string name="contextmenu_copylink">Copy link URL</string>
+    <string name="contextmenu_dial_dot">Dial\u2026</string>
+    <string name="contextmenu_feedback">Send feedback</string>
+    <string name="contextmenu_help">Help</string>
+    <string name="contextmenu_map">Map</string>
+    <string name="contextmenu_openlink">Open in Browser</string>
+    <string name="contextmenu_send_mail">Send email</string>
+    <string name="contextmenu_sharelink">Share link</string>
+    <string name="contextmenu_sms_dot">SMS\u2026</string>
+    <string name="conversation_content_provider" translatable="false">Conversation Content Provider</string>
+    <string name="conversation_folder_moved">Moved to <ns1:g id="folderName">%1$s</ns1:g></string>
+    <string name="conversation_photo_welcome_text">Touch a sender image to select that conversation.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="copy_email">Copy email address</string>
+    <string name="copy_number">Copy phone number</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="create_action">Create new</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="custom_from_account_label">Send mail as:</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/donottranslate.xml -->
+    <eat-comment/>
+    <string name="date" translatable="false">2888/88/88</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="date_heading">Date:\u0020</string>
+    <string name="date_message_received"><ns1:g id="day_and_date">%1$s</ns1:g>, <ns1:g id="time">%2$s</ns1:g></string>
+    <string name="date_message_received_today">Today, <ns1:g id="time">%1$s</ns1:g></string>
+    <string name="date_message_received_yesterday">Yesterday, <ns1:g id="time">%1$s</ns1:g></string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="debug_clear_webview_cache" translatable="false">
+        Clear WebView cache</string>
+    <string name="debug_disable_graphics_acceleration_label" translatable="false">
+        Disable hardware graphics acceleration</string>
+    <string name="debug_enable_debug_logging_label" translatable="false">
+        Enable extra debug logging?</string>
+    <string name="debug_enable_file_logging_label" translatable="false">
+        Enable sd card logging?</string>
+    <string name="debug_enable_strict_mode_label" translatable="false">
+        Enable strict mode (with logging)</string>
+    <string name="debug_enable_verbose_logging_label" translatable="false">
+        Enable extremely verbose logging?</string>
+    <string name="debug_force_one_minute_refresh_label" translatable="false">
+        Force 1-minute refresh for POP/IMAP</string>
+    <string name="debug_title">Debug</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="delete">Delete</string>
+    <string name="deleted">Deleted</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="device_admin_description">Enables server-specified security policies</string>
+    <string name="device_admin_label">Email</string>
+    <string name="disable_admin_warning">WARNING: Deactivating the Email app\'s authority
+         to administer your device will delete all email accounts that require it, along with their
+         email, contacts, calendar events, and other data.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="discard">Discard</string>
+    <string name="discard_drafts">Discard drafts</string>
+    <string name="dismiss_tip_hover_text">Dismiss tip</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="done">Return</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="done_action">Done</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="download_again">Download again</string>
+    <string name="download_failed">Couldn\'t download. Touch to retry.</string>
+    <string name="draft_count_format">\u00A0(<ns1:g id="count">%1$s</ns1:g>)</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="edit_quick_response_dialog">Quick response</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="elided_padding_token" translatable="false">\u00A0</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="email_feedback_uri" translatable="false"/>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/emailcommon_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="email_package_name" translatable="false">com.android.email</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="eml_attachment_provider" translatable="false">com.android.email.provider.eml.attachment</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="empty_spam">Empty Spam</string>
+    <string name="empty_spam_dialog_title">Empty Spam?</string>
+    <string name="empty_trash">Empty Trash</string>
+    <string name="empty_trash_dialog_title">Empty Trash?</string>
+    <string name="enable_sync_in_account_settings">Turn on in <ns1:g id="account_settings">%1$s</ns1:g>.</string>
+    <string name="enumeration_comma">,\u0020</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="exchange_name">Corporate</string>
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="expand_recipient_details">Expand recipient details</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="failed">Couldn\'t load image</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="feedback">Send feedback</string>
+    <string name="fetching_attachment">Fetching attachment</string>
+    <string name="filtered_tag"> [<ns1:g id="tag">%1$s</ns1:g>]<ns1:g id="subject">%2$s</ns1:g></string>
+    <string name="folder_icon_desc">Folder icon</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="folder_picker_title">Folder picker</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="folder_removed">Removed from <ns1:g id="folderName">%1$s</ns1:g></string>
+    <string name="folder_shortcut_widget_label">Email folder</string>
+    <string name="formatted_email_address" translatable="false">&lt;<ns1:g id="email">%1$s</ns1:g>></string>
+    <string name="formatted_subject" translatable="false"><ns1:g id="prefix">%1$s</ns1:g> <ns1:g id="subject">%2$s</ns1:g></string>
+    <string name="forward">Forward</string>
+    <string name="forward_attribution">---------- Forwarded message ----------&lt;br>From: <ns1:g id="from">%1$s</ns1:g>&lt;br>Date: <ns1:g id="date">%2$s</ns1:g>&lt;br>Subject: <ns1:g id="subject">%3$s</ns1:g>&lt;br>To: <ns1:g id="to">%4$s</ns1:g>&lt;br></string>
+    <string name="forward_attribution_no_headers">---------- Forwarded message ----------</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="forward_download_failed_ticker">Couldn\'t forward one or more attachments.</string>
+    <string name="forward_download_failed_title">Attachment not forwarded</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="forward_subject_label" translatable="false">Fwd:</string>
+    <string name="from_heading">From:\u0020</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="general_preference_confirm_delete_label">Confirm before deleting</string>
+    <string name="general_preference_confirm_delete_summary">Messages</string>
+    <string name="general_preference_confirm_send_label">Confirm before sending</string>
+    <string name="general_preference_confirm_send_summary">Messages</string>
+    <string name="general_preference_text_zoom_dialog_title">Message text size</string>
+    <string name="general_preference_text_zoom_huge">Huge</string>
+    <string name="general_preference_text_zoom_label">Message text size</string>
+    <string name="general_preference_text_zoom_large">Large</string>
+    <string name="general_preference_text_zoom_normal">Normal</string>
+    <string name="general_preference_text_zoom_small">Small</string>
+    <string name="general_preference_text_zoom_tiny">Tiny</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="generic_attachment_problem">Couldn\'t attach file.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="header_label_general_preferences">General settings</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="help_and_info">Help</string>
+    <string name="hide_elided">\u25BC Hide quoted text</string>
+    <string name="hide_folders">Hide folders</string>
+    <string name="hierarchical_folder_parent_top" translatable="false"><ns1:g id="topLevelParent">%1$s</ns1:g>\u2215<ns1:g id="parent">%2$s</ns1:g>\u2215</string>
+    <string name="hierarchical_folder_parent_top_ellip" translatable="false"><ns1:g id="topLevelParent">%1$s</ns1:g>\u2215\u2026\u2215<ns1:g id="parent">%2$s</ns1:g>\u2215</string>
+    <string name="hierarchical_folder_top" translatable="false"><ns1:g id="topLevelParent">%1$s</ns1:g>\u2215</string>
+    <string name="ignore_spam_warning">Ignore, I trust this message</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="imap_name">IMAP</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="inbox_folders_heading">Inbox</string>
+    <string name="info">Info</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="intent_account_manager_entry" translatable="false">com.android.email.activity.setup.ACCOUNT_MANAGER_ENTRY</string>
+    <string name="intent_exchange_action" translatable="false">com.android.email.EXCHANGE_INTENT</string>
+    <string name="intent_exchange_package" translatable="false">com.android.exchange</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="invalid_recipient">The address <ns1:g example="foo@@gmail..com" id="wrongemail">%s</ns1:g> is invalid.</string>
+    <string name="kilobytes"><ns1:g id="count">%s</ns1:g> KB</string>
+    <string name="label_notification_ticker">"<ns1:g id="label">%s</ns1:g>: <ns1:g id="notification">%s</ns1:g>"</string>
+    <string name="load_attachment">@string/load_more</string>
+    <string name="load_more">Load more</string>
+    <string name="loading_conversation">Loading\u2026</string>
+    <string name="loading_conversations">Loading\u2026</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="login_failed_ticker">
+        <ns1:g id="account_name">%s</ns1:g> signin unsuccessful.</string>
+    <string name="login_failed_title">Couldn\'t sign in</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="long_press_to_select_tip">Touch &amp; hold to select one conversation, then touch to select more.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/donottranslate.xml -->
+    <eat-comment/>
+    <string name="long_string" translatable="false">looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="mailbox_list_account_selector_combined_view">Combined view</string>
+    <string name="mailbox_name_display_drafts">Drafts</string>
+    <string name="mailbox_name_display_inbox">Inbox</string>
+    <string name="mailbox_name_display_junk">Junk</string>
+    <string name="mailbox_name_display_outbox">Outbox</string>
+    <string name="mailbox_name_display_sent">Sent</string>
+    <string name="mailbox_name_display_starred">Starred</string>
+    <string name="mailbox_name_display_trash">Trash</string>
+    <string name="mailbox_name_display_unread">Unread</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/emailcommon_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="mailbox_name_server_all_unread" translatable="false">Unread</string>
+    <string name="mailbox_name_server_drafts" translatable="false">Drafts</string>
+    <string name="mailbox_name_server_inbox" translatable="false">Inbox</string>
+    <string name="mailbox_name_server_junk" translatable="false">Junk</string>
+    <string name="mailbox_name_server_outbox" translatable="false">Outbox</string>
+    <string name="mailbox_name_server_sent" translatable="false">Sent</string>
+    <string name="mailbox_name_server_starred" translatable="false">Starred</string>
+    <string name="mailbox_name_server_trash" translatable="false">Trash</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="mailbox_settings_activity_title">Sync options</string>
+    <string name="mailbox_settings_activity_title_with_mailbox">Sync options (<ns1:g example="Family" id="mailboxx_name">%s</ns1:g>)</string>
+    <string name="mailbox_settings_mailbox_sync_window_label">Days of mail to sync</string>
+    <string name="mailbox_settings_sync_enabled_label">Sync this folder</string>
+    <string name="mailbox_settings_sync_enabled_summary">Messages will download when connected</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/helpcontext.xml -->
+    <eat-comment/>
+    <string name="main_help_context" translatable="false">ttl</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="manual_sync">Sync now</string>
+    <string name="mark_important">Mark important</string>
+    <string name="mark_not_important">Mark not important</string>
+    <string name="mark_not_spam">Report not spam</string>
+    <string name="mark_read">Mark read</string>
+    <string name="mark_unread">Mark unread</string>
+    <string name="me_object_pronun">me</string>
+    <string name="me_subject_pronun">me</string>
+    <string name="megabytes"><ns1:g id="count">%s</ns1:g> MB</string>
+    <string name="menu_change_folders">Change folders</string>
+    <string name="menu_compose">Compose</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="menu_folder_options">Sync options</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="menu_manage_folders">Folder settings</string>
+    <string name="menu_move_to">Move to</string>
+    <string name="menu_move_to_inbox">Move to Inbox</string>
+    <string name="menu_photo_save_all">Save all</string>
+    <string name="menu_photo_share">Share</string>
+    <string name="menu_photo_share_all">Share all</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_show_original">Revert auto-sizing</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="message_compose_fwd_header_fmt">\n\n-------- Original Message --------\nSubject: <ns1:g id="subject">%1$s</ns1:g>\nFrom: <ns1:g id="sender">%2$s</ns1:g>\nTo: <ns1:g id="to">%3$s</ns1:g>\nCC: <ns1:g id="cc">%4$s</ns1:g>\n\n</string>
+    <string name="message_compose_insert_quick_response_list_title">Insert quick response</string>
+    <string name="message_compose_insert_quick_response_menu_title">Insert quick response</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="message_count_spacer" translatable="false">\u00A0\u00A0</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="message_decode_error">There was an error while decoding the message.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="message_details_title">Message details</string>
+    <string name="message_discarded">Message discarded.</string>
+    <string name="message_invite_accept">Yes</string>
+    <string name="message_invite_calendar_view">View in Calendar</string>
+    <string name="message_invite_decline">No</string>
+    <string name="message_invite_label_attending">Going?</string>
+    <string name="message_invite_tentative">Maybe</string>
+    <string name="message_invite_title">Calendar invite</string>
+    <string name="message_saved">Message saved as draft.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="message_view_attachment_background_load">One or more attachments in your
+        forwarded message will be downloaded prior to sending.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="mock_content_provider" translatable="false">Mock Content Provider</string>
+    <string name="more_info_attachment">Info</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="more_string">\u002B<ns1:g id="count">%1$s</ns1:g></string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="more_than_999">999+</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="move_to_selection_dialog_title">Move to</string>
+    <string name="multiple_new_message_notification_item"><b><ns1:g id="sender">%1$s</ns1:g></b>\u0020\u0020\u0020<ns1:g id="subject">%2$s</ns1:g></string>
+    <string name="mute">Mute</string>
+    <string name="network_error">No connection</string>
+    <string name="new_incoming_messages_one">New message from <ns1:g id="sender">%s</ns1:g>. Show.</string>
+    <string name="new_messages"><ns1:g id="count">%1$d</ns1:g> new messages</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="next_action">Next</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="no">No</string>
+    <string name="no_application_found">No app can open this attachment for viewing.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="no_conversations">No messages.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="non_synced_folder_description">To view conversations, sync this folder.</string>
+    <string name="not_synced_title">Account not synced</string>
+    <string name="notification_action_archive">Archive</string>
+    <string name="notification_action_delete">Delete</string>
+    <string name="notification_action_remove_label">Remove label</string>
+    <string name="notification_action_reply">Reply</string>
+    <string name="notification_action_reply_all">Reply all</string>
+    <string name="notification_action_undo_archive">Archived</string>
+    <string name="notification_action_undo_delete">Deleted</string>
+    <string name="notification_action_undo_remove_label">Label Removed</string>
+    <string name="num_selected"><ns1:g example="7" id="number">%d</ns1:g></string>
+    <string name="ok">OK</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="okay_action">OK</string>
+    <string name="password_expire_warning_content_title">Lock screen password expiring</string>
+    <string name="password_expire_warning_dialog_content_fmt">
+         You need to change your lock screen PIN or password soon, or the data for
+         <ns1:g id="account">%s</ns1:g> will be erased. Do you want to change it now?</string>
+    <string name="password_expire_warning_dialog_title">Lock screen password expiring</string>
+    <string name="password_expire_warning_ticker_fmt">
+            \"<ns1:g id="account">%s</ns1:g>\" requires that you change your lock screen
+            PIN or password.</string>
+    <string name="password_expired_content_title">Lock screen password expired</string>
+    <string name="password_expired_dialog_content_fmt">
+         The data for <ns1:g id="account">%s</ns1:g> is being erased from your device.
+         You can restore it by changing your lock screen PIN or password. Do you want to change it now?</string>
+    <string name="password_expired_dialog_title">Lock screen password expired</string>
+    <string name="password_expired_ticker">Your lock screen PIN or password has expired.</string>
+    <string name="permission_access_provider_desc">Allows the app to access your email
+        database, including received messages, sent messages, usernames, and passwords.</string>
+    <string name="permission_access_provider_label">Access email provider data</string>
+    <string name="permission_read_attachment_desc">Allows the app to read your email
+        attachments.</string>
+    <string name="permission_read_attachment_label">Read email attachments</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="phone">phone</string>
+    <string name="photo_load_failed">Couldn\'t load image</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="photo_view_count"><ns1:g id="current_pos">%d</ns1:g> of <ns1:g id="count">%d</ns1:g></string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="please_wait">Please wait\u2026</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="policy_calendar_age">Limit the number of calendar events synced</string>
+    <string name="policy_dont_allow_camera">Disallow use of the device\'s camera</string>
+    <string name="policy_email_age">Limit the number of emails synced</string>
+    <string name="policy_password_expiration">Require passwords to expire</string>
+    <string name="policy_password_history">Restrict the reuse of recent passwords</string>
+    <string name="policy_require_password">Require device password</string>
+    <string name="policy_screen_timeout">Require an idle device to lock its screen</string>
+    <string name="pop3_name">POP3</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="prefDefault_autoAdvance" translatable="false">list</string>
+    <string name="prefDefault_removal_action" translatable="false">archive</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="prefDialogTitle_conversationListIcon">Sender image</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="prefDialogTitle_removal_action">Archive &amp; delete actions</string>
+    <string name="preference_removal_action_title">Archive &amp; delete actions</string>
+    <string name="preference_sender_image_description">Show beside name in conversation list</string>
+    <string name="preference_sender_image_title">Sender image</string>
+    <string name="preference_swipe_description">In conversation list</string>
+    <string name="preference_swipe_title_archive">Swipe to archive</string>
+    <string name="preference_swipe_title_delete">Swipe to delete</string>
+    <string name="preferences_default_reply_all_summary">Use as default for message replies</string>
+    <string name="preferences_default_reply_all_title">Reply all</string>
+    <string name="preferences_signature_dialog_title">Signature</string>
+    <string name="preferences_signature_summary_not_set">Not set</string>
+    <string name="preferences_signature_title">Signature</string>
+    <string name="preview_attachment">Preview</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="previous_action">Previous</string>
+    <string name="protocol_eas" translatable="false">eas</string>
+    <string name="protocol_imap" translatable="false">imap</string>
+    <string name="protocol_legacy_imap" translatable="false">imap</string>
+    <string name="protocol_pop3" translatable="false">pop3</string>
+    <string name="provider_note_live">Only some \"Plus\" accounts include POP access
+        allowing this program to connect. If you\'re not able to sign in with
+        your correct email address and password, you may not have a paid
+        \"Plus\" account. Launch the web browser to gain access to
+        these email accounts.</string>
+    <string name="provider_note_t_online">Before setting up this email account, visit the T-Online website and create a password for POP3 email access.</string>
+    <string name="quick_1">Thanks!</string>
+    <string name="quick_2">Sounds good to me!</string>
+    <string name="quick_3">I\'ll read this later and get back to you.</string>
+    <string name="quick_4">Let\'s set up a meeting to discuss this.</string>
+    <string name="quick_responses_empty_view">No quick responses.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="quote_begin" translatable="false">&lt;div class=\"quote\"></string>
+    <string name="quoted_text">Include quoted text</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/colors.xml -->
+    <eat-comment/>
+    <string name="quoted_text_background_color_string" translatable="false">@android:color/white</string>
+    <string name="quoted_text_font_color_string" translatable="false">@color/gray_text_color</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="quoted_text_label">Quote text</string>
+    <string name="read_string">conversation read</string>
+    <string name="recent_folders_heading">Recent folders</string>
+    <string name="recipient_error_dialog_title">Recipient error</string>
+    <string name="recipient_needed">Add at least one recipient.</string>
+    <string name="refresh">Refresh</string>
+    <string name="remove_folder">Remove from <ns1:g id="folderName">%1$s</ns1:g></string>
+    <string name="remove_star">Remove star</string>
+    <string name="reply">Reply</string>
+    <string name="reply_all">Reply all</string>
+    <string name="reply_attribution">On <ns1:g id="date">%s</ns1:g>, <ns1:g id="person">%s</ns1:g> wrote:</string>
+    <string name="reply_subject_label" translatable="false">Re:</string>
+    <string name="replyto_heading">Reply-to:\u0020</string>
+    <string name="report">Report</string>
+    <string name="report_phishing">Report phishing</string>
+    <string name="report_rendering_improvement" translatable="false">Looks good</string>
+    <string name="report_rendering_improvement_desc" translatable="false">
+        This message looks good.
+    </string>
+    <string name="report_rendering_problem" translatable="false">Looks bad</string>
+    <string name="report_rendering_problem_desc" translatable="false">
+        This message looks bad.
+    </string>
+    <string name="report_spam">Report spam</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="require_manual_sync_message">Background sync for this account is disabled while\
+     roaming.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="respond_inline">Respond inline</string>
+    <string name="resume_draft">Edit</string>
+    <string name="retry">Retry</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="save_action">Save</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="save_attachment">Save</string>
+    <string name="save_draft">Save draft</string>
+    <string name="saved">Saved, <ns1:g id="size">%s</ns1:g></string>
+    <string name="saving">Saving…</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="search_hint">Search email</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="search_results_header">Results</string>
+    <string name="search_results_loaded"><ns1:g id="searchCount">%1$d</ns1:g></string>
+    <string name="search_results_searching_header">Searching\u2026</string>
+    <string name="search_title" translatable="false">Unified Email</string>
+    <string name="search_unsupported">Search is not supported on this account.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="security_changed_ticker_fmt">
+            Account \"<ns1:g id="account">%s</ns1:g>\" changed its security settings; no user
+            action is required.
+    </string>
+    <string name="security_needed_ticker_fmt">
+            Account \"<ns1:g id="account">%s</ns1:g>\" requires security settings update.
+    </string>
+    <string name="security_notification_content_change_title">Security policies have
+         changed</string>
+    <string name="security_notification_content_unsupported_title">Security policies can\'t be
+         met</string>
+    <string name="security_notification_content_update_title">Security update required</string>
+    <string name="security_unsupported_ticker_fmt">
+            Account \"<ns1:g id="account">%s</ns1:g>\" can\'t be synced due to security
+    requirements.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="select_attachment_type">Choose type of attachment</string>
+    <string name="send">Send</string>
+    <string name="send_failed">Message wasn\'t sent.</string>
+    <string name="sender_whitelist_cleared">Pictures won\'t be shown automatically.</string>
+    <string name="senders_elided" translatable="false">..</string>
+    <string name="senders_split_token">,\u00A0</string>
+    <string name="sending">Sending\u2026</string>
+    <string name="sending_message">Sending message\u2026</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="sent_folder_selection_title">Select server sent items folder for <ns1:g id="account">%s</ns1:g></string>
+    <string name="settings_activity_title">Settings</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="shortcut_name_title">Name folder shortcut</string>
+    <string name="show_elided">\u25B6 Show quoted text</string>
+    <string name="show_images">Show pictures</string>
+    <string name="show_n_more_folders">Show <ns1:g id="number">%1$s</ns1:g> more folders</string>
+    <string name="signature">\n\n<ns1:g id="signature">%s</ns1:g></string>
+    <string name="signin">Sign-in</string>
+    <string name="silent_ringtone">Silent</string>
+    <string name="single_new_message_notification_big_text"><ns1:g id="subject">%1$s</ns1:g>\n<ns1:g id="snippet">%2$s</ns1:g></string>
+    <string name="single_new_message_notification_title"><ns1:g id="sender">%1$s</ns1:g>: <ns1:g id="subject">%2$s</ns1:g></string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="status_network_error">Connection problem.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="storage">Storage</string>
+    <string name="subject_and_snippet"><ns1:g>%s</ns1:g> \u2014 <ns1:g>%s</ns1:g></string>
+    <string name="subject_hint">Subject</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="suggestions_authority" translatable="false">com.android.email.suggestionsprovider</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="swipe_down_to_refresh">Swipe down to refresh</string>
+    <string name="sync_error">Couldn\'t sync.</string>
+    <string name="sync_error_message">Your device doesn\'t have enough storage space to sync.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="system_account_create_failed">Couldn\'t create the account. Try again.</string>
+    <string name="system_folders_sent_dlg">Select your server\'s sent items folder</string>
+    <string name="system_folders_sent_summary">Select your server\'s sent items folder</string>
+    <string name="system_folders_sent_title">Sent items folder</string>
+    <string name="system_folders_title">System folders</string>
+    <string name="system_folders_trash_dlg">Select your server\'s trash folder</string>
+    <string name="system_folders_trash_summary">Select your server\'s trash folder</string>
+    <string name="system_folders_trash_title">Trash folder</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="tablet">tablet</string>
+    <string name="tap_to_configure">Touch to set up</string>
+    <string name="tap_to_configure_folder_sync">Sync Folder</string>
+    <string name="tap_to_enable_sync">Touch to turn on.</string>
+    <string name="to">To</string>
+    <string name="to_heading">To:\u0020</string>
+    <string name="too_large_to_attach_additional">File not attached. <ns1:g id="maxSize">%1$s</ns1:g> limit reached.</string>
+    <string name="too_large_to_attach_multiple">One or more files not attached. Limit <ns1:g id="maxSize">%1$s</ns1:g>.</string>
+    <string name="too_large_to_attach_single">Can\'t attach file over <ns1:g id="maxSize">%1$s</ns1:g>.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="trash_folder_selection_title">Select server trash folder for <ns1:g id="account">%s</ns1:g></string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/shortcut_keys.xml -->
+    <eat-comment/>
+    <string name="trigger_compose_char" translatable="false">c</string>
+    <string name="trigger_refresh_char" translatable="false">u</string>
+    <string name="trigger_save_char" translatable="false">s</string>
+    <string name="trigger_y_char" translatable="false">y</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="turn_auto_sync_on_dialog_body">Changes you make to
+    all apps and accounts, not just Gmail, will be synchronized
+    between the web, your other devices, and your <ns1:g id="phone_or_tablet">%1$s</ns1:g>.</string>
+    <string name="turn_auto_sync_on_dialog_confirm_btn">Turn on</string>
+    <string name="turn_auto_sync_on_dialog_title">Turn auto-sync on?</string>
+    <string name="undo">Undo</string>
+    <string name="unread_string">conversation unread</string>
+    <string name="unsent_messages_in_outbox"><ns1:g id="number">%1$s</ns1:g>
+    unsent in <ns1:g id="outbox">%2$s</ns1:g></string>
+    <string name="veiled_address"/>
+    <string name="veiled_alternate_text"/>
+    <string name="veiled_alternate_text_unknown_person"/>
+    <string name="veiled_summary_unknown_person"/>
+    <string name="via_domain">via <ns1:g id="viaDomain">%1$s</ns1:g></string>
+    <string name="view_more_conversations">View more conversations</string>
+    <string name="wait_for_manual_sync_body">This account isn\'t set up to sync automatically.\nTouch <b>Sync Now</b> to sync mail once, or <b>Change Sync Settings</b> to set up this account to sync mail automatically.</string>
+    <string name="wait_for_sync_body">Your email will appear shortly.</string>
+    <string name="wait_for_sync_title">Waiting for sync</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/helpcontext.xml -->
+    <eat-comment/>
+    <string name="wait_help_context" translatable="false">wait</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="widget_large_unread_count">%d+</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="widget_provider" translatable="false">com.android.email.provider.WidgetProvider</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="yes">Yes</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/styles.xml -->
+    <eat-comment/>
+    <style name="AbstractConversationSubjectStyle">
+        <item name="android:textSize">@dimen/conversation_header_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/conv_header_text_dark</item>
+    </style>
+    <style name="AbstractMessageAttachmentsHeaderStyle" parent="MessageHeaderSmallStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="AbstractMessageHeaderShowPicsStyle" parent="MessageHeaderSmallStyle">
+        <item name="android:textColor">@color/conv_header_text_light</item>
+    </style>
+    <style name="AbstractNewMessageButtonStyle" parent="@android:style/Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/btn_default</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/dark_gray_text_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="AbstractUndoTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#aaaaaa</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AccountItemIcon">
+        <item name="android:layout_height">@dimen/account_item_swatch_height</item>
+        <item name="android:layout_width">@dimen/account_item_folder_color_width</item>
+    </style>
+    <style name="AccountSpinnerAnchorTextPrimary" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    </style>
+    <style name="AccountSpinnerAnchorTextSecondary" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+    </style>
+    <style name="AccountSpinnerStyle">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="AttachmentButtonStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">48dip</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_gravity">center|left</item>
+    </style>
+    <style name="AttachmentContainer">
+        <item name="android:background">@drawable/attachment_bg_holo</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+    </style>
+    <style name="AttachmentIconStyle">
+        <item name="android:layout_marginLeft">@dimen/attachment_icon_padding</item>
+    </style>
+    <style name="AttachmentMarginStyle">
+        <item name="android:layout_marginLeft">@dimen/attachment_margin_side</item>
+        <item name="android:layout_marginRight">@dimen/attachment_margin_side</item>
+    </style>
+    <style name="AttachmentName">
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginRight">32dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="AttachmentSize" parent="@style/AttachmentName">
+        <item name="android:textColor">#aaaaaa</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="AttachmentThumbnail">
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="CheckedTextStyle">
+        <item name="android:paddingLeft">@dimen/checked_text_padding</item>
+        <item name="android:paddingRight">@dimen/checked_text_padding</item>
+    </style>
+    <style name="ComposeBodyView" parent="@style/ComposeEditTextView">
+        <item name="android:textColorHint">@color/compose_label_text</item>
+        <item name="android:inputType">textLongMessage|textMultiLine|textAutoCorrect|textCapSentences</item>
+        <item name="android:imeOptions">flagNoFullscreen|actionDone|flagNoEnterAction</item>
+    </style>
+    <style name="ComposeButton">
+        <item name="android:padding">0dip</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#777777</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="ComposeEditTextView">
+        <item name="android:minHeight">40dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="ComposeFieldLayout" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="ComposeHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/compose_label_text</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+     </style>
+    <style name="ComposeSubjectView" parent="@style/ComposeEditTextView">
+        <item name="android:inputType">textEmailSubject|textAutoCorrect|textCapSentences|textImeMultiLine|textMultiLine</item>
+        <item name="android:hint">@string/subject_hint</item>
+        <item name="android:textColorHint">@color/compose_label_text</item>
+        <item name="android:imeOptions">actionDone|flagNoExtractUi|flagNoFullscreen</item>
+    </style>
+    <style name="ComposeTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/white</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_up_holo_light</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <style name="ConversationHeaderFolderStyle">
+        <item name="android:paddingLeft">@dimen/conversation_header_side_padding</item>
+    </style>
+    <style name="ConversationHeaderSideMarginStyle">
+        <item name="android:layout_marginLeft">@dimen/conversation_header_margin_side</item>
+        <item name="android:layout_marginRight">@dimen/conversation_header_margin_side</item>
+    </style>
+    <style name="ConversationListFade" parent="@android:style/Widget.Holo.Light.ListView">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dip</item>
+    </style>
+    <style name="ConversationSubjectStyle" parent="AbstractConversationSubjectStyle">
+        <item name="android:paddingLeft">@dimen/conversation_header_side_padding</item>
+        <item name="android:paddingRight">@dimen/conversation_header_side_padding</item>
+    </style>
+    <style name="ConversationViewSideMarginMinusGradientStyle">
+        <item name="android:layout_marginLeft">@dimen/conversation_view_margin_side_minus_gradient
+        </item>
+        <item name="android:layout_marginRight">@dimen/conversation_view_margin_side_minus_gradient
+        </item>
+    </style>
+    <style name="ConversationViewSideMarginStyle">
+        <item name="android:layout_marginLeft">@dimen/conversation_view_margin_side</item>
+        <item name="android:layout_marginRight">@dimen/conversation_view_margin_side</item>
+    </style>
+    <style name="DetailsExpanderStyle">
+        <item name="android:layout_marginLeft">@dimen/message_header_inner_side_padding</item>
+    </style>
+    <style name="DismissButtonStyle">
+        <item name="android:paddingLeft">@dimen/dismiss_button_padding_start</item>
+        <item name="android:paddingRight">@dimen/dismiss_button_padding_end</item>
+    </style>
+    <style name="DismissSeparatorStyle">
+        <item name="android:layout_marginLeft">@dimen/dismiss_separator_padding</item>
+    </style>
+    <style name="DraftTextAppearance">
+        <item name="android:textColor">@color/drafts</item>
+    </style>
+    <style name="FillRowStyle">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_column">1</item>
+    </style>
+    <style name="FolderColorBoxStyle" parent="@style/FolderItemIcon">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="FolderItemIcon">
+        <item name="android:layout_height">@dimen/folder_swatch_height</item>
+        <item name="android:layout_width">@dimen/folder_list_folder_color_width</item>
+    </style>
+    <style name="FolderListItemEndStyle">
+        <item name="android:layout_marginRight">@dimen/folder_list_item_end_margin</item>
+    </style>
+    <style name="FolderListItemStartStyle">
+        <item name="android:layout_marginLeft">@dimen/folder_list_item_start_margin</item>
+    </style>
+    <style name="FolderListItemStyle">
+        <item name="android:layout_marginLeft">@dimen/folder_list_item_start_margin</item>
+        <item name="android:layout_marginRight">@dimen/folder_list_item_end_margin</item>
+    </style>
+    <style name="FolderSelectionItemStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">4dip</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:drawablePadding">20dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/themes.xml -->
+    <eat-comment/>
+    <style name="Holo.ActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/actionbar_translucent</item>
+    </style>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/styles.xml -->
+    <eat-comment/>
+    <style name="InvisibleShortcutWidgetTheme" parent="@style/ShortcutWidgetTheme">
+        <item name="android:windowNoDisplay">true</item>
+    </style>
+    <style name="LinksInTipTextAppearance">
+        <item name="android:textColor">?android:attr/textColorLink</item>
+    </style>
+    <style name="MessageAttachmentButtonBaseStyle" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minHeight">0dip</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#777777</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="MessageAttachmentButtonStyle" parent="MessageAttachmentButtonBaseStyle">
+        <item name="android:padding">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="MessageAttachmentsHeaderStyle" parent="AbstractMessageAttachmentsHeaderStyle">
+        <item name="android:paddingLeft">@dimen/message_details_header_padding_start</item>
+    </style>
+    <style name="MessageDetailsHeaderStyle">
+        <item name="android:paddingLeft">@dimen/message_details_header_padding_start_collapsed
+        </item>
+        <item name="android:paddingRight">@dimen/message_details_header_padding_end</item>
+    </style>
+    <style name="MessageDetailsValueStyle" parent="MessageHeaderSmallStyle">
+        <item name="android:autoLink">email</item>
+        <item name="android:linksClickable">true</item>
+        <item name="android:textColor">@color/conv_header_text_light</item>
+        <item name="android:textColorLink">@color/conv_header_text_link_blue</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+    <style name="MessageHeaderActionButtonStyle" parent="android:Widget.Holo.Button.Borderless">
+        <item name="android:layout_width">@dimen/message_header_action_button_width</item>
+        <item name="android:layout_height">@dimen/message_header_action_button_height</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="MessageHeaderContactImageStyle">
+        <item name="android:layout_marginLeft">@dimen/message_header_padding_start</item>
+    </style>
+    <style name="MessageHeaderDetailsHeadingStyle" parent="MessageHeaderSmallStyle">
+        <item name="android:layout_marginRight">@dimen/message_header_inner_side_padding</item>
+    </style>
+    <style name="MessageHeaderPresenceStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">4dip</item>
+        <!-- note: presence asset dimensions differ betwen HC and ICS -->
+        <item name="android:layout_marginTop">@dimen/message_header_presence_top_margin</item>
+    </style>
+    <style name="MessageHeaderShowPicsStyle" parent="AbstractMessageHeaderShowPicsStyle">
+        <item name="android:paddingLeft">@dimen/message_details_header_padding_start_collapsed
+        </item>
+        <item name="android:paddingRight">@dimen/message_show_pics_header_padding_end</item>
+        <item name="android:drawableLeft">@drawable/ic_show_images_holo_light</item>
+    </style>
+    <style name="MessageHeaderSmallStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/conv_header_text_dark</item>
+        <item name="android:textSize">@dimen/message_header_subtitle_text_size</item>
+    </style>
+    <style name="MessageHeaderSnippetStyle">
+        <item name="android:lines">2</item>
+        <item name="android:textSize">@dimen/message_header_subtitle_text_size</item>
+        <item name="android:textColor">@color/conv_header_text_light</item>
+    </style>
+    <style name="MessageHeaderSubtitleStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/message_header_subtitle_text_size</item>
+        <item name="android:textColor">@color/conv_header_text_dark</item>
+    </style>
+    <style name="MessageHeaderUpperDateStyle" parent="MessageHeaderSmallStyle">
+        <item name="android:minHeight">24dp</item>
+    </style>
+    <style name="MessageInfoReadTextAppearance">
+        <item name="android:textColor">@color/message_info_text_color</item>
+    </style>
+    <style name="MessageInfoUnreadTextAppearance">
+        <item name="android:textColor">@color/message_info_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MessageSenderNameStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/message_sender_name_text_size</item>
+        <item name="android:textColor">@color/conv_header_text_dark</item>
+    </style>
+    <style name="MessageUpperHeaderTextStyle">
+        <item name="android:paddingLeft">@dimen/message_header_inner_side_padding</item>
+    </style>
+    <style name="MinTimeAnimationStyle" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <style name="MinTimeProgressDialogStyle" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/MinTimeAnimationStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="MinTimeProgressViewStyle" parent="@android:style/Widget.Holo.Light.ProgressBar"/>
+    <style name="NewMessageButtonStyle" parent="AbstractNewMessageButtonStyle">
+        <item name="android:layout_marginLeft">@dimen/conversation_view_margin_side</item>
+        <item name="android:layout_marginRight">@dimen/conversation_view_margin_side</item>
+    </style>
+    <style name="NotificationPrimaryText">
+        <item name="android:textColor">#cccccc</item>
+    </style>
+    <style name="NotificationSecondaryText">
+    </style>
+    <style name="NotificationSendersReadTextAppearance">
+        <item name="android:textSize">@dimen/senders_font_size</item>
+    </style>
+    <style name="NotificationSendersUnreadTextAppearance">
+        <item name="android:textSize">@dimen/senders_font_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="OverflowButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_moreoverflow_normal_holo_light</item>
+    </style>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/themes.xml -->
+    <eat-comment/>
+    <style name="PhotoViewTheme" parent="android:Theme.Holo">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@color/solid_black</item>
+        <item name="android:actionBarStyle">@style/Holo.ActionBar</item>
+    </style>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/styles.xml -->
+    <eat-comment/>
+    <style name="PlainActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:displayOptions"/>
+    </style>
+    <style name="PlainSpinnerDropdown" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="PlainUnifiedEmailTheme" parent="@style/UnifiedEmailTheme">
+        <item name="android:actionBarStyle">@style/PlainActionBarStyle</item>
+    </style>
+    <style name="QuotedTextHeaderStyle">
+        <item name="android:textColor">@color/quoted_text_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="RecipientComposeFieldLayout" parent="@style/ComposeFieldLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">0dip</item>
+    </style>
+    <style name="RecipientComposeFieldSpacer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dip</item>
+    </style>
+    <style name="RecipientComposeHeading" parent="@style/ComposeHeading">
+        <item name="android:layout_marginRight">4dip</item>
+        <item name="android:layout_marginTop">4dip</item>
+        <item name="android:paddingLeft">0dip</item>
+     </style>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values/styles.xml -->
+    <eat-comment/>
+    <style name="RecipientEditTextView" parent="@android:attr/autoCompleteTextViewStyle">
+        <item name="android:inputType">textEmailAddress|textMultiLine</item>
+        <item name="android:imeOptions">actionNext|flagNoFullscreen</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:dropDownVerticalOffset">-6dip</item>
+        <item name="android:dropDownHorizontalOffset">-16dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra</item>
+    </style>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/styles.xml -->
+    <eat-comment/>
+    <style name="RecipientEditTextViewStyle" parent="@style/RecipientEditTextView">
+        <item name="android:minHeight">42dip</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:maxLines">@integer/chips_max_lines</item>
+    </style>
+    <style name="RecipientSummaryStyle" parent="MessageHeaderSmallStyle">
+        <item name="android:layout_marginRight">@dimen/recipient_summary_margin</item>
+    </style>
+    <style name="RespondInlineButtonStyle">
+        <item name="android:textColor">@color/quotedTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+    <style name="SendMailStyle">
+        <item name="android:paddingRight">@dimen/send_mail_as_padding</item>
+    </style>
+    <style name="SendersReadTextAppearance">
+        <item name="android:textColor">@color/senders_text_color_read</item>
+    </style>
+    <style name="SendersUnreadTextAppearance">
+        <item name="android:textColor">@color/senders_text_color_unread</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SendingTextAppearance" parent="@style/DraftTextAppearance">
+    </style>
+    <style name="ShortcutNameStyle">
+        <item name="android:layout_marginTop">16dip</item>
+    </style>
+    <style name="ShortcutNameWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ShortcutWidgetTheme" parent="@android:style/Theme.Holo.Light.DialogWhenLarge">
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_up_holo_light</item>
+    </style>
+    <style name="SubjectAppearanceReadStyle">
+        <item name="android:textColor">@color/subject_text_color_read</item>
+    </style>
+    <style name="SubjectAppearanceUnreadStyle">
+        <item name="android:textColor">@color/subject_text_color_unread</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TeaserTextStyle">
+        <item name="android:layout_marginLeft">@dimen/teaser_text_padding</item>
+    </style>
+    <style name="ToastBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:layout_marginRight">4dip</item>
+        <item name="android:layout_marginBottom">4dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/panel_undo_holo</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:alpha">0</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="UndoNotificationStyle">
+        <item name="android:layout_marginLeft">@android:dimen/notification_large_icon_width</item>
+    </style>
+    <style name="UndoTextStyle" parent="AbstractUndoTextStyle">
+        <item name="android:paddingRight">@dimen/undo_text_padding</item>
+    </style>
+    <style name="UnifiedEmailTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionDropDownStyle">@style/PlainSpinnerDropdown</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_up_holo_light</item>
+        <item name="android:listViewWhiteStyle">@android:style/Widget.Holo.Light.ListView</item>
+    </style>
+    <style name="UnreadCount">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/folder_item_text_color</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="UnreadCountWithMarginEndStyle" parent="UnreadCount">
+        <item name="android:layout_marginRight">@dimen/folder_list_item_end_margin</item>
+    </style>
+    <style name="UnseenCount">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="UnseenCountWithMarginEndStyle" parent="UnseenCount">
+        <item name="android:layout_marginRight">@dimen/folder_list_item_end_margin</item>
+    </style>
+    <style name="WaitFragmentTitle" parent="@android:style/Widget.Holo.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginBottom">8dip</item>
+    </style>
+    <style name="WidgetSubtitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle.Inverse">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="WidgetTitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse">
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="accountSettingsButton">
+        <item name="android:layout_width">160sp</item>
+        <item name="android:layout_height">40sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+    <style name="accountSetupButton">
+        <item name="android:layout_width">160sp</item>
+        <item name="android:layout_height">40sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+    <style name="accountSetupHeadline">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/account_setup_headline_color</item>
+    </style>
+    <style name="accountSetupInfoText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/account_setup_info_text_color</item>
+    </style>
+</resources>

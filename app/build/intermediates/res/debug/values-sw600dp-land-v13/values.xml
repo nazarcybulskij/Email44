@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-sw600dp-land/constants.xml -->
+    <eat-comment/>
+    <bool name="list_collapsible">false</bool>
+    <bool name="show_two_pane_search_results">true</bool>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-sw600dp-land/dimen.xml -->
+    <eat-comment/>
+    <dimen name="chip_height">32dip</dimen>
+    <dimen name="chip_padding">8dip</dimen>
+    <dimen name="chip_text_size">14sp</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-sw600dp-land/dimen.xml -->
+    <eat-comment/>
+    <dimen name="compose_area_left_padding">100dip</dimen>
+    <dimen name="compose_area_right_padding">100dip</dimen>
+    <dimen name="compose_scrollview_width">800dip</dimen>
+    <dimen name="search_view_width">500dip</dimen>
+    <dimen name="spinner_frame_width">196dp</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-sw600dp-land/styles.xml -->
+    <eat-comment/>
+    <style name="ComposeArea">
+        <item name="android:layout_width">@dimen/compose_scrollview_width</item>
+    </style>
+</resources>

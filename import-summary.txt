@@ -1,0 +1,42 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* Android.mk
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => emailcommon/src/main/AndroidManifest.xml
+* res/ => emailcommon/src/main/res/
+* src/ => emailcommon/src/main/java/
+* src/com/android/emailcommon/provider/Account.aidl => emailcommon/src/main/aidl/com/android/emailcommon/provider/Account.aidl
+* src/com/android/emailcommon/provider/HostAuth.aidl => emailcommon/src/main/aidl/com/android/emailcommon/provider/HostAuth.aidl
+* src/com/android/emailcommon/provider/Policy.aidl => emailcommon/src/main/aidl/com/android/emailcommon/provider/Policy.aidl
+* src/com/android/emailcommon/service/IAccountService.aidl => emailcommon/src/main/aidl/com/android/emailcommon/service/IAccountService.aidl
+* src/com/android/emailcommon/service/IEmailService.aidl => emailcommon/src/main/aidl/com/android/emailcommon/service/IEmailService.aidl
+* src/com/android/emailcommon/service/IEmailServiceCallback.aidl => emailcommon/src/main/aidl/com/android/emailcommon/service/IEmailServiceCallback.aidl
+* src/com/android/emailcommon/service/IPolicyService.aidl => emailcommon/src/main/aidl/com/android/emailcommon/service/IPolicyService.aidl
+* src/com/android/emailcommon/service/SearchParams.aidl => emailcommon/src/main/aidl/com/android/emailcommon/service/SearchParams.aidl
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

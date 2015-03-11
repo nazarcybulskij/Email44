@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-w1000dp/constants.xml -->
+    <eat-comment/>
+    <integer name="conversation_list_search_header_mode">0</integer>
+    <integer name="conversation_list_weight">3</integer>
+    <integer name="conversation_view_weight">6</integer>
+    <integer name="folder_list_weight">1</integer>
+</resources>
