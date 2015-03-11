@@ -105,7 +105,7 @@ original-package
 ADDED from AndroidManifest.xml:47:5
 	android:name
 		ADDED from AndroidManifest.xml:47:23
-permission#com.android.email.permission.READ_ATTACHMENT
+permission#com.android.email_ee.permission.READ_ATTACHMENT
 ADDED from AndroidManifest.xml:51:5
 	android:label
 		ADDED from AndroidManifest.xml:55:9
@@ -125,7 +125,7 @@ uses-permission#android.permission.USE_CREDENTIALS
 ADDED from AndroidManifest.xml:60:5
 	android:name
 		ADDED from AndroidManifest.xml:61:9
-permission#com.android.email.permission.ACCESS_PROVIDER
+permission#com.android.email_ee.permission.ACCESS_PROVIDER
 ADDED from AndroidManifest.xml:64:5
 	android:label
 		ADDED from AndroidManifest.xml:67:9
@@ -135,7 +135,7 @@ ADDED from AndroidManifest.xml:64:5
 		ADDED from AndroidManifest.xml:68:9
 	android:name
 		ADDED from AndroidManifest.xml:65:9
-uses-permission#com.android.email.permission.ACCESS_PROVIDER
+uses-permission#com.android.email_ee.permission.ACCESS_PROVIDER
 ADDED from AndroidManifest.xml:69:5
 	android:name
 		ADDED from AndroidManifest.xml:70:9
@@ -162,7 +162,7 @@ ADDED from AndroidManifest.xml:81:9
 		ADDED from AndroidManifest.xml:82:13
 	android:name
 		ADDED from AndroidManifest.xml:81:20
-activity#com.android.email.activity.ComposeActivityEmail
+activity#com.android.email_ee.activity.ComposeActivityEmail
 ADDED from AndroidManifest.xml:83:9
 	android:label
 		ADDED from AndroidManifest.xml:85:13
@@ -302,7 +302,7 @@ ADDED from AndroidManifest.xml:205:13
 		ADDED from AndroidManifest.xml:205:62
 	android:name
 		ADDED from AndroidManifest.xml:205:24
-activity-alias#com.android.email.activity.Welcome
+activity-alias#com.android.email_ee.activity.Welcome
 ADDED from AndroidManifest.xml:208:9
 	android:label
 		ADDED from AndroidManifest.xml:210:13
@@ -634,7 +634,7 @@ ADDED from AndroidManifest.xml:478:9
 		ADDED from AndroidManifest.xml:480:13
 	android:name
 		ADDED from AndroidManifest.xml:479:13
-service#com.android.email.service.Pop3SyncAdapterService
+service#com.android.email_ee.service.Pop3SyncAdapterService
 ADDED from AndroidManifest.xml:494:9
 	android:exported
 		ADDED from AndroidManifest.xml:496:13
@@ -652,7 +652,7 @@ ADDED from AndroidManifest.xml:501:13
 		ADDED from AndroidManifest.xml:502:24
 	android:name
 		ADDED from AndroidManifest.xml:501:24
-service#com.android.email.service.LegacyImapSyncAdapterService
+service#com.android.email_ee.service.LegacyImapSyncAdapterService
 ADDED from AndroidManifest.xml:505:9
 	android:exported
 		ADDED from AndroidManifest.xml:507:13
@@ -786,7 +786,7 @@ ADDED from AndroidManifest.xml:660:9
 		ADDED from AndroidManifest.xml:662:13
 	android:name
 		ADDED from AndroidManifest.xml:661:13
-service#com.android.email.EmailIntentService
+service#com.android.email_ee.EmailIntentService
 ADDED from AndroidManifest.xml:675:9
 	android:exported
 		ADDED from AndroidManifest.xml:676:18

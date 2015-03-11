@@ -31,11 +31,9 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.RemoteException;
-import android.text.TextUtils;
 
 import com.android.emailcommon.provider.EmailContent.AccountColumns;
 import com.android.emailcommon.utility.Utility;
-import com.android.mail.utils.LogUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -483,7 +481,7 @@ public final class Account extends EmailContent implements AccountColumns, Parce
      * for desktop shortcuts.
      *
      * <p>We don't want to store _id in shortcuts, because
-     * {@link com.android.email.provider.AccountBackupRestore} won't preserve it.
+     * {@link com.android.email_ee.provider.AccountBackupRestore} won't preserve it.
      */
     public Uri getShortcutSafeUri() {
         return getShortcutSafeUriFromUuid(mCompatibilityUuid);

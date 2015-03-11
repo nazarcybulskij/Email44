@@ -1137,7 +1137,7 @@
     <string name="email_package_name" translatable="false">com.android.email</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="eml_attachment_provider" translatable="false">com.android.email.provider.eml.attachment</string>
+    <string name="eml_attachment_provider" translatable="false">com.android.email_ee.provider.eml.attachment</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
     <eat-comment/>
     <string name="empty_spam">Empty Spam</string>

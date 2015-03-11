@@ -21,7 +21,7 @@ import android.content.Intent;
 import android.net.Uri;
 
 import com.android.email_ee.R;
-import com.android.email.activity.setup.AccountSettings;
+import com.android.email_ee.activity.setup.AccountSettings;
 
 public class EmailAccountCacheProvider extends MailAppProvider {
     // Content provider for Email

@@ -30,6 +30,6 @@
     -->
 
 <senders>
-    <sender scheme="smtp" class="com.android.email.mail.transport.SmtpSender" />
+    <sender scheme="smtp" class="com.android.email_ee.mail.transport.SmtpSender" />
 </senders>
 <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/xml/senders.xml -->

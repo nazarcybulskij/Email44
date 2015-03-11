@@ -49,7 +49,7 @@
     <!-- Grant permission to other apps to view attachments -->
     <!-- STOPSHIP: protectionLevel should not be dangerous -->
     <permission
-        android:name="com.android.email.permission.READ_ATTACHMENT"
+        android:name="com.android.email_ee.permission.READ_ATTACHMENT"
         android:description="@string/permission_read_attachment_desc"
         android:label="@string/permission_read_attachment_label"
         android:permissionGroup="android.permission-group.MESSAGES"
@@ -60,12 +60,12 @@
 
     <!-- Grant permission to system apps to access provider (see provider below) -->
     <permission
-        android:name="com.android.email.permission.ACCESS_PROVIDER"
+        android:name="com.android.email_ee.permission.ACCESS_PROVIDER"
         android:description="@string/permission_access_provider_desc"
         android:label="@string/permission_access_provider_label"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER" />
+    <uses-permission android:name="com.android.email_ee.permission.ACCESS_PROVIDER" />
 
     <!-- Legacy permissions, etc. can go here -->
 
@@ -88,7 +88,7 @@
             android:value="com.android.email2.ui.MailActivityEmail" />
 
         <activity
-            android:name="com.android.email.activity.ComposeActivityEmail"
+            android:name="com.android.email_ee.activity.ComposeActivityEmail"
             android:label="@string/app_name"
             android:theme="@style/ComposeTheme" >
             <intent-filter>
@@ -138,7 +138,7 @@
 
         <activity-alias
             android:name="com.android.mail.compose.ComposeActivity"
-            android:targetActivity="com.android.email.activity.ComposeActivityEmail" />
+            android:targetActivity="com.android.email_ee.activity.ComposeActivityEmail" />
 
         <activity
             android:name="com.android.email_ee.activity.EventViewer"
@@ -211,7 +211,7 @@
         </activity>
 
         <activity-alias
-            android:name="com.android.email.activity.Welcome"
+            android:name="com.android.email_ee.activity.Welcome"
             android:label="@string/app_name"
             android:targetActivity="com.android.email2.ui.MailActivityEmail" >
             <intent-filter>
@@ -338,14 +338,14 @@
 
         <provider
             android:name="com.android.mail.browse.EmailConversationProvider"
-            android:authorities="com.android.email.conversation.provider"
+            android:authorities="com.android.email_ee.conversation.provider"
             android:exported="true"
             android:label="@string/conversation_content_provider" >
             <grant-uri-permission android:pathPattern=".*" />
         </provider>
         <provider
             android:name="com.android.mail.providers.EmailAccountCacheProvider"
-            android:authorities="com.android.email.accountcache"
+            android:authorities="com.android.email_ee.accountcache"
             android:exported="true"
             android:label="@string/account_cache_provider" >
             <grant-uri-permission android:pathPattern=".*" />
@@ -365,7 +365,7 @@
         -->
         <provider
             android:name="com.android.mail.providers.SuggestionsProvider"
-            android:authorities="com.android.email.suggestionsprovider"
+            android:authorities="com.android.email_ee.suggestionsprovider"
             android:exported="true" />
 
         <service android:name="com.android.mail.compose.EmptyService" />
@@ -495,7 +495,7 @@
 
         <!-- Required stanza to register the PopImapSyncAdapterService with SyncManager -->
         <service
-            android:name="com.android.email.service.Pop3SyncAdapterService"
+            android:name="com.android.email_ee.service.Pop3SyncAdapterService"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
@@ -506,7 +506,7 @@
                 android:resource="@xml/syncadapter_pop3" />
         </service>
         <service
-            android:name="com.android.email.service.LegacyImapSyncAdapterService"
+            android:name="com.android.email_ee.service.LegacyImapSyncAdapterService"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
@@ -608,7 +608,7 @@
 
         <provider
             android:name="com.android.email_ee.provider.AttachmentProvider"
-            android:authorities="com.android.email.attachmentprovider"
+            android:authorities="com.android.email_ee.attachmentprovider"
             android:exported="true"
             android:grantUriPermissions="true"
             android:readPermission="com.android.email.permission.READ_ATTACHMENT" />
@@ -619,7 +619,7 @@
         -->
         <provider
             android:name="com.android.email_ee.provider.EmailProvider"
-            android:authorities="com.android.email.provider;com.android.email.notifier"
+            android:authorities="com.android.email_ee.provider;com.android.email_ee.notifier"
             android:exported="true"
             android:label="@string/app_name"
             android:permission="com.android.email.permission.ACCESS_PROVIDER" />
@@ -651,7 +651,7 @@
                 android:resource="@xml/authenticator_legacy_eas" />
         </service>
         <service
-            android:name="com.android.email.EmailIntentService"
+            android:name="com.android.email_ee.EmailIntentService"
             android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.LOCALE_CHANGED" />

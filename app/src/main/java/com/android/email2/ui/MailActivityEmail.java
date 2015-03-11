@@ -26,12 +26,12 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 
-import com.android.email.NotificationController;
-import com.android.email.Preferences;
+import com.android.email_ee.NotificationController;
+import com.android.email_ee.Preferences;
 import com.android.email_ee.R;
-import com.android.email.provider.EmailProvider;
-import com.android.email.service.AttachmentDownloadService;
-import com.android.email.service.EmailServiceUtils;
+import com.android.email_ee.provider.EmailProvider;
+import com.android.email_ee.service.AttachmentDownloadService;
+import com.android.email_ee.service.EmailServiceUtils;
 import com.android.emailcommon.Logging;
 import com.android.emailcommon.TempDirectory;
 import com.android.emailcommon.provider.Account;

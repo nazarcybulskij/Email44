@@ -49,7 +49,7 @@
     <!-- Grant permission to other apps to view attachments -->
     <!-- STOPSHIP: protectionLevel should not be dangerous -->
     <permission
-        android:name="com.android.email.permission.READ_ATTACHMENT"
+        android:name="com.android.email_ee.permission.READ_ATTACHMENT"
         android:permissionGroup="android.permission-group.MESSAGES"
         android:protectionLevel="dangerous"
         android:label="@string/permission_read_attachment_label"
@@ -62,7 +62,7 @@
 
     <!-- Grant permission to system apps to access provider (see provider below) -->
     <permission
-        android:name="com.android.email.permission.ACCESS_PROVIDER"
+        android:name="com.android.email_ee.permission.ACCESS_PROVIDER"
         android:protectionLevel="signature"
         android:label="@string/permission_access_provider_label"
         android:description="@string/permission_access_provider_desc"/>
@@ -81,7 +81,7 @@
         <meta-data android:name="android.app.default_searchable"
             android:value="com.android.email2.ui.MailActivityEmail" />
         <activity
-            android:name="com.android.email.activity.ComposeActivityEmail"
+            android:name=".activity.ComposeActivityEmail"
             android:label="@string/app_name"
             android:theme="@style/ComposeTheme">
             <intent-filter>
@@ -136,7 +136,7 @@
         </activity>
 
         <activity-alias android:name="com.android.mail.compose.ComposeActivity"
-            android:targetActivity="com.android.email.activity.ComposeActivityEmail"/>
+            android:targetActivity=".activity.ComposeActivityEmail"/>
 
         <activity
             android:name=".activity.EventViewer"
@@ -205,7 +205,7 @@
             <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
         </activity>
 
-        <activity-alias android:name="com.android.email.activity.Welcome"
+        <activity-alias android:name="com.android.email_ee.activity.Welcome"
             android:targetActivity="com.android.email2.ui.MailActivityEmail"
             android:label="@string/app_name" >
             <intent-filter >
@@ -339,7 +339,7 @@
         <!-- additional activities -->
 
         <provider
-            android:authorities="com.android.email.conversation.provider"
+            android:authorities="com.android.email_ee.conversation.provider"
             android:label="@string/conversation_content_provider"
             android:exported="true"
             android:name="com.android.mail.browse.EmailConversationProvider" >
@@ -347,7 +347,7 @@
         </provider>
 
         <provider
-            android:authorities="com.android.email.accountcache"
+            android:authorities="com.android.email_ee.accountcache"
             android:label="@string/account_cache_provider"
             android:exported="true"
             android:name="com.android.mail.providers.EmailAccountCacheProvider" >
@@ -366,7 +366,7 @@
           called SuggestionsProvider. The authority name is specified in the MailAppProvider
           which is specific to the two apps separately. -->
         <provider android:name="com.android.mail.providers.SuggestionsProvider"
-            android:authorities="com.android.email.suggestionsprovider"
+            android:authorities="com.android.email_ee.suggestionsprovider"
             android:exported="true" />
 
         <service android:name="com.android.mail.compose.EmptyService"/>
@@ -492,7 +492,7 @@
 
         <!--Required stanza to register the PopImapSyncAdapterService with SyncManager -->
         <service
-            android:name="com.android.email.service.Pop3SyncAdapterService"
+            android:name=".service.Pop3SyncAdapterService"
             android:exported="true">
             <intent-filter>
                 <action
@@ -503,7 +503,7 @@
         </service>
 
         <service
-            android:name="com.android.email.service.LegacyImapSyncAdapterService"
+            android:name=".service.LegacyImapSyncAdapterService"
             android:exported="true">
             <intent-filter>
                 <action
@@ -624,7 +624,7 @@
 
         <provider
             android:name=".provider.AttachmentProvider"
-            android:authorities="com.android.email.attachmentprovider"
+            android:authorities="com.android.email_ee.attachmentprovider"
             android:grantUriPermissions="true"
             android:exported="true"
             android:readPermission="com.android.email.permission.READ_ATTACHMENT"
@@ -634,7 +634,7 @@
              it exposes user passwords and other confidential information. -->
         <provider
             android:name=".provider.EmailProvider"
-            android:authorities="com.android.email.provider;com.android.email.notifier"
+            android:authorities="com.android.email_ee.provider;com.android.email_ee.notifier"
             android:exported="true"
             android:permission="com.android.email.permission.ACCESS_PROVIDER"
             android:label="@string/app_name"
@@ -672,7 +672,7 @@
                 />
         </service>
 
-        <service android:name="com.android.email.EmailIntentService"
+        <service android:name=".EmailIntentService"
                  android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.LOCALE_CHANGED"/>

@@ -19,7 +19,7 @@
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/emailcommon/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="1b4046ba8858282df804f59cdc9df911b2677003">
+        sha1="e26ff2798354581dd81a9b5575fe9991cc93d9f9">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-5cce6e353010911d478ca9a6f46cf6fa00893abf.jar" />
     </item>
     <item

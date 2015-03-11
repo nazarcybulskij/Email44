@@ -819,7 +819,7 @@
     <string name="application_mime_type" translatable="false">application/email-ls</string>
 
     <!-- Content Provider Authority for Eml Attachments -->
-    <string name="eml_attachment_provider" translatable="false">com.android.email.provider.eml.attachment</string>
+    <string name="eml_attachment_provider" translatable="false">com.android.email_ee.provider.eml.attachment</string>
 
     <!-- Provider name for widgets -->
     <string name="widget_provider" translatable="false">com.android.email.provider.WidgetProvider</string>
