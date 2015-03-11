@@ -65,14 +65,12 @@
         android:label="@string/permission_access_provider_label"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.android.email_ee.permission.ACCESS_PROVIDER" />
-
     <!-- Legacy permissions, etc. can go here -->
 
     <android:uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-
+        android:maxSdkVersion="18" /> <!-- <uses-permission -->
+    <!-- android:name="com.android.email_ee.permission.ACCESS_PROVIDER"/> -->
     <application
         android:name="com.android.email_ee.EmailApplication"
         android:hardwareAccelerated="true"
@@ -622,7 +620,7 @@
             android:authorities="com.android.email_ee.provider;com.android.email_ee.notifier"
             android:exported="true"
             android:label="@string/app_name"
-            android:permission="com.android.email.permission.ACCESS_PROVIDER" />
+            android:permission="com.android.email_ee.permission.ACCESS_PROVIDER" />
 
         <!-- Legacy authenticators, etc. can be added below. OEMs may remove these -->
 

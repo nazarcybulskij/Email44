@@ -135,10 +135,6 @@ ADDED from AndroidManifest.xml:64:5
 		ADDED from AndroidManifest.xml:68:9
 	android:name
 		ADDED from AndroidManifest.xml:65:9
-uses-permission#com.android.email_ee.permission.ACCESS_PROVIDER
-ADDED from AndroidManifest.xml:69:5
-	android:name
-		ADDED from AndroidManifest.xml:70:9
 application
 ADDED from AndroidManifest.xml:72:5
 MERGED from com.android.support:gridlayout-v7:19.0.0:19:5

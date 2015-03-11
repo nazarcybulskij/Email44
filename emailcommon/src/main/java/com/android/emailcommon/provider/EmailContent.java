@@ -973,7 +973,7 @@ public abstract class EmailContent {
          * Override this so that we can store the Body first and link it to the Message
          * Also, attachments when we get there...
          * (non-Javadoc)
-         * @see com.android.email.provider.EmailContent#save(android.content.Context)
+         * @see com.android.email_ee.provider.EmailContent#save(android.content.Context)
          */
         @Override
         public Uri save(Context context) {
