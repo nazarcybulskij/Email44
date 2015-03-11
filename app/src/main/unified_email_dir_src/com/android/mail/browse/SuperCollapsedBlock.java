@@ -23,7 +23,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.browse.ConversationViewAdapter.SuperCollapsedBlockItem;
 
 /**

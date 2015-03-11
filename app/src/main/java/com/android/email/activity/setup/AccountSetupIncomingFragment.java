@@ -35,7 +35,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.activity.UiUtilities;
 import com.android.email.provider.AccountBackupRestore;
 import com.android.email.service.EmailServiceUtils;

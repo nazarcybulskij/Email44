@@ -31,7 +31,7 @@ import android.os.ParcelFileDescriptor;
 import android.os.SystemClock;
 
 import com.android.ex.photo.provider.PhotoContract;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.utils.LogTag;
 import com.android.mail.utils.LogUtils;
 import com.android.mail.utils.MimeType;

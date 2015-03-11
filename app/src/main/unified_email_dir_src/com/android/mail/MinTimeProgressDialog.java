@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnShowListener;
 import android.os.Handler;
+import com.android.email_ee.R;
 
 /**
  * MinTimeProgressDialog implements a ProgressDialog that waits MIN_DELAY ms to

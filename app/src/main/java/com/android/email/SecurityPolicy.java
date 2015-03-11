@@ -47,6 +47,8 @@ import com.android.emailcommon.utility.Utility;
 import com.android.mail.utils.LogUtils;
 import com.google.common.annotations.VisibleForTesting;
 
+import com.android.email_ee.R;
+
 import java.util.ArrayList;
 
 /**

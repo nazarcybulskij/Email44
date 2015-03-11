@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.browse.ConversationCursor;
 import com.android.mail.preferences.MailPrefs;

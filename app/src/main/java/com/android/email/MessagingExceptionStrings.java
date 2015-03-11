@@ -16,9 +16,10 @@
 
 package com.android.email;
 
-import com.android.emailcommon.mail.MessagingException;
-
 import android.content.Context;
+
+import com.android.email_ee.R;
+import com.android.emailcommon.mail.MessagingException;
 
 /**
  * @return the error message associated with this exception.

@@ -33,7 +33,7 @@ import android.text.style.TextAppearanceSpan;
 import android.text.util.Rfc822Token;
 import android.text.util.Rfc822Tokenizer;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.providers.Address;
 import com.android.mail.providers.Conversation;
 import com.android.mail.providers.ConversationInfo;

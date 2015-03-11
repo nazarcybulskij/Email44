@@ -28,7 +28,7 @@ import android.widget.BaseAdapter;
 
 import com.android.mail.ContactInfoSource;
 import com.android.mail.FormattedDateBuilder;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.browse.ConversationViewHeader.ConversationViewHeaderCallbacks;
 import com.android.mail.browse.MessageHeaderView.MessageHeaderViewCallbacks;
 import com.android.mail.browse.SuperCollapsedBlock.OnClickListener;

@@ -29,7 +29,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.mail.Sender;
 import com.android.email.mail.Store;
 import com.android.email.service.EmailServiceUtils;

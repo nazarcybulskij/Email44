@@ -27,7 +27,7 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 
 import com.android.mail.FormattedDateBuilder;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.browse.BorderView;
 import com.android.mail.browse.ConversationMessage;
 import com.android.mail.browse.ConversationViewAdapter;

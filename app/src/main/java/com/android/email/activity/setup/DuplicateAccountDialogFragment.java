@@ -16,7 +16,7 @@
 
 package com.android.email.activity.setup;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

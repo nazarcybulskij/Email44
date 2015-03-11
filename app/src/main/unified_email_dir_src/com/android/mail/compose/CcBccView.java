@@ -24,7 +24,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RelativeLayout;
-import com.android.email.R;
+import com.android.email_ee.R;
 
 public class CcBccView extends RelativeLayout {
 

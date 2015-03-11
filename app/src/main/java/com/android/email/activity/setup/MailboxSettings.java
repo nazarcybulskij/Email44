@@ -32,7 +32,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.emailcommon.Logging;
 import com.android.emailcommon.provider.Account;
 import com.android.emailcommon.provider.EmailContent.MailboxColumns;

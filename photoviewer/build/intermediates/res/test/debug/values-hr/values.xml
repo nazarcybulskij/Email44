@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/photoviewer/build/intermediates/bundles/debug/res/values-hr/values.xml -->
+    <eat-comment/>
+    <string msgid="1458877219699376279" name="failed">"Nije moguće učitati sliku"</string>
+    <string msgid="3466690572899800275" name="photo_view_count">"<ns1:g id="CURRENT_POS">%d</ns1:g> od <ns1:g id="COUNT">%d</ns1:g>"</string>
+    <string msgid="3319517143224679074" name="retry">"Pokušaj ponovo"</string>
+</resources>

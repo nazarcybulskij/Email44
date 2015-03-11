@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/photoviewer/src/main/res/values-da/strings.xml -->
+    <eat-comment/>
+    <string msgid="1458877219699376279" name="failed">"Billedet kunne ikke indlæses"</string>
+    <string msgid="3466690572899800275" name="photo_view_count">"<ns1:g id="CURRENT_POS">%d</ns1:g> af <ns1:g id="COUNT">%d</ns1:g>"</string>
+    <string msgid="3319517143224679074" name="retry">"Forsøg igen"</string>
+</resources>

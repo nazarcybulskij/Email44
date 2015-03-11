@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.text.format.DateUtils;
 import android.text.format.Time;
+import com.android.email_ee.R;
 
 import java.util.Formatter;
 

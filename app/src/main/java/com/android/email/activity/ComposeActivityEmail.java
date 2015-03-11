@@ -22,7 +22,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.compose.ComposeActivity;
 import com.android.mail.utils.LogUtils;
 

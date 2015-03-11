@@ -26,7 +26,7 @@ import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.utils.Utils;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;

@@ -19,7 +19,7 @@ package com.android.email.mail;
 import android.content.Context;
 import android.os.Bundle;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.mail.store.ImapStore;
 import com.android.email.mail.store.Pop3Store;
 import com.android.email.mail.store.ServiceStore;

@@ -45,7 +45,7 @@ import android.provider.ContactsContract;
 import android.provider.ContactsContract.RawContacts;
 import android.provider.SyncStateContract;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.emailcommon.Logging;
 import com.android.emailcommon.provider.Account;
 import com.android.emailcommon.provider.EmailContent;

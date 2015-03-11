@@ -1,0 +1,44 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        //applicationId "com.android.ex.photo"
+        minSdkVersion 7
+        targetSdkVersion 18
+    }
+
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java','src/main/activity/src']
+            res.srcDirs = ['src/main/res','src/main/activity/res']
+        }
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+//        compile project(':unifiedEmail')
+//    compile project(':chips')
+//    compile project (':photoviewer')
+        //compile project(':emailcommon')
+     //   compile group: 'com.google.guava', name: 'guava', version: '15.0'
+        compile 'com.android.support:support-v4:19.0.0'
+
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}

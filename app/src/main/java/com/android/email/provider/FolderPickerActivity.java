@@ -28,7 +28,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.emailcommon.provider.Account;
 import com.android.emailcommon.provider.EmailContent;
 import com.android.emailcommon.provider.Mailbox;

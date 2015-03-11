@@ -24,7 +24,7 @@ import android.text.Editable;
 import android.text.TextUtils;
 import android.widget.EditText;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.provider.AccountBackupRestore;
 import com.android.emailcommon.Logging;
 import com.android.emailcommon.VendorPolicyLoader;

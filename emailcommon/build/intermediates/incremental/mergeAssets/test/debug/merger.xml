@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug"><source path="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/emailcommon/build/intermediates/bundles/debug/assets"/></dataSet><dataSet config="main"><source path="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/emailcommon/src/androidTest/assets"/></dataSet></merger>

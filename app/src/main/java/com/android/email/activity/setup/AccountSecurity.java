@@ -28,7 +28,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.SecurityPolicy;
 import com.android.email.activity.ActivityHelper;
 import com.android.email2.ui.MailActivityEmail;

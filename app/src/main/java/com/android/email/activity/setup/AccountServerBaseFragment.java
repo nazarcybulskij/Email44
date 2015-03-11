@@ -31,7 +31,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.activity.UiUtilities;
 import com.android.emailcommon.provider.Account;
 import com.android.emailcommon.provider.HostAuth;

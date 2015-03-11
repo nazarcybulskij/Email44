@@ -40,7 +40,7 @@ import android.widget.Toast;
 
 import com.android.email.EmailAddressValidator;
 import com.android.email.Preferences;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.activity.ActivityHelper;
 import com.android.email.activity.UiUtilities;
 import com.android.email.service.EmailServiceUtils;

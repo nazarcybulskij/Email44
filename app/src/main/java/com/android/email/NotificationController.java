@@ -59,6 +59,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import com.android.email_ee.R;
+
 /**
  * Class that manages notifications.
  */

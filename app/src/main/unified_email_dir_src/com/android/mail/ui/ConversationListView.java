@@ -23,7 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.mail.ConversationListContext;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.preferences.AccountPreferences;
 import com.android.mail.preferences.MailPrefs;

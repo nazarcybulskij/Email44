@@ -19,7 +19,7 @@ package com.android.email.mail;
 import android.content.Context;
 import android.content.res.XmlResourceParser;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.emailcommon.Logging;
 import com.android.emailcommon.mail.MessagingException;
 import com.android.emailcommon.provider.Account;

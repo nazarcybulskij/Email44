@@ -15,7 +15,7 @@
  */
 package com.android.mail.ui;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 
 import android.widget.ImageView;
 import android.widget.TextView;

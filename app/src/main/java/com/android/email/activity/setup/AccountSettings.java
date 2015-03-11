@@ -40,7 +40,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.activity.ActivityHelper;
 import com.android.email.provider.EmailProvider;
 import com.android.emailcommon.Logging;

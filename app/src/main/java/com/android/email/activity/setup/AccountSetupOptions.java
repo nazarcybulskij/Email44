@@ -37,7 +37,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.activity.ActivityHelper;
 import com.android.email.activity.UiUtilities;
 import com.android.email.service.EmailServiceUtils;

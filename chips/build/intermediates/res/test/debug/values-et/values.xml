@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/chips/build/intermediates/bundles/debug/res/values-et/values.xml -->
+    <eat-comment/>
+    <string msgid="7869435992461603532" name="copy_email">"Kopeeri e-posti aadress"</string>
+    <string msgid="530057841276106843" name="copy_number">"Kopeeri telefoninumber"</string>
+    <string msgid="2356320650733788862" name="done">"Sisestus"</string>
+    <string msgid="8495478259330621990" name="more_string">"+<ns1:g id="COUNT">%1$s</ns1:g>"</string>
+</resources>

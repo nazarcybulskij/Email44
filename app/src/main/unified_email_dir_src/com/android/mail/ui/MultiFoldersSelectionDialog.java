@@ -22,7 +22,7 @@ import android.content.DialogInterface;
 import android.database.Cursor;
 import android.net.Uri;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.providers.Account;
 import com.android.mail.providers.Conversation;
 import com.android.mail.providers.Folder;

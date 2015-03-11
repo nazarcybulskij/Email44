@@ -29,7 +29,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.content.CursorCreator;
 import com.android.mail.content.ObjectCursor;
 import com.android.mail.content.ObjectCursorLoader;

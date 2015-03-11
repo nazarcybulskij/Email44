@@ -24,7 +24,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.activity.ActivityHelper;
 import com.android.email.activity.UiUtilities;
 import com.android.email.service.EmailServiceUtils;

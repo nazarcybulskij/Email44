@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/chips/build/intermediates/bundles/debug/res/values-sw600dp-land-v13/values.xml -->
+    <eat-comment/>
+    <dimen name="chip_height">32dip</dimen>
+    <dimen name="chip_padding">8dip</dimen>
+    <dimen name="chip_text_size">14sp</dimen>
+</resources>

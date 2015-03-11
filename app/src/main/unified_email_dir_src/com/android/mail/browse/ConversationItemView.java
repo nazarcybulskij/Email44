@@ -65,9 +65,9 @@ import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.TextView;
 
-import com.android.email.R;
-import com.android.email.R.drawable;
-import com.android.email.R.integer;
+import com.android.email_ee.R;
+import com.android.email_ee.R.drawable;
+import com.android.email_ee.R.integer;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.bitmap.AttachmentDrawable;
 import com.android.mail.bitmap.AttachmentGridDrawable;

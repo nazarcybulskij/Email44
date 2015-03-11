@@ -28,7 +28,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import com.android.email.Preferences;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.activity.UiUtilities;
 import com.android.email.service.EmailServiceUtils;
 import com.android.email2.ui.MailActivityEmail;

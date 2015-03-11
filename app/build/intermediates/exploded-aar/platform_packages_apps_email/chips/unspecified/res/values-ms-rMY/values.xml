@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/chips/src/main/res/values-ms-rMY/strings.xml -->
+    <eat-comment/>
+    <string msgid="7869435992461603532" name="copy_email">"Salin alamat e-mel"</string>
+    <string msgid="530057841276106843" name="copy_number">"Salin nombor telefon"</string>
+    <string msgid="2356320650733788862" name="done">"Kembali"</string>
+    <string msgid="8495478259330621990" name="more_string">"+<ns1:g id="COUNT">%1$s</ns1:g>"</string>
+</resources>

@@ -22,6 +22,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 
+import com.android.email_ee.R;
 import com.android.emailcommon.Logging;
 import com.android.emailcommon.internet.MimeBodyPart;
 import com.android.emailcommon.internet.MimeHeader;

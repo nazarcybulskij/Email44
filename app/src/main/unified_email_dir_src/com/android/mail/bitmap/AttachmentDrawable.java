@@ -23,7 +23,7 @@ import com.android.bitmap.DecodeTask;
 import com.android.bitmap.DecodeTask.Request;
 import com.android.bitmap.ReusableBitmap;
 import com.android.bitmap.Trace;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.browse.ConversationItemViewCoordinates;
 import com.android.mail.ui.SwipeableListView;
 import com.android.mail.utils.LogUtils;

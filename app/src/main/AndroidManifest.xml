@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.email"
+    package="com.android.email_ee"
     android:versionCode="500064" >
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
@@ -44,7 +44,7 @@
 
     <!-- additional uses -->
 
-    <original-package android:name="com.android.email" />
+    <original-package android:name="com.android.email_ee" />
 
     <!-- Grant permission to other apps to view attachments -->
     <!-- STOPSHIP: protectionLevel should not be dangerous -->

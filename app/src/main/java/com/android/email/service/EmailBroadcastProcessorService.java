@@ -35,7 +35,7 @@ import android.text.TextUtils;
 import android.text.format.DateUtils;
 
 import com.android.email.Preferences;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.SecurityPolicy;
 import com.android.email.activity.setup.AccountSettings;
 import com.android.email.provider.AccountReconciler;

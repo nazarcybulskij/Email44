@@ -28,7 +28,7 @@ import android.os.Bundle;
 
 import com.android.email.NotificationController;
 import com.android.email.Preferences;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.provider.EmailProvider;
 import com.android.email.service.AttachmentDownloadService;
 import com.android.email.service.EmailServiceUtils;

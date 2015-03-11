@@ -28,7 +28,7 @@ import android.graphics.Typeface;
 import android.text.TextPaint;
 import android.text.TextUtils;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.photomanager.ContactPhotoManager.ContactIdentifier;
 import com.android.mail.photomanager.PhotoManager.DefaultImageProvider;
 import com.android.mail.photomanager.PhotoManager.PhotoIdentifier;

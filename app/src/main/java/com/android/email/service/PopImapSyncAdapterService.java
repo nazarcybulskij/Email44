@@ -30,7 +30,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.emailcommon.TempDirectory;
 import com.android.emailcommon.mail.MessagingException;
 import com.android.emailcommon.provider.Account;

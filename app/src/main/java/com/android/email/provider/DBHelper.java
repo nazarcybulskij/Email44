@@ -28,7 +28,7 @@ import android.provider.CalendarContract;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email2.ui.MailActivityEmail;
 import com.android.emailcommon.mail.Address;
 import com.android.emailcommon.provider.Account;

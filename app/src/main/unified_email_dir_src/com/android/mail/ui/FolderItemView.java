@@ -25,7 +25,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.providers.Folder;
 import com.android.mail.utils.LogTag;
 import com.android.mail.utils.LogUtils;

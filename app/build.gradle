@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.android.email"
+        applicationId "com.android.email_ee"
         minSdkVersion 14
         targetSdkVersion 18
     }
@@ -24,11 +24,12 @@ android {
 
     dependencies {
 //        compile project(':unifiedEmail')
-//    compile project(':chips')
-//    compile project (':photoviewer')
+    compile project(':common')
+    compile project(':chips')
+    compile project (':photoviewer')
     compile project(':emailcommon')
-    compile group: 'com.google.guava', name: 'guava', version: '15.0'
-    compile 'com.android.support:support-v4:19.0.0'
+//    compile group: 'com.google.guava', name: 'guava', version: '15.0'
+//    compile 'com.android.support:support-v4:19.0.0'
     compile 'com.android.support:gridlayout-v7:19.0.0'
     compile 'com.android.support:support-v13:19.0.0'
 

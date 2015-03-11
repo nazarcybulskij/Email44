@@ -16,7 +16,7 @@
 
 package com.android.mail.browse;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.browse.ConversationCursor.ConversationProvider;
 
 import java.lang.Override;

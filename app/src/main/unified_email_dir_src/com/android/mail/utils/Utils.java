@@ -58,7 +58,7 @@ import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.browse.ConversationCursor;
 import com.android.mail.compose.ComposeActivity;
 import com.android.mail.perf.SimpleTimer;

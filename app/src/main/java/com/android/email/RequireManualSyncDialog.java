@@ -16,12 +16,13 @@
 
 package com.android.email;
 
-import com.android.emailcommon.provider.Account;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+
+import com.android.email_ee.R;
+import com.android.emailcommon.provider.Account;
 
 public class RequireManualSyncDialog extends AlertDialog implements OnClickListener {
 

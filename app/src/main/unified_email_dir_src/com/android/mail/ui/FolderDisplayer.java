@@ -23,7 +23,7 @@ import com.google.common.collect.Sets;
 
 import android.content.Context;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.mail.providers.Conversation;
 import com.android.mail.providers.Folder;
 import com.android.mail.providers.UIProvider.FolderType;

@@ -34,7 +34,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.activity.UiUtilities;
 import com.android.email.provider.AccountBackupRestore;
 import com.android.email2.ui.MailActivityEmail;

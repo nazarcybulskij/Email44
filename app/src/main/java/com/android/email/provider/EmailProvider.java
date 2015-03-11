@@ -63,7 +63,7 @@ import android.util.SparseArray;
 
 import com.android.common.content.ProjectionMap;
 import com.android.email.Preferences;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.SecurityPolicy;
 import com.android.email.service.AttachmentDownloadService;
 import com.android.email.service.EmailServiceUtils;

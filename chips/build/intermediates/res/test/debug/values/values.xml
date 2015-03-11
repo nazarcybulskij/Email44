@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <declare-styleable name="RecipientEditTextView"><attr format="reference" name="invalidChipBackground"/><attr format="reference" name="chipBackground"/><attr format="reference" name="chipBackgroundPressed"/><attr format="reference" name="chipDelete"/><attr format="reference" name="chipAlternatesLayout"/><attr format="reference" name="chipPadding"/><attr format="reference" name="chipHeight"/><attr format="reference" name="chipFontSize"/></declare-styleable>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/chips/build/intermediates/bundles/debug/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="chip_height">32dip</dimen>
+    <dimen name="chip_padding">8dip</dimen>
+    <dimen name="chip_text_size">14sp</dimen>
+    <dimen name="line_spacing_extra">4dip</dimen>
+    <integer name="chips_max_lines">-1</integer>
+    <string name="copy_email">Copy email address</string>
+    <string name="copy_number">Copy phone number</string>
+    <string name="done">Return</string>
+    <string name="more_string">\u002B<ns1:g id="count">%1$s</ns1:g></string>
+    <style name="RecipientEditTextView" parent="@android:attr/autoCompleteTextViewStyle">
+        <item name="android:inputType">textEmailAddress|textMultiLine</item>
+        <item name="android:imeOptions">actionNext|flagNoFullscreen</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:dropDownVerticalOffset">-6dip</item>
+        <item name="android:dropDownHorizontalOffset">-16dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra</item>
+    </style>
+</resources>

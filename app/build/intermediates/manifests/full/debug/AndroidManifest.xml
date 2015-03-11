@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.email"
+    package="com.android.email_ee"
     android:versionCode="500064" > <!-- This needs to be present when we are doing unbundled releases. -->
     <uses-sdk
         android:minSdkVersion="14"
@@ -44,7 +44,7 @@
 
     <!-- additional uses -->
 
-    <original-package android:name="com.android.email" />
+    <original-package android:name="com.android.email_ee" />
 
     <!-- Grant permission to other apps to view attachments -->
     <!-- STOPSHIP: protectionLevel should not be dangerous -->
@@ -74,7 +74,7 @@
         android:maxSdkVersion="18" />
 
     <application
-        android:name="com.android.email.EmailApplication"
+        android:name="com.android.email_ee.EmailApplication"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher_mail"
         android:label="@string/app_name"
@@ -141,7 +141,7 @@
             android:targetActivity="com.android.email.activity.ComposeActivityEmail" />
 
         <activity
-            android:name="com.android.email.activity.EventViewer"
+            android:name="com.android.email_ee.activity.EventViewer"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -238,7 +238,7 @@
         <!-- Must be exported in order for the AccountManager to launch it -->
         <!-- Also available for continuous test systems to force account creation -->
         <activity
-            android:name="com.android.email.activity.setup.AccountSetupBasics"
+            android:name="com.android.email_ee.activity.setup.AccountSetupBasics"
             android:exported="true"
             android:label="@string/account_setup_basics_title" >
             <intent-filter>
@@ -248,28 +248,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.email.activity.setup.AccountSetupType"
+            android:name="com.android.email_ee.activity.setup.AccountSetupType"
             android:label="@string/account_setup_account_type_title" >
         </activity>
         <activity
-            android:name="com.android.email.activity.setup.AccountSetupIncoming"
+            android:name="com.android.email_ee.activity.setup.AccountSetupIncoming"
             android:label="@string/account_setup_incoming_title" >
         </activity>
         <activity
-            android:name="com.android.email.activity.setup.AccountSetupOutgoing"
+            android:name="com.android.email_ee.activity.setup.AccountSetupOutgoing"
             android:label="@string/account_setup_outgoing_title" >
         </activity>
         <activity
-            android:name="com.android.email.activity.setup.AccountSetupOptions"
+            android:name="com.android.email_ee.activity.setup.AccountSetupOptions"
             android:label="@string/account_setup_options_title" >
         </activity>
         <activity
-            android:name="com.android.email.activity.setup.AccountSetupNames"
+            android:name="com.android.email_ee.activity.setup.AccountSetupNames"
             android:label="@string/account_setup_names_title" >
         </activity>
         <!-- Must be exported in order for the AccountManager to launch it -->
         <activity
-            android:name="com.android.email.activity.setup.AccountSettings"
+            android:name="com.android.email_ee.activity.setup.AccountSettings"
             android:exported="true"
             android:label="@string/settings_activity_title" >
             <intent-filter>
@@ -294,7 +294,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.email.provider.FolderPickerActivity"
+            android:name="com.android.email_ee.provider.FolderPickerActivity"
             android:label="@string/folder_picker_title" >
             <intent-filter>
                 <action android:name="android.intent.action.EDIT" />
@@ -308,11 +308,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.email.activity.setup.AccountSecurity"
+            android:name="com.android.email_ee.activity.setup.AccountSecurity"
             android:label="@string/account_security_title" >
         </activity>
         <activity
-            android:name="com.android.email.activity.setup.MailboxSettings"
+            android:name="com.android.email_ee.activity.setup.MailboxSettings"
             android:label="@string/mailbox_settings_activity_title" >
         </activity>
         <activity
@@ -371,7 +371,7 @@
         <service android:name="com.android.mail.compose.EmptyService" />
         <!-- Widget -->
         <receiver
-            android:name="com.android.email.provider.WidgetProvider"
+            android:name="com.android.email_ee.provider.WidgetProvider"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -405,12 +405,12 @@
         <!-- From Email application -->
 
         <receiver
-            android:name="com.android.email.service.AttachmentDownloadService$Watchdog"
+            android:name="com.android.email_ee.service.AttachmentDownloadService$Watchdog"
             android:enabled="true" />
 
         <!-- Handles app upgrade. This disables itself after running once. -->
         <receiver
-            android:name="com.android.email.service.EmailUpgradeBroadcastReceiver"
+            android:name="com.android.email_ee.service.EmailUpgradeBroadcastReceiver"
             android:enabled="true" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -418,7 +418,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name="com.android.email.service.EmailBroadcastReceiver"
+            android:name="com.android.email_ee.service.EmailBroadcastReceiver"
             android:enabled="true" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -444,11 +444,11 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="com.android.email.service.EmailBroadcastProcessorService" />
+        <service android:name="com.android.email_ee.service.EmailBroadcastProcessorService" />
 
         <!-- Support for DeviceAdmin / DevicePolicyManager.  See SecurityPolicy class for impl. -->
         <receiver
-            android:name="com.android.email.SecurityPolicy$PolicyAdmin"
+            android:name="com.android.email_ee.SecurityPolicy$PolicyAdmin"
             android:description="@string/device_admin_description"
             android:label="@string/device_admin_label"
             android:permission="android.permission.BIND_DEVICE_ADMIN" >
@@ -462,13 +462,13 @@
         </receiver>
 
         <service
-            android:name="com.android.email.service.AttachmentDownloadService"
+            android:name="com.android.email_ee.service.AttachmentDownloadService"
             android:enabled="false" >
         </service>
 
         <!-- Required stanza to register the PopImapAuthenticatorService with AccountManager -->
         <service
-            android:name="com.android.email.service.Pop3AuthenticatorService"
+            android:name="com.android.email_ee.service.Pop3AuthenticatorService"
             android:enabled="true"
             android:exported="true" >
             <intent-filter>
@@ -481,7 +481,7 @@
         </service>
         <!-- Required stanza to register the PopImapAuthenticatorService with AccountManager -->
         <service
-            android:name="com.android.email.service.ImapAuthenticatorService"
+            android:name="com.android.email_ee.service.ImapAuthenticatorService"
             android:enabled="false"
             android:exported="true" >
             <intent-filter>
@@ -519,7 +519,7 @@
 
         <!-- Require provider permission to use our Policy and Account services -->
         <service
-            android:name="com.android.email.service.PolicyService"
+            android:name="com.android.email_ee.service.PolicyService"
             android:enabled="true"
             android:permission="com.android.email.permission.ACCESS_PROVIDER" >
             <intent-filter>
@@ -527,7 +527,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.android.email.service.AccountService"
+            android:name="com.android.email_ee.service.AccountService"
             android:enabled="true"
             android:permission="com.android.email.permission.ACCESS_PROVIDER" >
             <intent-filter>
@@ -535,7 +535,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.android.email.service.ImapService"
+            android:name="com.android.email_ee.service.ImapService"
             android:enabled="true"
             android:permission="com.android.email.permission.ACCESS_PROVIDER" >
             <intent-filter>
@@ -543,7 +543,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.android.email.service.Pop3Service"
+            android:name="com.android.email_ee.service.Pop3Service"
             android:enabled="true"
             android:permission="com.android.email.permission.ACCESS_PROVIDER" >
             <intent-filter>
@@ -553,7 +553,7 @@
 
         <!-- Required stanza to register the EasAuthenticatorService with AccountManager -->
         <service
-            android:name="com.android.email.service.EasAuthenticatorService"
+            android:name="com.android.email_ee.service.EasAuthenticatorService"
             android:enabled="true"
             android:exported="true" >
             <intent-filter>
@@ -566,7 +566,7 @@
         </service>
         <!-- Required stanza to register the EasTestAuthenticatorService with AccountManager -->
         <service
-            android:name="com.android.email.service.EasTestAuthenticatorService"
+            android:name="com.android.email_ee.service.EasTestAuthenticatorService"
             android:enabled="false"
             android:exported="true" >
             <intent-filter>
@@ -582,7 +582,7 @@
             and OneTimeInitializer enables it if the vendor policy tells so.
         -->
         <service
-            android:name="com.android.email.service.EasAuthenticatorServiceAlternate"
+            android:name="com.android.email_ee.service.EasAuthenticatorServiceAlternate"
             android:enabled="false"
             android:exported="true" >
             <intent-filter>
@@ -594,7 +594,7 @@
                 android:resource="@xml/authenticator_alternate" />
         </service>
         <service
-            android:name="com.android.email.service.LegacyImapAuthenticatorService"
+            android:name="com.android.email_ee.service.LegacyImapAuthenticatorService"
             android:enabled="true"
             android:exported="false" >
             <intent-filter>
@@ -607,7 +607,7 @@
         </service>
 
         <provider
-            android:name="com.android.email.provider.AttachmentProvider"
+            android:name="com.android.email_ee.provider.AttachmentProvider"
             android:authorities="com.android.email.attachmentprovider"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -618,7 +618,7 @@
              it exposes user passwords and other confidential information.
         -->
         <provider
-            android:name="com.android.email.provider.EmailProvider"
+            android:name="com.android.email_ee.provider.EmailProvider"
             android:authorities="com.android.email.provider;com.android.email.notifier"
             android:exported="true"
             android:label="@string/app_name"
@@ -627,7 +627,7 @@
         <!-- Legacy authenticators, etc. can be added below. OEMs may remove these -->
 
         <service
-            android:name="com.android.email.service.LegacyEmailAuthenticatorService"
+            android:name="com.android.email_ee.service.LegacyEmailAuthenticatorService"
             android:enabled="true"
             android:exported="false" >
             <intent-filter>
@@ -639,7 +639,7 @@
                 android:resource="@xml/authenticator_legacy_email" />
         </service>
         <service
-            android:name="com.android.email.service.LegacyEasAuthenticatorService"
+            android:name="com.android.email_ee.service.LegacyEasAuthenticatorService"
             android:enabled="true"
             android:exported="false" >
             <intent-filter>

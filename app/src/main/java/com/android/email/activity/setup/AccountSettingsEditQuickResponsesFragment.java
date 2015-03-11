@@ -16,7 +16,7 @@
 
 package com.android.email.activity.setup;
 
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.activity.UiUtilities;
 import com.android.mail.providers.Account;
 import com.android.mail.providers.UIProvider;

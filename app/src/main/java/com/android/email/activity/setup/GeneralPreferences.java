@@ -30,7 +30,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.android.email.Preferences;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.provider.EmailProvider;
 import com.android.mail.preferences.MailPrefs;
 import com.android.mail.ui.settings.ClearPictureApprovalsDialogFragment;

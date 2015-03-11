@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
+import com.android.email_ee.R;
 
 /**
  * Helper class to load resources.

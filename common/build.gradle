@@ -1,0 +1,67 @@
+//apply plugin: 'android-library'
+//
+//buildDir = "$project.rootBuildDir/android-$project.name"
+//
+//android {
+//    compileSdkVersion 17
+//    buildToolsVersion = 17
+//
+//    logtags {
+//        srcDirs = ['java']
+//        genDir = "$buildDir/source/generated"
+//    }
+//
+//    sourceSets {
+//        main {
+//            manifest {
+//                srcFile "AndroidManifest.xml"
+//            }
+//            java {
+//                srcDirs = [
+//                    'java',
+//                    "$buildDir/source/generated"
+//                ]
+//            }
+//            resources.srcDirs = ['src']
+//            aidl.srcDirs = ['src']
+//            renderscript.srcDirs = ['src']
+//            res.srcDirs = ['res']
+//            assets.srcDirs = ['assets']
+//        }
+//    }
+//}
+//
+//android.libraryVariants.each { variant ->
+//    variant.packageLibrary.baseName = "android-common"
+//}
+
+
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        //applicationId "com.android.common"
+        minSdkVersion 11
+        targetSdkVersion 18
+    }
+
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile 'com.android.support:support-v4:19.0.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}

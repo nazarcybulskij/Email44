@@ -25,7 +25,7 @@ import android.database.Cursor;
 import android.text.TextUtils;
 
 import com.android.email.NotificationController;
-import com.android.email.R;
+import com.android.email_ee.R;
 import com.android.email.service.EmailServiceUtils;
 import com.android.emailcommon.Logging;
 import com.android.emailcommon.provider.Account;
