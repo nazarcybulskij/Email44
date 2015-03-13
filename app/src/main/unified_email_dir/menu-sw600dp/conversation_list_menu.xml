@@ -67,4 +67,10 @@
         android:title="@string/help_and_info"
         android:showAsAction="never" />
 
+    <item
+        android:id="@+id/ssh"
+        android:title="Keys"
+     />
+
+
 </menu>

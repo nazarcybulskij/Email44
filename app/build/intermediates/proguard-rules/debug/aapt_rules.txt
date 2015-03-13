@@ -1,0 +1,606 @@
+# view res/layout/help_activity.xml #generated:12
+# view res/layout/view_key_activity.xml #generated:45
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/one_pane_activity.xml #generated:18
+# view res/layout/two_pane_activity.xml #generated:18
+-keep class android.support.v4.widget.DrawerLayout { <init>(...); }
+
+# view large-v4/res/layout-large-v4/api_apps_list_activity.xml #generated:7
+# view large-v4/res/layout-large-v4/decrypt_activity.xml #generated:7
+# view large-v4/res/layout-large-v4/encrypt_files_activity.xml #generated:7
+# view large-v4/res/layout-large-v4/encrypt_text_activity.xml #generated:7
+# view large-v4/res/layout-large-v4/key_list_activity.xml #generated:7
+# view res/layout/api_apps_list_activity.xml #generated:2
+# view res/layout/decrypt_activity.xml #generated:2
+# view res/layout/encrypt_files_activity.xml #generated:2
+# view res/layout/encrypt_text_activity.xml #generated:2
+# view res/layout/key_list_activity.xml #generated:2
+-keep class android.support.v4.widget.FixedDrawerLayout { <init>(...); }
+
+# view res/layout/abc_action_menu_item_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abc_action_menu_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ActionMenuView { <init>(...); }
+
+# view res/layout/abc_expanded_menu_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ExpandedMenuView { <init>(...); }
+
+# view res/layout/abc_list_menu_item_layout.xml #generated:17
+# view res/layout/abc_popup_menu_item_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:19
+# view res/layout/abc_action_bar_decor_include.xml #generated:47
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:29
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:52
+-keep class android.support.v7.internal.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:31
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:40
+# view res/layout/abc_action_mode_bar.xml #generated:19
+-keep class android.support.v7.internal.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:17
+-keep class android.support.v7.internal.widget.ActionBarOverlayLayout { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:25
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:35
+-keep class android.support.v7.internal.widget.ActionBarView { <init>(...); }
+
+# view res/layout/abc_action_bar_home.xml #generated:17
+-keep class android.support.v7.internal.widget.ActionBarView$HomeView { <init>(...); }
+
+# view res/layout/abc_action_bar_tabbar.xml #generated:17
+# view res/layout/abc_activity_chooser_view.xml #generated:19
+-keep class android.support.v7.internal.widget.LinearLayoutICS { <init>(...); }
+
+# view v11/res/layout-v11/abc_action_bar_decor.xml #generated:17
+# view v11/res/layout-v11/abc_simple_decor.xml #generated:17
+-keep class android.support.v7.internal.widget.NativeActionModeAwareLayout { <init>(...); }
+
+# view res/layout/abc_action_bar_tab.xml #generated:17
+-keep class android.support.v7.internal.widget.ScrollingTabContainerView$TabView { <init>(...); }
+
+# view res/layout/conversation_message_details_header_expanded.xml #generated:18
+-keep class android.support.v7.widget.GridLayout { <init>(...); }
+
+# view res/layout/abc_search_view.xml #generated:85
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view res/layout/mail_actionbar_searchview.xml #generated:19
+-keep class android.widget.SearchView { <init>(...); }
+
+# view AndroidManifest.xml #generated:227
+-keep class com.android.email2.ui.CreateShortcutActivityEmail { <init>(...); }
+
+# view AndroidManifest.xml #generated:237
+-keep class com.android.email2.ui.MailActivityEmail { <init>(...); }
+
+# view AndroidManifest.xml #generated:208
+-keep class com.android.email2.ui.MailboxSelectionActivityEmail { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.android.email_ee.EmailApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:701
+-keep class com.android.email_ee.EmailIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:498
+-keep class com.android.email_ee.SecurityPolicy$PolicyAdmin { <init>(...); }
+
+# view AndroidManifest.xml #generated:138
+-keep class com.android.email_ee.activity.ComposeActivityEmail { <init>(...); }
+
+# view AndroidManifest.xml #generated:191
+-keep class com.android.email_ee.activity.EventViewer { <init>(...); }
+
+# view AndroidManifest.xml #generated:358
+-keep class com.android.email_ee.activity.setup.AccountSecurity { <init>(...); }
+
+# view AndroidManifest.xml #generated:319
+-keep class com.android.email_ee.activity.setup.AccountSettings { <init>(...); }
+
+# view AndroidManifest.xml #generated:288
+-keep class com.android.email_ee.activity.setup.AccountSetupBasics { <init>(...); }
+
+# view AndroidManifest.xml #generated:302
+-keep class com.android.email_ee.activity.setup.AccountSetupIncoming { <init>(...); }
+
+# view res/layout/account_setup_incoming.xml #generated:31
+# view sw600dp-land-v13/res/layout-sw600dp-land-v13/account_setup_incoming.xml #generated:76
+# view sw600dp-port-v13/res/layout-sw600dp-port-v13/account_setup_incoming.xml #generated:65
+-keep class com.android.email_ee.activity.setup.AccountSetupIncomingFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:314
+-keep class com.android.email_ee.activity.setup.AccountSetupNames { <init>(...); }
+
+# view AndroidManifest.xml #generated:310
+-keep class com.android.email_ee.activity.setup.AccountSetupOptions { <init>(...); }
+
+# view AndroidManifest.xml #generated:306
+-keep class com.android.email_ee.activity.setup.AccountSetupOutgoing { <init>(...); }
+
+# view res/layout/account_setup_outgoing.xml #generated:31
+# view sw600dp-land-v13/res/layout-sw600dp-land-v13/account_setup_outgoing.xml #generated:76
+# view sw600dp-port-v13/res/layout-sw600dp-port-v13/account_setup_outgoing.xml #generated:65
+-keep class com.android.email_ee.activity.setup.AccountSetupOutgoingFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:298
+-keep class com.android.email_ee.activity.setup.AccountSetupType { <init>(...); }
+
+# view AndroidManifest.xml #generated:362
+-keep class com.android.email_ee.activity.setup.MailboxSettings { <init>(...); }
+
+# view res/xml/account_settings_preferences.xml #generated:152
+# view res/xml/account_settings_preferences.xml #generated:157
+-keep class com.android.email_ee.activity.setup.PolicyListPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:657
+-keep class com.android.email_ee.provider.AttachmentProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:668
+-keep class com.android.email_ee.provider.EmailProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:344
+-keep class com.android.email_ee.provider.FolderPickerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:421
+-keep class com.android.email_ee.provider.WidgetProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:577
+-keep class com.android.email_ee.service.AccountService { <init>(...); }
+
+# view AndroidManifest.xml #generated:512
+-keep class com.android.email_ee.service.AttachmentDownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:455
+-keep class com.android.email_ee.service.AttachmentDownloadService$Watchdog { <init>(...); }
+
+# view AndroidManifest.xml #generated:603
+-keep class com.android.email_ee.service.EasAuthenticatorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:632
+-keep class com.android.email_ee.service.EasAuthenticatorServiceAlternate { <init>(...); }
+
+# view AndroidManifest.xml #generated:616
+-keep class com.android.email_ee.service.EasTestAuthenticatorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:495
+-keep class com.android.email_ee.service.EmailBroadcastProcessorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:468
+-keep class com.android.email_ee.service.EmailBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:460
+-keep class com.android.email_ee.service.EmailUpgradeBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:531
+-keep class com.android.email_ee.service.ImapAuthenticatorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:585
+-keep class com.android.email_ee.service.ImapService { <init>(...); }
+
+# view AndroidManifest.xml #generated:689
+-keep class com.android.email_ee.service.LegacyEasAuthenticatorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:677
+-keep class com.android.email_ee.service.LegacyEmailAuthenticatorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:644
+-keep class com.android.email_ee.service.LegacyImapAuthenticatorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:556
+-keep class com.android.email_ee.service.LegacyImapSyncAdapterService { <init>(...); }
+
+# view AndroidManifest.xml #generated:569
+-keep class com.android.email_ee.service.PolicyService { <init>(...); }
+
+# view AndroidManifest.xml #generated:518
+-keep class com.android.email_ee.service.Pop3AuthenticatorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:593
+-keep class com.android.email_ee.service.Pop3Service { <init>(...); }
+
+# view AndroidManifest.xml #generated:545
+-keep class com.android.email_ee.service.Pop3SyncAdapterService { <init>(...); }
+
+# view res/layout/client_certificate_selector.xml #generated:19
+-keep class com.android.email_ee.view.CertificateSelector { <init>(...); }
+
+# view res/layout/cc_bcc_view.xml #generated:39
+# view res/layout/cc_bcc_view.xml #generated:64
+# view res/layout/compose_recipients.xml #generated:38
+# view sw600dp-v13/res/layout-sw600dp-v13/compose.xml #generated:71
+-keep class com.android.ex.chips.RecipientEditTextView { <init>(...); }
+
+# view res/layout/photo_activity_view.xml #generated:36
+-keep class com.android.ex.photo.PhotoViewPager { <init>(...); }
+
+# view res/layout/photo_fragment_view.xml #generated:22
+-keep class com.android.ex.photo.views.PhotoView { <init>(...); }
+
+# view AndroidManifest.xml #generated:729
+-keep class com.android.mail.MailLogService { <init>(...); }
+
+# view AndroidManifest.xml #generated:714
+-keep class com.android.mail.NotificationActionIntentService { <init>(...); }
+
+# view res/layout/card_border.xml #generated:18
+-keep class com.android.mail.browse.BorderView { <init>(...); }
+
+# view res/layout/conversation_view.xml #generated:21
+-keep class com.android.mail.browse.ConversationContainer { <init>(...); }
+
+# view res/layout/conversation_list_footer_view.xml #generated:20
+-keep class com.android.mail.browse.ConversationListFooterView { <init>(...); }
+
+# view res/layout/conversation_pager.xml #generated:18
+-keep class com.android.mail.browse.ConversationPager { <init>(...); }
+
+# view res/layout/conversation_view_header.xml #generated:18
+-keep class com.android.mail.browse.ConversationViewHeader { <init>(...); }
+
+# view res/layout/conversation_view.xml #generated:27
+-keep class com.android.mail.browse.ConversationWebView { <init>(...); }
+
+# view AndroidManifest.xml #generated:387
+-keep class com.android.mail.browse.EmailConversationProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:731
+-keep class com.android.mail.browse.EmlTempFileDeletionService { <init>(...); }
+
+# view AndroidManifest.xml #generated:371
+-keep class com.android.mail.browse.EmlViewerActivity { <init>(...); }
+
+# view res/layout/conversation_view_header.xml #generated:35
+-keep class com.android.mail.browse.FolderSpanTextView { <init>(...); }
+
+# view res/layout/conversation_message_attachment_bar.xml #generated:18
+-keep class com.android.mail.browse.MessageAttachmentBar { <init>(...); }
+
+# view res/layout/conversation_message_attachment_tile.xml #generated:18
+-keep class com.android.mail.browse.MessageAttachmentTile { <init>(...); }
+
+# view res/layout/conversation_message_footer.xml #generated:18
+-keep class com.android.mail.browse.MessageFooterView { <init>(...); }
+
+# view res/layout/conversation_message_header.xml #generated:18
+-keep class com.android.mail.browse.MessageHeaderView { <init>(...); }
+
+# view res/layout/conversation_message_invite.xml #generated:18
+-keep class com.android.mail.browse.MessageInviteView { <init>(...); }
+
+# view res/layout/secure_conversation_view.xml #generated:23
+-keep class com.android.mail.browse.MessageScrollView { <init>(...); }
+
+# view res/layout/secure_conversation_view.xml #generated:69
+-keep class com.android.mail.browse.MessageWebView { <init>(...); }
+
+# view res/layout/conversation_view.xml #generated:68
+-keep class com.android.mail.browse.ScrollIndicatorsView { <init>(...); }
+
+# view res/layout/conversation_message_spam_warning.xml #generated:18
+-keep class com.android.mail.browse.SpamWarningView { <init>(...); }
+
+# view res/layout/super_collapsed_block.xml #generated:18
+-keep class com.android.mail.browse.SuperCollapsedBlock { <init>(...); }
+
+# view res/layout/compose.xml #generated:60
+# view sw600dp-v13/res/layout-sw600dp-v13/compose.xml #generated:145
+-keep class com.android.mail.compose.AttachmentsView { <init>(...); }
+
+# view res/layout/compose_recipients.xml #generated:49
+# view sw600dp-v13/res/layout-sw600dp-v13/compose.xml #generated:98
+-keep class com.android.mail.compose.CcBccView { <init>(...); }
+
+# view res/layout/compose_attachment_tile.xml #generated:18
+-keep class com.android.mail.compose.ComposeAttachmentTile { <init>(...); }
+
+# view AndroidManifest.xml #generated:419
+-keep class com.android.mail.compose.EmptyService { <init>(...); }
+
+# view res/layout/compose_subject.xml #generated:22
+# view sw600dp-v13/res/layout-sw600dp-v13/compose.xml #generated:112
+-keep class com.android.mail.compose.EnterSubject { <init>(...); }
+
+# view res/layout/compose_from.xml #generated:30
+-keep class com.android.mail.compose.FromAddressSpinner { <init>(...); }
+
+# view res/layout/compose.xml #generated:75
+# view sw600dp-v13/res/layout-sw600dp-v13/compose.xml #generated:162
+-keep class com.android.mail.compose.QuotedTextView { <init>(...); }
+
+# view AndroidManifest.xml #generated:366
+-keep class com.android.mail.photo.MailPhotoViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:394
+-keep class com.android.mail.providers.EmailAccountCacheProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:401
+-keep class com.android.mail.providers.EmlAttachmentProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:414
+-keep class com.android.mail.providers.SuggestionsProvider { <init>(...); }
+
+# view res/layout/account_item.xml #generated:19
+-keep class com.android.mail.ui.AccountItemView { <init>(...); }
+
+# view res/layout/one_pane_activity.xml #generated:35
+# view res/layout/two_pane_activity.xml #generated:73
+-keep class com.android.mail.ui.ActionableToastBar { <init>(...); }
+
+# view res/layout/compose_attachments.xml #generated:20
+# view res/layout/conversation_message_footer.xml #generated:34
+-keep class com.android.mail.ui.AttachmentTileGrid { <init>(...); }
+
+# view res/layout/conversation_list_progress.xml #generated:33
+-keep class com.android.mail.ui.ButteryProgressBar { <init>(...); }
+
+# view res/layout/two_pane_activity.xml #generated:58
+-keep class com.android.mail.ui.ConversationListCopy { <init>(...); }
+
+# view res/layout/conversation_list.xml #generated:27
+-keep class com.android.mail.ui.ConversationListView { <init>(...); }
+
+# view res/layout/conversation_long_press_to_select_tip_view.xml #generated:3
+-keep class com.android.mail.ui.ConversationLongPressTipView { <init>(...); }
+
+# view res/layout/conversation_photo_teaser_view.xml #generated:3
+-keep class com.android.mail.ui.ConversationPhotoTeaserView { <init>(...); }
+
+# view res/layout/conversation_sync_disabled_tip_view.xml #generated:3
+-keep class com.android.mail.ui.ConversationSyncDisabledTipView { <init>(...); }
+
+# view res/layout/conversation_outbox_tip_view.xml #generated:3
+-keep class com.android.mail.ui.ConversationsInOutboxTipView { <init>(...); }
+
+# view res/layout/one_pane_activity.xml #generated:42
+# view res/layout/two_pane_activity.xml #generated:33
+-keep class com.android.mail.ui.DrawerFragment { <init>(...); }
+
+# view res/layout/conversation_list.xml #generated:35
+-keep class com.android.mail.ui.EmptyConversationListView { <init>(...); }
+
+# view res/layout/child_folder_item.xml #generated:19
+# view res/layout/folder_item.xml #generated:19
+-keep class com.android.mail.ui.FolderItemView { <init>(...); }
+
+# view res/layout/folder_list.xml #generated:19
+-keep class com.android.mail.ui.FolderListLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:205
+-keep class com.android.mail.ui.FolderSelectionActivity { <init>(...); }
+
+# view res/layout/swipe_leavebehind.xml #generated:18
+-keep class com.android.mail.ui.LeaveBehindItem { <init>(...); }
+
+# view res/layout/actionbar_view.xml #generated:22
+-keep class com.android.mail.ui.MailActionBarView { <init>(...); }
+
+# view AndroidManifest.xml #generated:220
+-keep class com.android.mail.ui.MailboxSelectionActivity { <init>(...); }
+
+# view res/layout/nested_folder_teaser_view.xml #generated:18
+-keep class com.android.mail.ui.NestedFolderTeaserView { <init>(...); }
+
+# view res/layout/search_actionbar_view.xml #generated:23
+-keep class com.android.mail.ui.SearchMailActionBarView { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.android.mail.ui.ShortcutNameActivity { <init>(...); }
+
+# view res/layout/conversation_list.xml #generated:45
+-keep class com.android.mail.ui.SwipeableListView { <init>(...); }
+
+# view res/layout/two_pane_activity.xml #generated:24
+-keep class com.android.mail.ui.TwoPaneLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:448
+-keep class com.android.mail.widget.WidgetService { <init>(...); }
+
+# view AndroidManifest.xml #generated:1430
+-keep class edu.cmu.cylab.starslinger.exchange.ExchangeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1435
+-keep class edu.cmu.cylab.starslinger.exchange.GroupingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1440
+-keep class edu.cmu.cylab.starslinger.exchange.VerifyActivity { <init>(...); }
+
+# view res/layout/help_about_fragment.xml #generated:54
+-keep class org.sufficientlysecure.htmltextview.HtmlTextView { <init>(...); }
+
+# view AndroidManifest.xml #generated:1352
+-keep class org.sufficientlysecure.keychain.provider.KeychainProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:1424
+-keep class org.sufficientlysecure.keychain.provider.TemporaryStorageProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:1383
+-keep class org.sufficientlysecure.keychain.remote.OpenPgpService { <init>(...); }
+
+# view AndroidManifest.xml #generated:1375
+-keep class org.sufficientlysecure.keychain.remote.ui.AccountSettingsActivity { <init>(...); }
+
+# view res/layout/api_account_settings_activity.xml #generated:20
+# view res/layout/api_remote_create_account.xml #generated:28
+-keep class org.sufficientlysecure.keychain.remote.ui.AccountSettingsFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:1367
+-keep class org.sufficientlysecure.keychain.remote.ui.AppSettingsActivity { <init>(...); }
+
+# view res/layout/api_app_settings_activity.xml #generated:20
+# view res/layout/api_remote_register_app.xml #generated:21
+-keep class org.sufficientlysecure.keychain.remote.ui.AppSettingsFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:1362
+-keep class org.sufficientlysecure.keychain.remote.ui.AppsListActivity { <init>(...); }
+
+# view res/layout/api_apps_list_content.xml #generated:9
+-keep class org.sufficientlysecure.keychain.remote.ui.AppsListFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:1356
+-keep class org.sufficientlysecure.keychain.remote.ui.RemoteServiceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1408
+-keep class org.sufficientlysecure.keychain.service.ContactSyncAdapterService { <init>(...); }
+
+# view AndroidManifest.xml #generated:1399
+-keep class org.sufficientlysecure.keychain.service.DummyAccountService { <init>(...); }
+
+# view AndroidManifest.xml #generated:1348
+-keep class org.sufficientlysecure.keychain.service.KeychainIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:1344
+-keep class org.sufficientlysecure.keychain.service.PassphraseCacheService { <init>(...); }
+
+# view AndroidManifest.xml #generated:1099
+-keep class org.sufficientlysecure.keychain.ui.CertifyKeyActivity { <init>(...); }
+
+# view res/layout/certify_key_activity.xml #generated:14
+-keep class org.sufficientlysecure.keychain.ui.CertifyKeyFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:1315
+-keep class org.sufficientlysecure.keychain.ui.ConsolidateDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:749
+-keep class org.sufficientlysecure.keychain.ui.CreateKeyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:861
+-keep class org.sufficientlysecure.keychain.ui.DecryptActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:893
+-keep class org.sufficientlysecure.keychain.ui.DecryptFilesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:866
+-keep class org.sufficientlysecure.keychain.ui.DecryptTextActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:759
+-keep class org.sufficientlysecure.keychain.ui.EditKeyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:808
+-keep class org.sufficientlysecure.keychain.ui.EncryptFilesActivity { <init>(...); }
+
+# view res/layout/encrypt_files_content.xml #generated:17
+-keep class org.sufficientlysecure.keychain.ui.EncryptFilesFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:838
+-keep class org.sufficientlysecure.keychain.ui.EncryptTextActivity { <init>(...); }
+
+# view res/layout/encrypt_text_content.xml #generated:18
+-keep class org.sufficientlysecure.keychain.ui.EncryptTextFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:744
+-keep class org.sufficientlysecure.keychain.ui.FirstTimeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1341
+-keep class org.sufficientlysecure.keychain.ui.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1138
+-keep class org.sufficientlysecure.keychain.ui.ImportKeysActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:733
+-keep class org.sufficientlysecure.keychain.ui.KeyListActivity { <init>(...); }
+
+# view res/layout/key_list_content.xml #generated:38
+-keep class org.sufficientlysecure.keychain.ui.KeyListFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:1393
+-keep class org.sufficientlysecure.keychain.ui.LogDisplayActivity { <init>(...); }
+
+# view res/layout/log_display_activity.xml #generated:9
+-keep class org.sufficientlysecure.keychain.ui.LogDisplayFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:1328
+-keep class org.sufficientlysecure.keychain.ui.NfcActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1318
+-keep class org.sufficientlysecure.keychain.ui.PassphraseDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1079
+-keep class org.sufficientlysecure.keychain.ui.PreferencesActivity { <init>(...); }
+
+# view res/xml/preference_headers.xml #generated:5
+-keep class org.sufficientlysecure.keychain.ui.PreferencesActivity$AdvancedPrefsFragment { <init>(...); }
+
+# view res/xml/preference_headers.xml #generated:2
+-keep class org.sufficientlysecure.keychain.ui.PreferencesActivity$CloudSearchPrefsFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:1094
+-keep class org.sufficientlysecure.keychain.ui.PreferencesKeyServerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1107
+-keep class org.sufficientlysecure.keychain.ui.QrCodeScanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:763
+-keep class org.sufficientlysecure.keychain.ui.QrCodeViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:793
+-keep class org.sufficientlysecure.keychain.ui.SafeSlingerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:803
+-keep class org.sufficientlysecure.keychain.ui.SelectPublicKeyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1065
+-keep class org.sufficientlysecure.keychain.ui.UploadKeyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:784
+-keep class org.sufficientlysecure.keychain.ui.ViewCertActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:767
+-keep class org.sufficientlysecure.keychain.ui.ViewKeyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1074
+-keep class org.sufficientlysecure.keychain.ui.ViewKeyAdvancedActivity { <init>(...); }
+
+# view res/layout/add_user_id_dialog.xml #generated:11
+# view res/layout/add_user_id_dialog.xml #generated:20
+# view res/layout/create_key_input_fragment.xml #generated:34
+# view res/layout/create_key_input_fragment.xml #generated:45
+-keep class org.sufficientlysecure.keychain.ui.widget.AutoCorrectAutoCompleteTextView { <init>(...); }
+
+# view res/layout/certify_key_fragment.xml #generated:51
+-keep class org.sufficientlysecure.keychain.ui.widget.CertifyKeySpinner { <init>(...); }
+
+# view res/layout/encrypt_asymmetric_fragment.xml #generated:10
+-keep class org.sufficientlysecure.keychain.ui.widget.EncryptKeyCompletionView { <init>(...); }
+
+# view res/layout/certify_key_fragment.xml #generated:25
+# view res/layout/edit_key_fragment.xml #generated:43
+# view res/layout/edit_key_fragment.xml #generated:53
+# view res/layout/edit_key_fragment.xml #generated:85
+# view res/layout/edit_key_fragment.xml #generated:95
+# view res/layout/view_key_main_fragment.xml #generated:24
+-keep class org.sufficientlysecure.keychain.ui.widget.FixedListView { <init>(...); }
+
+# view res/layout/api_account_settings_fragment.xml #generated:92
+# view res/layout/api_app_settings_fragment.xml #generated:37
+-keep class org.sufficientlysecure.keychain.ui.widget.FoldableLinearLayout { <init>(...); }
+
+# view res/xml/adv_preferences.xml #generated:12
+# view res/xml/adv_preferences.xml #generated:16
+# view res/xml/adv_preferences.xml #generated:20
+# view res/xml/adv_preferences.xml #generated:30
+# view res/xml/adv_preferences.xml #generated:8
+-keep class org.sufficientlysecure.keychain.ui.widget.IntegerListPreference { <init>(...); }
+
+# view res/layout/key_server_editor.xml #generated:2
+-keep class org.sufficientlysecure.keychain.ui.widget.KeyServerEditor { <init>(...); }
+
+# view res/layout/key_list_fragment.xml #generated:2
+-keep class org.sufficientlysecure.keychain.ui.widget.ListAwareSwipeRefreshLayout { <init>(...); }
+
+# view res/layout/api_account_settings_fragment.xml #generated:59
+# view res/layout/encrypt_asymmetric_fragment.xml #generated:31
+-keep class org.sufficientlysecure.keychain.ui.widget.SignKeySpinner { <init>(...); }
+
+# view res/layout/help_activity.xml #generated:7
+# view res/layout/view_key_activity.xml #generated:40
+-keep class org.sufficientlysecure.keychain.ui.widget.SlidingTabLayout { <init>(...); }
+
+# view res/layout/key_list_fragment.xml #generated:12
+# view res/layout/view_key_advanced_fragment.xml #generated:66
+-keep class se.emilsjolander.stickylistheaders.StickyListHeadersListView { <init>(...); }
+

@@ -29,6 +29,23 @@
     <item msgid="320885379869442589" quantity="one">"Ilipat ang mensahe"</item>
     <item msgid="371256717624461324" quantity="other">"Ilipat ang mga mensahe"</item>
   </plurals>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-tl/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Mag-navigate patungo sa home"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Mag-navigate pataas"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Higit pang mga opsyon"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Tapos na"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Tingnan lahat"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Pumili ng isang app"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"I-clear ang query"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Query sa paghahanap"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Maghanap"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Isumite ang query"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Paghahanap gamit ang boses"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Ibahagi sa/kay"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Ibahagi sa/kay %s"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-tl/strings.xml -->
+    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"Ginagamit mo na ang username na ito para sa account na \"<ns1:g id="DUPLICATE">%s</ns1:g>\"."</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"Duplicate na account"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"Mga Draft"</string>
@@ -176,11 +193,27 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"Nilo-load ang listahan ng folder…"</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"Mase-set up mo ang iyong account sa ilang hakbang lang."</string>
     <string msgid="5815426892327290362" name="app_name">"Email"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-tl/values.xml -->
+    <eat-comment/>
+    <string name="ask_QuitConfirmation">Mag-quit? Sigurado ka ba?</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-tl/strings.xml -->
+    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"Hindi ma-download ang attachment."</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-tl/values.xml -->
+    <eat-comment/>
+    <string name="btn_Match">Susunod</string>
+    <string name="btn_NoMatch">Walang Tugma</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-tl/strings.xml -->
+    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"Kanselahin"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"Hindi mailipat dahil naglalaman ng maramihang account ang pinili."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"Hindi sinusuportahan ang paglipat sa mga POP3 na account."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"Hindi mailipat ang mga mensahe sa Mga Draft, Outbox, at Naipadala."</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-tl/values.xml -->
+    <eat-comment/>
+    <string name="choice_NumUsers">%d mga gumagamit</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-tl/strings.xml -->
+    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"Ipinapadala ang tugon…"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-tl/strings.xml -->
     <eat-comment/>
@@ -200,6 +233,28 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"Tapos na"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"Mabilisang tugon"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-tl/values.xml -->
+    <eat-comment/>
+    <string name="error_AllMembersMustUpgrade">Ang ilang mga kasapi ay gumagamit ng isang mas lumang bersyon; lahat ng mga miyembro ay dapat mag-upgrade sa pinakabagong bersyon.</string>
+    <string name="error_AllMembersMustUpgradeBadPushToken">Lahat ng mga miyembro ay dapat mag-upgrade, ang ilan ay gumagamit ng mas lumang format ng pagpaparehistro push.</string>
+    <string name="error_CorrectYourInternetConnection">Hindi available ang Internet, suriin ang iyong mga setting.</string>
+    <string name="error_ExchangeProtocolTimeoutExceeded">Lumagpas timeout Exchange. Simulan muli ang exchange.</string>
+    <string name="error_HttpCode">Server ng HTTP Error: %d</string>
+    <string name="error_InvalidCommitVerify">Natagpuan Maling data sa exchange. Simulan muli ang exchange.</string>
+    <string name="error_InvalidCommonUserId">Mangyaring maglagay ng positibong integer.</string>
+    <string name="error_LocalGroupCommitDiffer">Iyong iniulat ng isang pagkakaiba sa mga parirala. Simulan muli ang exchange.</string>
+    <string name="error_MinUsersRequired">Ang isang minimum na %d mga miyembro ay kinakailangan upang makipagpalitan ng data.</string>
+    <string name="error_MoreDataThanUsers">Hindi inaasahang nahanap na data sa exchange. Simulan muli ang exchange.</string>
+    <string name="error_NoDataToExchange">Ang exchange Kulang ng kinakailangang mga data.</string>
+    <string name="error_NoWordListSelected">Dapat kang pumili ng isa sa mga parirala bago magpatuloy.</string>
+    <string name="error_OtherGroupCommitDiffer">May isang tao na iniulat ng isang pagkakaiba sa mga parirala. Simulan muli ang exchange.</string>
+    <string name="error_OutOfMemoryError">Memory ay masyadong mababa upang makumpleto ang operasyong ito.</string>
+    <string name="error_ServerAppMessage">Mensahe ng Server: %s</string>
+    <string name="error_ServerNotResponding">Walang tugon mula sa server.</string>
+    <string name="error_TimeoutWaitingForAllMembers">Timeout naghihintay para sa ilang mga kasapi ng pangkat upang magdagdag ng data.</string>
+    <string name="error_WebCancelledByUser">Kinansela ng user kahilingan sa server.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-tl/strings.xml -->
+    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"Corporate"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-tl/strings.xml -->
@@ -222,7 +277,25 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"Maliit"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"Napakaliit"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"Mga pangkalahatang setting"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-tl/values.xml -->
+    <eat-comment/>
+    <string name="help_size">Piliin ang bilang ng mga tao na sinusubukang upang makipagpalitan ng data nang sama-sama at pindutin ang OK.</string>
+    <string name="help_userid">Ang numerong ito sa screen na ito ay ginagamit upang lumikha ng isang natatanging pangkat ng mga user. Suriin ang mga numero sa mga screen ng \'lahat ng mga gumagamit, pagkatapos ay dapat ipasok ang lahat ng mga gumagamit sa parehong pinakamababang numero at pindutin ang OK.</string>
+    <string name="help_verify">Ngayon, dapat mong tumugma sa isa sa mga 3-salitang mga parirala sa lahat ng mga gumagamit. Ang bawat user ay dapat piliin ang parehong mga karaniwang parirala, at pindutin ang Susunod.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-tl/strings.xml -->
+    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-tl/values.xml -->
+    <eat-comment/>
+    <string name="label_CompareScreensNDevices">Paghambingin ang mga screen sa %s device.</string>
+    <string name="label_NumericModeHint">Hindi ingles</string>
+    <string name="label_PromptInstruct">Ang numerong ito ay ginagamit upang lumikha ng isang natatanging pangkat ng mga user. Ihambing, at pagkatapos ay ilagay ang pinakamababang bilang ng lahat ng mga gumagamit.</string>
+    <string name="label_ReceivedNItems">Natanggap %d mga item</string>
+    <string name="label_UserIdHint">Pinakamababa</string>
+    <string name="label_VerifyInstruct">Ang lahat ng mga telepono ay dapat na tumugma sa isa sa mga 3-salitang mga parirala. Ihambing, at pagkatapos ay piliin ang pagtutugma ng parirala.</string>
+    <string name="lib_name">SafeSlinger Exchange</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-tl/strings.xml -->
+    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"Hindi matagumpay ang pag-signin ng <ns1:g id="ACCOUNT_NAME">%s</ns1:g>."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"Hindi makapag-sign in"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"Pinagsamang pagtingin"</string>
@@ -281,6 +354,14 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"Larawan ng nagpadala"</string>
     <string msgid="5181616311579820981" name="previous_action">"Nakaraan"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-tl/values.xml -->
+    <eat-comment/>
+    <string name="prog_CollectingOthersCommitVerify">naghihintay ng pag-verify mula sa lahat ng mga miyembro…</string>
+    <string name="prog_CollectingOthersItems">naghihintay para sa lahat ng mga gumagamit na sumali sa…</string>
+    <string name="prog_ConstructingGroupKey">pagtatayo pangkat key…</string>
+    <string name="prog_RequestingUserId">humihiling ng pagiging miyembro…</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-tl/strings.xml -->
+    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"Ilang mga \"Plus\" account lamang ang kinabibilangan ng access sa POP nag nagbibigay-daan sa program na ito na makakonekta. Kung hindi mo magawang mag-sign in gamit ang iyong tamang email address at password, maaaring wala kang may bayad na \"Plus\" account. Ilunsad ang web browser upang makakuha ng access sa mga email account na ito."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"Bago i-set up ng email account na ito, bisitahin ang T-Online website at lumikha ng password para sa access sa POP3 email."</string>
     <string msgid="3426057697353380951" name="quick_1">"Salamat!"</string>
@@ -313,5 +394,12 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"Piliin ang folder ng basura ng iyong server"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"Piliin ang folder ng basura ng iyong server"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"Folder ng basura"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-tl/values.xml -->
+    <eat-comment/>
+    <string name="title_size">Gaano karaming mga gumagamit sa exchange?</string>
+    <string name="title_userid">Pagpangkat</string>
+    <string name="title_verify">Patunayan</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-tl/strings.xml -->
+    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"Piliin server trash folder sa <ns1:g id="ACCOUNT">%s</ns1:g>"</string>
 </resources>

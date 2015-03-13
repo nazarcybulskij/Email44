@@ -1,0 +1,13 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/section_general" >
+        <intent
+            android:action="org.sufficientlysecure.keychain.ui.PREFS_GEN" />
+    </Preference>
+    <Preference
+        android:title="@string/section_advanced" >
+        <intent
+            android:action="org.sufficientlysecure.keychain.ui.PREFS_ADV" />
+    </Preference>
+</PreferenceScreen>
+<!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/OpenKeychain/src/main/res/xml/preference_headers_legacy.xml --><!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/xml/preference_headers_legacy.xml -->

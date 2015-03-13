@@ -29,6 +29,23 @@
     <item msgid="320885379869442589" quantity="one">"Presunúť správu"</item>
     <item msgid="371256717624461324" quantity="other">"Presunúť správy"</item>
   </plurals>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-sk/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Prejsť na plochu"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Prejsť hore"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Ďalšie možnosti"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Hotovo"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Zobraziť všetko"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Zvoľte aplikáciu"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Vymazať dopyt"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Vyhľadávací dopyt"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Hľadať"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Odoslať dopyt"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Hlasové vyhľadávanie"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Zdieľať pomocou"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Zdieľať pomocou %s"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sk/strings.xml -->
+    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"Toto používateľské meno už používate pre účet „<ns1:g id="DUPLICATE">%s</ns1:g>“."</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"Duplikovať účet"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"Koncepty"</string>
@@ -176,11 +193,27 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"Prebieha načítavanie zoznamu priečinkov..."</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"Účet si môžete nastaviť pomocou niekoľkých krokov."</string>
     <string msgid="5815426892327290362" name="app_name">"Email"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sk/values.xml -->
+    <eat-comment/>
+    <string name="ask_QuitConfirmation">Ukončiť? Ste si istí?</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sk/strings.xml -->
+    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"Prílohu sa nepodarilo stiahnuť."</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sk/values.xml -->
+    <eat-comment/>
+    <string name="btn_Match">Ďalší</string>
+    <string name="btn_NoMatch">No Match</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sk/strings.xml -->
+    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"Zrušiť"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"Správu nie je možné presunúť, pretože výber obsahuje viacero účtov."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"Účty s protokolom POP3 nepodporujú presun."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"Správy v priečinkoch Koncepty, Pošta na odoslanie a Odoslané nie je možné presunúť."</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sk/values.xml -->
+    <eat-comment/>
+    <string name="choice_NumUsers">%d užívateľov</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sk/strings.xml -->
+    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"Odosiela sa odpoveď..."</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-sk/strings.xml -->
     <eat-comment/>
@@ -200,6 +233,28 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"Hotovo"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"Rýchla odpoveď"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sk/values.xml -->
+    <eat-comment/>
+    <string name="error_AllMembersMustUpgrade">Niektorí členovia sú používate staršiu verziu; všetci členovia nutné vykonať upgrade na najnovšiu verziu.</string>
+    <string name="error_AllMembersMustUpgradeBadPushToken">Všetci členovia musia inovovať, niektorí využívajú staršie formáty registráciu Push.</string>
+    <string name="error_CorrectYourInternetConnection">Internet nie je k dispozícii, skontrolujte nastavenia.</string>
+    <string name="error_ExchangeProtocolTimeoutExceeded">Exchange timeout prekročená. Začnite výmenu znova.</string>
+    <string name="error_HttpCode">Server HTTP Chyba: %d</string>
+    <string name="error_InvalidCommitVerify">Nesprávne údaje našiel výmenou. Začnite výmenu znova.</string>
+    <string name="error_InvalidCommonUserId">Prosím, zadajte kladné celé číslo.</string>
+    <string name="error_LocalGroupCommitDiffer">Ste hlásené rozdiel v fráz. Začnite výmenu znova.</string>
+    <string name="error_MinUsersRequired">Je potrebných minimálne %d členov pre výmenu dát.</string>
+    <string name="error_MoreDataThanUsers">Neočakávané údaje našiel výmenou. Začnite výmenu znova.</string>
+    <string name="error_NoDataToExchange">Výmena chýbajú potrebné údaje.</string>
+    <string name="error_NoWordListSelected">Musíte vybrať jednu z viet pred pokračovaním.</string>
+    <string name="error_OtherGroupCommitDiffer">Niekto hlásené rozdiel v fráz. Začnite výmenu znova.</string>
+    <string name="error_OutOfMemoryError">Pamäť je príliš nízka na dokončenie tejto operácie.</string>
+    <string name="error_ServerAppMessage">Server Message: %s</string>
+    <string name="error_ServerNotResponding">Žiadna odpoveď zo servera.</string>
+    <string name="error_TimeoutWaitingForAllMembers">Timeout čakanie na niektorých členov skupiny pridať dáta.</string>
+    <string name="error_WebCancelledByUser">Používateľ zrušil požiadavku serveru.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sk/strings.xml -->
+    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"Firemný"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-sk/strings.xml -->
@@ -222,7 +277,25 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"Malé"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"Veľmi malé"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"Všeobecné nastavenia"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sk/values.xml -->
+    <eat-comment/>
+    <string name="help_size">Vyberte počet ľudí, ktorí sa snažia výmenu dát dohromady a stlačte tlačidlo OK.</string>
+    <string name="help_userid">Toto číslo na tejto obrazovke sa používa na vytvorenie jedinečného skupinu užívateľov. Prejdite si čísla na obrazovkách všetkých užívateľov, potom všetci užívatelia by mali vstúpiť rovnakú najnižšie číslo a stlačte tlačidlo OK.</string>
+    <string name="help_verify">Teraz musíte zodpovedať jednému z týchto 3 slovách so všetkými užívateľmi. Každý užívateľ musí zvoliť rovnaký spoločný frázu a stlačte tlačidlo Ďalej.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sk/strings.xml -->
+    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sk/values.xml -->
+    <eat-comment/>
+    <string name="label_CompareScreensNDevices">Porovnať obrazoviek na %s zariadení.</string>
+    <string name="label_NumericModeHint">Non-anglický</string>
+    <string name="label_PromptInstruct">Toto číslo sa používa na vytvorenie unikátnej skupinu užívateľov. Porovnajte, a potom zadajte najnižšie číslo medzi všetkými užívateľmi.</string>
+    <string name="label_ReceivedNItems">dostal %d položiek</string>
+    <string name="label_UserIdHint">Najnižšie</string>
+    <string name="label_VerifyInstruct">Všetky telefóny sa musí zhodovať s jedným z 3-slovo frázy. Porovnajte, a potom vybrať zodpovedajúce výraz.</string>
+    <string name="lib_name">SafeSlinger Exchange</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sk/strings.xml -->
+    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"Prihlásenie do účtu <ns1:g id="ACCOUNT_NAME">%s</ns1:g> zlyhalo."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"Prihlásenie sa nepodarilo"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"Kombinované zobrazenie"</string>
@@ -281,6 +354,14 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"Obrázok odosielateľa"</string>
     <string msgid="5181616311579820981" name="previous_action">"Predchádzajúce"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sk/values.xml -->
+    <eat-comment/>
+    <string name="prog_CollectingOthersCommitVerify">čakanie na overenie všetkých členov…</string>
+    <string name="prog_CollectingOthersItems">čakanie na všetkým užívateľom pripojiť sa…</string>
+    <string name="prog_ConstructingGroupKey">konštrukciu Group Key…</string>
+    <string name="prog_RequestingUserId">žiadajúce o členstvo…</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sk/strings.xml -->
+    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"Len niektoré účty Plus majú prístup prostredníctvom protokolu POP, ktorý umožňuje pripojenie tohto programu. Ak sa nemôžete prihlásiť so správnou e-mailovou adresou a heslom, pravdepodobne nemáte platený účet „Plus“. Ak chcete pristupovať k týmto e-mailovým účtom, urobte tak prostredníctvom webového prehliadača."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"Pred nastavením tohto e-mailového účtu navštívte webové stránky T-Online a vytvorte heslo pre e-mailový prístup POP3."</string>
     <string msgid="3426057697353380951" name="quick_1">"Ďakujeme!"</string>
@@ -313,5 +394,12 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"Vyberte priečinok Kôš na vašom serveri"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"Vyberte priečinok Kôš na vašom serveri"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"Priečinok Kôš"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sk/values.xml -->
+    <eat-comment/>
+    <string name="title_size">Koľko užívateľov pri výmene?</string>
+    <string name="title_userid">Zoskupenie</string>
+    <string name="title_verify">Overiť</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sk/strings.xml -->
+    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"Priečinok Kôš servera pre <ns1:g id="ACCOUNT">%s</ns1:g>"</string>
 </resources>

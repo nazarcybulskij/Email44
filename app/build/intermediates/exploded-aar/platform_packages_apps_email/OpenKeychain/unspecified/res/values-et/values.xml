@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/OpenKeychain/src/main/res/values-et/strings.xml -->
+    <eat-comment/>
+    <string name="btn_back">Tagasi</string>
+    <string name="btn_delete">Kustuta</string>
+    <string name="btn_do_not_save">Katkesta</string>
+    <string name="btn_export_to_server">Saada võtmeserverisse</string>
+    <string name="btn_next">Järgmine</string>
+    <string name="btn_save">Salvesta</string>
+    <string name="choice_10mins">10 minutit</string>
+    <string name="choice_15secs">15 sekundit</string>
+    <string name="choice_1hour">1 tund</string>
+    <string name="choice_1min">1 minut</string>
+    <string name="choice_20mins">20 minutit</string>
+    <string name="choice_2hours">2 tundi</string>
+    <string name="choice_3mins">3 minutit</string>
+    <string name="choice_40mins">40 minutit</string>
+    <string name="choice_4hours">4 tundi</string>
+    <string name="choice_5mins">5 minutit</string>
+    <string name="choice_8hours">8 tundi</string>
+    <string name="dsa">DSA</string>
+    <string name="elgamal">ElGamal</string>
+    <string name="error">Viga</string>
+    <string name="error_message">Viga: %s</string>
+    <string name="expired">aegunud</string>
+    <string name="filemanager_title_open">Ava...</string>
+    <string name="label_algorithm">Algoritm</string>
+    <string name="label_comment">Kommentaar</string>
+    <string name="label_creation">Loodud</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_expiry">Aegub</string>
+    <string name="label_file">Fail</string>
+    <string name="label_key_size">Võtmepikkus</string>
+    <string name="label_message">Sõnum</string>
+    <string name="label_name">Nimi</string>
+    <string name="label_no_passphrase">Salasõnet pole</string>
+    <string name="label_passphrase">Salasõne</string>
+    <string name="label_usage">Kasutusvaldkond</string>
+    <string name="menu_delete_key">Kustuta võti</string>
+    <string name="menu_preferences">Seaded</string>
+    <string name="menu_search">Otsi</string>
+    <string name="passphrase_for_symmetric_encryption">Sümmeetriline krüpteering</string>
+    <string name="passphrases_do_not_match">Salasõned ei ühti.</string>
+    <string name="rsa">RSA</string>
+    <string name="secret_key">Salajane võti:</string>
+    <string name="section_defaults">Vaikeseaded</string>
+    <string name="section_general">Üldine</string>
+    <string name="title_authentication">Salasõne</string>
+    <string name="title_decrypt">Dekrüpteeri</string>
+    <string name="title_edit_key">Muuda võtit</string>
+    <string name="title_export_key">Ekspordi võti</string>
+    <string name="title_export_keys">Ekspordi võtmed</string>
+    <string name="title_help">Abi</string>
+    <string name="title_import_keys">Impordi võtmeid</string>
+    <string name="title_key_not_found">Võtit ei leitud</string>
+    <string name="title_key_server_preference">Võtmeserveri seaded</string>
+    <string name="title_preferences">Seaded</string>
+    <string name="title_send_key">Lae võtmeserverisse</string>
+    <string name="warning">Hoiatus</string>
+    <string name="wrong_passphrase">Vale salasõne</string>
+</resources>

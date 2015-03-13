@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_key_view_export_file"
+        android:icon="@drawable/ic_action_import_export"
+        app:showAsAction="never"
+        android:title="@string/menu_export_key" />
+
+    <item
+        android:id="@+id/menu_key_view_delete"
+        android:icon="@drawable/ic_action_discard"
+        app:showAsAction="never"
+        android:title="@string/menu_delete_key" />
+
+    <item
+        android:id="@+id/menu_key_view_advanced"
+        app:showAsAction="never"
+        android:title="@string/menu_advanced" />
+
+</menu><!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/OpenKeychain/src/main/res/menu/key_view.xml --><!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/menu/key_view.xml -->

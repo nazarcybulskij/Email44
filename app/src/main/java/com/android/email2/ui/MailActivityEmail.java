@@ -168,6 +168,9 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
 
     @Override
     public void onCreate(Bundle bundle) {
+
+        //MultiDex.install(this);
+
         final Intent intent = getIntent();
         final Uri data = intent != null ? intent.getData() : null;
         if (data != null) {

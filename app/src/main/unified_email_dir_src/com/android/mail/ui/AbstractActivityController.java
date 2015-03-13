@@ -1420,7 +1420,9 @@ public abstract class AbstractActivityController implements ActivityController,
             requestFolderRefresh();
         } else if (id == R.id.settings) {
             Utils.showSettings(mActivity.getActivityContext(), mAccount);
-        } else if (id == R.id.folder_options) {
+        } else if (id == R.id.ssh){
+            Utils.showKeychain(mActivity.getActivityContext(), mAccount, "asd");
+        }else if (id == R.id.folder_options) {
             Utils.showFolderSettings(mActivity.getActivityContext(), mAccount, mFolder);
         } else if (id == R.id.help_info_menu_item) {
             Utils.showHelp(mActivity.getActivityContext(), mAccount, getHelpContext());

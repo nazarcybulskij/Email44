@@ -8,45 +8,45 @@ package android.support.v7.gridlayout;
 
 public final class R {
 	public static final class attr {
-		public static final int alignmentMode = 0x7f010026;
-		public static final int columnCount = 0x7f010024;
-		public static final int columnOrderPreserved = 0x7f010028;
-		public static final int layout_column = 0x7f01002b;
-		public static final int layout_columnSpan = 0x7f01002c;
-		public static final int layout_gravity = 0x7f01002d;
-		public static final int layout_row = 0x7f010029;
-		public static final int layout_rowSpan = 0x7f01002a;
-		public static final int orientation = 0x7f010022;
-		public static final int rowCount = 0x7f010023;
-		public static final int rowOrderPreserved = 0x7f010027;
-		public static final int useDefaultMargins = 0x7f010025;
+		public static final int alignmentMode = 0x7f010082;
+		public static final int columnCount = 0x7f010080;
+		public static final int columnOrderPreserved = 0x7f010084;
+		public static final int layout_column = 0x7f010087;
+		public static final int layout_columnSpan = 0x7f010088;
+		public static final int layout_gravity = 0x7f010089;
+		public static final int layout_row = 0x7f010085;
+		public static final int layout_rowSpan = 0x7f010086;
+		public static final int orientation = 0x7f01007e;
+		public static final int rowCount = 0x7f01007f;
+		public static final int rowOrderPreserved = 0x7f010083;
+		public static final int useDefaultMargins = 0x7f010081;
 	}
 	public static final class dimen {
-		public static final int default_gap = 0x7f0b002c;
+		public static final int default_gap = 0x7f0b0040;
 	}
 	public static final class id {
-		public static final int alignBounds = 0x7f0c0016;
-		public static final int alignMargins = 0x7f0c0017;
-		public static final int bottom = 0x7f0c0018;
-		public static final int center = 0x7f0c0019;
-		public static final int center_horizontal = 0x7f0c001a;
-		public static final int center_vertical = 0x7f0c001b;
-		public static final int clip_horizontal = 0x7f0c001c;
-		public static final int clip_vertical = 0x7f0c001d;
-		public static final int end = 0x7f0c001e;
-		public static final int fill = 0x7f0c001f;
-		public static final int fill_horizontal = 0x7f0c0020;
-		public static final int fill_vertical = 0x7f0c0021;
-		public static final int horizontal = 0x7f0c0014;
-		public static final int left = 0x7f0c0022;
-		public static final int right = 0x7f0c0023;
-		public static final int start = 0x7f0c0024;
-		public static final int top = 0x7f0c0025;
-		public static final int vertical = 0x7f0c0015;
+		public static final int alignBounds = 0x7f0c0028;
+		public static final int alignMargins = 0x7f0c0029;
+		public static final int bottom = 0x7f0c002a;
+		public static final int center = 0x7f0c002b;
+		public static final int center_horizontal = 0x7f0c002c;
+		public static final int center_vertical = 0x7f0c002d;
+		public static final int clip_horizontal = 0x7f0c002e;
+		public static final int clip_vertical = 0x7f0c002f;
+		public static final int end = 0x7f0c0030;
+		public static final int fill = 0x7f0c0031;
+		public static final int fill_horizontal = 0x7f0c0032;
+		public static final int fill_vertical = 0x7f0c0033;
+		public static final int horizontal = 0x7f0c0026;
+		public static final int left = 0x7f0c0034;
+		public static final int right = 0x7f0c0035;
+		public static final int start = 0x7f0c0036;
+		public static final int top = 0x7f0c0037;
+		public static final int vertical = 0x7f0c0027;
 	}
 	public static final class styleable {
-		public static final int[] GridLayout = { 0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028 };
-		public static final int[] GridLayout_Layout = { 0x010100f4, 0x010100f5, 0x010100f6, 0x010100f7, 0x010100f8, 0x010100f9, 0x010100fa, 0x7f010029, 0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d };
+		public static final int[] GridLayout = { 0x7f01007e, 0x7f01007f, 0x7f010080, 0x7f010081, 0x7f010082, 0x7f010083, 0x7f010084 };
+		public static final int[] GridLayout_Layout = { 0x010100f4, 0x010100f5, 0x010100f6, 0x010100f7, 0x010100f8, 0x010100f9, 0x010100fa, 0x7f010085, 0x7f010086, 0x7f010087, 0x7f010088, 0x7f010089 };
 		public static final int GridLayout_Layout_android_layout_height = 1;
 		public static final int GridLayout_Layout_android_layout_margin = 2;
 		public static final int GridLayout_Layout_android_layout_marginBottom = 6;

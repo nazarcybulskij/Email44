@@ -29,6 +29,23 @@
     <item msgid="320885379869442589" quantity="one">"Üzenet áthelyezése"</item>
     <item msgid="371256717624461324" quantity="other">"Üzenetek áthelyezése"</item>
   </plurals>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-hu/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ugrás a főoldalra"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Felfelé mozgatás"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"További lehetőségek"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Kész"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Összes megtekintése"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Válasszon ki egy alkalmazást"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Lekérdezés törlése"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Keresési lekérdezés"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Keresés"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Lekérdezés küldése"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Hangalapú keresés"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Megosztás a következővel:"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Megosztás a következővel: %s"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hu/strings.xml -->
+    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"Már használja ezt a felhasználónevet a(z) \"<ns1:g id="DUPLICATE">%s</ns1:g>\" fiókhoz."</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"Már létező fiók"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"Piszkozatok"</string>
@@ -176,11 +193,27 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"Mappalista betöltése..."</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"Mindössze néhány lépésben létrehozhatja fiókját."</string>
     <string msgid="5815426892327290362" name="app_name">"E-mail"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hu/values.xml -->
+    <eat-comment/>
+    <string name="ask_QuitConfirmation">Lépni? Biztos vagy benne?</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hu/strings.xml -->
+    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"Nem sikerült letölteni a mellékletet."</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hu/values.xml -->
+    <eat-comment/>
+    <string name="btn_Match">Következő</string>
+    <string name="btn_NoMatch">No Match</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hu/strings.xml -->
+    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"Mégse"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"Nem lehet áthelyezni, mert a kijelölés több fiókot tartalmaz."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"Az áthelyezés nem támogatott POP3-fiókokban."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"A Piszkozatok, Kimenő levelek és Elküldött mappákban lévő üzeneteket nem lehet áthelyezni."</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hu/values.xml -->
+    <eat-comment/>
+    <string name="choice_NumUsers">%d felhasználók</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hu/strings.xml -->
+    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"Válasz küldése..."</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-hu/strings.xml -->
     <eat-comment/>
@@ -200,6 +233,28 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"Kész"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"Gyors válasz"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hu/values.xml -->
+    <eat-comment/>
+    <string name="error_AllMembersMustUpgrade">Egyes tagok egy régebbi verzió; minden tagja kell frissíteni a legújabb verzióra.</string>
+    <string name="error_AllMembersMustUpgradeBadPushToken">Minden tag köteles frissíteni, néhány régebbi nyomja regisztráció formátumokat.</string>
+    <string name="error_CorrectYourInternetConnection">Internet nincs, ellenőrizze a beállításokat.</string>
+    <string name="error_ExchangeProtocolTimeoutExceeded">Az Exchange timeout meghaladta. Kezdje a csere újra.</string>
+    <string name="error_HttpCode">Server HTTP Error: %d</string>
+    <string name="error_InvalidCommitVerify">Helytelen talált adatok cseréjét. Kezdje a csere újra.</string>
+    <string name="error_InvalidCommonUserId">Adjon meg egy pozitív egész szám.</string>
+    <string name="error_LocalGroupCommitDiffer">Ön arról számoltak be, a különbség a mondatok. Kezdje a csere újra.</string>
+    <string name="error_MinUsersRequired">Legalább %d tagjai kötelesek egymással kommunikálni.</string>
+    <string name="error_MoreDataThanUsers">Váratlan talált adatok cseréjét. Kezdje a csere újra.</string>
+    <string name="error_NoDataToExchange">A csere Hiányzik a szükséges adatokat.</string>
+    <string name="error_NoWordListSelected">Ki kell választania az egyik mondatok előtt.</string>
+    <string name="error_OtherGroupCommitDiffer">Valaki jelentett a különbség a mondatok. Kezdje a csere újra.</string>
+    <string name="error_OutOfMemoryError">Memória túl alacsony befejezni ezt a műveletet.</string>
+    <string name="error_ServerAppMessage">Server Message: %s</string>
+    <string name="error_ServerNotResponding">Nem válaszol a szerver.</string>
+    <string name="error_TimeoutWaitingForAllMembers">Timeout vár néhány csoport tagjai az adatok bevitelében.</string>
+    <string name="error_WebCancelledByUser">A felhasználó törli szerverkérés.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hu/strings.xml -->
+    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"Vállalati"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-hu/strings.xml -->
@@ -222,7 +277,25 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"Kicsi"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"Apró"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"Általános beállítások"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hu/values.xml -->
+    <eat-comment/>
+    <string name="help_size">Válassza ki az embereknek a száma, akik megpróbálják adatcserét együtt, és nyomjuk meg az OK gombot.</string>
+    <string name="help_userid">Ez a szám a képernyőn létrehozásához használt egyedi felhasználói csoportnak. Nézze át a számokat az összes felhasználó képernyők, akkor minden felhasználó adja meg ugyanazt a legkevesebb, majd nyomja meg az OK gombot.</string>
+    <string name="help_verify">Most meg kell egyeznie a fenti 3 szavas mondatok minden felhasználó számára. Minden felhasználónak ki kell választani az azonos mondás, és kattintson a Tovább gombra.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hu/strings.xml -->
+    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hu/values.xml -->
+    <eat-comment/>
+    <string name="label_CompareScreensNDevices">Hasonlítsa össze a képernyők %s eszközök.</string>
+    <string name="label_NumericModeHint">Nem angol nyelvű</string>
+    <string name="label_PromptInstruct">Ez a szám, hogy hozzon létre egy egyedi felhasználói csoportnak. Összehasonlítása, majd adja meg a legkevesebb felhasználók között.</string>
+    <string name="label_ReceivedNItems">beérkezett %d példány</string>
+    <string name="label_UserIdHint">Legalacsonyabb</string>
+    <string name="label_VerifyInstruct">Minden telefon kell egyeznie az egyik 3 szavas mondatok. Összehasonlítása, majd vedd a megfelelő kifejezést.</string>
+    <string name="lib_name">SafeSlinger Csere</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hu/strings.xml -->
+    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"A(z) <ns1:g id="ACCOUNT_NAME">%s</ns1:g> fiókba való bejelentkezés sikertelen."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"Sikertelen bejelentkezés"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"Kombinált nézet"</string>
@@ -281,6 +354,14 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"Feladó képe"</string>
     <string msgid="5181616311579820981" name="previous_action">"Előző"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hu/values.xml -->
+    <eat-comment/>
+    <string name="prog_CollectingOthersCommitVerify">vár ellenőrzés minden tagja…</string>
+    <string name="prog_CollectingOthersItems">vár minden felhasználó számára, hogy csatlakozzon…</string>
+    <string name="prog_ConstructingGroupKey">építésének csoport gombot…</string>
+    <string name="prog_RequestingUserId">kérő tagság…</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hu/strings.xml -->
+    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"Csak bizonyos \"Plus\" típusú fiókok rendelkeznek olyan POP-hozzáféréssel, amely lehetővé teszi a program számára a kapcsolódást. Ha nem tud bejelentkezni a megfelelő e-mail címmel és jelszóval, valószínűleg nem fizetett elő \"Plus\" típusú fiókra. Az ilyen e-mail fiókok eléréséhez indítsa el a böngészőt."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"Kérjük, az e-mail fiók beállítása előtt keresse fel a T-Online webhelyét, és hozzon létre jelszót a POP3-alapú e-mail hozzáféréshez."</string>
     <string msgid="3426057697353380951" name="quick_1">"Köszönjük!"</string>
@@ -313,5 +394,12 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"A szerver Kuka mappájának kiválasztása"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"A szerver Kuka mappájának kiválasztása"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"Kuka mappa"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hu/values.xml -->
+    <eat-comment/>
+    <string name="title_size">Hány felhasználó a csere?</string>
+    <string name="title_userid">Csoportosítás</string>
+    <string name="title_verify">Ellenőrizze</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hu/strings.xml -->
+    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"Szerver Kuka mappájának kiválasztása – <ns1:g id="ACCOUNT">%s</ns1:g>"</string>
 </resources>

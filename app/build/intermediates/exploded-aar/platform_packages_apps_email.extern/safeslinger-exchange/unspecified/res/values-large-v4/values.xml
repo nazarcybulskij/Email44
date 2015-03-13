@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/safeslinger-exchange/res/values-large/dimens.xml -->
+    <eat-comment/>
+    <dimen name="sse__button_side_margin">23dp</dimen>
+    <dimen name="sse__size_20dp">30dp</dimen>
+    <dimen name="sse__size_5dp">8dp</dimen>
+    <dimen name="sse__text_size_50">75sp</dimen>
+    <dimen name="sse__text_size_large">33sp</dimen>
+    <dimen name="sse__text_size_medium">27sp</dimen>
+    <dimen name="sse__text_size_micro">18sp</dimen>
+    <dimen name="sse__text_size_small">21sp</dimen>
+</resources>

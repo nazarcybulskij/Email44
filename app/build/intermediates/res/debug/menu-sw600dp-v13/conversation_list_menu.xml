@@ -67,5 +67,11 @@
         android:title="@string/help_and_info"
         android:showAsAction="never" />
 
+    <item
+        android:id="@+id/ssh"
+        android:title="Keys"
+     />
+
+
 </menu>
 <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/menu-sw600dp/conversation_list_menu.xml -->

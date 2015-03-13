@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.email.test">
+    package="com.android.email_ee.test">
 
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.android.email"
+                     android:targetPackage="com.android.email_ee"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.android.email"/>
+                     android:label="Tests for com.android.email_ee"/>
 </manifest>

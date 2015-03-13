@@ -16,5 +16,6 @@ public final class Manifest {
  STOPSHIP: protectionLevel should not be dangerous 
          */
         public static final String READ_ATTACHMENT="com.android.email_ee.permission.READ_ATTACHMENT";
+        public static final String WRITE_TEMPORARY_STORAGE="org.sufficientlysecure.keychain.WRITE_TEMPORARY_STORAGE";
     }
 }

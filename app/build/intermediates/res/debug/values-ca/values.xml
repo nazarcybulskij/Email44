@@ -29,6 +29,23 @@
     <item msgid="320885379869442589" quantity="one">"Mou el missatge"</item>
     <item msgid="371256717624461324" quantity="other">"Mou els missatges"</item>
   </plurals>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-ca/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navega a la pàgina d\'inici"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Navega cap a dalt"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Més opcions"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Fet"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Mostra\'ls tots"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Selecciona una aplicació"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Esborra la consulta"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta de cerca"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Cerca"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Envia la consulta"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Cerca per veu"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Comparteix amb"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Comparteix amb %s"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-ca/strings.xml -->
+    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"Ja estàs fent servir aquest nom d\'usuari per al compte \"<ns1:g id="DUPLICATE">%s</ns1:g>\"."</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"Compte duplicat"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"Esborranys"</string>
@@ -176,11 +193,27 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"S\'està carregant la llista de carpetes..."</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"Pots configurar el teu compte en només un quants passos."</string>
     <string msgid="5815426892327290362" name="app_name">"Correu"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-ca/values.xml -->
+    <eat-comment/>
+    <string name="ask_QuitConfirmation">Deixar? Estàs segur?</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-ca/strings.xml -->
+    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"No s\'ha pogut baixar el fitxer adjunt."</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-ca/values.xml -->
+    <eat-comment/>
+    <string name="btn_Match">¡Següent</string>
+    <string name="btn_NoMatch">No Match</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-ca/strings.xml -->
+    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"Cancel·la"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"No es pot moure perquè la selecció conté diversos comptes."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"Els comptes POP3 no admeten el desplaçament d\'elements."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"Els missatges de les carpetes Esborranys, Bústia de sortida i Enviats no es poden moure."</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-ca/values.xml -->
+    <eat-comment/>
+    <string name="choice_NumUsers">%d usuaris</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-ca/strings.xml -->
+    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"S\'està enviant la resposta..."</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-ca/strings.xml -->
     <eat-comment/>
@@ -200,6 +233,28 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"Fet"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"Resposta ràpida"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-ca/values.xml -->
+    <eat-comment/>
+    <string name="error_AllMembersMustUpgrade">Alguns membres estan utilitzant una versió anterior; tots els membres han d\'actualitzar a la versió més recent.</string>
+    <string name="error_AllMembersMustUpgradeBadPushToken">Tots els membres han d\'actualitzar, alguns estan utilitzant els formats de registre d\'empenta grans.</string>
+    <string name="error_CorrectYourInternetConnection">Internet no està disponible, comproveu la configuració.</string>
+    <string name="error_ExchangeProtocolTimeoutExceeded">Temps d\'espera de Valors va superar. Comença l\'intercanvi de nou.</string>
+    <string name="error_HttpCode">Servidor HTTP Error: %d</string>
+    <string name="error_InvalidCommitVerify">Dades incorrectes que es troben a canvi. Comença l\'intercanvi de nou.</string>
+    <string name="error_InvalidCommonUserId">Introduïu un enter positiu.</string>
+    <string name="error_LocalGroupCommitDiffer">Assenyalat una diferència en les frases. Comença l\'intercanvi de nou.</string>
+    <string name="error_MinUsersRequired">Un mínim de %d membres estan obligats a intercanviar dades.</string>
+    <string name="error_MoreDataThanUsers">Dades inesperats van trobar a canvi. Comença l\'intercanvi de nou.</string>
+    <string name="error_NoDataToExchange">L\'intercanvi falten dades requerides.</string>
+    <string name="error_NoWordListSelected">Heu de seleccionar una de les frases abans.</string>
+    <string name="error_OtherGroupCommitDiffer">Algú ha informat una diferència en frases. Comença l\'intercanvi de nou.</string>
+    <string name="error_OutOfMemoryError">La memòria és massa baixa per completar aquesta operació.</string>
+    <string name="error_ServerAppMessage">Missatge del servidor: %s</string>
+    <string name="error_ServerNotResponding">No hi ha resposta del servidor.</string>
+    <string name="error_TimeoutWaitingForAllMembers">Temps d\'espera d\'espera d\'alguns membres del grup per afegir dades.</string>
+    <string name="error_WebCancelledByUser">L\'usuari cancel·lar sol·licitud del servidor.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-ca/strings.xml -->
+    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"Corporatiu"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-ca/strings.xml -->
@@ -222,7 +277,25 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"Petita"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"Molt petita"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"Configuració general"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-ca/values.xml -->
+    <eat-comment/>
+    <string name="help_size">Seleccioneu el nombre de persones que estan tractant d\'intercanviar dades junts i premeu OK.</string>
+    <string name="help_userid">Aquest número en aquesta pantalla s\'utilitza per crear un grup únic d\'usuaris. Reviseu els nombres en les pantalles de tots els usuaris, tots els usuaris han d\'introduir el mateix menor nombre i premeu D\'acord.</string>
+    <string name="help_verify">Ara, ha de coincidir amb una d\'aquestes frases de 3 paraules amb tots els usuaris. Cada usuari ha de seleccionar la mateixa frase comuna, i premeu Següent.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-ca/strings.xml -->
+    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-ca/values.xml -->
+    <eat-comment/>
+    <string name="label_CompareScreensNDevices">Comparar pantalles en dispositius %s.</string>
+    <string name="label_NumericModeHint">No-Anglès</string>
+    <string name="label_PromptInstruct">Aquest número s\'utilitza per crear un grup únic d\'usuaris. Comparar i després introduïu el nombre més baix entre tots els usuaris.</string>
+    <string name="label_ReceivedNItems">rebut %d articles</string>
+    <string name="label_UserIdHint">Menor</string>
+    <string name="label_VerifyInstruct">Tots els telèfons han de coincidir amb una de les frases de 3 paraules. Compari, i després recollir la concordança de frase.</string>
+    <string name="lib_name">SafeSlinger Canvi</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-ca/strings.xml -->
+    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"Error en l\'inici de sessió a <ns1:g id="ACCOUNT_NAME">%s</ns1:g>."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"No s\'ha pogut iniciar la sessió"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"Vista combinada"</string>
@@ -281,6 +354,14 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"Imatge del remitent"</string>
     <string msgid="5181616311579820981" name="previous_action">"Anterior"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-ca/values.xml -->
+    <eat-comment/>
+    <string name="prog_CollectingOthersCommitVerify">l\'espera de la verificació de tots els membres…</string>
+    <string name="prog_CollectingOthersItems">esperant tots els usuaris a unir-se…</string>
+    <string name="prog_ConstructingGroupKey">la construcció de clau de grup…</string>
+    <string name="prog_RequestingUserId">que sol·liciti ser membre…</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-ca/strings.xml -->
+    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"Només alguns comptes \"Plus\" inclouen l\'accés POP que permet que aquest programa s\'hi connecti. Si no pots iniciar la sessió amb l\'adreça electrònica i la contrasenya correctes, pot ser que no tinguis un compte \"Plus\" de pagament. Inicia el navegador web per accedir a aquests comptes de correu."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"Abans de configurar aquest compte de correu electrònic, visita el lloc web de T-Online i crea una contrasenya per a l\'accés al correu electrònic POP3."</string>
     <string msgid="3426057697353380951" name="quick_1">"Gràcies."</string>
@@ -313,5 +394,12 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"Selecciona la carpeta de la paperera del servidor"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"Selecciona la carpeta de la paperera del servidor"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"Carpeta de la paperera"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-ca/values.xml -->
+    <eat-comment/>
+    <string name="title_size">Quants usuaris en l\'intercanvi?</string>
+    <string name="title_userid">Agrupament</string>
+    <string name="title_verify">Verificar</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-ca/strings.xml -->
+    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"Selecciona la carpeta de la paperera del servidor per a: <ns1:g id="ACCOUNT">%s</ns1:g>"</string>
 </resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/safeslinger-exchange/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="sse__button_side_margin">15dp</dimen>
+    <dimen name="sse__size_20dp">20dp</dimen>
+    <dimen name="sse__size_5dp">5dp</dimen>
+    <dimen name="sse__text_size_50">50sp</dimen>
+    <dimen name="sse__text_size_large">22sp</dimen>
+    <dimen name="sse__text_size_medium">18sp</dimen>
+    <dimen name="sse__text_size_micro">12sp</dimen>
+    <dimen name="sse__text_size_small">14sp</dimen>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/safeslinger-exchange/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="ask_QuitConfirmation">Quit? Are you sure?</string>
+    <string name="btn_Match">Next</string>
+    <string name="btn_NoMatch">No Match</string>
+    <string name="choice_NumUsers">%d users</string>
+    <string name="error_AllMembersMustUpgrade">Some members are using an older version; all members must upgrade to the newest version.</string>
+    <string name="error_AllMembersMustUpgradeBadPushToken">All members must upgrade, some are using older push registration formats.</string>
+    <string name="error_CorrectYourInternetConnection">Internet not available, check your settings.</string>
+    <string name="error_ExchangeProtocolTimeoutExceeded">Exchange timeout exceeded. Begin the exchange again.</string>
+    <string name="error_HttpCode">Server HTTP Error: %d</string>
+    <string name="error_InvalidCommitVerify">Incorrect data found in exchange. Begin the exchange again.</string>
+    <string name="error_InvalidCommonUserId">Please enter a positive integer.</string>
+    <string name="error_LocalGroupCommitDiffer">You have reported a difference in phrases. Begin the exchange again.</string>
+    <string name="error_MinUsersRequired">A minimum of %d members are required to exchange data.</string>
+    <string name="error_MoreDataThanUsers">Unexpected data found in exchange. Begin the exchange again.</string>
+    <string name="error_NoDataToExchange">The exchange is missing required data.</string>
+    <string name="error_NoWordListSelected">You must select one of the phrases before proceeding.</string>
+    <string name="error_OtherGroupCommitDiffer">Someone reported a difference in phrases. Begin the exchange again.</string>
+    <string name="error_OutOfMemoryError">Memory is too low to complete this operation.</string>
+    <string name="error_ServerAppMessage">Server Message: %s</string>
+    <string name="error_ServerNotResponding">No response from server.</string>
+    <string name="error_TimeoutWaitingForAllMembers">Timeout waiting for some group members to add data.</string>
+    <string name="error_WebCancelledByUser">User canceled server request.</string>
+    <string name="help_size">Select the number of people who are attempting to exchange data together and press OK.</string>
+    <string name="help_userid">This number on this screen is used to create a unique group of users. Review the numbers on all users\' screens, then all users should enter the same lowest number and press OK.</string>
+    <string name="help_verify">Now, you must match one of these 3-word phrases with all users. Every user must select the same common phrase, and press Next.</string>
+    <string name="label_CompareScreensNDevices">Compare screens on %s devices.</string>
+    <string name="label_NumericModeHint">Non-English</string>
+    <string name="label_PromptInstruct">This number is used to create a unique group of users. Compare, and then enter the lowest number among all users.</string>
+    <string name="label_ReceivedNItems">received %d items</string>
+    <string name="label_UserIdHint">Lowest</string>
+    <string name="label_VerifyInstruct">All phones must match one of the 3-word phrases. Compare, and then pick the matching phrase.</string>
+    <string name="lib_name">SafeSlinger Exchange</string>
+    <string name="prog_CollectingOthersCommitVerify">waiting for verification from all members…</string>
+    <string name="prog_CollectingOthersItems">waiting for all users to join…</string>
+    <string name="prog_ConstructingGroupKey">constructing group key…</string>
+    <string name="prog_RequestingUserId">requesting membership…</string>
+    <string name="title_size">How many users in the exchange?</string>
+    <string name="title_userid">Grouping</string>
+    <string name="title_verify">Verify</string>
+</resources>

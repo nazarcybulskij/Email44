@@ -29,6 +29,23 @@
     <item msgid="320885379869442589" quantity="one">"Premjesti poruku"</item>
     <item msgid="371256717624461324" quantity="other">"Premjesti poruke"</item>
   </plurals>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-hr/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Idi na početnu"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Idi gore"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Dodatne opcije"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Gotovo"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Prikaži sve"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Odabir aplikacije"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Izbriši upit"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Upit za pretraživanje"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Pretraživanje"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Pošalji upit"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Glasovno pretraživanje"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Dijeljenje sa"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Dijeljenje sa: %s"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hr/strings.xml -->
+    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"To korisničko ime već upotrebljavate za račun \"<ns1:g id="DUPLICATE">%s</ns1:g>\"."</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"Dvostruki račun"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"Skice"</string>
@@ -176,11 +193,27 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"Učitavanje popisa mapa…"</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"Možete postaviti svoj korisnički račun u samo nekoliko koraka."</string>
     <string msgid="5815426892327290362" name="app_name">"E-pošta"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hr/values.xml -->
+    <eat-comment/>
+    <string name="ask_QuitConfirmation">Quit? Jeste li sigurni?</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hr/strings.xml -->
+    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"Preuzimanje privitka nije uspjelo."</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hr/values.xml -->
+    <eat-comment/>
+    <string name="btn_Match">Sljedeći</string>
+    <string name="btn_NoMatch">Bez odgovarajuće</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hr/strings.xml -->
+    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"Odustani"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"Premještanje nije moguće jer odabir sadrži više računa."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"Premještanje nije podržano na računima POP3."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"Poruke u mapama Nacrti, Izlazni spremnik i Poslano ne mogu se premjestiti."</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hr/values.xml -->
+    <eat-comment/>
+    <string name="choice_NumUsers">%d korisnik</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hr/strings.xml -->
+    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"Slanje odgovora..."</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-hr/strings.xml -->
     <eat-comment/>
@@ -200,6 +233,28 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"Gotovo"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"Brzi odgovor"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hr/values.xml -->
+    <eat-comment/>
+    <string name="error_AllMembersMustUpgrade">Neki članovi koriste stariju verziju; Svi članovi moraju nadograditi na najnoviju verziju.</string>
+    <string name="error_AllMembersMustUpgradeBadPushToken">Svi članovi moraju nadograditi, neki koriste starije registracije formata gurati.</string>
+    <string name="error_CorrectYourInternetConnection">Internet nije dostupan, provjerite svoje postavke.</string>
+    <string name="error_ExchangeProtocolTimeoutExceeded">Razmjena timeout premašila. Opet započnite razmjenu.</string>
+    <string name="error_HttpCode">Server HTTP Error: %d</string>
+    <string name="error_InvalidCommitVerify">Netočni podaci nalaze u zamjenu. Opet započnite razmjenu.</string>
+    <string name="error_InvalidCommonUserId">Unesite prirodan broj.</string>
+    <string name="error_LocalGroupCommitDiffer">Vi ste prijavili razliku u frazama. Opet započnite razmjenu.</string>
+    <string name="error_MinUsersRequired">Najmanje %d članova su potrebni za razmjenu podataka.</string>
+    <string name="error_MoreDataThanUsers">Neočekivani podaci nalaze u zamjenu. Opet započnite razmjenu.</string>
+    <string name="error_NoDataToExchange">Razmjena nedostaje potrebne podatke.</string>
+    <string name="error_NoWordListSelected">Morate odabrati jednu od fraza prije nastavka.</string>
+    <string name="error_OtherGroupCommitDiffer">Netko izvijestio je razlika u izrazima. Opet započnite razmjenu.</string>
+    <string name="error_OutOfMemoryError">Memorija je preniska završiti ovu operaciju.</string>
+    <string name="error_ServerAppMessage">Server Message: %s</string>
+    <string name="error_ServerNotResponding">Nema odgovora od poslužitelja.</string>
+    <string name="error_TimeoutWaitingForAllMembers">Timeout čekaju neki članovi grupe dodati podatke.</string>
+    <string name="error_WebCancelledByUser">Korisnik otkazao zahtjev poslužitelja.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hr/strings.xml -->
+    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"Korporacijski"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-hr/strings.xml -->
@@ -222,7 +277,25 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"Malen"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"Sitan"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"Opće postavke"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hr/values.xml -->
+    <eat-comment/>
+    <string name="help_size">Odaberite broj ljudi koji su pokušavali razmijeniti podatke zajedno i pritisnite OK.</string>
+    <string name="help_userid">Ovaj broj na zaslonu se koristi za stvaranje jedinstvene skupinu korisnika. Pregledajte brojeve na ekranima svih korisnika, a zatim su svi korisnici bi trebali ući u istu najmanji broj i pritisnite OK.</string>
+    <string name="help_verify">Sada, morate odgovarati jedan od tih 3-riječ fraza sa svim korisnicima. Svaki korisnik mora odabrati isti zajednički izraz, a zatim pritisnite Dalje.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hr/strings.xml -->
+    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hr/values.xml -->
+    <eat-comment/>
+    <string name="label_CompareScreensNDevices">Usporedite zaslona na %s uređajima.</string>
+    <string name="label_NumericModeHint">Non-English</string>
+    <string name="label_PromptInstruct">Ovaj broj se koristi za stvaranje jedinstvene skupinu korisnika. Usporedite, a zatim unesite najmanji broj među svim korisnicima.</string>
+    <string name="label_ReceivedNItems">dobila %d stavki</string>
+    <string name="label_UserIdHint">Najniža</string>
+    <string name="label_VerifyInstruct">Svi telefoni moraju odgovarati jedan od 3 riječi izraze. Usporedite, a zatim odabrati podudaranje izraz.</string>
+    <string name="lib_name">SafeSlinger Exchange</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hr/strings.xml -->
+    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"Prijava računa <ns1:g id="ACCOUNT_NAME">%s</ns1:g> neuspješna."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"Neuspjela prijava"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"Kombinirani prikaz"</string>
@@ -281,6 +354,14 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"Slika pošiljatelja"</string>
     <string msgid="5181616311579820981" name="previous_action">"Prethodno"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hr/values.xml -->
+    <eat-comment/>
+    <string name="prog_CollectingOthersCommitVerify">čekajući provjeru svih članova…</string>
+    <string name="prog_CollectingOthersItems">čeka za sve korisnike da se pridruže…</string>
+    <string name="prog_ConstructingGroupKey">izgradnje grupe ključ…</string>
+    <string name="prog_RequestingUserId">traži članstvo u…</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hr/strings.xml -->
+    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"Samo neki računi usluge \"Plus\" uključuju POP pristup koji ovom programu omogućuje povezivanje. Ako se ne možete prijaviti sa svojom ispravnom adresom e-pošte i zaporkom, možda nemate plaćeni račun usluge \"Plus\". Pokrenite web-preglednik kako biste dobili pristup tim računima e-pošte."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"Prije postavljanja ovog računa e-pošte posjetite web-lokaciju T-Online i stvorite zaporku za POP3 pristup e-pošti."</string>
     <string msgid="3426057697353380951" name="quick_1">"Hvala!"</string>
@@ -313,5 +394,12 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"Odaberite mapu za otpad poslužitelja"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"Odaberite mapu za otpad poslužitelja"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"Mapa za otpad"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-hr/values.xml -->
+    <eat-comment/>
+    <string name="title_size">Koliko korisnici u zamjenu?</string>
+    <string name="title_userid">Grupiranje</string>
+    <string name="title_verify">Provjeriti</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-hr/strings.xml -->
+    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"Odaberite mapu za otpad poslužitelja za <ns1:g id="ACCOUNT">%s</ns1:g>"</string>
 </resources>

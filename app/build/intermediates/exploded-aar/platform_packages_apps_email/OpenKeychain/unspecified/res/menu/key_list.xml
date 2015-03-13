@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_key_list_search"
+        android:title="@string/menu_search"
+        android:icon="@drawable/ic_action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="collapseActionView|always" />
+
+    <item
+        android:id="@+id/menu_key_list_search_cloud"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/ic_action_search_cloud"
+        android:title="@string/menu_add_keys" />
+
+    <item
+        android:id="@+id/menu_key_list_add"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/ic_action_qr_code"
+        android:title="@string/import_qr_code_button" />
+
+    <item
+        android:id="@+id/menu_key_list_export"
+        app:showAsAction="never"
+        android:title="@string/menu_export_all_keys" />
+
+    <item
+        android:id="@+id/menu_key_list_create"
+        app:showAsAction="never"
+        android:title="@string/menu_create_key" />
+
+    <item
+        android:id="@+id/menu_key_list_import_existing_key"
+        app:showAsAction="never"
+        android:title="@string/menu_import_existing_key" />
+
+    <item
+        android:id="@+id/menu_key_list_debug_cons"
+        app:showAsAction="never"
+        android:title="Debug / Consolidate"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/menu_key_list_debug_read"
+        app:showAsAction="never"
+        android:title="Debug / DB restore"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/menu_key_list_debug_write"
+        app:showAsAction="never"
+        android:title="Debug / DB backup"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/menu_key_list_debug_first_time"
+        app:showAsAction="never"
+        android:title="Debug / Show first time screen"
+        android:visible="false" />
+
+</menu>
+<!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/OpenKeychain/src/main/res/menu/key_list.xml -->

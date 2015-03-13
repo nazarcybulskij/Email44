@@ -1,0 +1,90 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+
+dependencies {
+    // NOTE: Always use fixed version codes not dynamic ones, e.g. 0.7.3 instead of 0.7.+, see README for more information
+
+    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile project(':extern:openpgp-api-lib')
+    compile project(':extern:openkeychain-api-lib')
+    compile project(':extern:html-textview')
+    compile project(':extern:StickyListHeaders:library')
+    compile project(':extern:zxing-qr-code')
+    compile project(':extern:zxing-android-integration')
+    compile project(':extern:spongycastle:core')
+    compile project(':extern:spongycastle:pg')
+    compile project(':extern:spongycastle:pkix')
+    compile project(':extern:spongycastle:prov')
+    compile project(':extern:SuperToasts:supertoasts')
+    compile project(':extern:minidns')
+    compile project(':extern:KeybaseLib:Lib')
+    compile project(':extern:TokenAutoComplete:library')
+    compile project(':extern:safeslinger-exchange')
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1'
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 19
+    }
+
+    /*
+     * To sign release build, create file gradle.properties in ~/.gradle/ with this content:
+     *
+     * signingStoreLocation=/home/key.store
+     * signingStorePassword=xxx
+     * signingKeyAlias=alias
+     * signingKeyPassword=xxx
+     */
+
+    dexOptions {
+        jumboMode true
+    }
+    if (project.hasProperty('signingStoreLocation') &&
+            project.hasProperty('signingStorePassword') &&
+            project.hasProperty('signingKeyAlias') &&
+            project.hasProperty('signingKeyPassword')) {
+        println "Found sign properties in gradle.properties! Signing build…"
+        
+        signingConfigs {
+            release {
+                storeFile file(signingStoreLocation)
+                storePassword signingStorePassword
+                keyAlias signingKeyAlias
+                keyPassword signingKeyPassword
+            }
+        }
+
+        buildTypes.release.signingConfig = signingConfigs.release
+    } else {
+        buildTypes.release.signingConfig = null
+    }
+    
+    // NOTE: Lint is disabled because it slows down builds,
+    // to enable it comment out the code at the bottom of this build.gradle
+    lintOptions {
+        // Do not abort build if lint finds errors
+        abortOnError false
+
+        checkAllWarnings true
+        htmlReport true
+        htmlOutput file('lint-report.html')
+    }
+    
+    // Disable preDexing, causes com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000) on some systems
+    dexOptions {
+        preDexLibraries = false
+    }
+}
+
+// NOTE: This disables Lint!
+tasks.whenTaskAdded { task ->
+    if (task.name.contains('lint')) {
+        task.enabled = false
+    }
+}
+

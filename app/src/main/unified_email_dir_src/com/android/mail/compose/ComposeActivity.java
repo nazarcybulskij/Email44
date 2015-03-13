@@ -2043,7 +2043,9 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
             Utils.showHelp(this, mAccount, getString(R.string.compose_help_context));
         } else if (id == R.id.feedback_menu_item) {
             Utils.sendFeedback(this, mAccount, false);
-        } else {
+        } else if (id==R.id.ssh){
+            Toast.makeText(this,"Ssh ComposeActivity ",Toast.LENGTH_LONG).show();
+        }else{
             handled = false;
         }
         return !handled ? super.onOptionsItemSelected(item) : handled;

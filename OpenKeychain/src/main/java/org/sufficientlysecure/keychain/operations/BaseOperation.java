@@ -1,0 +1,100 @@
+package org.sufficientlysecure.keychain.operations;
+
+import android.content.Context;
+
+import org.sufficientlysecure.keychain.pgp.PassphraseCacheInterface;
+import org.sufficientlysecure.keychain.pgp.Progressable;
+import org.sufficientlysecure.keychain.provider.ProviderHelper;
+import org.sufficientlysecure.keychain.provider.ProviderHelper.NotFoundException;
+import org.sufficientlysecure.keychain.service.PassphraseCacheService;
+
+import java.util.concurrent.atomic.AtomicBoolean;
+
+public abstract class BaseOperation implements PassphraseCacheInterface {
+
+    final public Context mContext;
+    final public Progressable mProgressable;
+    final public AtomicBoolean mCancelled;
+
+    final public ProviderHelper mProviderHelper;
+
+    /** An abstract base class for all *Operation classes. It provides a number
+     * of common methods for progress, cancellation and passphrase cache handling.
+     *
+     * An "operation" in this sense is a high level operation which is called
+     * by the KeychainIntentService or OpenPgpService services. Concrete
+     * subclasses of this class should implement either a single or a group of
+     * related operations. An operation must rely solely on its input
+     * parameters for operation specifics. It should also write a log of its
+     * operation using the OperationLog class, and return an OperationResult
+     * subclass of its specific type.
+     *
+     * An operation must *not* throw exceptions of any kind, errors should be
+     * handled as part of the OperationResult! Consequently, all handling of
+     * errors in KeychainIntentService and OpenPgpService should consist of
+     * informational rather than operational means.
+     *
+     * Note that subclasses of this class should be either Android- or
+     * BouncyCastle-related, and use as few imports from the other type as
+     * possible.  A class with Pgp- prefix is considered BouncyCastle-related,
+     * if there is no prefix it is considered Android-related.
+     *
+     */
+    public BaseOperation(Context context, ProviderHelper providerHelper, Progressable progressable) {
+        this.mContext = context;
+        this.mProgressable = progressable;
+        this.mProviderHelper = providerHelper;
+        mCancelled = null;
+    }
+
+    public BaseOperation(Context context, ProviderHelper providerHelper,
+                         Progressable progressable, AtomicBoolean cancelled) {
+        mContext = context;
+        mProgressable = progressable;
+        mProviderHelper = providerHelper;
+        mCancelled = cancelled;
+    }
+
+    public void updateProgress(int message, int current, int total) {
+        if (mProgressable != null) {
+            mProgressable.setProgress(message, current, total);
+        }
+    }
+
+    public void updateProgress(String message, int current, int total) {
+        if (mProgressable != null) {
+            mProgressable.setProgress(message, current, total);
+        }
+    }
+
+    public void updateProgress(int current, int total) {
+        if (mProgressable != null) {
+            mProgressable.setProgress(current, total);
+        }
+    }
+
+    protected boolean checkCancelled() {
+        return mCancelled != null && mCancelled.get();
+    }
+
+    @Override
+    public String getCachedPassphrase(long subKeyId) throws NoSecretKeyException {
+        try {
+            long masterKeyId = mProviderHelper.getMasterKeyId(subKeyId);
+            return getCachedPassphrase(masterKeyId, subKeyId);
+        } catch (NotFoundException e) {
+            throw new PassphraseCacheInterface.NoSecretKeyException();
+        }
+    }
+
+    @Override
+    public String getCachedPassphrase(long masterKeyId, long subKeyId) throws NoSecretKeyException {
+        try {
+            return PassphraseCacheService.getCachedPassphrase(
+                    mContext, masterKeyId, subKeyId);
+        } catch (PassphraseCacheService.KeyNotFoundException e) {
+            throw new PassphraseCacheInterface.NoSecretKeyException();
+        }
+    }
+
+}

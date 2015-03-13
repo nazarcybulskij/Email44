@@ -16,12 +16,6 @@
 
 package com.android.mail.utils;
 
-import com.google.android.mail.common.html.parser.HtmlDocument;
-import com.google.android.mail.common.html.parser.HtmlParser;
-import com.google.android.mail.common.html.parser.HtmlTree;
-import com.google.android.mail.common.html.parser.HtmlTreeBuilder;
-import com.google.common.collect.Maps;
-
 import android.app.Fragment;
 import android.app.SearchManager;
 import android.content.Context;
@@ -57,6 +51,7 @@ import android.view.ViewGroup.MarginLayoutParams;
 import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 import com.android.email_ee.R;
 import com.android.mail.browse.ConversationCursor;
@@ -69,8 +64,14 @@ import com.android.mail.providers.UIProvider;
 import com.android.mail.providers.UIProvider.EditSettingsExtras;
 import com.android.mail.ui.FeedbackEnabledActivity;
 import com.android.mail.ui.ViewMode;
+import com.google.android.mail.common.html.parser.HtmlDocument;
+import com.google.android.mail.common.html.parser.HtmlParser;
+import com.google.android.mail.common.html.parser.HtmlTree;
+import com.google.android.mail.common.html.parser.HtmlTreeBuilder;
+import com.google.common.collect.Maps;
 
 import org.json.JSONObject;
+import org.sufficientlysecure.keychain.ui.KeyListActivity;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
@@ -794,6 +795,19 @@ public class Utils {
 
         openUrl(context, builder.build(), null);
     }
+
+
+    public static void showKeychain(Context context, Account account, String fromWhere) {
+        Intent intent = new Intent(context,KeyListActivity.class);
+        context.startActivity(intent);
+        Toast.makeText(context, "ssh  Utils", Toast.LENGTH_LONG).show();
+    }
+
+
+
+
+
+
 
     /**
      * Helper method to open a link in a browser.

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape 
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid 
+        android:color="#55FFFFFF" />
+
+</shape><!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/SuperToasts/supertoasts/res/drawable/shape_kitkat_square_undobarselected.xml --><!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern.SuperToasts/supertoasts/unspecified/res/drawable/shape_kitkat_square_undobarselected.xml -->

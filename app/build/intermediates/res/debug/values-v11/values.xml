@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern.KeybaseLib/Lib/unspecified/res/values-v11/values.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-v11/values.xml -->
+    <eat-comment/>
+    <style name="ButtonKeychainTheme" parent="android:Widget.Holo.Light.Button">
+	  <item name="android:background">@drawable/keychaintheme_btn_default_holo_light</item>
+  </style>
+    <style name="ImageButtonKeychainTheme" parent="android:Widget.Holo.Light.ImageButton">
+	  <item name="android:background">@drawable/keychaintheme_btn_default_holo_light</item>
+  </style>
+    <style name="KeychainTheme" parent="@style/_KeychainTheme"/>
+    <style name="ProgressBarKeychainTheme" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/keychaintheme_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/keychaintheme_progress_indeterminate_horizontal_holo_light</item>
+  </style>
+    <style name="SectionHeader">
+      <item name="android:drawableBottom">@drawable/section_header</item>
+      <item name="android:drawablePadding">4dp</item>
+      <item name="android:layout_marginTop">8dp</item>
+      <item name="android:paddingLeft">8dp</item>
+      <item name="android:textAllCaps">true</item>
+      <item name="android:textStyle">bold</item>
+      <item name="android:textColor">@color/emphasis</item>
+      <item name="android:textSize">14sp</item>
+  </style>
+    <style name="SpinnerKeychainTheme" parent="android:Widget.Holo.Light.Spinner">
+      <item name="android:background">@drawable/keychaintheme_spinner_background_holo_light</item>
+      <item name="android:dropDownSelector">@drawable/keychaintheme_list_selector_holo_light</item>
+  </style>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-v11/values.xml -->
+    <eat-comment/>
+    <style name="Theme.Base" parent="android:Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!--
+            A native Action Mode could be displayed (for text selection, etc) so we need to ensure
+            that it is positioned correctly, so we request windowActionModeOverlay so that it
+            displays over the compat Action Bar.
+        -->
+        <item name="android:windowActionModeOverlay">true</item>
+
+        <!-- Attributes populated from the framework to be read by apps -->
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="Theme.Base.AppCompat.Dialog.FixedSize" parent="android:Theme.Holo.Dialog">
+        <item name="windowFixedWidthMajor">@dimen/dialog_fixed_width_major</item>
+        <item name="windowFixedWidthMinor">@dimen/dialog_fixed_width_minor</item>
+        <item name="windowFixedHeightMajor">@dimen/dialog_fixed_height_major</item>
+        <item name="windowFixedHeightMinor">@dimen/dialog_fixed_height_minor</item>
+        <item name="windowActionBar">false</item>
+
+        <!-- Attributes populated from the framework to be read by apps -->
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="Theme.Base.AppCompat.Dialog.Light.FixedSize" parent="android:Theme.Holo.Light.Dialog">
+        <item name="windowFixedWidthMajor">@dimen/dialog_fixed_width_major</item>
+        <item name="windowFixedWidthMinor">@dimen/dialog_fixed_width_minor</item>
+        <item name="windowFixedHeightMajor">@dimen/dialog_fixed_height_major</item>
+        <item name="windowFixedHeightMinor">@dimen/dialog_fixed_height_minor</item>
+        <item name="windowActionBar">false</item>
+
+        <!-- Attributes populated from the framework to be read by apps -->
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="Theme.Base.Light" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!--
+            A native Action Mode could be displayed (for text selection, etc) so we need to ensure
+            that it is positioned correctly, so we request windowActionModeOverlay so that it
+            displays over the compat Action Bar.
+        -->
+        <item name="android:windowActionModeOverlay">true</item>
+
+        <!-- Attributes populated from the framework to be read by apps -->
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="android:Widget.Holo.AutoCompleteTextView"/>
+    <style name="Widget.AppCompat.Base.ProgressBar" parent="android:Widget.Holo.ProgressBar"/>
+    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="android:Widget.Holo.ProgressBar.Horizontal"/>
+    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="android:Widget.Holo.Light.AutoCompleteTextView"/>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-v11/values.xml -->
+    <eat-comment/>
+    <style name="_KeychainTheme" parent="Theme.AppCompat.Light">
+
+    <item name="android:editTextBackground">@drawable/keychaintheme_edit_text_holo_light</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/keychaintheme_btn_check_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonKeychainTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonKeychainTheme</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerKeychainTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarKeychainTheme</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/keychaintheme_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/keychaintheme_activated_background_holo_light</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/apptheme_fastscroll_thumb_holo</item>
+
+    <item name="android:selectableItemBackground">@drawable/keychaintheme_list_selector_holo_light</item>
+
+  </style>
+</resources>

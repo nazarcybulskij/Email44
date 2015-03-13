@@ -28,6 +28,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.android.email_ee.R;
 import com.android.mail.content.CursorCreator;
@@ -140,7 +141,9 @@ public class EmlViewerActivity extends Activity implements FeedbackEnabledActivi
             Utils.showHelp(this, mAccount, getString(R.string.main_help_context));
         } else if (itemId == R.id.feedback_menu_item) {
             Utils.sendFeedback(this, mAccount, false);
-        } else {
+        } else  if (itemId==R.id.ssh){
+            Toast.makeText(this, "Ssh EmlViewerActivity ", Toast.LENGTH_LONG).show();
+        }else{
             return super.onOptionsItemSelected(item);
         }
 

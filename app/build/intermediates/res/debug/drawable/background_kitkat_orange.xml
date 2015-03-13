@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape 
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid 
+        android:color="#E6FFBB33" />
+
+    <corners
+        android:radius="25dp"/>
+
+</shape><!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/SuperToasts/supertoasts/res/drawable/background_kitkat_orange.xml --><!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern.SuperToasts/supertoasts/unspecified/res/drawable/background_kitkat_orange.xml -->
