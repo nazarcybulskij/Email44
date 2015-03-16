@@ -931,5 +931,9 @@
     <string name="hide_folders">Hide folders</string>
 
 
+    <!--Nazarko Zipolino   add  in compose layoyt string  fot checboxs-->
+    <string name="btn_crypto_sign">Sign</string>
+    <string name="btn_encrypt">Encrypt</string>
+
 
 </resources>

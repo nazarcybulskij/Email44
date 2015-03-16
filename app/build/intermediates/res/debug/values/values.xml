@@ -1487,6 +1487,11 @@
     <string name="btn_add_share_decrypted_text">"Share decrypted text"</string>
     <string name="btn_back">"Back"</string>
     <string name="btn_create_key">"Create key"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="btn_crypto_sign">Sign</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values/values.xml -->
+    <eat-comment/>
     <string name="btn_decrypt_and_verify">"and verify signatures"</string>
     <string name="btn_decrypt_clipboard">"Decrypt from clipboard"</string>
     <string name="btn_decrypt_files">"Decrypt files"</string>
@@ -1494,6 +1499,11 @@
     <string name="btn_decrypt_verify_message">"Decrypt and verify message"</string>
     <string name="btn_delete">"Delete"</string>
     <string name="btn_do_not_save">"Cancel"</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
+    <string name="btn_encrypt">Encrypt</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values/values.xml -->
+    <eat-comment/>
     <string name="btn_encrypt_file">"Encrypt and save file"</string>
     <string name="btn_encrypt_share_file">"Encrypt and share file"</string>
     <string name="btn_export_to_server">"Upload To Keyserver"</string>

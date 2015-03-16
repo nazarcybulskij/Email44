@@ -28,30 +28,30 @@ public final class R {
 		public static final int ic_menu_refresh_holo_dark = 0x7f020108;
 	}
 	public static final class id {
-		public static final int determinate_progress = 0x7f0c022a;
-		public static final int empty_text = 0x7f0c022b;
-		public static final int indeterminate_progress = 0x7f0c0229;
-		public static final int photo_activity_background = 0x7f0c0223;
-		public static final int photo_activity_root_view = 0x7f0c0222;
-		public static final int photo_activity_temporary_image = 0x7f0c0224;
-		public static final int photo_preview = 0x7f0c0227;
-		public static final int photo_preview_image = 0x7f0c0228;
-		public static final int photo_view = 0x7f0c0226;
-		public static final int photo_view_pager = 0x7f0c0225;
-		public static final int retry_button = 0x7f0c022c;
+		public static final int determinate_progress = 0x7f0c022f;
+		public static final int empty_text = 0x7f0c0230;
+		public static final int indeterminate_progress = 0x7f0c022e;
+		public static final int photo_activity_background = 0x7f0c0228;
+		public static final int photo_activity_root_view = 0x7f0c0227;
+		public static final int photo_activity_temporary_image = 0x7f0c0229;
+		public static final int photo_preview = 0x7f0c022c;
+		public static final int photo_preview_image = 0x7f0c022d;
+		public static final int photo_view = 0x7f0c022b;
+		public static final int photo_view_pager = 0x7f0c022a;
+		public static final int retry_button = 0x7f0c0231;
 	}
 	public static final class integer {
 		public static final int reenter_fullscreen_delay_time_in_millis = 0x7f0d002d;
 	}
 	public static final class layout {
-		public static final int photo_activity_view = 0x7f0400bc;
-		public static final int photo_fragment_view = 0x7f0400bd;
-		public static final int photo_retry_button = 0x7f0400be;
+		public static final int photo_activity_view = 0x7f0400bd;
+		public static final int photo_fragment_view = 0x7f0400be;
+		public static final int photo_retry_button = 0x7f0400bf;
 	}
 	public static final class string {
-		public static final int failed = 0x7f0f01e3;
-		public static final int photo_view_count = 0x7f0f0470;
-		public static final int retry = 0x7f0f04e2;
+		public static final int failed = 0x7f0f01e5;
+		public static final int photo_view_count = 0x7f0f0472;
+		public static final int retry = 0x7f0f04e4;
 	}
 	public static final class style {
 		public static final int Holo_ActionBar = 0x7f10002e;

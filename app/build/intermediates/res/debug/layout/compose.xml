@@ -48,10 +48,25 @@
                     android:layout_width="match_parent"
                     android:orientation="vertical">
 
+
+
+
                     <include layout="@layout/compose_recipients"/>
 
+
+
+                    <!--Crypr-->
+                    <include layout="@layout/compose_crypt"/>
+
                     <include layout="@layout/compose_subject"/>
+
+
+
                 </LinearLayout>
+
+
+
+
 
                 <!-- Body -->
                 <include layout="@layout/compose_body"/>

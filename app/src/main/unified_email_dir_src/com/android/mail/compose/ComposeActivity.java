@@ -64,15 +64,16 @@ import android.view.inputmethod.BaseInputConnection;
 import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.common.Rfc822Validator;
 import com.android.common.contacts.DataUsageStatUpdater;
+import com.android.email_ee.R;
 import com.android.ex.chips.RecipientEditTextView;
 import com.android.mail.MailIntentService;
-import com.android.email_ee.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.browse.MessageHeaderView;
 import com.android.mail.compose.AttachmentsView.AttachmentAddedOrDeletedListener;
@@ -101,6 +102,7 @@ import com.android.mail.utils.ContentProviderTask;
 import com.android.mail.utils.LogTag;
 import com.android.mail.utils.LogUtils;
 import com.android.mail.utils.Utils;
+import com.fsck.k9.crypto.PgpData;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
@@ -271,6 +273,11 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
     private View mPhotoAttachmentsButton;
     private View mVideoAttachmentsButton;
 
+    //Nazarko Zipolino crypt Checkbox
+    private CheckBox mCryptoSignatureCheckbox;
+    private CheckBox mEncryptCheckbox;
+    private PgpData mPgpData = null;
+
     /**
      * Boolean indicating whether ComposeActivity was launched from a Gmail controlled view.
      */
@@ -435,6 +442,21 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
         mInnerSavedState = (savedInstanceState != null) ?
                 savedInstanceState.getBundle(KEY_INNER_SAVED_STATE) : null;
         checkValidAccounts();
+
+        mCryptoSignatureCheckbox = (CheckBox)findViewById(R.id.cb_crypto_signature);
+
+        mEncryptCheckbox = (CheckBox)findViewById(R.id.cb_encrypt);
+
+        initializeCrypto();
+
+
+    }
+    /*Nazarko zipolino add  initializeCrypto */
+    private void initializeCrypto() {
+        if (mPgpData != null) {
+            return;
+        }
+        mPgpData = new PgpData();
     }
 
     private void finishCreate() {
@@ -2032,7 +2054,8 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
         } else if (id == R.id.save) {
             doSave(true);
         } else if (id == R.id.send) {
-            doSend();
+            Toast.makeText(this, "Send email",Toast.LENGTH_LONG).show();
+            doSendNormalorCrypt();
         } else if (id == R.id.discard) {
             doDiscard();
         } else if (id == R.id.settings) {
@@ -2087,6 +2110,19 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
         logSendOrSave(false /* save */);
         mPerformedSendOrDiscard = true;
     }
+
+   /* Nazarko Zipolino   replase meton  send email doSend -> doSendNormalorCrypt */
+
+
+    private void doSendNormalorCrypt() {
+        sendOrSaveWithSanityChecks(false, true, false, false);
+        logSendOrSave(false /* save */);
+        mPerformedSendOrDiscard = true;
+    }
+
+
+
+
 
     private void doSave(boolean showToast) {
         sendOrSaveWithSanityChecks(true, showToast, false, false);
@@ -2614,9 +2650,29 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
             }
         }
 
+        // Nazarko Zipolino add check CryptyBox
+
+//        if (mEncryptCheckbox.isChecked() && mCryptoSignatureCheckbox.isChecked()) {
+//            Intent intent = new Intent(OpenPgpApi.ACTION_SIGN_AND_ENCRYPT);
+//            intent.putExtra(OpenPgpApi.EXTRA_USER_IDS, /*emailsArray*/);
+//            executeOpenPgpMethod(intent);
+//        } else if (mCryptoSignatureCheckbox.isChecked()) {
+//            Intent intent = new Intent(OpenPgpApi.ACTION_SIGN);
+//            executeOpenPgpMethod(intent);
+//        } else if (mEncryptCheckbox.isChecked()) {
+//            Intent intent = new Intent(OpenPgpApi.ACTION_ENCRYPT);
+//            intent.putExtra(OpenPgpApi.EXTRA_USER_IDS,/* emailsArray*/);
+//            executeOpenPgpMethod(intent);
+//        }
+
+
+
         sendOrSave(save, showToast);
         return true;
     }
+
+
+
 
     /**
      * Returns a boolean indicating whether warnings should be shown for empty
