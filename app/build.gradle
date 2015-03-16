@@ -26,6 +26,7 @@ android {
     }
 
     dependencies {
+
     compile project(':OpenKeychain')
 
     compile project(':common')
@@ -34,7 +35,7 @@ android {
     compile project(':emailcommon')
 //    compile group: 'com.google.guava', name: 'guava', version: '15.0'
 //    compile 'com.android.support:support-v4:19.0.0'
-    compile 'com.android.support:gridlayout-v7:19.0.0'
+   // compile 'com.android.support:gridlayout-v7:19.0.0'
     compile 'com.android.support:support-v13:19.0.0'
 
 

@@ -54,9 +54,7 @@ public class KeyListActivity extends DrawerActivity {
         setTitle(R.string.nav_keys);
 
         // if this is the first time show first time activity
-
-        //Nazarko Zipolino comment Sphlash  First Activity
-
+//        Delete first start    
 //        Preferences prefs = Preferences.getPreferences(this);
 //        if (prefs.isFirstTime()) {
 //            startActivity(new Intent(this, FirstTimeActivity.class));
@@ -77,15 +75,12 @@ public class KeyListActivity extends DrawerActivity {
         super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.key_list, menu);
 
-        //Nazarko Zipolino clear items menu  in debug mode
-
-
-//        if (Constants.DEBUG) {
-//            menu.findItem(R.id.menu_key_list_debug_cons).setVisible(true);
-//            menu.findItem(R.id.menu_key_list_debug_read).setVisible(true);
-//            menu.findItem(R.id.menu_key_list_debug_write).setVisible(true);
-//            menu.findItem(R.id.menu_key_list_debug_first_time).setVisible(true);
-//        }
+        if (Constants.DEBUG) {
+            menu.findItem(R.id.menu_key_list_debug_cons).setVisible(true);
+            menu.findItem(R.id.menu_key_list_debug_read).setVisible(true);
+            menu.findItem(R.id.menu_key_list_debug_write).setVisible(true);
+            menu.findItem(R.id.menu_key_list_debug_first_time).setVisible(true);
+        }
 
         return true;
     }

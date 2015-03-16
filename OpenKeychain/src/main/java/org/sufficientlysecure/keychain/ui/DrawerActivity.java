@@ -81,15 +81,12 @@ public class DrawerActivity extends ActionBarActivity {
             mIsDrawerLocked = false;
         }
 
-
-        //Nazarko Zipolino delete items in Drawer
         NavItem mItemIconTexts[] = new NavItem[]{
-                new NavItem(R.drawable.ic_action_accounts, getString(R.string.nav_keys))//,
-//                new NavItem(R.drawable.ic_action_secure, getString(R.string.nav_encrypt_text)),
-//                new NavItem(R.drawable.ic_action_secure, getString(R.string.nav_encrypt_files)),
-//                new NavItem(R.drawable.ic_action_not_secure, getString(R.string.nav_decrypt)),
-//                new NavItem(R.drawable.ic_action_view_as_list, getString(R.string.nav_apps))
-        };
+                new NavItem(R.drawable.ic_action_accounts, getString(R.string.nav_keys)),
+                new NavItem(R.drawable.ic_action_secure, getString(R.string.nav_encrypt_text)),
+                new NavItem(R.drawable.ic_action_secure, getString(R.string.nav_encrypt_files)),
+                new NavItem(R.drawable.ic_action_not_secure, getString(R.string.nav_decrypt)),
+                new NavItem(R.drawable.ic_action_view_as_list, getString(R.string.nav_apps))};
 
         mDrawerList.setAdapter(new NavigationDrawerAdapter(this, R.layout.drawer_list_item,
                 mItemIconTexts));

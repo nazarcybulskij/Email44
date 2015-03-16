@@ -19,7 +19,7 @@ android {
 //    compile project(':chips')
 //    compile project (':photoviewer')
         //compile project(':emailcommon')
-        compile group: 'com.google.guava', name: 'guava', version: '15.0'
+        compile group: 'com.google.guava', name: 'guava', version: '10.0'
         compile 'com.android.support:support-v4:19.0.0'
 
     }

@@ -118,7 +118,6 @@ MERGED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified
 MERGED from platform_packages_apps_email:common:unspecified:6:5
 MERGED from platform_packages_apps_email:chips:unspecified:21:5
 MERGED from platform_packages_apps_email:photoviewer:unspecified:22:5
-MERGED from com.android.support:gridlayout-v7:19.0.0:18:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:44:15
 		INJECTED from AndroidManifest.xml:0:0
@@ -171,7 +170,6 @@ MERGED from platform_packages_apps_email.extern:html-textview:unspecified:11:5
 MERGED from platform_packages_apps_email.extern.SuperToasts:supertoasts:unspecified:11:5
 MERGED from platform_packages_apps_email.extern.TokenAutoComplete:library:unspecified:11:5
 MERGED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:36:5
-MERGED from com.android.support:gridlayout-v7:19.0.0:19:5
 	android:requiredAccountType
 		ADDED from AndroidManifest.xml:79:9
 	android:label
@@ -946,7 +944,7 @@ ADDED from platform_packages_apps_email:OpenKeychain:unspecified:84:9
 		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:86:13
 	android:name
 		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:85:13
-intent-filter#android.intent.action.MAIN
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from platform_packages_apps_email:OpenKeychain:unspecified:89:13
 activity#org.sufficientlysecure.keychain.ui.FirstTimeActivity
 ADDED from platform_packages_apps_email:OpenKeychain:unspecified:95:9
