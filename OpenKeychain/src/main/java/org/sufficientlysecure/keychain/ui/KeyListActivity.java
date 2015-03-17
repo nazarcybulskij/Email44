@@ -54,13 +54,12 @@ public class KeyListActivity extends DrawerActivity {
         setTitle(R.string.nav_keys);
 
         // if this is the first time show first time activity
-//        Delete first start    
-//        Preferences prefs = Preferences.getPreferences(this);
-//        if (prefs.isFirstTime()) {
-//            startActivity(new Intent(this, FirstTimeActivity.class));
-//            finish();
-//            return;
-//        }
+        Preferences prefs = Preferences.getPreferences(this);
+        if (prefs.isFirstTime()) {
+            startActivity(new Intent(this, FirstTimeActivity.class));
+            finish();
+            return;
+        }
 
         mExportHelper = new ExportHelper(this);
 
