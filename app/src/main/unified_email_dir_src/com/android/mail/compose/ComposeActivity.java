@@ -26,12 +26,14 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.app.LoaderManager;
+import android.app.PendingIntent;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.CursorLoader;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.content.Loader;
 import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
@@ -107,10 +109,17 @@ import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
+import org.openintents.openpgp.OpenPgpError;
+import org.openintents.openpgp.util.OpenPgpApi;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -277,6 +286,7 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
     private CheckBox mCryptoSignatureCheckbox;
     private CheckBox mEncryptCheckbox;
     private PgpData mPgpData = null;
+    private static final int REQUEST_CODE_SIGN_ENCRYPT = 12;
 
     /**
      * Boolean indicating whether ComposeActivity was launched from a Gmail controlled view.
@@ -2652,24 +2662,123 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
 
         // Nazarko Zipolino add check CryptyBox
 
-//        if (mEncryptCheckbox.isChecked() && mCryptoSignatureCheckbox.isChecked()) {
-//            Intent intent = new Intent(OpenPgpApi.ACTION_SIGN_AND_ENCRYPT);
-//            intent.putExtra(OpenPgpApi.EXTRA_USER_IDS, /*emailsArray*/);
-//            executeOpenPgpMethod(intent);
-//        } else if (mCryptoSignatureCheckbox.isChecked()) {
-//            Intent intent = new Intent(OpenPgpApi.ACTION_SIGN);
-//            executeOpenPgpMethod(intent);
-//        } else if (mEncryptCheckbox.isChecked()) {
-//            Intent intent = new Intent(OpenPgpApi.ACTION_ENCRYPT);
-//            intent.putExtra(OpenPgpApi.EXTRA_USER_IDS,/* emailsArray*/);
-//            executeOpenPgpMethod(intent);
-//        }
+        String[] emailsArray = null;
+        if (mEncryptCheckbox.isChecked()) {
+            // get emails as array
+            List<String> emails = new ArrayList<String>();
 
 
+             emails.add("nazar.cybulskij@indeema.com");
 
+            emailsArray = emails.toArray(new String[emails.size()]);
+        }
+
+
+        if (mEncryptCheckbox.isChecked() && mCryptoSignatureCheckbox.isChecked()) {
+            Intent intent = new Intent(OpenPgpApi.ACTION_SIGN_AND_ENCRYPT);
+            intent.putExtra(OpenPgpApi.EXTRA_USER_IDS, emailsArray);
+            executeOpenPgpMethod(intent);
+        } else if (mCryptoSignatureCheckbox.isChecked()) {
+            Intent intent = new Intent(OpenPgpApi.ACTION_SIGN);
+            executeOpenPgpMethod(intent);
+        } else if (mEncryptCheckbox.isChecked()) {
+            Intent intent = new Intent(OpenPgpApi.ACTION_ENCRYPT);
+            intent.putExtra(OpenPgpApi.EXTRA_USER_IDS, emailsArray);
+            executeOpenPgpMethod(intent);
+        }
         sendOrSave(save, showToast);
         return true;
     }
+
+    private void executeOpenPgpMethod(Intent intent) {
+        intent.putExtra(OpenPgpApi.EXTRA_REQUEST_ASCII_ARMOR, true);
+        // this follows user id format of OpenPGP to allow key generation based on it
+        // includes account number to make it unique
+        //
+        // String accName = OpenPgpApiHelper.buildAccountName(mIdentity);
+        String accName = "<nazar.cybulskij@indeema.com>";
+
+        intent.putExtra(OpenPgpApi.EXTRA_ACCOUNT_NAME, accName);
+
+        final InputStream is = getOpenPgpInputStream();
+
+        final ByteArrayOutputStream os = new ByteArrayOutputStream();
+
+        SignEncryptCallback callback = new SignEncryptCallback(os, REQUEST_CODE_SIGN_ENCRYPT);
+//
+//        OpenPgpApi api = new OpenPgpApi(this, mOpenPgpServiceConnection.getService());
+//        api.executeApiAsync(intent, is, os, callback);
+    }
+
+    private InputStream getOpenPgpInputStream() {
+
+        //String text = buildText(false).getText();
+        String text =" asd ";
+
+        return new ByteArrayInputStream(text.getBytes(Charset.forName("UTF-8")));
+    }
+
+    /**
+     * Called on successful encrypt/verify
+     */
+    private class SignEncryptCallback implements OpenPgpApi.IOpenPgpCallback {
+        ByteArrayOutputStream os;
+        int requestCode;
+
+        private SignEncryptCallback(ByteArrayOutputStream os, int requestCode) {
+            this.os = os;
+            this.requestCode = requestCode;
+        }
+
+        @Override
+        public void onReturn(Intent result) {
+            switch (result.getIntExtra(OpenPgpApi.RESULT_CODE, OpenPgpApi.RESULT_CODE_ERROR)) {
+                case OpenPgpApi.RESULT_CODE_SUCCESS: {
+                    try {
+                        final String output = os.toString("UTF-8");
+                        mPgpData.setEncryptedData(output);
+                        onSend();
+                    } catch (UnsupportedEncodingException e) {
+                        //Log.e(K9.LOG_TAG, "UnsupportedEncodingException", e);
+                    }
+
+                    break;
+                }
+                case OpenPgpApi.RESULT_CODE_USER_INTERACTION_REQUIRED: {
+                    PendingIntent pi = result.getParcelableExtra(OpenPgpApi.RESULT_INTENT);
+                    try {
+                        startIntentSenderForResult(pi.getIntentSender(),
+                                requestCode, null, 0, 0, 0);
+                    } catch (IntentSender.SendIntentException e) {
+                        //Log.e(K9.LOG_TAG, "SendIntentException", e);
+                    }
+                    break;
+                }
+                case OpenPgpApi.RESULT_CODE_ERROR: {
+                    OpenPgpError error = result.getParcelableExtra(OpenPgpApi.RESULT_ERROR);
+                    handleOpenPgpErrors(error);
+                    break;
+                }
+            }
+        }
+    }
+
+    private void handleOpenPgpErrors(final OpenPgpError error) {
+        runOnUiThread(new Runnable() {
+
+            @Override
+            public void run() {
+
+
+                Toast.makeText(ComposeActivity.this,
+                        "))))  " + error.getMessage(),
+                        Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+
+
 
 
 
