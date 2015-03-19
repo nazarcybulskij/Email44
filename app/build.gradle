@@ -33,10 +33,15 @@ android {
     compile project(':chips')
     compile project (':photoviewer')
     compile project(':emailcommon')
+    //compile project(':k9mail-library')
+
 //    compile group: 'com.google.guava', name: 'guava', version: '15.0'
 //    compile 'com.android.support:support-v4:19.0.0'
    // compile 'com.android.support:gridlayout-v7:19.0.0'
     compile 'com.android.support:support-v13:19.0.0'
+    compile 'com.beetstra.jutf7:jutf7:1.0.0'
+
+
 
 
      //compile 'com.android.support:multidex:1.0.0'
