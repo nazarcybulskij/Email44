@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/spongycastle/pg/build/libs/pg-1.51.0.0.jar"
-        jumboMode="true"
-        revision="21.1.2"
-        sha1="53486b33d42f0a2e02f32e40635b563f243440de">
-        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/pg-1.51.0.0-93c9214099334eb6a3086278687866610e33c556.jar" />
-    </item>
-    <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/photoviewer/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -19,15 +12,92 @@
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/photoviewer/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="a70853028d5a84983d6f84eb62572545a04261c8">
+        sha1="d16e79c3f8e8ff134fd455a61a1f693d2a51c095">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-2e6c3afc9ea6da7042573899b1f998fbb372ae63.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/spongycastle/prov/build/libs/prov-1.51.0.0.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="8116f451586526c0251583e5636c6cb5e75b9708">
+        sha1="59ef963bde4dbda29180588a41a1ada850420bdd">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/prov-1.51.0.0-4907d82d6cea0f18eececef317a17dfe95c2797d.jar" />
+    </item>
+    <item
+        jar="/home/nazar/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j-benchmark/0.7.2/e78b97c5f8130289de714a8315b0813355be2bd3/apache-mime4j-benchmark-0.7.2.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="e78b97c5f8130289de714a8315b0813355be2bd3">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/apache-mime4j-benchmark-0.7.2-9f51e97204b968998f06a62f08e16bad5f028493.jar" />
+    </item>
+    <item
+        jar="/home/nazar/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j-examples/0.7.2/c271ac2328a92b70318f1bb3544eea2452b0aab/apache-mime4j-examples-0.7.2.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="0c271ac2328a92b70318f1bb3544eea2452b0aab">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/apache-mime4j-examples-0.7.2-61eaa82890a426fb2120f6297ae5502e043a9a8e.jar" />
+    </item>
+    <item
+        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern.SuperToasts/supertoasts/unspecified/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="91a7b89bd187e88cb005d184c98710eebe2c2d1c">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-a9a8c48ded557eed0c48dbc058bde5336b5b4c29.jar" />
+    </item>
+    <item
+        jar="/home/nazar/adt-bundle-linux/sdk/extras/android/m2repository/com/android/support/support-v13/19.0.0/support-v13-19.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="cc8ccb8ee435883471a5f5856b00f5f86d3f938c">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/support-v13-19.0.0-9e863192c74f2afb9eecab983e020ce723fe780d.jar" />
+    </item>
+    <item
+        jar="/home/nazar/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/10.0/4e65a01f856672857bf8c9ab47de11384d7cc4fa/guava-10.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="4e65a01f856672857bf8c9ab47de11384d7cc4fa">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/guava-10.0-ff8b96b78a4376432f6f1ff36cf02b2aedbaa177.jar" />
+    </item>
+    <item
+        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/spongycastle/pkix/build/libs/pkix-1.51.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="b2bfa1626eb810d9d8cfce46b3027542513ff0d2">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/pkix-1.51.0.0-796f6598424b38d4e66e0efc3bdcd90f905fa9ea.jar" />
+    </item>
+    <item
+        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/openpgp-api-lib/unspecified/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="864462f505e9568e9950d17da7a99af13161468a">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-c9c2351211e45479735aa08748b5ca5facb172a8.jar" />
+    </item>
+    <item
+        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/zxing-android-integration/unspecified/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="3974c8d8815ee9fd1244b91e0051822e79656d9b">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-8a6673305f618e174603ea0f836e44efa33b945f.jar" />
+    </item>
+    <item
+        jar="/home/nazar/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j-dom/0.7.2/1c289aa264548a0a1f1b43685a9cb2ab23f67287/apache-mime4j-dom-0.7.2.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="1c289aa264548a0a1f1b43685a9cb2ab23f67287">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/apache-mime4j-dom-0.7.2-4bc8637dcddb8963ea57a0b73e035d398016371e.jar" />
+    </item>
+    <item
+        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/html-textview/unspecified/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="10210549c3daa708894df2202126dcd8e6ede34b">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-efb95fd4964a6e1055bceca9e10b696f7509530f.jar" />
+    </item>
+    <item
+        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/spongycastle/pg/build/libs/pg-1.51.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="db188d4c7ac56c5d3d38a2865f7cec8980ffd406">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/pg-1.51.0.0-93c9214099334eb6a3086278687866610e33c556.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/common/unspecified/classes.jar"
@@ -40,22 +110,36 @@
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/common/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="02c5a9ff6988b148c53af16d654bd9f175ca1220">
+        sha1="5b1188f6570a15ca80a08c0df1f1dbd6b3a995fd">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-71733a106a8defcaa2838be5a5f50e8871f85a6c.jar" />
+    </item>
+    <item
+        jar="/home/nazar/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j-core/0.7.2/a81264fe0265ebe8fd1d8128aad06dc320de6eef/apache-mime4j-core-0.7.2.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="a81264fe0265ebe8fd1d8128aad06dc320de6eef">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/apache-mime4j-core-0.7.2-ab9f7024ece1b0c0266c700555abfda48559a34d.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/openkeychain-api-lib/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="94198fb76f0cc5f005df6b6ea7410b1fb15532c6">
+        sha1="468aea344fd1a0d18c7dd8ae5eb8721f7e5615c1">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-1775e3b8783f0013b0c4f7ab2873cb318addf21f.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern.TokenAutoComplete/library/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="544735cec127cc382d42a19d8d1d6bb093734dbe">
+        sha1="c7eafe0e2a238c99da28ab262c5089db8b1604ea">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-124a78c8975eff44350e8434a51f7fdfaaf18143.jar" />
+    </item>
+    <item
+        jar="/home/nazar/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j-storage/0.7.2/459fa77616db49c598bd31a111d642c88435246c/apache-mime4j-storage-0.7.2.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="459fa77616db49c598bd31a111d642c88435246c">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/apache-mime4j-storage-0.7.2-95960c8a0085a8aaf551761517081c4ca693d0ac.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
@@ -72,53 +156,32 @@
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-3cb2bc026b344fdb60eb46677d3288bc96088ab9.jar" />
     </item>
     <item
-        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern.SuperToasts/supertoasts/unspecified/classes.jar"
+        jar="/home/nazar/.gradle/caches/modules-2/files-2.1/com.beetstra.jutf7/jutf7/1.0.0/5308ab88a1049e8d75fe3d6c0a9e7b1305dd0520/jutf7-1.0.0.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="e93fa2a3948a8fde146cde16e9f7a76aadaab2ab">
-        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-a9a8c48ded557eed0c48dbc058bde5336b5b4c29.jar" />
-    </item>
-    <item
-        jar="/home/nazar/adt-bundle-linux/sdk/extras/android/m2repository/com/android/support/support-v13/19.0.0/support-v13-19.0.0.jar"
-        jumboMode="true"
-        revision="21.1.2"
-        sha1="cc8ccb8ee435883471a5f5856b00f5f86d3f938c">
-        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/support-v13-19.0.0-9e863192c74f2afb9eecab983e020ce723fe780d.jar" />
+        sha1="5308ab88a1049e8d75fe3d6c0a9e7b1305dd0520">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/jutf7-1.0.0-b1c2e66f9b4d00b16a5c4631461b0f712a3e3c82.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/spongycastle/core/build/libs/core-1.51.0.0.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="c829946f697dbdc2abbd557a618ecb593a3c42fb">
+        sha1="4428da70a1a07565a4acc2ebd0f45d921ba029a4">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/core-1.51.0.0-c427039535e0bf77574a071d2725ea5357c225da.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/emailcommon/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="3227c47f14640b158653e63a4384ce6a284f495d">
+        sha1="9825b755a7ae2809af7243aaaa75f12da85b7735">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-5cce6e353010911d478ca9a6f46cf6fa00893abf.jar" />
-    </item>
-    <item
-        jar="/home/nazar/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/10.0/4e65a01f856672857bf8c9ab47de11384d7cc4fa/guava-10.0.jar"
-        jumboMode="true"
-        revision="21.1.2"
-        sha1="4e65a01f856672857bf8c9ab47de11384d7cc4fa">
-        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/guava-10.0-ff8b96b78a4376432f6f1ff36cf02b2aedbaa177.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/minidns/build/libs/minidns.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="9eb0c0d387536c6893e3f427f3f695faceb378f4">
+        sha1="1444a0a87d9bec7a776abeb9549c184e06d2ab14">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/minidns-5e9a9e6508af54e42201fb57c26de84bad02d406.jar" />
-    </item>
-    <item
-        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/extern/spongycastle/pkix/build/libs/pkix-1.51.0.0.jar"
-        jumboMode="true"
-        revision="21.1.2"
-        sha1="08739461b7a30920e0177d0420811164d85fd1a3">
-        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/pkix-1.51.0.0-796f6598424b38d4e66e0efc3bdcd90f905fa9ea.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/emailcommon/unspecified/classes.jar"
@@ -128,39 +191,32 @@
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-5cce6e353010911d478ca9a6f46cf6fa00893abf.jar" />
     </item>
     <item
-        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/openpgp-api-lib/unspecified/classes.jar"
-        jumboMode="true"
-        revision="21.1.2"
-        sha1="efa3aa94fe7564fc183c0f4876105eb26b0ba1a0">
-        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-c9c2351211e45479735aa08748b5ca5facb172a8.jar" />
-    </item>
-    <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern.StickyListHeaders/library/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="0a730c592b985183cb900f42c07b204736d638f7">
+        sha1="74a558cafbab97cc212b43f067c29476a305e352">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-66228fee5afb0b8ec9ffc3de97b226a1a0ca97bf.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="6d8e734f433a419fb5b7f966607ae342c8459031">
+        sha1="edd6d1b69545df811575984640ccdf7e062b2781">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-1f1244a70d03ead9f2ab65eb30bb0b16a3f380d5.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/chips/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="fff86b742bea94df3d8aea2ac64c0b8e68a461aa">
+        sha1="a0167050205d47cd9f9c921b9305d6c66630da1d">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-376d5df4cfddd09c7e0412d931196a08b5df0f5a.jar" />
     </item>
     <item
-        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/zxing-android-integration/unspecified/classes.jar"
+        jar="/home/nazar/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="cfebe6bc01e04498c41f742493f8db3e3899687c">
-        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-8a6673305f618e174603ea0f836e44efa33b945f.jar" />
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/commons-io-2.4-5267b1120d0c80413ef73791219f3179c4ec092c.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/chips/unspecified/classes.jar"
@@ -173,14 +229,14 @@
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/zxing-qr-code/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="7d65802adf6d3de26fa0a8c990803c7af6ad8d42">
+        sha1="38c1f4120a39e425f7edcd1d6b462744cf4f8413">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-b9a2338c83667765ca4ff79e90badcf8e22f922c.jar" />
     </item>
     <item
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="ac0e7ad41cda437f5ea08ae43289f4b334db8433">
+        sha1="0df15ab4f6a909df293184ee4a929ae0be3f2274">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-1f970b4bdbe47ef1dc3aba7bffc305a4555420c5.jar" />
     </item>
     <item
@@ -194,15 +250,8 @@
         jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern.KeybaseLib/Lib/unspecified/classes.jar"
         jumboMode="true"
         revision="21.1.2"
-        sha1="534580bd1465cb987e2557747075c8ca229a003f">
+        sha1="1356aa6f0f9486abdb6d56de3162fd50131ed982">
         <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-474c1266e068a9fe0ace8eade2544810878426ec.jar" />
-    </item>
-    <item
-        jar="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/html-textview/unspecified/classes.jar"
-        jumboMode="true"
-        revision="21.1.2"
-        sha1="0e02fb799acd819225fcb549fc8e748e72ba9871">
-        <dex dex="/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-efb95fd4964a6e1055bceca9e10b696f7509530f.jar" />
     </item>
 
 </items>

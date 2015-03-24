@@ -14,16 +14,13 @@
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-2e6c3afc9ea6da7042573899b1f998fbb372ae63.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-376d5df4cfddd09c7e0412d931196a08b5df0f5a.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-1f1244a70d03ead9f2ab65eb30bb0b16a3f380d5.jar
-/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/apache-mime4j-core-0.7.2-ab9f7024ece1b0c0266c700555abfda48559a34d.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-b9a2338c83667765ca4ff79e90badcf8e22f922c.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-71733a106a8defcaa2838be5a5f50e8871f85a6c.jar
-/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/commons-io-2.4-5267b1120d0c80413ef73791219f3179c4ec092c.jar
-/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/apache-mime4j-dom-0.7.2-4bc8637dcddb8963ea57a0b73e035d398016371e.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/pg-1.51.0.0-93c9214099334eb6a3086278687866610e33c556.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-6de1043a317d8035e3af6b37ffcb7cadca49b839.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/pkix-1.51.0.0-796f6598424b38d4e66e0efc3bdcd90f905fa9ea.jar
-/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-5cce6e353010911d478ca9a6f46cf6fa00893abf.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-3cb2bc026b344fdb60eb46677d3288bc96088ab9.jar
+/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-5cce6e353010911d478ca9a6f46cf6fa00893abf.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-1f970b4bdbe47ef1dc3aba7bffc305a4555420c5.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/prov-1.51.0.0-4907d82d6cea0f18eececef317a17dfe95c2797d.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/guava-10.0-ff8b96b78a4376432f6f1ff36cf02b2aedbaa177.jar
