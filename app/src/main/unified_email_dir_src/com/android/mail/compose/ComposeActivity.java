@@ -18,7 +18,6 @@ package com.android.mail.compose;
 
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
-import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -26,6 +25,7 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.app.LoaderManager;
+import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
@@ -40,9 +40,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.os.Messenger;
 import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
 import android.provider.BaseColumns;
+import android.support.v4.app.FragmentActivity;
 import android.text.Editable;
 import android.text.Html;
 import android.text.SpannableString;
@@ -64,15 +66,17 @@ import android.view.inputmethod.BaseInputConnection;
 import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.common.Rfc822Validator;
 import com.android.common.contacts.DataUsageStatUpdater;
+import com.android.email_ee.R;
 import com.android.ex.chips.RecipientEditTextView;
 import com.android.mail.MailIntentService;
-import com.android.email_ee.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.browse.MessageHeaderView;
 import com.android.mail.compose.AttachmentsView.AttachmentAddedOrDeletedListener;
@@ -105,6 +109,23 @@ import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
+import org.sufficientlysecure.keychain.Constants;
+import org.sufficientlysecure.keychain.compatibility.ClipboardReflection;
+import org.sufficientlysecure.keychain.operations.results.SignEncryptResult;
+import org.sufficientlysecure.keychain.pgp.KeyRing;
+import org.sufficientlysecure.keychain.service.KeychainIntentService;
+import org.sufficientlysecure.keychain.service.KeychainIntentServiceHandler;
+import org.sufficientlysecure.keychain.ui.EncryptActivityInterface;
+import org.sufficientlysecure.keychain.ui.EncryptAsymmetricFragment;
+import org.sufficientlysecure.keychain.ui.EncryptSymmetricFragment;
+import org.sufficientlysecure.keychain.ui.NfcActivity;
+import org.sufficientlysecure.keychain.ui.PassphraseDialogActivity;
+import org.sufficientlysecure.keychain.ui.util.Notify;
+import org.sufficientlysecure.keychain.ui.widget.KeySpinner;
+import org.sufficientlysecure.keychain.util.Log;
+import org.sufficientlysecure.keychain.util.Preferences;
+import org.sufficientlysecure.keychain.util.ShareHelper;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -112,6 +133,7 @@ import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -119,11 +141,11 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class ComposeActivity extends Activity implements OnClickListener, OnNavigationListener,
+public class ComposeActivity extends FragmentActivity implements OnClickListener, OnNavigationListener,
         RespondInlineListener, TextWatcher,
         AttachmentAddedOrDeletedListener, OnAccountChangedListener,
         LoaderManager.LoaderCallbacks<Cursor>, TextView.OnEditorActionListener,
-        FeedbackEnabledActivity {
+        FeedbackEnabledActivity , EncryptActivityInterface {
     // Identifiers for which type of composition this is
     public static final int COMPOSE = -1;
     public static final int REPLY = 0;
@@ -132,7 +154,11 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
     public static final int EDIT_DRAFT = 3;
 
     // Integer extra holding one of the above compose action
-    protected static final String EXTRA_ACTION = "action";
+    protected static final String EXTRA_ACTION;
+
+    static {
+        EXTRA_ACTION = "action";
+    }
 
     private static final String EXTRA_SHOW_CC = "showCc";
     private static final String EXTRA_SHOW_BCC = "showBcc";
@@ -295,6 +321,10 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
     private boolean mRespondedInline;
     private boolean mPerformedSendOrDiscard = false;
 
+
+    private CheckBox mCryptoSignatureCheckbox;
+    private CheckBox mEncryptCheckbox;
+
     /**
      * Can be called from a non-UI thread.
      */
@@ -435,6 +465,7 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
         mInnerSavedState = (savedInstanceState != null) ?
                 savedInstanceState.getBundle(KEY_INNER_SAVED_STATE) : null;
         checkValidAccounts();
+        //updateModeFragment();
     }
 
     private void finishCreate() {
@@ -1144,10 +1175,63 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
         mQuotedTextView = (QuotedTextView) findViewById(R.id.quoted_text_view);
         mQuotedTextView.setRespondInlineListener(this);
         mBodyView = (EditText) findViewById(R.id.body);
+
+        mBodyView.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+               ComposeActivity.this.setMessage(s.toString());
+            }
+        });
+
+
         mFromStatic = findViewById(R.id.static_from_content);
         mFromStaticText = (TextView) findViewById(R.id.from_account_name);
         mFromSpinnerWrapper = findViewById(R.id.spinner_from_content);
         mFromSpinner = (FromAddressSpinner) findViewById(R.id.from_picker);
+
+        mSign = (KeySpinner) findViewById(org.sufficientlysecure.keychain.R.id.sign);
+        mSign.setOnKeyChangedListener(new KeySpinner.OnKeyChangedListener() {
+            @Override
+            public void onKeyChanged(long masterKeyId) {
+                setSignatureKeyId(masterKeyId);
+            }
+        });
+        mSign.setVisibility(View.INVISIBLE);
+
+        mCryptoSignatureCheckbox = (CheckBox)findViewById(R.id.cb_crypto_signature);
+//        mCryptoSignatureCheckbox.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                updateMessageFormat();
+//            }
+//        });
+
+        mEncryptCheckbox = (CheckBox)findViewById(R.id.cb_encrypt);
+        mEncryptCheckbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked){
+                    mSign.setVisibility(View.VISIBLE);
+
+                }else{
+                    mSign.setVisibility(View.INVISIBLE);
+                }
+
+
+
+                //updateMessageFormat();
+            }
+        });
     }
 
     @Override
@@ -2033,6 +2117,7 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
             doSave(true);
         } else if (id == R.id.send) {
             doSend();
+
         } else if (id == R.id.discard) {
             doDiscard();
         } else if (id == R.id.settings) {
@@ -2081,9 +2166,21 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
     }
 
     private void doSend() {
-        sendOrSaveWithSanityChecks(false, true, false, false);
-        logSendOrSave(false /* save */);
-        mPerformedSendOrDiscard = true;
+//        if (mEncryptCheckbox.isChecked()){
+//            startEncrypt(true);
+//        }else{
+            sendOrSaveWithSanityChecks(false, true, false, false);
+            logSendOrSave(false /* save */);
+            mPerformedSendOrDiscard = true;
+
+       // }
+
+
+
+
+
+
+
     }
 
     private void doSave(boolean showToast) {
@@ -2612,7 +2709,12 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
             }
         }
 
-        sendOrSave(save, showToast);
+       // doSendEncrypt();
+        if (mEncryptCheckbox.isChecked()){
+            startEncrypt(true);
+        }else{
+            sendOrSave(save, showToast);
+        }
         return true;
     }
 
@@ -2673,7 +2775,25 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
     }
 
     private void finishSendConfirmDialog(final boolean save, final boolean showToast) {
-        sendOrSave(save, showToast);
+//
+//        if (){
+//
+//        }
+//
+//        if (mEncryptCheckbox.isChecked()){
+//            startEncrypt(true);
+//        }
+//        else{
+            sendOrSave(save, showToast);
+       // }
+
+
+
+
+
+
+
+
     }
 
     private void showSendConfirmDialog(final int messageId, final boolean save,
@@ -2812,7 +2932,11 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
             return;
         }
 
+
+
         final Spanned body = mBodyView.getEditableText();
+
+
 
         SendOrSaveCallback callback = new SendOrSaveCallback() {
             // FIXME: unused
@@ -3355,6 +3479,7 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
             }
         }
 
+
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
             // Do nothing.
@@ -3484,4 +3609,365 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
     public Context getActivityContext() {
         return this;
     }
+
+
+    private KeySpinner mSign;
+    protected String mSigningKeyPassphrase = null;
+    private boolean mShareAfterEncrypt = false;
+    public static final int REQUEST_CODE_PASSPHRASE = 0x00008001;
+    public static final int REQUEST_CODE_NFC = 0x00008002;
+    protected Date mNfcTimestamp = null;
+    protected byte[] mNfcHash = null;
+    // model used by fragments
+    private long mEncryptionKeyIds[] = null;
+    private String mEncryptionUserIds[] = null;
+    // TODO Constants.key.none? What's wrong with a null value?
+    private long mSigningKeyId = Constants.key.none;
+    private String mMessage = "";
+    private String mPassphrase = "";
+
+    // view
+    private int mCurrentMode = MODE_ASYMMETRIC;
+
+    // tabs
+    private static final int MODE_ASYMMETRIC = 0;
+    private static final int MODE_SYMMETRIC = 1;
+
+    private ArrayList<Uri> mInputUris;
+    private ArrayList<Uri> mOutputUris;
+
+
+    @Override
+    public boolean isUseArmor() {
+        return true;
+    }
+
+    @Override
+    public long getSignatureKey() {
+        return mSigningKeyId;
+    }
+
+    @Override
+    public long[] getEncryptionKeys() {
+        return mEncryptionKeyIds;
+    }
+
+    @Override
+    public String[] getEncryptionUsers() {
+        return mEncryptionUserIds;
+    }
+
+    @Override
+    public void setSignatureKey(long signatureKey) {
+        mSigningKeyId = signatureKey;
+       // notifyUpdate();
+    }
+
+    @Override
+    public void setEncryptionKeys(long[] encryptionKeys) {
+        mEncryptionKeyIds = encryptionKeys;
+        notifyUpdate();
+    }
+
+    @Override
+    public void setEncryptionUsers(String[] encryptionUsers) {
+        mEncryptionUserIds = encryptionUsers;
+        notifyUpdate();
+    }
+
+    @Override
+    public void setPassphrase(String passphrase) {
+        mPassphrase = passphrase;
+    }
+
+    @Override
+    public ArrayList<Uri> getInputUris() {
+        if (mInputUris == null) mInputUris = new ArrayList<Uri>();
+        return mInputUris;
+    }
+
+    @Override
+    public ArrayList<Uri> getOutputUris() {
+        if (mOutputUris == null) mOutputUris = new ArrayList<Uri>();
+        return mOutputUris;
+    }
+
+    @Override
+    public void setInputUris(ArrayList<Uri> uris) {
+        mInputUris = uris;
+        notifyUpdate();
+    }
+
+    @Override
+    public void setOutputUris(ArrayList<Uri> uris) {
+        mOutputUris = uris;
+        notifyUpdate();
+    }
+
+    @Override
+    public String getMessage() {
+        return mMessage;
+    }
+
+    @Override
+    public void setMessage(String message) {
+        mMessage = message;
+    }
+
+    @Override
+    public void notifyUpdate() {
+        for (android.support.v4.app.Fragment fragment : getSupportFragmentManager().getFragments()) {
+            if (fragment instanceof UpdateListener) {
+                ((UpdateListener) fragment).onNotifyUpdate();
+            }
+        }
+    }
+    public void startEncrypt(boolean share) {
+        mShareAfterEncrypt = share;
+        startEncrypt();
+    }
+
+    public void startEncrypt() {
+        if (!inputIsValid()) {
+            // Notify was created by inputIsValid.
+            return;
+        }
+
+        // Send all information needed to service to edit key in other thread
+        Intent intent = new Intent(this, KeychainIntentService.class);
+        intent.setAction(KeychainIntentService.ACTION_SIGN_ENCRYPT);
+        intent.putExtra(KeychainIntentService.EXTRA_DATA, createEncryptBundle());
+
+        // Message is received after encrypting is done in KeychainIntentService
+        KeychainIntentServiceHandler serviceHandler = new KeychainIntentServiceHandler(this,
+                getString(org.sufficientlysecure.keychain.R.string.progress_encrypting), ProgressDialog.STYLE_HORIZONTAL) {
+            public void handleMessage(android.os.Message message) {
+                // handle messages by standard KeychainIntentServiceHandler first
+                super.handleMessage(message);
+
+                if (message.arg1 == KeychainIntentServiceHandler.MESSAGE_OKAY) {
+                    SignEncryptResult pgpResult =
+                            message.getData().getParcelable(SignEncryptResult.EXTRA_RESULT);
+
+                    if (pgpResult.isPending()) {
+                        if ((pgpResult.getResult() & SignEncryptResult.RESULT_PENDING_PASSPHRASE) ==
+                                SignEncryptResult.RESULT_PENDING_PASSPHRASE) {
+                            startPassphraseDialog(pgpResult.getKeyIdPassphraseNeeded());
+                        } else if ((pgpResult.getResult() & SignEncryptResult.RESULT_PENDING_NFC) ==
+                                SignEncryptResult.RESULT_PENDING_NFC) {
+
+                            mNfcTimestamp = pgpResult.getNfcTimestamp();
+                            startNfcSign(pgpResult.getNfcKeyId(), pgpResult.getNfcPassphrase(), pgpResult.getNfcHash(), pgpResult.getNfcAlgo());
+                        } else {
+                            throw new RuntimeException("Unhandled pending result!");
+                        }
+                        return;
+                    }
+
+                    if (pgpResult.success()) {
+                        onEncryptSuccess(message, pgpResult);
+                    } else {
+                        pgpResult.createNotify(ComposeActivity.this).show();
+                    }
+
+                    // no matter the result, reset parameters
+                    mSigningKeyPassphrase = null;
+                    mNfcHash = null;
+                    mNfcTimestamp = null;
+                }
+            }
+        };
+        // Create a new Messenger for the communication back
+        Messenger messenger = new Messenger(serviceHandler);
+        intent.putExtra(KeychainIntentService.EXTRA_MESSENGER, messenger);
+
+        // show progress dialog
+        serviceHandler.showProgressDialog(this);
+
+        // start service with intent
+        startService(intent);
+    }
+
+
+    protected Bundle createEncryptBundle() {
+        // fill values for this action
+        Bundle data = new Bundle();
+
+        data.putInt(KeychainIntentService.TARGET, KeychainIntentService.IO_BYTES);
+        data.putByteArray(KeychainIntentService.ENCRYPT_MESSAGE_BYTES, mMessage.getBytes());
+
+        data.putInt(KeychainIntentService.ENCRYPT_COMPRESSION_ID,
+                Preferences.getPreferences(this).getDefaultMessageCompression());
+
+        // Always use armor for messages
+        data.putBoolean(KeychainIntentService.ENCRYPT_USE_ASCII_ARMOR, true);
+
+        if (isModeSymmetric()) {
+            Log.d(Constants.TAG, "Symmetric encryption enabled!");
+            String passphrase = mPassphrase;
+            if (passphrase.length() == 0) {
+                passphrase = null;
+            }
+            data.putString(KeychainIntentService.ENCRYPT_SYMMETRIC_PASSPHRASE, passphrase);
+        } else {
+            data.putLong(KeychainIntentService.ENCRYPT_SIGNATURE_MASTER_ID, mSigningKeyId);
+            data.putLongArray(KeychainIntentService.ENCRYPT_ENCRYPTION_KEYS_IDS, mEncryptionKeyIds);
+            data.putString(KeychainIntentService.ENCRYPT_SIGNATURE_KEY_PASSPHRASE, mSigningKeyPassphrase);
+            data.putSerializable(KeychainIntentService.ENCRYPT_SIGNATURE_NFC_TIMESTAMP, mNfcTimestamp);
+            data.putByteArray(KeychainIntentService.ENCRYPT_SIGNATURE_NFC_HASH, mNfcHash);
+        }
+        return data;
+    }
+
+    protected void startPassphraseDialog(long subkeyId) {
+        Intent intent = new Intent(this, PassphraseDialogActivity.class);
+        intent.putExtra(PassphraseDialogActivity.EXTRA_SUBKEY_ID, subkeyId);
+        startActivityForResult(intent, REQUEST_CODE_PASSPHRASE);
+    }
+
+
+    protected void onEncryptSuccess(android.os.Message message, SignEncryptResult pgpResult) {
+        if (mShareAfterEncrypt) {
+            // Share encrypted message/file
+            //startActivity(sendWithChooserExcludingEncrypt(message));
+            doSendEncrypt(message);
+
+        } else {
+            // Copy to clipboard
+            copyToClipboard(message);
+           // pgpResult.createNotify(EncryptTextActivity.this).show();
+            // Notify.showNotify(EncryptTextActivity.this,
+            // R.string.encrypt_sign_clipboard_successful, Notify.Style.INFO);
+        }
+    }
+
+    protected void startNfcSign(long keyId, String pin, byte[] hashToSign, int hashAlgo) {
+        // build PendingIntent for Yubikey NFC operations
+        Intent intent = new Intent(this, NfcActivity.class);
+        intent.setAction(NfcActivity.ACTION_SIGN_HASH);
+
+        // pass params through to activity that it can be returned again later to repeat pgp operation
+        intent.putExtra(NfcActivity.EXTRA_DATA, new Intent()); // not used, only relevant to OpenPgpService
+        intent.putExtra(NfcActivity.EXTRA_KEY_ID, keyId);
+        intent.putExtra(NfcActivity.EXTRA_PIN, pin);
+        intent.putExtra(NfcActivity.EXTRA_NFC_HASH_TO_SIGN, hashToSign);
+        intent.putExtra(NfcActivity.EXTRA_NFC_HASH_ALGO, hashAlgo);
+
+        startActivityForResult(intent, REQUEST_CODE_NFC);
+    }
+
+    protected void doSendEncrypt(android.os.Message message){
+
+
+        String text = new String(message.getData().getByteArray(KeychainIntentService.RESULT_BYTES));
+        mBodyView.setText(text);
+        sendOrSave(false,true);
+
+    }
+
+    private Intent sendWithChooserExcludingEncrypt(android.os.Message message) {
+        Intent prototype = createSendIntent(message);
+        String title = getString(org.sufficientlysecure.keychain.R.string.title_share_message);
+
+        // we don't want to encrypt the encrypted, no inception ;)
+        String[] blacklist = new String[]{
+                Constants.PACKAGE_NAME + ".ui.EncryptTextActivity",
+                "org.thialfihar.android.apg.ui.EncryptActivity"
+        };
+
+        return new ShareHelper(this).createChooserExcluding(prototype, title, blacklist);
+    }
+
+    public boolean isModeSymmetric() {
+        return MODE_SYMMETRIC == mCurrentMode;
+    }
+
+    private void copyToClipboard(android.os.Message message) {
+        ClipboardReflection.copyToClipboard(this, new String(message.getData().getByteArray(KeychainIntentService.RESULT_BYTES)));
+    }
+
+    private Intent createSendIntent(android.os.Message message)
+    {
+
+
+        Intent sendIntent;
+        sendIntent = new Intent(Intent.ACTION_SEND);
+        sendIntent.setType("text/plain");
+        String text = new String(message.getData().getByteArray(KeychainIntentService.RESULT_BYTES));
+        sendIntent.putExtra(Intent.EXTRA_TEXT, text);
+
+        if (!isModeSymmetric() && mEncryptionUserIds != null) {
+            Set<String> users = new HashSet<String>();
+            for (String user : mEncryptionUserIds) {
+                String[] userId = KeyRing.splitUserId(user);
+                if (userId[1] != null) {
+                    users.add(userId[1]);
+                }
+            }
+            sendIntent.putExtra(Intent.EXTRA_EMAIL, users.toArray(new String[users.size()]));
+        }
+
+
+
+
+        return sendIntent;
+
+
+
+    }
+
+    protected boolean inputIsValid() {
+        if (mMessage == null) {
+            Notify.showNotify(this, org.sufficientlysecure.keychain.R.string.error_message, Notify.Style.ERROR);
+            return false;
+        }
+
+        if (isModeSymmetric()) {
+            // symmetric encryption checks
+
+            if (mPassphrase == null) {
+                Notify.showNotify(this, org.sufficientlysecure.keychain.R.string.passphrases_do_not_match, Notify.Style.ERROR);
+                return false;
+            }
+            if (mPassphrase.isEmpty()) {
+                Notify.showNotify(this, org.sufficientlysecure.keychain.R.string.passphrase_must_not_be_empty, Notify.Style.ERROR);
+                return false;
+            }
+
+        } else {
+            // asymmetric encryption checks
+
+            boolean gotEncryptionKeys = (mEncryptionKeyIds != null
+                    && mEncryptionKeyIds.length > 0);
+
+            if (!gotEncryptionKeys && mSigningKeyId == 0) {
+                Notify.showNotify(this, org.sufficientlysecure.keychain.R.string.select_encryption_or_signature_key, Notify.Style.ERROR);
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    private void updateModeFragment() {
+        getSupportFragmentManager().beginTransaction()
+                .replace(org.sufficientlysecure.keychain.R.id.encrypt_pager_mode,
+                        mCurrentMode == MODE_SYMMETRIC
+                                ? new EncryptSymmetricFragment()
+                                : new EncryptAsymmetricFragment()
+                )
+                .commitAllowingStateLoss();
+        getSupportFragmentManager().executePendingTransactions();
+    }
+
+
+
+
+    private void setSignatureKeyId(long signatureKeyId) {
+       setSignatureKey(signatureKeyId);
+    }
+
+
+
+
 }

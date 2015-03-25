@@ -64,7 +64,7 @@ public final class R {
 	}
 	public static final class id {
 		public static final int button = 0x7f0c0099;
-		public static final int card_container = 0x7f0c01b1;
+		public static final int card_container = 0x7f0c01b2;
 		public static final int divider = 0x7f0c0270;
 		public static final int message_textview = 0x7f0c026f;
 		public static final int progress_bar = 0x7f0c0271;

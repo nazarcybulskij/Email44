@@ -1415,6 +1415,8 @@ public abstract class AbstractActivityController implements ActivityController,
         } else if (id == android.R.id.home) {
             onUpPressed();
         } else if (id == R.id.compose) {
+            //mActivity.startActivity(new Intent("org.sufficientlysecure.keychain.action.ENCRYPT_TEXT"));
+
             ComposeActivity.compose(mActivity.getActivityContext(), mAccount);
         } else if (id == R.id.refresh) {
             requestFolderRefresh();
