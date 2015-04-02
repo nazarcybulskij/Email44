@@ -15,15 +15,6 @@
     <bool name="show_disabled_archive_menu_item">false</bool>
     <bool name="show_two_pane_search_results">false</bool>
     <bool name="use_expansive_tablet_ui">false</bool>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-sw600dp/values.xml -->
-    <eat-comment/>
-    <dimen name="abc_action_bar_default_height">56dip</dimen>
-    <dimen name="abc_action_bar_icon_vertical_padding">4dip</dimen>
-    <dimen name="abc_action_bar_subtitle_bottom_margin">9dip</dimen>
-    <dimen name="abc_action_bar_subtitle_text_size">14dp</dimen>
-    <dimen name="abc_action_bar_subtitle_top_margin">-3dp</dimen>
-    <dimen name="abc_action_bar_title_text_size">18dp</dimen>
-    <dimen name="abc_config_prefDialogWidth">580dp</dimen>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-sw600dp/dimen.xml -->
     <eat-comment/>
     <dimen name="attachment_tile_max_size">254dp</dimen>
@@ -78,9 +69,6 @@
     <dimen name="super_collapsed_height">39sp</dimen>
     <dimen name="super_collapsed_text_size">16sp</dimen>
     <dimen name="wait_padding">32dp</dimen>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-sw600dp/values.xml -->
-    <eat-comment/>
-    <integer name="abc_max_action_buttons">5</integer>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-sw600dp/constants.xml -->
     <eat-comment/>
     <integer name="conversation_desired_font_size_px">16</integer>

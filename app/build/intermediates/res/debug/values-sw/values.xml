@@ -29,23 +29,6 @@
     <item msgid="320885379869442589" quantity="one">"Hamisha ujumbe"</item>
     <item msgid="371256717624461324" quantity="other">"Hamisha ujumbe"</item>
   </plurals>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-sw/values.xml -->
-    <eat-comment/>
-    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Nenda mwanzo"</string>
-    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Nenda juu"</string>
-    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Chaguo zaidi"</string>
-    <string msgid="4076576682505996667" name="abc_action_mode_done">"Nimemaliza"</string>
-    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Angalia zote"</string>
-    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Chagua programu"</string>
-    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Futa hoja"</string>
-    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Hoja ya utafutaji"</string>
-    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Tafuta"</string>
-    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Wasilisha hoja"</string>
-    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Tafuta kwa kutamka"</string>
-    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Shiriki na:"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Shiriki na %s"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw/strings.xml -->
-    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"Tayari unatumia jina hili la mtumiaji kwa akaunti \"<ns1:g id="DUPLICATE">%s</ns1:g>\"."</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"Akaunti Rudufu"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"Rasimu"</string>
@@ -193,27 +176,11 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"Inapakia orodha ya folda…"</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"Unaweza kufungua akaunti yako kwa hatua chache tu."</string>
     <string msgid="5815426892327290362" name="app_name">"Barua pepe"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sw/values.xml -->
-    <eat-comment/>
-    <string name="ask_QuitConfirmation">Kuacha? Je, una uhakika?</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw/strings.xml -->
-    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"Haikuweza kupakia kiambatisho hiki."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sw/values.xml -->
-    <eat-comment/>
-    <string name="btn_Match">Next</string>
-    <string name="btn_NoMatch">Hakuna mechi</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw/strings.xml -->
-    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"Ghairi"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"Haiwezi kuhamisha. Uteuzi una akaunti mbalimbali."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"Uhamishaji hauauniwi kwenye akaunti za POP3."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"Ujumbe katika Rasimu, Kikasha toezi na Zilizotumwa haziwezi kuhamishwa."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sw/values.xml -->
-    <eat-comment/>
-    <string name="choice_NumUsers">%d watumiaji</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw/strings.xml -->
-    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"Inatuma mwitikio…"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-sw/strings.xml -->
     <eat-comment/>
@@ -233,28 +200,6 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"Nimemaliza"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"Jibu la haraka"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sw/values.xml -->
-    <eat-comment/>
-    <string name="error_AllMembersMustUpgrade">Baadhi ya wanachama ni kutumia toleo la wazee, wanachama wote lazima kuboresha na toleo newest.</string>
-    <string name="error_AllMembersMustUpgradeBadPushToken">Wanachama wote lazima kuboresha, baadhi ni kutumia wakubwa muundo usajili kushinikiza.</string>
-    <string name="error_CorrectYourInternetConnection">Internet si inapatikana, angalia mipangilio yako.</string>
-    <string name="error_ExchangeProtocolTimeoutExceeded">Exchange umeisha ulizidi. Kuanza kubadilishana tena.</string>
-    <string name="error_HttpCode">Server HTTP Error: %d</string>
-    <string name="error_InvalidCommitVerify">Data sio sahihi kupatikana katika kubadilishana. Kuanza kubadilishana tena.</string>
-    <string name="error_InvalidCommonUserId">Tafadhali kuingia integer chanya.</string>
-    <string name="error_LocalGroupCommitDiffer">Una taarifa tofauti katika maneno. Kuanza kubadilishana tena.</string>
-    <string name="error_MinUsersRequired">Kiwango cha chini ya %d wanachama wanatakiwa kubadilishana data.</string>
-    <string name="error_MoreDataThanUsers">Data Unexpected kupatikana katika kubadilishana. Kuanza kubadilishana tena.</string>
-    <string name="error_NoDataToExchange">Kubadilishana ni kukosa data required.</string>
-    <string name="error_NoWordListSelected">Lazima kuchagua moja ya maneno kabla ya kuendelea.</string>
-    <string name="error_OtherGroupCommitDiffer">Mtu taarifa tofauti katika maneno. Kuanza kubadilishana tena.</string>
-    <string name="error_OutOfMemoryError">Kumbukumbu ni ya chini sana kukamilisha kazi hii.</string>
-    <string name="error_ServerAppMessage">Server Ujumbe: %s</string>
-    <string name="error_ServerNotResponding">Hakuna majibu kutoka server.</string>
-    <string name="error_TimeoutWaitingForAllMembers">Timeout kusubiri kwa baadhi ya wanakikundi kuongeza data.</string>
-    <string name="error_WebCancelledByUser">User imesitisha ombi server.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw/strings.xml -->
-    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"Shirika"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-sw/strings.xml -->
@@ -277,25 +222,7 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"Ndogo"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"Dogo sana"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"Mipangilio ya kawaida"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sw/values.xml -->
-    <eat-comment/>
-    <string name="help_size">Kuchagua idadi ya watu ambao ni kujaribu kubadilishana data pamoja na vyombo vya habari OK.</string>
-    <string name="help_userid">Idadi hii kwenye screen hii ni kutumika kujenga kundi kipekee ya watumiaji. Mapitio namba kwenye skrini watumiaji \'wote, basi watumiaji wote wanapaswa kuingia huo na idadi ya chini na vyombo vya habari OK.</string>
-    <string name="help_verify">Sasa, lazima mechi mmoja wa haya 3-neno maneno na watumiaji wote. Kila mtumiaji lazima kuchagua moja ya kawaida ya maneno, na waandishi wa habari Next.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw/strings.xml -->
-    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sw/values.xml -->
-    <eat-comment/>
-    <string name="label_CompareScreensNDevices">Kulinganisha skrini juu ya vifaa %s.</string>
-    <string name="label_NumericModeHint">Yasiyo ya Kiingereza</string>
-    <string name="label_PromptInstruct">Idadi hii ni kutumika kujenga kundi kipekee ya watumiaji. Kulinganisha, na kisha kuingia idadi ya chini kati ya watumiaji wote.</string>
-    <string name="label_ReceivedNItems">kupokea vitu %d</string>
-    <string name="label_UserIdHint">Chini</string>
-    <string name="label_VerifyInstruct">Zote za lazima mechi moja ya 3-neno maneno. Kulinganisha, na kisha kuchukua vinavyolingana maneno.</string>
-    <string name="lib_name">SafeSlinger Exchange</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw/strings.xml -->
-    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"Kuingia <ns1:g id="ACCOUNT_NAME">%s</ns1:g> hakujafaulu."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"Haikuweza kuingia"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"Vikasha vyote kwa pamoja"</string>
@@ -354,14 +281,6 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"Picha ya mtumaji"</string>
     <string msgid="5181616311579820981" name="previous_action">"Iliyotangulia"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sw/values.xml -->
-    <eat-comment/>
-    <string name="prog_CollectingOthersCommitVerify">kusubiri kwa ajili ya ukaguzi kutoka kwa wanachama wote…</string>
-    <string name="prog_CollectingOthersItems">kusubiri kwa watumiaji wote kujiunga…</string>
-    <string name="prog_ConstructingGroupKey">ujenzi wa kundi muhimu…</string>
-    <string name="prog_RequestingUserId">kuomba uanachama…</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw/strings.xml -->
-    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"Akaunti zingine za \"Plus\" tu ndizo zinazojumuisha ufikivu wa POP na kwa hivyo kuruhusu programu hii kuunganisha. Kama hauwezi kuingia kwa kutumia anwani yako ya barua pepe na nenosiri lako sahihi, huenda usiwe na akaunti iliyolipiwa ya \"Plus\". Tafadhali zindua Kivinjari cha Wavuti ili uweze kufikia akaunti hizi za barua pepe."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"Kabla ya kusanidi akaunti ya barua pepe hii, tembelea wavuti ya T-Online na unda nenosiri ya ufikivu wa barua pepe ya POP3."</string>
     <string msgid="3426057697353380951" name="quick_1">"Asante!"</string>
@@ -394,12 +313,5 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"Chagua folda yako ya taka ya seva"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"Chagua folda yako ya taka ya seva"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"Folda ya taka"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-sw/values.xml -->
-    <eat-comment/>
-    <string name="title_size">Jinsi watumiaji badala wengi?</string>
-    <string name="title_userid">Kambi</string>
-    <string name="title_verify">Kuthibitisha</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-sw/strings.xml -->
-    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"Chagua folda ya taka ya seva kwa ajili ya <ns1:g id="ACCOUNT">%s</ns1:g>"</string>
 </resources>

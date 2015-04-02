@@ -46,5 +46,8 @@
     <include layout="@layout/conversation_message_upper_header_text" />
     <include layout="@layout/conversation_message_upper_header_actions" />
 
+
+
+
 </LinearLayout>
 <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/layout/conversation_message_upper_header.xml -->

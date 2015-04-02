@@ -21,5 +21,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:background="@android:color/white" >
+
+
 </FrameLayout>
 <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/layout/eml_viewer_activity.xml -->

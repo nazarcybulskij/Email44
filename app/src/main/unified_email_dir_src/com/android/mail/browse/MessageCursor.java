@@ -65,6 +65,7 @@ public class MessageCursor extends ObjectCursor<ConversationMessage> {
 
     public ConversationMessage getMessage() {
         final ConversationMessage m = getModel();
+
         // ALWAYS set up each ConversationMessage with the latest controller.
         // Rotation invalidates everything except this Cursor, its Loader and the cached Messages,
         // so if we want to continue using them after rotate, we have to ensure their controller

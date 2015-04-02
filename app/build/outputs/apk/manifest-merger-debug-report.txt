@@ -23,8 +23,6 @@ ADDED from AndroidManifest.xml:23:5
 		ADDED from AndroidManifest.xml:23:22
 uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:24:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:64:5
-MERGED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:34:5
 	android:name
 		ADDED from AndroidManifest.xml:24:22
 uses-permission#android.permission.VIBRATE
@@ -33,42 +31,34 @@ ADDED from AndroidManifest.xml:25:5
 		ADDED from AndroidManifest.xml:25:22
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:26:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:65:5
 	android:name
 		ADDED from AndroidManifest.xml:26:22
 uses-permission#android.permission.GET_ACCOUNTS
 ADDED from AndroidManifest.xml:27:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:67:5
 	android:name
 		ADDED from AndroidManifest.xml:27:22
 uses-permission#android.permission.MANAGE_ACCOUNTS
 ADDED from AndroidManifest.xml:28:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:69:5
 	android:name
 		ADDED from AndroidManifest.xml:28:22
 uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
 ADDED from AndroidManifest.xml:29:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:68:5
 	android:name
 		ADDED from AndroidManifest.xml:29:22
 uses-permission#android.permission.READ_SYNC_SETTINGS
 ADDED from AndroidManifest.xml:30:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:70:5
 	android:name
 		ADDED from AndroidManifest.xml:30:22
 uses-permission#android.permission.WRITE_SYNC_SETTINGS
 ADDED from AndroidManifest.xml:31:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:71:5
 	android:name
 		ADDED from AndroidManifest.xml:31:22
 uses-permission#android.permission.WRITE_CONTACTS
 ADDED from AndroidManifest.xml:32:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:73:5
 	android:name
 		ADDED from AndroidManifest.xml:32:22
 uses-permission#android.permission.READ_CONTACTS
 ADDED from AndroidManifest.xml:33:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:72:5
 	android:name
 		ADDED from AndroidManifest.xml:33:22
 uses-permission#android.permission.READ_CALENDAR
@@ -81,12 +71,10 @@ ADDED from AndroidManifest.xml:36:5
 		ADDED from AndroidManifest.xml:36:22
 uses-permission#android.permission.READ_PROFILE
 ADDED from AndroidManifest.xml:37:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:74:5
 	android:name
 		ADDED from AndroidManifest.xml:37:22
 uses-permission#android.permission.NFC
 ADDED from AndroidManifest.xml:38:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:66:5
 	android:name
 		ADDED from AndroidManifest.xml:38:22
 uses-permission#android.permission.WAKE_LOCK
@@ -103,18 +91,6 @@ ADDED from AndroidManifest.xml:41:5
 		ADDED from AndroidManifest.xml:41:22
 uses-sdk
 ADDED from AndroidManifest.xml:44:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:9:5
-MERGED from com.android.support:appcompat-v7:19.1.0:18:5
-MERGED from platform_packages_apps_email.extern:openpgp-api-lib:unspecified:7:5
-MERGED from platform_packages_apps_email.extern:openkeychain-api-lib:unspecified:7:5
-MERGED from platform_packages_apps_email.extern:html-textview:unspecified:7:5
-MERGED from platform_packages_apps_email.extern.StickyListHeaders:library:unspecified:7:5
-MERGED from platform_packages_apps_email.extern:zxing-qr-code:unspecified:7:5
-MERGED from platform_packages_apps_email.extern:zxing-android-integration:unspecified:7:5
-MERGED from platform_packages_apps_email.extern.SuperToasts:supertoasts:unspecified:7:5
-MERGED from platform_packages_apps_email.extern.KeybaseLib:Lib:unspecified:7:5
-MERGED from platform_packages_apps_email.extern.TokenAutoComplete:library:unspecified:7:5
-MERGED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:30:5
 MERGED from platform_packages_apps_email:common:unspecified:6:5
 MERGED from platform_packages_apps_email:chips:unspecified:21:5
 MERGED from platform_packages_apps_email:photoviewer:unspecified:22:5
@@ -162,36 +138,22 @@ ADDED from AndroidManifest.xml:65:5
 		ADDED from AndroidManifest.xml:66:9
 application
 ADDED from AndroidManifest.xml:73:5
-MERGED from platform_packages_apps_email:OpenKeychain:unspecified:77:5
-MERGED from com.android.support:appcompat-v7:19.1.0:19:5
-MERGED from platform_packages_apps_email.extern:openpgp-api-lib:unspecified:11:5
-MERGED from platform_packages_apps_email.extern:openkeychain-api-lib:unspecified:11:5
-MERGED from platform_packages_apps_email.extern:html-textview:unspecified:11:5
-MERGED from platform_packages_apps_email.extern.SuperToasts:supertoasts:unspecified:11:5
-MERGED from platform_packages_apps_email.extern.TokenAutoComplete:library:unspecified:11:5
-MERGED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:36:5
 	android:requiredAccountType
 		ADDED from AndroidManifest.xml:79:9
 	android:label
 		ADDED from AndroidManifest.xml:78:9
-		REJECTED from platform_packages_apps_email:OpenKeychain:unspecified:82:9
 	android:supportsRtl
 		ADDED from AndroidManifest.xml:82:9
 	android:hardwareAccelerated
 		ADDED from AndroidManifest.xml:81:9
 	android:icon
 		ADDED from AndroidManifest.xml:77:9
-		REJECTED from platform_packages_apps_email:OpenKeychain:unspecified:81:9
-	android:allowBackup
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:79:9
 	android:theme
 		ADDED from AndroidManifest.xml:80:9
-		REJECTED from platform_packages_apps_email:OpenKeychain:unspecified:83:9
 	tools:replace
 		ADDED from AndroidManifest.xml:74:9
 	android:name
 		ADDED from AndroidManifest.xml:75:9
-		REJECTED from platform_packages_apps_email:OpenKeychain:unspecified:78:9
 meta-data#android.app.default_searchable
 ADDED from AndroidManifest.xml:84:9
 	android:value
@@ -815,578 +777,86 @@ ADDED from AndroidManifest.xml:648:9
 	android:name
 		ADDED from AndroidManifest.xml:649:13
 service#com.android.email_ee.service.LegacyEasAuthenticatorService
-ADDED from AndroidManifest.xml:663:9
+ADDED from AndroidManifest.xml:665:9
 	android:enabled
+		ADDED from AndroidManifest.xml:668:13
+	android:exported
+		ADDED from AndroidManifest.xml:667:13
+	android:name
 		ADDED from AndroidManifest.xml:666:13
-	android:exported
-		ADDED from AndroidManifest.xml:665:13
-	android:name
-		ADDED from AndroidManifest.xml:664:13
 service#com.android.email_ee.EmailIntentService
-ADDED from AndroidManifest.xml:678:9
+ADDED from AndroidManifest.xml:680:9
 	android:exported
-		ADDED from AndroidManifest.xml:679:18
+		ADDED from AndroidManifest.xml:681:18
 	android:name
-		ADDED from AndroidManifest.xml:678:18
+		ADDED from AndroidManifest.xml:680:18
 intent-filter#android.intent.action.LOCALE_CHANGED+com.android.mail.action.RESEND_NOTIFICATIONS
-ADDED from AndroidManifest.xml:680:13
+ADDED from AndroidManifest.xml:682:13
 action#android.intent.action.LOCALE_CHANGED
-ADDED from AndroidManifest.xml:681:17
+ADDED from AndroidManifest.xml:683:17
 	android:name
-		ADDED from AndroidManifest.xml:681:25
+		ADDED from AndroidManifest.xml:683:25
 action#com.android.mail.action.RESEND_NOTIFICATIONS
-ADDED from AndroidManifest.xml:682:17
+ADDED from AndroidManifest.xml:684:17
 	android:name
-		ADDED from AndroidManifest.xml:682:25
+		ADDED from AndroidManifest.xml:684:25
 intent-filter#com.android.mail.action.CLEAR_NEW_MAIL_NOTIFICATIONS
-ADDED from AndroidManifest.xml:684:13
+ADDED from AndroidManifest.xml:686:13
 action#com.android.mail.action.CLEAR_NEW_MAIL_NOTIFICATIONS
-ADDED from AndroidManifest.xml:685:17
+ADDED from AndroidManifest.xml:687:17
 	android:name
-		ADDED from AndroidManifest.xml:685:25
+		ADDED from AndroidManifest.xml:687:25
 service#com.android.mail.NotificationActionIntentService
-ADDED from AndroidManifest.xml:690:9
+ADDED from AndroidManifest.xml:692:9
 	android:exported
-		ADDED from AndroidManifest.xml:691:19
+		ADDED from AndroidManifest.xml:693:19
 	android:name
-		ADDED from AndroidManifest.xml:690:18
+		ADDED from AndroidManifest.xml:692:18
 intent-filter#com.android.mail.action.notification.ARCHIVE+com.android.mail.action.notification.DELETE+com.android.mail.action.notification.DESTRUCT+com.android.mail.action.notification.FORWARD+com.android.mail.action.notification.MARK_READ+com.android.mail.action.notification.REPLY+com.android.mail.action.notification.REPLY_ALL+com.android.mail.action.notification.UNDO+com.android.mail.action.notification.UNDO_TIMEOUT
-ADDED from AndroidManifest.xml:692:13
+ADDED from AndroidManifest.xml:694:13
 action#com.android.mail.action.notification.MARK_READ
-ADDED from AndroidManifest.xml:693:17
-	android:name
-		ADDED from AndroidManifest.xml:693:25
-action#com.android.mail.action.notification.ARCHIVE
-ADDED from AndroidManifest.xml:694:17
-	android:name
-		ADDED from AndroidManifest.xml:694:25
-action#com.android.mail.action.notification.DELETE
 ADDED from AndroidManifest.xml:695:17
 	android:name
 		ADDED from AndroidManifest.xml:695:25
-action#com.android.mail.action.notification.UNDO
+action#com.android.mail.action.notification.ARCHIVE
 ADDED from AndroidManifest.xml:696:17
 	android:name
 		ADDED from AndroidManifest.xml:696:25
-action#com.android.mail.action.notification.DESTRUCT
+action#com.android.mail.action.notification.DELETE
 ADDED from AndroidManifest.xml:697:17
 	android:name
 		ADDED from AndroidManifest.xml:697:25
-action#com.android.mail.action.notification.UNDO_TIMEOUT
+action#com.android.mail.action.notification.UNDO
 ADDED from AndroidManifest.xml:698:17
 	android:name
 		ADDED from AndroidManifest.xml:698:25
-action#com.android.mail.action.notification.REPLY
+action#com.android.mail.action.notification.DESTRUCT
 ADDED from AndroidManifest.xml:699:17
 	android:name
 		ADDED from AndroidManifest.xml:699:25
-action#com.android.mail.action.notification.REPLY_ALL
+action#com.android.mail.action.notification.UNDO_TIMEOUT
 ADDED from AndroidManifest.xml:700:17
 	android:name
 		ADDED from AndroidManifest.xml:700:25
-action#com.android.mail.action.notification.FORWARD
+action#com.android.mail.action.notification.REPLY
 ADDED from AndroidManifest.xml:701:17
 	android:name
 		ADDED from AndroidManifest.xml:701:25
-service#com.android.mail.MailLogService
-ADDED from AndroidManifest.xml:704:9
+action#com.android.mail.action.notification.REPLY_ALL
+ADDED from AndroidManifest.xml:702:17
 	android:name
-		ADDED from AndroidManifest.xml:704:18
-service#com.android.mail.browse.EmlTempFileDeletionService
+		ADDED from AndroidManifest.xml:702:25
+action#com.android.mail.action.notification.FORWARD
+ADDED from AndroidManifest.xml:703:17
+	android:name
+		ADDED from AndroidManifest.xml:703:25
+service#com.android.mail.MailLogService
 ADDED from AndroidManifest.xml:706:9
 	android:name
 		ADDED from AndroidManifest.xml:706:18
-uses-feature#android.hardware.wifi
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:44:5
-	android:required
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:46:9
+service#com.android.mail.browse.EmlTempFileDeletionService
+ADDED from AndroidManifest.xml:708:9
 	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:45:9
-uses-feature#android.hardware.telephony
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:47:5
-	android:required
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:49:9
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:48:9
-uses-feature#android.hardware.microphone
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:50:5
-	android:required
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:52:9
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:51:9
-uses-feature#android.hardware.touchscreen
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:53:5
-	android:required
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:55:9
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:54:9
-uses-feature#android.hardware.screen.portrait
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:57:5
-	android:required
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:59:9
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:58:9
-permission#org.sufficientlysecure.keychain.WRITE_TEMPORARY_STORAGE
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:61:5
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:61:17
-uses-permission#org.sufficientlysecure.keychain.WRITE_TEMPORARY_STORAGE
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:63:5
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:63:22
-activity#org.sufficientlysecure.keychain.ui.KeyListActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:84:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:87:13
-	android:launchMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:88:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:86:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:85:13
-intent-filter#android.intent.action.MAIN
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:89:13
-activity#org.sufficientlysecure.keychain.ui.FirstTimeActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:95:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:98:13
-	android:windowSoftInputMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:99:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:97:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:96:13
-activity#org.sufficientlysecure.keychain.ui.CreateKeyActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:100:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:103:13
-	android:parentActivityName
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:104:13
-	android:windowSoftInputMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:105:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:102:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:101:13
-meta-data#android.support.PARENT_ACTIVITY
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:106:13
-	android:value
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:108:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:107:17
-activity#org.sufficientlysecure.keychain.ui.EditKeyActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:110:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:113:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:112:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:111:13
-activity#org.sufficientlysecure.keychain.ui.QrCodeViewActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:114:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:117:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:116:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:115:13
-activity#org.sufficientlysecure.keychain.ui.ViewKeyActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:118:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:121:13
-	android:parentActivityName
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:122:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:120:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:119:13
-activity#org.sufficientlysecure.keychain.ui.ViewCertActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:135:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:138:13
-	android:parentActivityName
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:139:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:137:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:136:13
-activity#org.sufficientlysecure.keychain.ui.SafeSlingerActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:144:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:147:13
-	android:parentActivityName
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:148:13
-	android:windowSoftInputMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:149:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:146:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:145:13
-activity#org.sufficientlysecure.keychain.ui.SelectPublicKeyActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:154:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:157:13
-	android:launchMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:158:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:156:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:155:13
-activity#org.sufficientlysecure.keychain.ui.EncryptFilesActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:159:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:162:13
-	android:windowSoftInputMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:163:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:161:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:160:13
-intent-filter#android.intent.category.DEFAULT+org.sufficientlysecure.keychain.action.ENCRYPT_DATA
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:167:13
-action#org.sufficientlysecure.keychain.action.ENCRYPT_DATA
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:168:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:168:25
-intent-filter#android.intent.action.SEND+android.intent.action.SEND_MULTIPLE+android.intent.category.DEFAULT
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:175:13
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:175:28
-activity#org.sufficientlysecure.keychain.ui.EncryptTextActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:189:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:192:13
-	android:windowSoftInputMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:193:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:191:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:190:13
-intent-filter#android.intent.category.DEFAULT+org.sufficientlysecure.keychain.action.ENCRYPT_TEXT
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:197:13
-action#org.sufficientlysecure.keychain.action.ENCRYPT_TEXT
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:198:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:198:25
-activity#org.sufficientlysecure.keychain.ui.DecryptActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:212:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:215:13
-	android:windowSoftInputMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:216:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:214:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:213:13
-activity#org.sufficientlysecure.keychain.ui.DecryptTextActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:217:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:220:13
-	android:parentActivityName
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:221:13
-	android:windowSoftInputMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:222:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:219:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:218:13
-intent-filter#android.intent.category.DEFAULT+org.sufficientlysecure.keychain.action.DECRYPT_TEXT
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:229:13
-action#org.sufficientlysecure.keychain.action.DECRYPT_TEXT
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:230:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:230:25
-activity#org.sufficientlysecure.keychain.ui.DecryptFilesActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:244:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:247:13
-	android:parentActivityName
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:248:13
-	android:windowSoftInputMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:249:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:246:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:245:13
-intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:255:13
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:255:28
-intent-filter#android.intent.category.DEFAULT+org.sufficientlysecure.keychain.action.DECRYPT_DATA
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:277:13
-action#org.sufficientlysecure.keychain.action.DECRYPT_DATA
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:278:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:278:25
-activity#org.sufficientlysecure.keychain.ui.UploadKeyActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:416:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:419:13
-	android:parentActivityName
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:420:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:418:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:417:13
-activity#org.sufficientlysecure.keychain.ui.ViewKeyAdvancedActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:425:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:428:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:427:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:426:13
-activity#org.sufficientlysecure.keychain.ui.PreferencesActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:430:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:433:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:432:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:431:13
-intent-filter#android.intent.category.DEFAULT+org.sufficientlysecure.keychain.ui.PREFS_GEN
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:434:13
-action#org.sufficientlysecure.keychain.ui.PREFS_GEN
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:435:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:435:25
-intent-filter#android.intent.category.DEFAULT+org.sufficientlysecure.keychain.ui.PREFS_ADV
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:439:13
-action#org.sufficientlysecure.keychain.ui.PREFS_ADV
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:440:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:440:25
-activity#org.sufficientlysecure.keychain.ui.PreferencesKeyServerActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:445:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:448:13
-	android:windowSoftInputMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:449:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:447:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:446:13
-activity#org.sufficientlysecure.keychain.ui.CertifyKeyActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:450:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:453:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:452:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:451:13
-activity#org.sufficientlysecure.keychain.ui.QrCodeScanActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:458:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:461:13
-	android:windowSoftInputMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:463:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:460:13
-	android:theme
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:462:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:459:13
-intent-filter#android.intent.category.DEFAULT+org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_QR_CODE
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:483:13
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:483:28
-action#org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_QR_CODE
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:484:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:484:25
-activity#org.sufficientlysecure.keychain.ui.ImportKeysActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:489:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:492:13
-	android:launchMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:493:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:491:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:490:13
-intent-filter#android.intent.category.DEFAULT+org.sufficientlysecure.keychain.action.IMPORT_KEY
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:639:13
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:639:28
-action#org.sufficientlysecure.keychain.action.IMPORT_KEY
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:640:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:640:25
-intent-filter#android.intent.category.DEFAULT+org.sufficientlysecure.keychain.action.IMPORT_KEY+org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEYSERVER
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:655:13
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:655:28
-action#org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEYSERVER
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:657:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:657:25
-activity#org.sufficientlysecure.keychain.ui.ConsolidateDialogActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:666:9
-	android:theme
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:668:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:667:13
-activity#org.sufficientlysecure.keychain.ui.PassphraseDialogActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:669:9
-	android:theme
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:671:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:670:13
-activity#org.sufficientlysecure.keychain.ui.NfcActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:679:9
-	android:launchMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:682:13
-	android:allowTaskReparenting
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:681:13
-	android:taskAffinity
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:683:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:680:13
-activity#org.sufficientlysecure.keychain.ui.HelpActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:697:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:699:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:698:13
-service#org.sufficientlysecure.keychain.service.PassphraseCacheService
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:702:9
-	android:process
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:705:13
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:704:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:703:13
-service#org.sufficientlysecure.keychain.service.KeychainIntentService
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:706:9
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:708:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:707:13
-provider#org.sufficientlysecure.keychain.provider.KeychainProvider
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:710:9
-	android:authorities
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:712:13
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:713:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:711:13
-activity#org.sufficientlysecure.keychain.remote.ui.RemoteServiceActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:716:9
-	android:process
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:721:13
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:719:13
-	android:launchMode
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:720:13
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:718:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:717:13
-activity#org.sufficientlysecure.keychain.remote.ui.AppsListActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:722:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:726:13
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:725:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:724:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:723:13
-activity#org.sufficientlysecure.keychain.remote.ui.AppSettingsActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:727:9
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:730:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:729:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:728:13
-activity#org.sufficientlysecure.keychain.remote.ui.AccountSettingsActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:735:9
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:738:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:737:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:736:13
-service#org.sufficientlysecure.keychain.remote.OpenPgpService
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:744:9
-	android:enabled
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:746:13
-	android:process
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:748:13
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:747:13
-	tools:ignore
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:749:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:745:13
-intent-filter#org.openintents.openpgp.IOpenPgpService
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:750:13
-action#org.openintents.openpgp.IOpenPgpService
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:751:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:751:25
-activity#org.sufficientlysecure.keychain.ui.LogDisplayActivity
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:755:9
-	android:label
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:759:13
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:758:13
-	android:configChanges
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:757:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:756:13
-service#org.sufficientlysecure.keychain.service.DummyAccountService
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:761:9
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:761:18
-service#org.sufficientlysecure.keychain.service.ContactSyncAdapterService
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:770:9
-	android:process
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:773:13
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:772:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:771:13
-meta-data#android.provider.CONTACTS_STRUCTURE
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:781:13
-	android:resource
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:783:17
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:782:17
-provider#org.sufficientlysecure.keychain.provider.TemporaryStorageProvider
-ADDED from platform_packages_apps_email:OpenKeychain:unspecified:786:9
-	android:authorities
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:788:13
-	android:exported
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:789:13
-	android:name
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:787:13
-	android:writePermission
-		ADDED from platform_packages_apps_email:OpenKeychain:unspecified:790:13
+		ADDED from AndroidManifest.xml:708:18
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from AndroidManifest.xml:17:1 reason: org.sufficientlysecure.keychain requested WRITE_EXTERNAL_STORAGE
-activity#edu.cmu.cylab.starslinger.exchange.ExchangeActivity
-ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:37:9
-	android:screenOrientation
-		ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:40:13
-	android:label
-		ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:39:13
-	android:name
-		ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:38:13
-activity#edu.cmu.cylab.starslinger.exchange.GroupingActivity
-ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:42:9
-	android:screenOrientation
-		ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:45:13
-	android:label
-		ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:44:13
-	android:name
-		ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:43:13
-activity#edu.cmu.cylab.starslinger.exchange.VerifyActivity
-ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:47:9
-	android:screenOrientation
-		ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:50:13
-	android:label
-		ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:49:13
-	android:name
-		ADDED from platform_packages_apps_email.extern:safeslinger-exchange:unspecified:48:13
+IMPLIED from AndroidManifest.xml:17:1 reason: com.android.emailcommon requested WRITE_EXTERNAL_STORAGE

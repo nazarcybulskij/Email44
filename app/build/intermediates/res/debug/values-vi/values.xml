@@ -29,23 +29,6 @@
     <item msgid="320885379869442589" quantity="one">"Di chuyển thư"</item>
     <item msgid="371256717624461324" quantity="other">"Di chuyển thư"</item>
   </plurals>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-vi/values.xml -->
-    <eat-comment/>
-    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Điều hướng về trang chủ"</string>
-    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Điều hướng lên trên"</string>
-    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Thêm tùy chọn"</string>
-    <string msgid="4076576682505996667" name="abc_action_mode_done">"Xong"</string>
-    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Xem tất cả"</string>
-    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Chọn một ứng dụng"</string>
-    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Xóa truy vấn"</string>
-    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Tìm kiếm truy vấn"</string>
-    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Tìm kiếm"</string>
-    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Gửi truy vấn"</string>
-    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Tìm kiếm bằng giọng nói"</string>
-    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Chia sẻ với"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Chia sẻ với %s"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-vi/strings.xml -->
-    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"Bạn đã và đang sử dụng tên người dùng này cho tài khoản \"<ns1:g id="DUPLICATE">%s</ns1:g>\"."</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"Tài khoản trùng lặp"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"Tin nháp"</string>
@@ -193,27 +176,11 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"Đang tải danh sách thư mục…"</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"Bạn có thể thiết lập tài khoản của mình chỉ bằng vài bước."</string>
     <string msgid="5815426892327290362" name="app_name">"Email"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-vi/values.xml -->
-    <eat-comment/>
-    <string name="ask_QuitConfirmation">Bỏ thuốc lá? Bạn có chắc chắn?</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-vi/strings.xml -->
-    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"Không thể tải xuống tệp đính kèm."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-vi/values.xml -->
-    <eat-comment/>
-    <string name="btn_Match">Kế tiếp</string>
-    <string name="btn_NoMatch">Không có trận đấu</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-vi/strings.xml -->
-    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"Hủy"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"Không thể di chuyển vì lựa chọn chứa nhiều tài khoản."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"Di chuyển không được hỗ trợ trên các tài khoản POP3."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"Không thể di chuyển thư trong Thư nháp, Hộp thư đi và Thư đã gửi."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-vi/values.xml -->
-    <eat-comment/>
-    <string name="choice_NumUsers">%d người dùng</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-vi/strings.xml -->
-    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"Đang gửi trả lời..."</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-vi/strings.xml -->
     <eat-comment/>
@@ -233,28 +200,6 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"Xong"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"Trả lời nhanh"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-vi/values.xml -->
-    <eat-comment/>
-    <string name="error_AllMembersMustUpgrade">Một số thành viên đang sử dụng một phiên bản cũ; tất cả các thành viên phải nâng cấp lên phiên bản mới nhất.</string>
-    <string name="error_AllMembersMustUpgradeBadPushToken">Tất cả các thành viên phải nâng cấp, một số đang sử dụng định dạng đăng ký push cũ.</string>
-    <string name="error_CorrectYourInternetConnection">Internet không có sẵn, kiểm tra các thiết lập của bạn.</string>
-    <string name="error_ExchangeProtocolTimeoutExceeded">Trao đổi thời gian chờ vượt quá. Bắt đầu trao đổi một lần nữa.</string>
-    <string name="error_HttpCode">Máy chủ HTTP Error: %d</string>
-    <string name="error_InvalidCommitVerify">Dữ liệu không chính xác được tìm thấy trong trao đổi. Bắt đầu trao đổi một lần nữa.</string>
-    <string name="error_InvalidCommonUserId">Xin vui lòng nhập một số nguyên dương.</string>
-    <string name="error_LocalGroupCommitDiffer">Bạn đã báo cáo một sự khác biệt trong các cụm từ. Bắt đầu trao đổi một lần nữa.</string>
-    <string name="error_MinUsersRequired">Có ít nhất %d thành viên được yêu cầu phải trao đổi dữ liệu.</string>
-    <string name="error_MoreDataThanUsers">Dữ liệu bất ngờ tìm thấy trong trao đổi. Bắt đầu trao đổi một lần nữa.</string>
-    <string name="error_NoDataToExchange">Việc trao đổi là mất tích dữ liệu cần thiết.</string>
-    <string name="error_NoWordListSelected">Bạn phải lựa chọn một trong các cụm từ trước khi tiếp tục.</string>
-    <string name="error_OtherGroupCommitDiffer">Có người báo cáo một sự khác biệt trong các cụm từ. Bắt đầu trao đổi một lần nữa.</string>
-    <string name="error_OutOfMemoryError">Bộ nhớ là quá thấp để hoàn thành hoạt động này.</string>
-    <string name="error_ServerAppMessage">Message Server: %s</string>
-    <string name="error_ServerNotResponding">Không có phản hồi từ máy chủ.</string>
-    <string name="error_TimeoutWaitingForAllMembers">Timeout chờ đợi cho một số thành viên trong nhóm để thêm dữ liệu.</string>
-    <string name="error_WebCancelledByUser">Người dùng đã hủy yêu cầu máy chủ.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-vi/strings.xml -->
-    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"Doanh nghiệp"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-vi/strings.xml -->
@@ -277,25 +222,7 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"Nhỏ"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"Rất nhỏ"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"Cài đặt chung"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-vi/values.xml -->
-    <eat-comment/>
-    <string name="help_size">Chọn số lượng những người đang cố gắng để trao đổi dữ liệu với nhau và nhấn OK.</string>
-    <string name="help_userid">Con số này trên màn hình này được sử dụng để tạo ra một nhóm duy nhất của người sử dụng. Xem lại những con số trên màn hình tất cả người sử dụng, sau đó tất cả người dùng cần nhập cùng thấp nhất số lượng và bấm OK.</string>
-    <string name="help_verify">Bây giờ, bạn phải phù hợp với một trong những cụm từ 3 từ với tất cả người dùng. Mỗi người sử dụng phải chọn các cụm từ phổ biến tương tự, và nhấn Next.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-vi/strings.xml -->
-    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-vi/values.xml -->
-    <eat-comment/>
-    <string name="label_CompareScreensNDevices">So sánh màn hình trên các thiết bị %s.</string>
-    <string name="label_NumericModeHint">Non-English</string>
-    <string name="label_PromptInstruct">Con số này được sử dụng để tạo ra một nhóm duy nhất của người sử dụng. So sánh, và sau đó nhập số thấp nhất trong số tất cả người dùng.</string>
-    <string name="label_ReceivedNItems">nhận được %d mặt hàng</string>
-    <string name="label_UserIdHint">Thấp nhất</string>
-    <string name="label_VerifyInstruct">Tất cả điện thoại phải phù hợp với một trong các cụm từ 3 từ. So sánh, và sau đó chọn các cụm từ phù hợp.</string>
-    <string name="lib_name">SafeSlinger khoán</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-vi/strings.xml -->
-    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"Đăng nhập vào <ns1:g id="ACCOUNT_NAME">%s</ns1:g> không thành công."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"Không thể đăng nhập"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"Chế độ xem tổng hợp"</string>
@@ -354,14 +281,6 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"Ảnh người gửi"</string>
     <string msgid="5181616311579820981" name="previous_action">"Trước"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-vi/values.xml -->
-    <eat-comment/>
-    <string name="prog_CollectingOthersCommitVerify">chờ kiểm định từ tất cả các thành viên…</string>
-    <string name="prog_CollectingOthersItems">chờ đợi cho tất cả người dùng tham gia…</string>
-    <string name="prog_ConstructingGroupKey">xây dựng chính nhóm…</string>
-    <string name="prog_RequestingUserId">yêu cầu các thành viên…</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-vi/strings.xml -->
-    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"Chỉ một số tài khoản \"Plus\" mới có quyền truy cập POP cho phép chương trình này kết nối. Nếu bạn không thể đăng nhập bằng địa chỉ email và mật khẩu chính xác của mình, bạn có thể không có tài khoản \"Plus\" tính phí. Hãy khởi chạy trình duyệt web để yêu cầu cấp quyền truy cập vào các tài khoản email này."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"Trước khi thiết lập tài khoản email này, hãy truy cập trang web T-Online và tạo mật khẩu để truy cập email POP3."</string>
     <string msgid="3426057697353380951" name="quick_1">"Cảm ơn bạn!"</string>
@@ -394,12 +313,5 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"Chọn thư mục thùng rác trên máy chủ của bạn"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"Chọn thư mục thùng rác trên máy chủ của bạn"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"Thư mục thùng rác"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-vi/values.xml -->
-    <eat-comment/>
-    <string name="title_size">Làm thế nào nhiều người sử dụng trong việc trao đổi?</string>
-    <string name="title_userid">Phân nhóm</string>
-    <string name="title_verify">Xác nhận</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-vi/strings.xml -->
-    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"Chọn thư mục thùng rác trên máy chủ cho <ns1:g id="ACCOUNT">%s</ns1:g>"</string>
 </resources>

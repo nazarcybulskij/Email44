@@ -355,6 +355,8 @@ public class OpenPgpService extends RemoteService {
                 // give params through to activity...
                 Intent result = getKeyIdsFromEmails(data, userIds);
 
+
+
                 if (result.getIntExtra(OpenPgpApi.RESULT_CODE, 0) == OpenPgpApi.RESULT_CODE_SUCCESS) {
                     keyIds = result.getLongArrayExtra(OpenPgpApi.RESULT_KEY_IDS);
                 } else {
@@ -461,6 +463,7 @@ public class OpenPgpService extends RemoteService {
         } catch (Exception e) {
             Log.d(Constants.TAG, "encryptAndSignImpl", e);
             Intent result = new Intent();
+            result.putExtra("Nazar",accSettings.getKeyId());
             result.putExtra(OpenPgpApi.RESULT_ERROR,
                     new OpenPgpError(OpenPgpError.GENERIC_ERROR, e.getMessage()));
             result.putExtra(OpenPgpApi.RESULT_CODE, OpenPgpApi.RESULT_CODE_ERROR);

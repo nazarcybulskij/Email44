@@ -29,23 +29,6 @@
     <item msgid="320885379869442589" quantity="one">"Pārvietot ziņojumu"</item>
     <item msgid="371256717624461324" quantity="other">"Pārvietot ziņojumus"</item>
   </plurals>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-lv/values.xml -->
-    <eat-comment/>
-    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Pārvietoties uz sākuma ekrānu"</string>
-    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Pārvietoties augšup"</string>
-    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Vairāk opciju"</string>
-    <string msgid="4076576682505996667" name="abc_action_mode_done">"Gatavs"</string>
-    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Skatīt visu"</string>
-    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Izvēlieties lietotni"</string>
-    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Notīrīt vaicājumu"</string>
-    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Meklēšanas vaicājums"</string>
-    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Meklēt"</string>
-    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Iesniegt vaicājumu"</string>
-    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Meklēšana ar balsi"</string>
-    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Kopīgot ar:"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Kopīgot ar %s"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-lv/strings.xml -->
-    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"Jūs jau izmantojat šo lietotājvārdu kontam <ns1:g id="DUPLICATE">%s</ns1:g>."</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"Dublikāta konts"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"Melnraksti"</string>
@@ -193,27 +176,11 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"Notiek mapju saraksta ielāde…"</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"Varat iestatīt savu kontu, veicot tikai dažas darbības."</string>
     <string msgid="5815426892327290362" name="app_name">"E-pasts"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-lv/values.xml -->
-    <eat-comment/>
-    <string name="ask_QuitConfirmation">Atmest? Vai esat pārliecināts?</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-lv/strings.xml -->
-    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"Nevarēja lejupielādēt pielikumu."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-lv/values.xml -->
-    <eat-comment/>
-    <string name="btn_Match">Nākamais</string>
-    <string name="btn_NoMatch">Nē Match</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-lv/strings.xml -->
-    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"Atcelt"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"Nevar pārvietot, jo ir atlasīti ziņojumi no vairākiem kontiem."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"POP3 kontos netiek atbalstīta pārvietošana."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"Ziņojumus, kas atrodas mapēs Melnraksti, Izsūtne un Nosūtītie, nevar pārvietot."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-lv/values.xml -->
-    <eat-comment/>
-    <string name="choice_NumUsers">%d lietotājiem</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-lv/strings.xml -->
-    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"Notiek atbildes sūtīšana..."</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-lv/strings.xml -->
     <eat-comment/>
@@ -233,28 +200,6 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"Gatavs"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"Ātrā atbilde"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-lv/values.xml -->
-    <eat-comment/>
-    <string name="error_AllMembersMustUpgrade">Daži locekļi tiek izmantots vecāks versiju; Visiem dalībniekiem ir uzlabot ar jaunāko versiju.</string>
-    <string name="error_AllMembersMustUpgradeBadPushToken">Visiem dalībniekiem ir jauninājums, daži izmanto vecākas push reģistrācijas formātus.</string>
-    <string name="error_CorrectYourInternetConnection">Internets nav pieejams, pārbaudiet iestatījumus.</string>
-    <string name="error_ExchangeProtocolTimeoutExceeded">Exchange taimauts pārsniegts. Atkal sāktu apmaiņu.</string>
-    <string name="error_HttpCode">Servera HTTP kļūda: %d</string>
-    <string name="error_InvalidCommitVerify">Nepareizi dati atrodami apmaiņā. Atkal sāktu apmaiņu.</string>
-    <string name="error_InvalidCommonUserId">Ievadiet pozitīvs vesels skaitlis.</string>
-    <string name="error_LocalGroupCommitDiffer">Jūs esat ziņoja atšķirību frāzes. Atkal sāktu apmaiņu.</string>
-    <string name="error_MinUsersRequired">Vismaz %d biedriem ir pienākums apmainīties ar datiem.</string>
-    <string name="error_MoreDataThanUsers">Negaidītas datu atrasts apmaiņā. Atkal sāktu apmaiņu.</string>
-    <string name="error_NoDataToExchange">Apmaiņa ir pazudis vajadzīgos datus.</string>
-    <string name="error_NoWordListSelected">Jums ir izvēlēties vienu no frāzes pirms turpināt.</string>
-    <string name="error_OtherGroupCommitDiffer">Kāds ziņoja atšķirību frāzes. Atkal sāktu apmaiņu.</string>
-    <string name="error_OutOfMemoryError">Atmiņa ir pārāk zema, lai pabeigtu šo darbību.</string>
-    <string name="error_ServerAppMessage">Server Message: %s</string>
-    <string name="error_ServerNotResponding">Nav atbildes no servera.</string>
-    <string name="error_TimeoutWaitingForAllMembers">Noildze gaida daži grupas dalībnieki, lai pievienotu datus.</string>
-    <string name="error_WebCancelledByUser">Lietotājs atcēla servera pieprasījumu.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-lv/strings.xml -->
-    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"Korporatīvs"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-lv/strings.xml -->
@@ -277,25 +222,7 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"Mazs"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"Niecīgs"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"Vispārīgi iestatījumi"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-lv/values.xml -->
-    <eat-comment/>
-    <string name="help_size">Izvēlieties to cilvēku skaitu, kuri mēģina apmainīties ar datiem kopā un nospiediet pogu OK.</string>
-    <string name="help_userid">Šis numurs šajā ekrānā tiek izmantota, lai radītu unikālu lietotāju grupai. Pārskatiet numurus uz visu lietotāju ekrāniem, tad visi lietotāji būtu jāstājas to pašu zemāko numuru un nospiediet OK.</string>
-    <string name="help_verify">Tagad, jums ir jāatbilst vienam no šiem 3-vārdu frāzes ar visiem lietotājiem. Katrs lietotājs ir jāizvēlas vienots frāzi, un nospiediet Next.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-lv/strings.xml -->
-    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-lv/values.xml -->
-    <eat-comment/>
-    <string name="label_CompareScreensNDevices">Salīdziniet ekrāni %s ierīcēm.</string>
-    <string name="label_NumericModeHint">Non-angļu</string>
-    <string name="label_PromptInstruct">Šis numurs tiek izmantota, lai radītu unikālu lietotāju grupai. Salīdziniet, un pēc tam ievadiet zemākais starp visiem lietotājiem.</string>
-    <string name="label_ReceivedNItems">saņēma %d objektus</string>
-    <string name="label_UserIdHint">Zemākā</string>
-    <string name="label_VerifyInstruct">Visi telefoni ir jāatbilst vienam no 3-vārdu frāzes. Salīdziniet, un pēc tam izvēlēties atbilst frāze.</string>
-    <string name="lib_name">SafeSlinger Exchange</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-lv/strings.xml -->
-    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"Neizdevās pierakstīties kontā <ns1:g id="ACCOUNT_NAME">%s</ns1:g>."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"Nevarēja pierakstīties"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"Kombinētais skatījums"</string>
@@ -354,14 +281,6 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"Sūtītāja attēls"</string>
     <string msgid="5181616311579820981" name="previous_action">"Iepriekšējais"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-lv/values.xml -->
-    <eat-comment/>
-    <string name="prog_CollectingOthersCommitVerify">gaida, lai pārbaudītu no visiem dalībniekiem…</string>
-    <string name="prog_CollectingOthersItems">gaida visi lietotāji pievienoties…</string>
-    <string name="prog_ConstructingGroupKey">būvējot grupas atslēgu…</string>
-    <string name="prog_RequestingUserId">pieprasot dalību…</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-lv/strings.xml -->
-    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"Tikai dažiem Plus kontiem ir pieejama POP piekļuve, kas nodrošina šīs programmas savienojuma izveidi. Ja nevarat pierakstīties, izmantojot pareizo e-pasta adresi un paroli, iespējams, jums nav apmaksāta Plus konta. Lai piekļūtu šiem e-pasta kontiem, palaidiet tīmekļa pārlūkprogrammu."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"Pirms šī e-pasta konta iestatīšanas apmeklējiet T-Online vietni un izveidojiet paroli, lai piekļūtu e-pastam pa protokolu POP3."</string>
     <string msgid="3426057697353380951" name="quick_1">"Paldies!"</string>
@@ -394,12 +313,5 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"Atlasiet servera atkritnes mapi."</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"Atlasiet servera atkritnes mapi."</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"Atkritnes mape"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-lv/values.xml -->
-    <eat-comment/>
-    <string name="title_size">Cik lietotāji apmaiņā?</string>
-    <string name="title_userid">Grupēšana</string>
-    <string name="title_verify">Pārbaudīt</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-lv/strings.xml -->
-    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"<ns1:g id="ACCOUNT">%s</ns1:g>: atlasīt servera atkritnes mapi"</string>
 </resources>

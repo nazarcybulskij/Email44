@@ -80,9 +80,9 @@ public class ProgressDialogFragment extends DialogFragment {
 
         ProgressDialog dialog = (ProgressDialog) getDialog();
 
-        dialog.setMessage(message);
-        dialog.setProgress(progress);
-        dialog.setMax(max);
+       dialog.setMessage(message);
+       dialog.setProgress(progress);
+       dialog.setMax(max);
     }
 
     /**

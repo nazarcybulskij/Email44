@@ -66,6 +66,10 @@ public class EmlMessageLoader extends AsyncTaskLoader<ConversationMessage> {
         try {
             mimeMessage = new MimeMessage(stream);
             convMessage = new ConversationMessage(context, mimeMessage, mEmlFileUri);
+
+
+
+
         } catch (IOException e) {
             LogUtils.e(LOG_TAG, e, "Could not read eml file");
             return null;
@@ -108,7 +112,9 @@ public class EmlMessageLoader extends AsyncTaskLoader<ConversationMessage> {
             return;
         }
         ConversationMessage oldMessage = mMessage;
+
         mMessage = result;
+
 
         if (isStarted()) {
             // If the Loader is currently started, we can immediately
@@ -122,6 +128,7 @@ public class EmlMessageLoader extends AsyncTaskLoader<ConversationMessage> {
         if (oldMessage != null && oldMessage != mMessage) {
             onReleaseResources(oldMessage);
         }
+
     }
 
     /**

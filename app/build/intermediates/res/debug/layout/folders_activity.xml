@@ -22,6 +22,8 @@
     android:minWidth="@dimen/folder_list_popup_width"
     android:orientation="vertical">
 
+
+
     <FrameLayout
         android:id="@+id/content_pane"
         android:name="com.android.mail.ui.FolderListFragment"
@@ -30,7 +32,11 @@
         android:layout_weight="1"
         android:background="@color/list_background_color"/>
 
+
+
     <include layout="@layout/one_button_button_bar"/>
+
+
 
 </LinearLayout>
 <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/layout/folders_activity.xml -->

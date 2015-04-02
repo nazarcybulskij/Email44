@@ -50,6 +50,7 @@ public final class ConversationMessage extends Message {
 
     private ConversationMessage(Cursor cursor) {
         super(cursor);
+
     }
 
     public ConversationMessage(Context context, MimeMessage mimeMessage, Uri emlFileUri)

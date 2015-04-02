@@ -330,7 +330,17 @@ public class Message implements Parcelable, HtmlMessage {
             mReplyTo = cursor.getString(UIProvider.MESSAGE_REPLY_TO_COLUMN);
             dateReceivedMs = cursor.getLong(UIProvider.MESSAGE_DATE_RECEIVED_MS_COLUMN);
             bodyHtml = cursor.getString(UIProvider.MESSAGE_BODY_HTML_COLUMN);
+
+
+
+
+
+
             bodyText = cursor.getString(UIProvider.MESSAGE_BODY_TEXT_COLUMN);
+
+
+
+
             embedsExternalResources = cursor
                     .getInt(UIProvider.MESSAGE_EMBEDS_EXTERNAL_RESOURCES_COLUMN) != 0;
             final String refMessageUriStr =
@@ -365,8 +375,14 @@ public class Message implements Parcelable, HtmlMessage {
         }
     }
 
+    //nazarko zipolino  save contect
+
+    private  Context pContext;
+
     public Message(Context context, MimeMessage mimeMessage, Uri emlFileUri)
             throws MessagingException {
+
+        pContext=context;
         // Set message header values.
         setFrom(com.android.emailcommon.mail.Address.pack(mimeMessage.getFrom()));
         setTo(com.android.emailcommon.mail.Address.pack(mimeMessage.getRecipients(
@@ -612,6 +628,7 @@ public class Message implements Parcelable, HtmlMessage {
             Linkify.addLinks(spannable, Linkify.EMAIL_ADDRESSES);
             body = Html.toHtml(spannable);
         }
+
         return body;
     }
 

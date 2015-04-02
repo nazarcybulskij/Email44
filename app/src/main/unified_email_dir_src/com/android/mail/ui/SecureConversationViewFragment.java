@@ -18,13 +18,20 @@
 package com.android.mail.ui;
 
 import android.app.Fragment;
+import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.Loader;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Message;
+import android.os.Messenger;
+import android.support.v4.app.FragmentActivity;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 import com.android.mail.browse.ConversationAccountController;
 import com.android.mail.browse.ConversationMessage;
@@ -40,10 +47,25 @@ import com.android.mail.utils.LogUtils;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Sets;
 
+import org.sufficientlysecure.keychain.Constants;
+import org.sufficientlysecure.keychain.api.OpenKeychainIntents;
+import org.sufficientlysecure.keychain.compatibility.ClipboardReflection;
+import org.sufficientlysecure.keychain.operations.results.DecryptVerifyResult;
+import org.sufficientlysecure.keychain.operations.results.OperationResult;
+import org.sufficientlysecure.keychain.operations.results.SingletonResult;
+import org.sufficientlysecure.keychain.pgp.PgpHelper;
+import org.sufficientlysecure.keychain.service.KeychainIntentService;
+import org.sufficientlysecure.keychain.service.KeychainIntentServiceHandler;
+import org.sufficientlysecure.keychain.ui.NfcActivity;
+import org.sufficientlysecure.keychain.ui.PassphraseDialogActivity;
+import org.sufficientlysecure.keychain.ui.util.Notify;
+import org.sufficientlysecure.keychain.util.Log;
+
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Matcher;
 
 public class SecureConversationViewFragment extends AbstractConversationViewFragment
         implements SecureConversationViewControllerCallbacks {
@@ -247,9 +269,33 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
             LogUtils.e(LOG_TAG, "unable to open message cursor");
             return;
         }
+        ConversationMessage data = newCursor.getMessage();
 
-        mViewController.renderMessage(newCursor.getMessage());
+        //String sharedText = data.bodyHtml;
+
+//        Intent clipboardDecrypt = new Intent(getActivity(), DecryptTextActivity.class);
+//        clipboardDecrypt.setAction(DecryptTextActivity.ACTION_DECRYPT_FROM_CLIPBOARD);
+//        startActivityForResult(clipboardDecrypt, 0);
+
+
+//        mCiphertex = data.bodyText;
+//        decryptStart();
+
+        handleActions(getActivity().getIntent());
+
+        //sharedText = getPgpContent(sharedText);
+
+
+
+//        data.bodyHtml="stub";
+//        data.bodyText="stub";
+        //Toast.makeText(getContext(), sharedText, Toast.LENGTH_SHORT).show();
+
+        mViewController.renderMessage(data);
     }
+
+    // model
+    public  String mCiphertex;
 
     @Override
     public void onConversationUpdated(Conversation conv) {
@@ -265,4 +311,259 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
     public boolean supportsMessageTransforms() {
         return false;
     }
+
+    private void handleActions( Intent intent) {
+        String action = intent.getAction();
+        Bundle extras = intent.getExtras();
+        String type = intent.getType();
+
+        if (extras == null) {
+            extras = new Bundle();
+        }
+
+        if (Intent.ACTION_SEND.equals(action) && type != null) {
+            Log.d(Constants.TAG, "ACTION_SEND");
+            Log.logDebugBundle(extras, "SEND extras");
+
+            // When sending to Keychain Decrypt via share menu
+            if ("text/plain".equals(type)) {
+                String sharedText = extras.getString(Intent.EXTRA_TEXT);
+                sharedText = getPgpContent(sharedText);
+
+                if (sharedText != null) {
+                   // loadFragment(savedInstanceState, sharedText);
+                } else {
+                    Notify.showNotify(getActivity(), org.sufficientlysecure.keychain.R.string.error_invalid_data, Notify.Style.ERROR);
+                }
+            } else {
+                Log.e(Constants.TAG, "ACTION_SEND received non-plaintext, this should not happen in this activity!");
+            }
+        } else if (ACTION_DECRYPT_TEXT.equals(action)) {
+            Log.d(Constants.TAG, "ACTION_DECRYPT_TEXT");
+
+            String extraText = extras.getString(EXTRA_TEXT);
+            extraText = getPgpContent(extraText);
+
+            if (extraText != null) {
+               // loadFragment(savedInstanceState, extraText);
+            } else {
+                Notify.showNotify(getActivity(), org.sufficientlysecure.keychain.R.string.error_invalid_data, Notify.Style.ERROR);
+            }
+        } else if (ACTION_DECRYPT_FROM_CLIPBOARD.equals(action)) {
+            Log.d(Constants.TAG, "ACTION_DECRYPT_FROM_CLIPBOARD");
+
+            CharSequence clipboardText = ClipboardReflection.getClipboardText(getActivity());
+            String text = getPgpContent(clipboardText);
+
+            if (text != null) {
+               // loadFragment(savedInstanceState, text);
+            } else {
+                returnInvalidResult();
+            }
+        } else if (ACTION_DECRYPT_TEXT.equals(action)) {
+            Log.e(Constants.TAG, "Include the extra 'text' in your Intent!");
+            getActivity().finish();
+        }
+    }
+    public static final String ACTION_DECRYPT_TEXT = OpenKeychainIntents.DECRYPT_TEXT;
+    public static final String EXTRA_TEXT = OpenKeychainIntents.DECRYPT_EXTRA_TEXT;
+    public static final String ACTION_DECRYPT_FROM_CLIPBOARD = Constants.INTENT_PREFIX + "DECRYPT_TEXT_FROM_CLIPBOARD";
+
+
+    public static final int RESULT_OK           = -1;
+
+    private void returnInvalidResult() {
+        SingletonResult result = new SingletonResult(
+                SingletonResult.RESULT_ERROR, OperationResult.LogType.MSG_NO_VALID_ENC);
+        Intent intent = new Intent();
+        intent.putExtra(SingletonResult.EXTRA_RESULT, result);
+        getActivity().setResult(RESULT_OK, intent);
+        getActivity().finish();
+    }
+
+
+
+
+
+    private String getPgpContent(CharSequence input) {
+        // only decrypt if clipboard content is available and a pgp message or cleartext signature
+        if (!TextUtils.isEmpty(input)) {
+            Log.dEscaped(Constants.TAG, "input: " + input);
+
+            Matcher matcher = PgpHelper.PGP_MESSAGE.matcher(input);
+            if (matcher.matches()) {
+                String text = matcher.group(1);
+                text = fixPgpMessage(text);
+
+                Log.dEscaped(Constants.TAG, "input fixed: " + text);
+                return text;
+            } else {
+                matcher = PgpHelper.PGP_CLEARTEXT_SIGNATURE.matcher(input);
+                if (matcher.matches()) {
+                    String text = matcher.group(1);
+                    text = fixPgpCleartextSignature(text);
+
+                    Log.dEscaped(Constants.TAG, "input fixed: " + text);
+                    return text;
+                } else {
+                    return null;
+                }
+            }
+        } else {
+            return null;
+        }
+    }
+
+    private String fixPgpMessage(String message) {
+        // windows newline -> unix newline
+        message = message.replaceAll("\r\n", "\n");
+        // Mac OS before X newline -> unix newline
+        message = message.replaceAll("\r", "\n");
+
+        // remove whitespaces before newline
+        message = message.replaceAll(" +\n", "\n");
+        // only two consecutive newlines are allowed
+        message = message.replaceAll("\n\n+", "\n\n");
+
+        // replace non breakable spaces
+        message = message.replaceAll("\\xa0", " ");
+
+        return message;
+    }
+
+    /**
+     * Fixing broken PGP SIGNED MESSAGE Strings coming from GMail/AOSP Mail
+     */
+    private String fixPgpCleartextSignature(CharSequence input) {
+        if (!TextUtils.isEmpty(input)) {
+            String text = input.toString();
+
+            // windows newline -> unix newline
+            text = text.replaceAll("\r\n", "\n");
+            // Mac OS before X newline -> unix newline
+            text = text.replaceAll("\r", "\n");
+
+            return text;
+        } else {
+            return null;
+        }
+    }
+
+    // State
+    protected String mPassphrase;
+    protected byte[] mNfcDecryptedSessionKey;
+
+
+    protected void decryptStart() {
+        Log.d(Constants.TAG, "decryptStart");
+
+        // Send all information needed to service to decrypt in other thread
+        Intent intent = new Intent(getActivity(), KeychainIntentService.class);
+
+        // fill values for this action
+        Bundle data = new Bundle();
+
+        intent.setAction(KeychainIntentService.ACTION_DECRYPT_VERIFY);
+
+        // data
+        data.putInt(KeychainIntentService.TARGET, KeychainIntentService.IO_BYTES);
+        data.putByteArray(KeychainIntentService.DECRYPT_CIPHERTEXT_BYTES, mCiphertex.getBytes());
+        data.putString(KeychainIntentService.DECRYPT_PASSPHRASE, mPassphrase);
+        data.putByteArray(KeychainIntentService.DECRYPT_NFC_DECRYPTED_SESSION_KEY, mNfcDecryptedSessionKey);
+
+        intent.putExtra(KeychainIntentService.EXTRA_DATA, data);
+
+        // Message is received after encrypting is done in KeychainIntentService
+        KeychainIntentServiceHandler saveHandler = new KeychainIntentServiceHandler(getActivity(),
+                getString(org.sufficientlysecure.keychain.R.string.progress_decrypting), ProgressDialog.STYLE_HORIZONTAL) {
+            public void handleMessage(Message message) {
+                // handle messages by standard KeychainIntentServiceHandler first
+                super.handleMessage(message);
+
+                if (message.arg1 == KeychainIntentServiceHandler.MESSAGE_OKAY) {
+                    // get returned data bundle
+                    Bundle returnData = message.getData();
+
+                    DecryptVerifyResult pgpResult =
+                            returnData.getParcelable(DecryptVerifyResult.EXTRA_RESULT);
+
+                    if (pgpResult.isPending()) {
+                        if ((pgpResult.getResult() & DecryptVerifyResult.RESULT_PENDING_ASYM_PASSPHRASE) ==
+                                DecryptVerifyResult.RESULT_PENDING_ASYM_PASSPHRASE) {
+                            startPassphraseDialog(pgpResult.getKeyIdPassphraseNeeded());
+                        } else if ((pgpResult.getResult() & DecryptVerifyResult.RESULT_PENDING_SYM_PASSPHRASE) ==
+                                DecryptVerifyResult.RESULT_PENDING_SYM_PASSPHRASE) {
+                            startPassphraseDialog(Constants.key.symmetric);
+                        } else if ((pgpResult.getResult() & DecryptVerifyResult.RESULT_PENDING_NFC) ==
+                                DecryptVerifyResult.RESULT_PENDING_NFC) {
+                            startNfcDecrypt(pgpResult.getNfcSubKeyId(), pgpResult.getNfcPassphrase(), pgpResult.getNfcEncryptedSessionKey());
+                        } else {
+                            throw new RuntimeException("Unhandled pending result!");
+                        }
+                    } else if (pgpResult.success()) {
+
+                        byte[] decryptedMessage = returnData
+                                .getByteArray(KeychainIntentService.RESULT_DECRYPTED_BYTES);
+
+                        Toast.makeText(getContext(),"decrypt",Toast.LENGTH_SHORT).show();
+                        //mText.setText(new String(decryptedMessage));
+
+                        pgpResult.createNotify(getActivity()).show();
+
+                        // display signature result in activity
+                        //boolean valid = onResult(pgpResult);
+
+
+                    } else {
+                        pgpResult.createNotify(getActivity()).show();
+                        // TODO: show also invalid layout with different text?
+                    }
+                }
+            }
+        };
+
+        // Create a new Messenger for the communication back
+        Messenger messenger = new Messenger(saveHandler);
+        intent.putExtra(KeychainIntentService.EXTRA_MESSENGER, messenger);
+
+        // show progress dialog
+       // Activity act =  getActivity();
+        saveHandler.showProgressDialog((FragmentActivity)getActivity());
+
+        // start service with intent
+        getActivity().startService(intent);
+    }
+
+    protected void startPassphraseDialog(long subkeyId) {
+        Intent intent = new Intent(getActivity(), PassphraseDialogActivity.class);
+        intent.putExtra(PassphraseDialogActivity.EXTRA_SUBKEY_ID, subkeyId);
+        startActivityForResult(intent, REQUEST_CODE_PASSPHRASE);
+    }
+
+
+    protected void startNfcDecrypt(long subKeyId, String pin, byte[] encryptedSessionKey) {
+        // build PendingIntent for Yubikey NFC operations
+        Intent intent = new Intent(getActivity(), NfcActivity.class);
+        intent.setAction(NfcActivity.ACTION_DECRYPT_SESSION_KEY);
+        intent.putExtra(NfcActivity.EXTRA_DATA, new Intent()); // not used, only relevant to OpenPgpService
+        intent.putExtra(NfcActivity.EXTRA_KEY_ID, subKeyId);
+        intent.putExtra(NfcActivity.EXTRA_PIN, pin);
+
+        intent.putExtra(NfcActivity.EXTRA_NFC_ENC_SESSION_KEY, encryptedSessionKey);
+
+        startActivityForResult(intent, REQUEST_CODE_NFC_DECRYPT);
+    }
+    public static final int REQUEST_CODE_PASSPHRASE = 0x00008001;
+    public static final int REQUEST_CODE_NFC_DECRYPT = 0x00008002;
+
+
+
+
+
+
+
+
+    //nazarko zipolino
+
+
 }

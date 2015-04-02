@@ -61,6 +61,9 @@
                 android:paddingRight="24dp"
                 android:visibility="gone" />
 
+
+
+
         </FrameLayout>
 
     </com.android.mail.browse.ConversationContainer>
@@ -73,6 +76,8 @@
         android:scrollbars="vertical|horizontal" />
 
     <include layout="@layout/conversation_load_spinner"/>
+
+
 
 </FrameLayout>
 <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/layout/conversation_view.xml -->

@@ -37,7 +37,15 @@
             android:paddingRight="16dip"
             android:fadingEdgeLength="16dip" />
 
+
+
+
+
+
         <include layout="@layout/one_button_button_bar"/>
+
+
+
 
     </LinearLayout>
 </FrameLayout><!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/layout/mailbox_selection_activity.xml -->

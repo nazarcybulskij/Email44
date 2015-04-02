@@ -29,23 +29,6 @@
     <item msgid="320885379869442589" quantity="one">"移动邮件"</item>
     <item msgid="371256717624461324" quantity="other">"移动邮件"</item>
   </plurals>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-zh-rCN/values.xml -->
-    <eat-comment/>
-    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"转到主屏幕"</string>
-    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"转到上一层级"</string>
-    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多选项"</string>
-    <string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string>
-    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string>
-    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"选择应用"</string>
-    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查询"</string>
-    <string msgid="2550479030709304392" name="abc_searchview_description_query">"搜索查询"</string>
-    <string msgid="8264924765203268293" name="abc_searchview_description_search">"搜索"</string>
-    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查询"</string>
-    <string msgid="893419373245838918" name="abc_searchview_description_voice">"语音搜索"</string>
-    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享方式"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"通过%s分享"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rCN/strings.xml -->
-    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"帐户“<ns1:g id="DUPLICATE">%s</ns1:g>”已经使用了此用户名。"</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"帐户重复"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"草稿"</string>
@@ -193,27 +176,11 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"正在加载文件夹列表…"</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"只需几步操作，即可设置好您的帐户。"</string>
     <string msgid="5815426892327290362" name="app_name">"电子邮件"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rCN/values.xml -->
-    <eat-comment/>
-    <string name="ask_QuitConfirmation">退出？你确定吗？</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rCN/strings.xml -->
-    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"无法下载该附件。"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rCN/values.xml -->
-    <eat-comment/>
-    <string name="btn_Match">下一步</string>
-    <string name="btn_NoMatch">没有匹配</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rCN/strings.xml -->
-    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"取消"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"所选内容包含多个帐户的邮件，因此无法进行移动。"</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"POP3 帐户不支持移动邮件的操作。"</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"无法移动“草稿”、“发件箱”和“已发邮件”中的邮件。"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rCN/values.xml -->
-    <eat-comment/>
-    <string name="choice_NumUsers">%d位成员</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rCN/strings.xml -->
-    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"正在发送回复…"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-zh-rCN/strings.xml -->
     <eat-comment/>
@@ -233,28 +200,6 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"完成"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"快速回复"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rCN/values.xml -->
-    <eat-comment/>
-    <string name="error_AllMembersMustUpgrade">一些成员使用的是较旧的版本;所有成员都必须升级到最新版本。</string>
-    <string name="error_AllMembersMustUpgradeBadPushToken">所有成员都必须升级，一些正在使用旧的讯息通知格式。</string>
-    <string name="error_CorrectYourInternetConnection">网路不可使用，请检查您的网路设定。</string>
-    <string name="error_ExchangeProtocolTimeoutExceeded">金钥交换过程超时。重新开始交换金钥。</string>
-    <string name="error_HttpCode">伺服器HTTP错误：%d</string>
-    <string name="error_InvalidCommitVerify">在金钥交换中找到不合法的数据。重新开始交换金钥。</string>
-    <string name="error_InvalidCommonUserId">请输入一个正整数。</string>
-    <string name="error_LocalGroupCommitDiffer">您已回报的词语组的差异。重新开始交换金钥。</string>
-    <string name="error_MinUsersRequired">至少需要%d个成员进行交换金钥。</string>
-    <string name="error_MoreDataThanUsers">在交换中发生不预期的资料流。重新开始交换金钥。</string>
-    <string name="error_NoDataToExchange">缺少交换必需的资料数据。</string>
-    <string name="error_NoWordListSelected">你必须选择一个词组并继续进行。</string>
-    <string name="error_OtherGroupCommitDiffer">有人反应词组有差别。重新开始交换金钥。</string>
-    <string name="error_OutOfMemoryError">记忆体太少不能够完成这个操作。</string>
-    <string name="error_ServerAppMessage">伺服器讯息：%s。</string>
-    <string name="error_ServerNotResponding">伺服器没有回应。</string>
-    <string name="error_TimeoutWaitingForAllMembers">等待收集成员资讯逾时。</string>
-    <string name="error_WebCancelledByUser">使用者取消伺服器请求。</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rCN/strings.xml -->
-    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"公司"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-zh-rCN/strings.xml -->
@@ -277,25 +222,7 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"小"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"超小"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"常规设置"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rCN/values.xml -->
-    <eat-comment/>
-    <string name="help_size">选择试图与您交换资讯的成员数目，然后按确定。</string>
-    <string name="help_userid">萤幕上的号码是用来建立一个专有的群体，每位成员审视其他成员的号码后，所有成员必须输入相同的最低号码，接着按确定。</string>
-    <string name="help_verify">现在你必须从这三个词组中找出和所有成员相同(匹配)的词组，每位成员必须选择相同的词组，然后按下一步。</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rCN/strings.xml -->
-    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rCN/values.xml -->
-    <eat-comment/>
-    <string name="label_CompareScreensNDevices">比较其他%s个装置萤幕。</string>
-    <string name="label_NumericModeHint">非英语</string>
-    <string name="label_PromptInstruct">该数字是用来创建一个专有的群体，请您比较该数字并输入所有成员之间最小的数字。</string>
-    <string name="label_ReceivedNItems">收到%d个项目</string>
-    <string name="label_UserIdHint">最低数字</string>
-    <string name="label_VerifyInstruct">所有的手机都必须显示一组全匹配3字词组。比较并选择该匹配的字词组。</string>
-    <string name="lib_name">SafeSlinger交易所</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rCN/strings.xml -->
-    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"<ns1:g id="ACCOUNT_NAME">%s</ns1:g> 登录失败。"</string>
     <string msgid="7624349996212476176" name="login_failed_title">"无法登录"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"合并的视图"</string>
@@ -354,14 +281,6 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"发件人头像"</string>
     <string msgid="5181616311579820981" name="previous_action">"上一步"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rCN/values.xml -->
-    <eat-comment/>
-    <string name="prog_CollectingOthersCommitVerify">等待所有成员被验证…</string>
-    <string name="prog_CollectingOthersItems">等待所有成员加入…</string>
-    <string name="prog_ConstructingGroupKey">构建群组密钥…</string>
-    <string name="prog_RequestingUserId">要求成员认证码…</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rCN/strings.xml -->
-    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"只有某些“Plus”帐户支持 POP 访问而允许此程序进行连接。如果您使用正确的电子邮件地址和密码无法登录，则可能还未开通付费的“Plus”帐户。请启动网络浏览器以获取对这些电子邮件帐户的访问权限。"</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"在设置该电子邮件帐户之前，请访问 T-Online 网站，为访问 POP3 电子邮件创建密码。"</string>
     <string msgid="3426057697353380951" name="quick_1">"非常感谢！"</string>
@@ -394,12 +313,5 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"选择您在服务器上的已删除邮件文件夹"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"选择您在服务器上的已删除邮件文件夹"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"已删除邮件文件夹"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rCN/values.xml -->
-    <eat-comment/>
-    <string name="title_size">和多少人交换资讯？</string>
-    <string name="title_userid">分组</string>
-    <string name="title_verify">确认</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rCN/strings.xml -->
-    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"选择 <ns1:g id="ACCOUNT">%s</ns1:g> 在服务器上的已删除邮件文件夹"</string>
 </resources>

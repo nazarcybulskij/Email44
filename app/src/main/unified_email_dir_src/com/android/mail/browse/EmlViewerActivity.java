@@ -18,7 +18,6 @@
 package com.android.mail.browse;
 
 import android.app.ActionBar;
-import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.app.LoaderManager;
 import android.content.Context;
@@ -26,6 +25,7 @@ import android.content.Intent;
 import android.content.Loader;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -42,7 +42,7 @@ import com.android.mail.utils.LogUtils;
 import com.android.mail.utils.MimeType;
 import com.android.mail.utils.Utils;
 
-public class EmlViewerActivity extends Activity implements FeedbackEnabledActivity,
+public class EmlViewerActivity extends FragmentActivity implements FeedbackEnabledActivity,
         ConversationAccountController {
     public static final String EXTRA_ACCOUNT_URI = "extra-account-uri";
 

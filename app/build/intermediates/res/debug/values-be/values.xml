@@ -167,27 +167,11 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"Загрузка спісу тэчак..."</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"Вы можаце зарэгістраваць свой уліковы запіс усяго за некалькі крокаў."</string>
     <string msgid="5815426892327290362" name="app_name">"Электронная пошта"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-be/values.xml -->
-    <eat-comment/>
-    <string name="ask_QuitConfirmation">Выхад? Ты ўпэўнены?</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-be/strings.xml -->
-    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"Не атрымалася спампаваць далучаны файл."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-be/values.xml -->
-    <eat-comment/>
-    <string name="btn_Match">Наступны</string>
-    <string name="btn_NoMatch">Няма Матч</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-be/strings.xml -->
-    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"Адмяніць"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"Немагчыма перанесці. Выбрана некалькі ўліковых запісаў."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"Перамяшчэнне не падтрымліваецца ўліковымі запісамі з падтрымкай пратаколу POP3."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"Нельга перамяшчаць паведамленні ў тэчках \"Чарнавікі\", \"Зыходныя\" і \"Адпраўленыя\"."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-be/values.xml -->
-    <eat-comment/>
-    <string name="choice_NumUsers">%d карыстальнікаў</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-be/strings.xml -->
-    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"Адпраўка адказу..."</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-be/strings.xml -->
     <eat-comment/>
@@ -206,28 +190,6 @@
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-be/strings.xml -->
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"Зроблена"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-be/values.xml -->
-    <eat-comment/>
-    <string name="error_AllMembersMustUpgrade">Некаторыя члены карыстаецеся старую версію; усе члены павінны абнавіць да апошняй версіі.</string>
-    <string name="error_AllMembersMustUpgradeBadPushToken">Усе члены павінны абнавіць, некаторыя выкарыстоўваюць старыя фарматы рэгістрацыі штуршок.</string>
-    <string name="error_CorrectYourInternetConnection">Інтэрнэт не даступны, праверце налады.</string>
-    <string name="error_ExchangeProtocolTimeoutExceeded">Абмен тайм-аўт перавышаны. Пачніце зноў памяняцца.</string>
-    <string name="error_HttpCode">Сервер HTTP Error: %d</string>
-    <string name="error_InvalidCommitVerify">Няправільныя дадзеныя, знойдзеныя ў абмене. Пачніце зноў памяняцца.</string>
-    <string name="error_InvalidCommonUserId">Калі ласка, увядзіце станоўчае цэлае лік.</string>
-    <string name="error_LocalGroupCommitDiffer">Вы паведамілі розніцу ў фраз. Пачніце зноў памяняцца.</string>
-    <string name="error_MinUsersRequired">Мінімум %d членаў абавязаны абменьвацца дадзенымі.</string>
-    <string name="error_MoreDataThanUsers">Нечаканыя дадзеныя знаходзяцца ў абмене. Пачніце зноў памяняцца.</string>
-    <string name="error_NoDataToExchange">Абмен адсутнічаюць неабходныя дадзеныя.</string>
-    <string name="error_NoWordListSelected">Вы павінны выбраць адзін з фраз, перш чым працягнуць.</string>
-    <string name="error_OtherGroupCommitDiffer">Хтосьці паведаміў розніцу ў фраз. Пачніце зноў памяняцца.</string>
-    <string name="error_OutOfMemoryError">Памяць з\'яўляецца занадта нізкім, каб завяршыць гэтую аперацыю.</string>
-    <string name="error_ServerAppMessage">Сервер паведамленняў: %s</string>
-    <string name="error_ServerNotResponding">Няма адказу ад сервера.</string>
-    <string name="error_TimeoutWaitingForAllMembers">Тайм-аўт у чаканні некаторыя члены групы, каб дадаць дадзеныя.</string>
-    <string name="error_WebCancelledByUser">Карыстальнік адмяніў запыт сервера.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-be/strings.xml -->
-    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"Карпаратыўны"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-be/strings.xml -->
@@ -250,25 +212,7 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"Маленькі"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"Малы"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"Агульныя налады"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-be/values.xml -->
-    <eat-comment/>
-    <string name="help_size">Выберыце колькасць людзей, якія спрабуюць абменьвацца дадзенымі разам і націсніце кнопку ОК.</string>
-    <string name="help_userid">Гэты лік на экране выкарыстоўваецца, каб стварыць унікальную групу карыстальнікаў. Праглядзіце нумары на экранах ўсіх карыстальнікаў, то ўсё карыстальнікі павінны ўвесці той жа самы нізкі нумар і націсніце OK.</string>
-    <string name="help_verify">Цяпер вы павінны адпавядаць аднаму з гэтых 3-словазлучэнняў з усімі карыстальнікамі. Кожны карыстальнік павінен выбраць адзін і той жа агульны фразу і націсніце Далей.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-be/strings.xml -->
-    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-be/values.xml -->
-    <eat-comment/>
-    <string name="label_CompareScreensNDevices">Параўнайце экранаў на %s прылад.</string>
-    <string name="label_NumericModeHint">Нумары англійскай</string>
-    <string name="label_PromptInstruct">Гэты нумар выкарыстоўваецца для стварэння унікальнай групы карыстальнікаў. Параўнайце, а затым увядзіце найменшы нумар сярод усіх карыстальнікаў.</string>
-    <string name="label_ReceivedNItems">атрымаў %d пунктаў</string>
-    <string name="label_UserIdHint">Найнізкі</string>
-    <string name="label_VerifyInstruct">Усе тэлефоны павінны адпавядаць аднаму з фраз з 3 слоў. Параўнайце, а затым выбраць адпаведны фразу.</string>
-    <string name="lib_name">SafeSlinger Абмен</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-be/strings.xml -->
-    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"Няўдалы ўваход з уліковага запісу <ns1:g id="ACCOUNT_NAME">%s</ns1:g>."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"Не атрымалася ўвайсці"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"Камбінаваны выгляд"</string>
@@ -322,14 +266,6 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"Выява адпраўнiка"</string>
     <string msgid="5181616311579820981" name="previous_action">"Папярэдняе"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-be/values.xml -->
-    <eat-comment/>
-    <string name="prog_CollectingOthersCommitVerify">у чаканні праверкі ўсіх членаў…</string>
-    <string name="prog_CollectingOthersItems">чакае ўсіх карыстальнікаў далучыцца да…</string>
-    <string name="prog_ConstructingGroupKey">пабудовы групавой ключ…</string>
-    <string name="prog_RequestingUserId">з просьбай сяброўства…</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-be/strings.xml -->
-    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"Толькі некаторыя ўліковыя запісы Google Plus маюць доступ да пратаколу POP, які дазваляе падключэнне гэтай праграме. Калі не атрымліваецца ўвайсці ў сістэму з правільным адрасам электроннай пошты і паролем, магчыма, уліковы запіс Plus не аплачаны. Запусціце вэб-браўзэр, каб атрымаць доступ да гэтых уліковых запісаў."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"Перад наладай гэтага ўліковага запісу электроннай пошты наведайце вэб-сайт T-Online і стварыце пароль для доступу да электроннай пошты па пратаколу POP3."</string>
     <string msgid="3426057697353380951" name="quick_1">"Дзякуй!"</string>
@@ -362,12 +298,5 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"Выберыце на серверы тэчку са смеццем"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"Выберыце на серверы тэчку са смеццем"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"Тэчка са смеццем"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-be/values.xml -->
-    <eat-comment/>
-    <string name="title_size">Колькі карыстальнікаў у абмене?</string>
-    <string name="title_userid">Групоўка</string>
-    <string name="title_verify">Праверыць</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-be/strings.xml -->
-    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"Выберыце на серверы тэчку са смеццем для запiсу: <ns1:g id="ACCOUNT">%s</ns1:g>"</string>
 </resources>

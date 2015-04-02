@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_focused="true"
-        android:drawable="@drawable/keychaintheme_textfield_activated_holo_light" />
-    <item android:drawable="@drawable/keychaintheme_textfield_default_holo_light" />
-</selector><!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/OpenKeychain/src/main/res/drawable/keychaintheme_searchview_holo_light.xml --><!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/drawable/keychaintheme_searchview_holo_light.xml -->

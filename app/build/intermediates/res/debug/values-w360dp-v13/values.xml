@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-w360dp/values.xml -->
-    <eat-comment/>
-    <integer name="abc_max_action_buttons">3</integer>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values-w360dp/constants.xml -->
     <eat-comment/>
     <integer name="actionbar_hidden_non_cab_items_no_physical_button">0</integer>

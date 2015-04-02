@@ -30,6 +30,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <include layout="@layout/notify_area"/>
+
+
             <include layout="@layout/conversation_view_header"
                 android:id="@+id/conv_header"
                 android:layout_width="match_parent"
@@ -97,6 +100,8 @@
                     android:layout_height="match_parent"
                     android:background="@color/message_border_gradient_color"/>
             </LinearLayout>
+
+
 
             <include layout="@layout/card_border" android:id="@+id/bottom_border" />
 

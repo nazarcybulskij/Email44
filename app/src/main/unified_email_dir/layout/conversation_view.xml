@@ -61,6 +61,9 @@
                 android:paddingRight="24dp"
                 android:visibility="gone" />
 
+
+
+
         </FrameLayout>
 
     </com.android.mail.browse.ConversationContainer>
@@ -73,5 +76,7 @@
         android:scrollbars="vertical|horizontal" />
 
     <include layout="@layout/conversation_load_spinner"/>
+
+
 
 </FrameLayout>

@@ -25,9 +25,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
+import android.widget.Button;
 
-import com.android.mail.FormattedDateBuilder;
 import com.android.email_ee.R;
+import com.android.mail.FormattedDateBuilder;
 import com.android.mail.browse.BorderView;
 import com.android.mail.browse.ConversationMessage;
 import com.android.mail.browse.ConversationViewAdapter;
@@ -59,6 +60,7 @@ public class SecureConversationViewController implements
     private MessageFooterView mMessageFooterView;
     private ConversationMessage mMessage;
     private MessageScrollView mScrollView;
+    private Button mDecrypt;
 
     private ConversationViewProgressController mProgressController;
     private FormattedDateBuilder mDateBuilder;
@@ -76,6 +78,7 @@ public class SecureConversationViewController implements
         mConversationHeaderView = (ConversationViewHeader) rootView.findViewById(R.id.conv_header);
         mMessageHeaderView = (MessageHeaderView) rootView.findViewById(R.id.message_header);
         mMessageFooterView = (MessageFooterView) rootView.findViewById(R.id.message_footer);
+
 
         // Add color backgrounds to the header and footer.
         // Otherwise the backgrounds are grey. They can't
@@ -107,7 +110,11 @@ public class SecureConversationViewController implements
         settings.setBuiltInZoomControls(true);
         settings.setDisplayZoomControls(false);
 
+
+
         mScrollView.setInnerScrollableView(mWebView);
+
+
 
         return rootView;
     }
@@ -153,7 +160,15 @@ public class SecureConversationViewController implements
         // At this point, only adds margins.
         StringBuilder dataBuilder = new StringBuilder(
                 String.format(BEGIN_HTML, mSideMarginInWebPx));
-        dataBuilder.append(mMessage.getBodyAsHtml());
+
+
+        String body = mMessage.getBodyAsHtml();
+
+
+
+
+        dataBuilder.append(body);
+
         dataBuilder.append(END_HTML);
 
         mWebView.loadDataWithBaseURL(mCallbacks.getBaseUri(), dataBuilder.toString(),

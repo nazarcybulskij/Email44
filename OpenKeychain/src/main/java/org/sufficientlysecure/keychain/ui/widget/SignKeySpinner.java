@@ -26,7 +26,6 @@ import android.support.v4.content.Loader;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import org.sufficientlysecure.keychain.R;
 import org.sufficientlysecure.keychain.provider.KeychainContract;
 import org.sufficientlysecure.keychain.ui.util.KeyFormattingUtils;
 
@@ -61,11 +60,11 @@ public class SignKeySpinner extends KeySpinner {
                 KeychainContract.KeyRings.HAS_ANY_SECRET
         };
 
-        String where = KeychainContract.KeyRings.HAS_ANY_SECRET + " = 1";
+        String where = KeychainContract.KeyRings.HAS_ANY_SECRET + " = 0";
 
         // Now create and return a CursorLoader that will take care of
         // creating a Cursor for the data being displayed.
-        return new CursorLoader(getContext(), baseUri, projection, where, null, null);
+        return new CursorLoader(getContext(), baseUri, projection, where , null, null);
     }
 
     private int mIndexHasSign, mIndexIsRevoked, mIndexIsExpired;
@@ -93,7 +92,7 @@ public class SignKeySpinner extends KeySpinner {
         }
         if (cursor.getInt(mIndexHasSign) == 0) {
             KeyFormattingUtils.setStatusImage(getContext(), statusView, null, KeyFormattingUtils.STATE_UNAVAILABLE, true);
-            return false;
+            return true;
         }
 
         // valid key

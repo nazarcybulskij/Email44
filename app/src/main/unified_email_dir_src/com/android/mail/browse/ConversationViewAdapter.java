@@ -25,10 +25,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.Toast;
 
+import com.android.email_ee.R;
 import com.android.mail.ContactInfoSource;
 import com.android.mail.FormattedDateBuilder;
-import com.android.email_ee.R;
 import com.android.mail.browse.ConversationViewHeader.ConversationViewHeaderCallbacks;
 import com.android.mail.browse.MessageHeaderView.MessageHeaderViewCallbacks;
 import com.android.mail.browse.SuperCollapsedBlock.OnClickListener;
@@ -140,6 +142,8 @@ public class ConversationViewAdapter extends BaseAdapter {
         private FormattedDateBuilder mDateBuilder;
         public CharSequence recipientSummaryText;
 
+        public Button mDecrypt;
+
         MessageHeaderItem(ConversationViewAdapter adapter, FormattedDateBuilder dateBuilder,
                 ConversationMessage message, boolean expanded, boolean showImages) {
             mAdapter = adapter;
@@ -161,7 +165,7 @@ public class ConversationViewAdapter extends BaseAdapter {
         }
 
         @Override
-        public View createView(Context context, LayoutInflater inflater, ViewGroup parent) {
+        public View createView(final Context context, LayoutInflater inflater, ViewGroup parent) {
             final MessageHeaderView v = (MessageHeaderView) inflater.inflate(
                     R.layout.conversation_message_header, parent, false);
             v.initialize(mAdapter.mAccountController,
@@ -169,6 +173,16 @@ public class ConversationViewAdapter extends BaseAdapter {
             v.setCallbacks(mAdapter.mMessageCallbacks);
             v.setContactInfoSource(mAdapter.mContactInfoSource);
             v.setVeiledMatcher(mAdapter.mMatcher);
+
+
+
+            mDecrypt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(context,"Decrypt",Toast.LENGTH_LONG).show();
+                }
+            });
+
             return v;
         }
 

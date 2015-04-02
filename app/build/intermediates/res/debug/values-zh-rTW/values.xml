@@ -29,23 +29,6 @@
     <item msgid="320885379869442589" quantity="one">"移動郵件"</item>
     <item msgid="371256717624461324" quantity="other">"移動郵件數"</item>
   </plurals>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"瀏覽首頁"</string>
-    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"向上瀏覽"</string>
-    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多選項"</string>
-    <string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string>
-    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string>
-    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"選擇應用程式"</string>
-    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查詢"</string>
-    <string msgid="2550479030709304392" name="abc_searchview_description_query">"搜尋查詢"</string>
-    <string msgid="8264924765203268293" name="abc_searchview_description_search">"搜尋"</string>
-    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查詢"</string>
-    <string msgid="893419373245838918" name="abc_searchview_description_voice">"語音搜尋"</string>
-    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"選擇分享對象"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"與「%s」分享"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"您的「<ns1:g id="DUPLICATE">%s</ns1:g>」帳戶已經使用這個使用者名稱。"</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"複製帳戶"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"草稿"</string>
@@ -192,76 +175,12 @@
     <string msgid="1618869759801584109" name="account_setup_username_uneditable_error">"您無法變更帳戶的使用者名稱。如要以其他使用者名稱新增帳戶，請輕觸 [新增帳戶]。"</string>
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"正在載入資料夾清單…"</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"只要幾個步驟即可完成帳戶設定。"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="also_export_secret_keys">一併匯出私鑰</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="5815426892327290362" name="app_name">"電子郵件"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="ask_QuitConfirmation">退出？你確定嗎？</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"無法下載附件。"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="btn_Match">下一步</string>
-    <string name="btn_NoMatch">沒有匹配</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="btn_add_files">加入檔案</string>
-    <string name="btn_add_share_decrypted_text">解密並分享訊息</string>
-    <string name="btn_back">返回</string>
-    <string name="btn_create_key">建立金鑰</string>
-    <string name="btn_decrypt_and_verify">並且驗證簽名</string>
-    <string name="btn_decrypt_clipboard">解密剪貼簿的內容</string>
-    <string name="btn_decrypt_files">解密檔案</string>
-    <string name="btn_decrypt_verify_file">解密並驗證檔案</string>
-    <string name="btn_decrypt_verify_message">解密並驗證訊息</string>
-    <string name="btn_delete">刪除</string>
-    <string name="btn_do_not_save">取消</string>
-    <string name="btn_encrypt_file">加密檔案</string>
-    <string name="btn_encrypt_share_file">加密並分享檔案</string>
-    <string name="btn_export_to_server">上傳到金鑰伺服器</string>
-    <string name="btn_lookup_key">尋找金鑰</string>
-    <string name="btn_next">下一步</string>
-    <string name="btn_no_date">永不過期</string>
-    <string name="btn_okay">確定</string>
-    <string name="btn_save">儲存</string>
-    <string name="btn_share_encrypted_signed">加密並分享訊息</string>
-    <string name="btn_view_cert_key">檢視簽署的金鑰</string>
-    <string name="can_certify">可以簽署</string>
-    <string name="can_certify_not">無法簽署</string>
-    <string name="can_encrypt">可以加密</string>
-    <string name="can_sign">可以簽名</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"取消"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"無法移動，因為選取了多個帳戶。"</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"POP3 帳戶不支援郵件移動功能。"</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"無法移動 [草稿]、[寄件匣] 及 [寄件備份] 中的郵件。"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="choice_10mins">10分鐘</string>
-    <string name="choice_15secs">15秒</string>
-    <string name="choice_1hour">1小時</string>
-    <string name="choice_1min">1分鐘</string>
-    <string name="choice_20mins">20分鐘</string>
-    <string name="choice_2hours">2小時</string>
-    <string name="choice_3mins">3分鐘</string>
-    <string name="choice_40mins">40分鐘</string>
-    <string name="choice_4hours">4小時</string>
-    <string name="choice_5mins">5分鐘</string>
-    <string name="choice_8hours">8小時</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="choice_NumUsers">%d位成員</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="choice_forever">永久</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"正在傳送回應…"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-zh-rTW/strings.xml -->
     <eat-comment/>
@@ -271,11 +190,6 @@
     <eat-comment/>
     <string msgid="3062715563215392251" name="create_action">"建立新回應"</string>
     <string msgid="5175710493691536719" name="debug_title">"偵錯"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="decrypt_result_invalid_signature">無效的簽章!</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="426727923791430306" name="device_admin_description">"啟用伺服器專用安全性政策"</string>
     <string msgid="8680224994637869414" name="device_admin_label">"電子郵件"</string>
     <string msgid="6196985268695592382" name="disable_admin_warning">"警告：如果停用「電子郵件」應用程式的裝置管理權限，系統將刪除所有需要使用這項權限的「電子郵件」帳戶，以及帳戶中所有的電子郵件、聯絡人、日曆活動和其他資料。"</string>
@@ -285,67 +199,12 @@
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"完成"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="dsa">DSA</string>
-    <string name="ecdh">ECDH</string>
-    <string name="ecdsa">ECDSA</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"快速回應"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="elgamal">ElGamal</string>
-    <string name="error">錯誤</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="error_AllMembersMustUpgrade">一些成員使用的是較舊的版本;所有成員都必須升級到最新版本。</string>
-    <string name="error_AllMembersMustUpgradeBadPushToken">所有成員都必須升級，一些正在使用舊的訊息通知格式。</string>
-    <string name="error_CorrectYourInternetConnection">網路不可使用，請檢查您的網路設定。</string>
-    <string name="error_ExchangeProtocolTimeoutExceeded">金鑰交換過程超時。重新開始交換金鑰。</string>
-    <string name="error_HttpCode">伺服器HTTP錯誤：%d</string>
-    <string name="error_InvalidCommitVerify">在金鑰交換中找到不合法的數據。重新開始交換金鑰。</string>
-    <string name="error_InvalidCommonUserId">請輸入一個正整數。</string>
-    <string name="error_LocalGroupCommitDiffer">您已回報的詞語組的差異。重新開始交換金鑰。</string>
-    <string name="error_MinUsersRequired">至少需要%d個成員進行交換金鑰。</string>
-    <string name="error_MoreDataThanUsers">在交換中發生不預期的資料流。重新開始交換金鑰。</string>
-    <string name="error_NoDataToExchange">缺少交換必需的資料數據。</string>
-    <string name="error_NoWordListSelected">你必須選擇一個詞組並繼續進行。</string>
-    <string name="error_OtherGroupCommitDiffer">有人反應詞組有差別。重新開始交換金鑰。</string>
-    <string name="error_OutOfMemoryError">記憶體太少不能夠完成這個操作。</string>
-    <string name="error_ServerAppMessage">伺服器訊息：%s。</string>
-    <string name="error_ServerNotResponding">伺服器沒有回應。</string>
-    <string name="error_TimeoutWaitingForAllMembers">等待收集成員資訊逾時。</string>
-    <string name="error_WebCancelledByUser">使用者取消伺服器請求。</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="error_external_storage_not_ready">外部儲存空間尚未就緒</string>
-    <string name="error_file_not_found">找不到檔案</string>
-    <string name="error_key_size_minimum512bit">金鑰長度必須大於512位元</string>
-    <string name="error_message">錯誤: %s</string>
-    <string name="error_nfc_needed">您的裝置不支援NFC!</string>
-    <string name="error_no_secret_key_found">沒有適合的私鑰</string>
-    <string name="error_wrong_passphrase">口令錯誤</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"公司"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="expired">已過期</string>
-    <string name="expiry_date_dialog_title">設定效期</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-zh-rTW/strings.xml -->
     <eat-comment/>
     <string msgid="1458877219699376279" name="failed">"無法載入圖片"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="file_delete_successful">刪除成功。</string>
-    <string name="filemanager_title_open">開啟…</string>
-    <string name="fingerprint_copied_to_clipboard">指紋已複製到剪貼簿!</string>
-    <string name="flag_authenticate">驗證</string>
-    <string name="flag_certify">簽署</string>
-    <string name="flag_encrypt">加密</string>
-    <string name="flag_sign">簽名</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
     <eat-comment/>
     <string msgid="860241987640527156" name="folder_picker_title">"資料夾選取工具"</string>
@@ -363,67 +222,7 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"小"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"最小"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"一般設定"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="help_size">選擇試圖與您交換資訊的成員數目，然後按確定。</string>
-    <string name="help_userid">螢幕上的號碼是用來建立一個專有的群體，每位成員審視其他成員的號碼後，所有成員必須輸入相同的最低號碼，接著按確定。</string>
-    <string name="help_verify">現在你必須從這三個詞組中找出和所有成員相同(匹配)的詞組，每位成員必須選擇相同的詞組，然後按下一步。</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="key_copied_to_clipboard">金鑰已複製到剪貼簿!</string>
-    <string name="key_exported">成功匯出 1 把金鑰。</string>
-    <string name="key_too_big_for_sharing">金鑰太大無法使用此方式分享!</string>
-    <string name="keys_exported">成功匯出 %d 把金鑰。</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="label_CompareScreensNDevices">比較其他%s個裝置螢幕。</string>
-    <string name="label_NumericModeHint">非英語</string>
-    <string name="label_PromptInstruct">該數字是用來創建一個專有的群體，請您比較該數字並輸入所有成員之間最小的數字。</string>
-    <string name="label_ReceivedNItems">收到%d個項目</string>
-    <string name="label_UserIdHint">最低數字</string>
-    <string name="label_VerifyInstruct">所有的手機都必須顯示一組全匹配3字詞組。比較並選擇該匹配的字詞組。</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="label_algorithm">演算法</string>
-    <string name="label_asymmetric_from">簽名自:</string>
-    <string name="label_comment">註記</string>
-    <string name="label_creation">建立</string>
-    <string name="label_delete_after_decryption">解密後刪除檔案</string>
-    <string name="label_delete_after_encryption">加密後刪除檔案</string>
-    <string name="label_ecc_curve">橢圓曲線</string>
-    <string name="label_email">Email</string>
-    <string name="label_encryption_algorithm">加密演算法</string>
-    <string name="label_expiry">效期</string>
-    <string name="label_file">檔案</string>
-    <string name="label_file_compression">檔案壓縮</string>
-    <string name="label_files">檔案</string>
-    <string name="label_fingerprint">指紋</string>
-    <string name="label_hash_algorithm">雜湊演算法</string>
-    <string name="label_key_id">金鑰ID</string>
-    <string name="label_key_size">金鑰長度</string>
-    <string name="label_keyservers">金鑰伺服器</string>
-    <string name="label_label_use_default_yubikey_pin_summary">使用預設的PIN (123456)來通過NFC存取Yubikeys</string>
-    <string name="label_main_user_id">主身份</string>
-    <string name="label_message">訊息</string>
-    <string name="label_message_compression">訊息壓縮</string>
-    <string name="label_name">名字</string>
-    <string name="label_no_passphrase">沒有口令</string>
-    <string name="label_passphrase">口令</string>
-    <string name="label_passphrase_again">再次輸入口令</string>
-    <string name="label_symmetric">使用口令加密</string>
-    <string name="label_to">加密給:</string>
-    <string name="label_usage">用途</string>
-    <string name="label_use_default_yubikey_pin">使用預設的Yubikey PIN</string>
-    <string name="label_write_version_header">讓別人知道我在使用OpenKeychain</string>
-    <string name="label_write_version_header_summary">在簽名、密文與匯出的金鑰裡寫入\'OpenKeychain v2.7\'</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="lib_name">SafeSlinger交易所</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"<ns1:g id="ACCOUNT_NAME">%s</ns1:g> 登入失敗。"</string>
     <string msgid="7624349996212476176" name="login_failed_title">"無法登入"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"合併檢視"</string>
@@ -440,27 +239,7 @@
     <string msgid="851180833264474141" name="mailbox_settings_mailbox_sync_window_label">"同步處理下列天數的郵件量"</string>
     <string msgid="1180866791599296994" name="mailbox_settings_sync_enabled_label">"同步處理這個資料夾"</string>
     <string msgid="345878979425044320" name="mailbox_settings_sync_enabled_summary">"連線時會下載郵件"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="menu_add_keys">加入金鑰</string>
-    <string name="menu_advanced">顯示進階資訊</string>
-    <string name="menu_beam_preferences">Beam 設定</string>
-    <string name="menu_create_key">建立金鑰</string>
-    <string name="menu_delete_key">刪除金鑰</string>
-    <string name="menu_export_all_keys">匯出所有金鑰</string>
-    <string name="menu_export_key">匯出到檔案</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="2871906096248843471" name="menu_folder_options">"同步處理選項"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="menu_help">說明</string>
-    <string name="menu_key_edit_cancel">取消</string>
-    <string name="menu_preferences">設定</string>
-    <string name="menu_search">搜尋</string>
-    <string name="menu_select_all">全選</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="5181300290654579434" name="message_compose_fwd_header_fmt">\n\n"--------原始郵件 --------\n主旨：<ns1:g id="SUBJECT">%1$s</ns1:g>\n寄件者：<ns1:g id="SENDER">%2$s</ns1:g>\n收件者：<ns1:g id="TO">%3$s</ns1:g>\n副本：<ns1:g id="CC_0">%4$s</ns1:g>\n\n"</string>
     <string msgid="5314107302508728189" name="message_compose_insert_quick_response_list_title">"插入快速回應"</string>
     <string msgid="5817075097532919955" name="message_compose_insert_quick_response_menu_title">"插入快速回應"</string>
@@ -473,18 +252,8 @@
     <eat-comment/>
     <string msgid="8704425397397918798" name="more_than_999">"999+"</string>
     <string msgid="3931301986364184415" name="next_action">"下一步"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="nfc_successful">NFC Beam發送金鑰成功!</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="5559527390337162819" name="no_conversations">"沒有任何郵件。"</string>
     <string msgid="8365197396795675617" name="okay_action">"確定"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="passphrase_for_symmetric_encryption">對稱加密。</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="7174669014074849304" name="password_expire_warning_content_title">"螢幕上鎖密碼即將過期"</string>
     <string msgid="4293446611405084436" name="password_expire_warning_dialog_content_fmt">"您必須儘快變更螢幕上鎖 PIN 或密碼，否則 <ns1:g id="ACCOUNT">%s</ns1:g> 的資料將遭到清除，要立即變更嗎？"</string>
     <string msgid="1687074175399798189" name="password_expire_warning_dialog_title">"螢幕上鎖密碼即將過期"</string>
@@ -512,23 +281,6 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"寄件者圖片"</string>
     <string msgid="5181616311579820981" name="previous_action">"上一步"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="prog_CollectingOthersCommitVerify">等待所有成員被驗證…</string>
-    <string name="prog_CollectingOthersItems">等待所有成員加入…</string>
-    <string name="prog_ConstructingGroupKey">構建群組密鑰…</string>
-    <string name="prog_RequestingUserId">要求成員認證碼…</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="progress_cancel">取消</string>
-    <string name="progress_cancelling">正在取消…</string>
-    <string name="progress_done">完成。</string>
-    <string name="progress_exporting">匯出中…</string>
-    <string name="progress_importing">匯入中…</string>
-    <string name="progress_saving">正在儲存…</string>
-    <string name="progress_uploading">正在上傳…</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"只有部分包含 POP 存取功能的「Plus」帳戶能與這個程式連線。如果您輸入的電子郵件地址和密碼無誤，卻仍無法登入，表示您可能尚未購買「Plus」帳戶。請啟動網頁瀏覽器，以存取這些電子郵件帳戶。"</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"設定這個電子郵件帳戶前，請先造訪 T-Online 網站，並設定 POP3 電子郵件收發功能的密碼。"</string>
     <string msgid="3426057697353380951" name="quick_1">"感謝您！"</string>
@@ -540,31 +292,10 @@
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-zh-rTW/strings.xml -->
     <eat-comment/>
     <string msgid="3319517143224679074" name="retry">"重試"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="revoked">已撤銷</string>
-    <string name="rsa">RSA</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
     <eat-comment/>
     <string msgid="1988862706623227093" name="save_action">"儲存"</string>
     <string msgid="2200412192574686497" name="search_hint">"搜尋電子郵件"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="secret_key">密鑰:</string>
-    <string name="section_advanced">進階</string>
-    <string name="section_certification_key">用來簽署的私鑰</string>
-    <string name="section_cloud_search">雲端檢索</string>
-    <string name="section_decrypt_files">檔案</string>
-    <string name="section_decrypt_text">文字</string>
-    <string name="section_defaults">預設</string>
-    <string name="section_fingerprint">指紋</string>
-    <string name="section_general">一般</string>
-    <string name="section_key_server">金鑰伺服器</string>
-    <string name="section_key_to_certify">要簽署的金鑰</string>
-    <string name="section_keys">子金鑰</string>
-    <string name="section_user_ids">身份</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="2609435447352755285" name="security_changed_ticker_fmt">"「<ns1:g id="ACCOUNT">%s</ns1:g>」帳戶已自行變更安全性設定，使用者不需採取任何行動。"</string>
     <string msgid="2120499087897133665" name="security_needed_ticker_fmt">"「<ns1:g id="ACCOUNT">%s</ns1:g>」帳戶的安全性設定必須更新。"</string>
     <string msgid="443490921895642130" name="security_notification_content_change_title">"安全性政策已變更"</string>
@@ -582,48 +313,5 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"選取您伺服器的垃圾桶資料夾"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"選取您伺服器的垃圾桶資料夾"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"垃圾桶資料夾"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="text_copied_to_clipboard">文字已複製到剪貼簿!</string>
-    <string name="title_add_subkey">新增子金鑰</string>
-    <string name="title_api_registered_apps">應用程式</string>
-    <string name="title_authentication">口令</string>
-    <string name="title_certify_key">簽署身份</string>
-    <string name="title_change_passphrase">變更口令</string>
-    <string name="title_cloud_search_preferences">雲端檢索設定</string>
-    <string name="title_create_key">建立金鑰</string>
-    <string name="title_decrypt">解密</string>
-    <string name="title_decrypt_to_file">解密到檔案</string>
-    <string name="title_edit_key">編輯金鑰</string>
-    <string name="title_encrypt_files">加密檔案</string>
-    <string name="title_encrypt_text">加密文字</string>
-    <string name="title_encrypt_to_file">加密到檔案</string>
-    <string name="title_export_key">匯出金鑰</string>
-    <string name="title_export_keys">匯出所有金鑰</string>
-    <string name="title_help">說明</string>
-    <string name="title_import_keys">匯入金鑰</string>
-    <string name="title_key_details">金鑰內容</string>
-    <string name="title_key_not_found">找不到金鑰</string>
-    <string name="title_key_server_preference">金鑰伺服器設定</string>
-    <string name="title_log_display">紀錄</string>
-    <string name="title_preferences">偏好設定</string>
-    <string name="title_select_recipients">選擇金鑰</string>
-    <string name="title_select_secret_key">選擇私鑰</string>
-    <string name="title_send_key">上傳到金鑰伺服器</string>
-    <string name="title_share_file">分享檔案…</string>
-    <string name="title_share_fingerprint_with">分享指紋…</string>
-    <string name="title_share_key">分享金鑰…</string>
-    <string name="title_share_message">分享訊息…</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="title_size">和多少人交換資訊？</string>
-    <string name="title_userid">分組</string>
-    <string name="title_verify">確認</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-zh-rTW/strings.xml -->
-    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"選取 <ns1:g id="ACCOUNT">%s</ns1:g> 伺服器的垃圾桶資料夾"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/OpenKeychain/unspecified/res/values-zh-rTW/values.xml -->
-    <eat-comment/>
-    <string name="warning">警告</string>
-    <string name="wrong_passphrase">口令錯誤。</string>
 </resources>

@@ -27,7 +27,7 @@ android {
 
     dependencies {
 
-    compile project(':OpenKeychain')
+    //compile project(':OpenKeychain')
 
     compile project(':common')
     compile project(':chips')

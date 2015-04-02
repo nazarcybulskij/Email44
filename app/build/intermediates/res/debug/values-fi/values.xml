@@ -29,23 +29,6 @@
     <item msgid="320885379869442589" quantity="one">"Siirrä viesti"</item>
     <item msgid="371256717624461324" quantity="other">"Siirrä viestit"</item>
   </plurals>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-fi/values.xml -->
-    <eat-comment/>
-    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Siirry etusivulle"</string>
-    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Siirry ylös"</string>
-    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Lisää"</string>
-    <string msgid="4076576682505996667" name="abc_action_mode_done">"Valmis"</string>
-    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Näytä kaikki"</string>
-    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Valitse sovellus"</string>
-    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Tyhjennä kysely"</string>
-    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Hakulauseke"</string>
-    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Haku"</string>
-    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Lähetä kysely"</string>
-    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Puhehaku"</string>
-    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Jakaminen:"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Jakaminen: %s"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-fi/strings.xml -->
-    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"Käytät tätä käyttäjänimeä jo tilissä <ns1:g id="DUPLICATE">%s</ns1:g>."</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"Päällekkäiset tilit"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"Luonnokset"</string>
@@ -193,27 +176,11 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"Ladataan kansioluetteloa..."</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"Tilisi asetuksien määrittäminen käy helposti muutaman vaiheen kautta."</string>
     <string msgid="5815426892327290362" name="app_name">"Sähköposti"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-fi/values.xml -->
-    <eat-comment/>
-    <string name="ask_QuitConfirmation">Lopeta? Oletko varma?</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-fi/strings.xml -->
-    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"Liitettä ei voitu ladata."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-fi/values.xml -->
-    <eat-comment/>
-    <string name="btn_Match">Seuraava</string>
-    <string name="btn_NoMatch">Ei täsmää</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-fi/strings.xml -->
-    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"Peruuta"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"Ei voi siirtää. Valinta sisältää useita tilejä."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"POP3-tilit eivät tue siirtoa."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"Luonnokset-, Lähtevät- ja Lähetetyt-kansioissa olevia viestejä ei voi siirtää."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-fi/values.xml -->
-    <eat-comment/>
-    <string name="choice_NumUsers">%d käyttäjät</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-fi/strings.xml -->
-    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"Vastausta lähetetään..."</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-fi/strings.xml -->
     <eat-comment/>
@@ -233,28 +200,6 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"Valmis"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"Pikavastaukset"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-fi/values.xml -->
-    <eat-comment/>
-    <string name="error_AllMembersMustUpgrade">Jotkut jäsenet käyttävät vanhempaa versiota; kaikkien jäsenten on päivitettävä uusimpaan versioon.</string>
-    <string name="error_AllMembersMustUpgradeBadPushToken">Kaikki jäsenet on päivitettävä, jotkut käyttävät vanhempia push rekisteröinnin muodossa.</string>
-    <string name="error_CorrectYourInternetConnection">Internet ei ole saatavilla, tarkista asetukset.</string>
-    <string name="error_ExchangeProtocolTimeoutExceeded">Vaihto timeout ylitetty. Aloita vaihto uudelleen.</string>
-    <string name="error_HttpCode">Palvelimen HTTP Error: %d</string>
-    <string name="error_InvalidCommitVerify">Väärät tiedot löytyy vaihtoon. Aloita vaihto uudelleen.</string>
-    <string name="error_InvalidCommonUserId">Syötä positiivinen kokonaisluku.</string>
-    <string name="error_LocalGroupCommitDiffer">Olet raportoitu eroa lauseita. Aloita vaihto uudelleen.</string>
-    <string name="error_MinUsersRequired">Vähintään %d jäsentä, tulee vaihtaa tietoja.</string>
-    <string name="error_MoreDataThanUsers">Odottamaton tieto löytyy vaihtoon. Aloita vaihto uudelleen.</string>
-    <string name="error_NoDataToExchange">Vaihto puuttuu tarvittavat tiedot.</string>
-    <string name="error_NoWordListSelected">Sinun tulee valita yksi lauseita ennen kuin jatkat.</string>
-    <string name="error_OtherGroupCommitDiffer">Joku raportoitu ero lauseita. Aloita vaihto uudelleen.</string>
-    <string name="error_OutOfMemoryError">Muisti on liian alhainen suorittaa tätä toimintoa.</string>
-    <string name="error_ServerAppMessage">Server Message: %s</string>
-    <string name="error_ServerNotResponding">Ei vastausta palvelimelta.</string>
-    <string name="error_TimeoutWaitingForAllMembers">Aikakatkaisu odottaa joidenkin ryhmän jäsenten lisätä tietoja.</string>
-    <string name="error_WebCancelledByUser">Käyttäjän peruttu palvelimen pyynnöstä.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-fi/strings.xml -->
-    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"Yritys"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-fi/strings.xml -->
@@ -277,25 +222,7 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"Pieni"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"Hyvin pieni"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"Yleiset asetukset"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-fi/values.xml -->
-    <eat-comment/>
-    <string name="help_size">Valitse määrä ihmisiä, jotka yrittävät vaihtaa tietoja keskenään ja paina OK.</string>
-    <string name="help_userid">Tämä numero tässä näytössä käytetään luomaan ainutlaatuinen joukko käyttäjiä. Arvioi numerot kaikkien käyttäjien näytöt, niin kaikki käyttäjät pitäisi syöttää saman pienin numero ja paina OK.</string>
-    <string name="help_verify">Nyt sinun täytyy vastata näistä 3-sanan lauseita kaikille käyttäjille. Jokainen käyttäjä on valittava sama yhteinen lause, ja paina Seuraava.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-fi/strings.xml -->
-    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-fi/values.xml -->
-    <eat-comment/>
-    <string name="label_CompareScreensNDevices">Vertaa näytöt %s laitteissa.</string>
-    <string name="label_NumericModeHint">Ei-Englanti</string>
-    <string name="label_PromptInstruct">Tätä numeroa käytetään luoda ainutlaatuinen joukko käyttäjiä. Vertaa ja kirjoita pienin määrä kaikkien käyttäjien kesken.</string>
-    <string name="label_ReceivedNItems">sai %d kohdetta</string>
-    <string name="label_UserIdHint">Alin</string>
-    <string name="label_VerifyInstruct">Kaikki puhelimet on vastattava yksi 3-sanan lauseita. Vertaa, ja sitten valita Matching lause.</string>
-    <string name="lib_name">SafeSlinger Exchange</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-fi/strings.xml -->
-    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"Kirjautuminen tiliin <ns1:g id="ACCOUNT_NAME">%s</ns1:g> epäonnistui."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"Kirjautuminen ei onnistu"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"Yhdistetty näkymä"</string>
@@ -354,14 +281,6 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"Lähettäjän kuva"</string>
     <string msgid="5181616311579820981" name="previous_action">"Edellinen"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-fi/values.xml -->
-    <eat-comment/>
-    <string name="prog_CollectingOthersCommitVerify">odottaa tarkastusta kaikilta jäseniltä…</string>
-    <string name="prog_CollectingOthersItems">odottaa kaikkien käyttäjien liittyä…</string>
-    <string name="prog_ConstructingGroupKey">rakentamalla ryhmä avain…</string>
-    <string name="prog_RequestingUserId">jäseneksi hakevan…</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-fi/strings.xml -->
-    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"Vain joihinkin Plus-tileihin sisältyy POP-käyttö, joka sallii tämän ohjelman muodostaa yhteyden. Jos et pysty kirjautumaan tiliisi sähköpostiosoitteellasi ja salasanallasi, sinulla ei ehkä ole maksullista Plus-tiliä. Pääset käyttämään näitä sähköpostitilejä käynnistämällä verkkoselaimen."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"Käy ennen tämän sähköpostitilin luomista T-Onlinen sivustossa ja luo salasana sähköpostin POP3-käyttöä varten."</string>
     <string msgid="3426057697353380951" name="quick_1">"Kiitos!"</string>
@@ -394,12 +313,5 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"Valitse palvelimen roskakori"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"Valitse palvelimen roskakori"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"Roskakori"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-fi/values.xml -->
-    <eat-comment/>
-    <string name="title_size">Kuinka monta käyttäjien vaihtoon?</string>
-    <string name="title_userid">Ryhmittymä</string>
-    <string name="title_verify">Tarkistaa</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-fi/strings.xml -->
-    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"Valitse roskakori tilille <ns1:g id="ACCOUNT">%s</ns1:g>"</string>
 </resources>

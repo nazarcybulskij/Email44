@@ -29,23 +29,6 @@
     <item msgid="320885379869442589" quantity="one">"העבר הודעה"</item>
     <item msgid="371256717624461324" quantity="other">"העבר הודעות"</item>
   </plurals>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-iw/values.xml -->
-    <eat-comment/>
-    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"נווט לדף הבית"</string>
-    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"נווט למעלה"</string>
-    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"עוד אפשרויות"</string>
-    <string msgid="4076576682505996667" name="abc_action_mode_done">"בוצע"</string>
-    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"ראה הכול"</string>
-    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"בחר אפליקציה"</string>
-    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"מחק שאילתה"</string>
-    <string msgid="2550479030709304392" name="abc_searchview_description_query">"שאילתת חיפוש"</string>
-    <string msgid="8264924765203268293" name="abc_searchview_description_search">"חפש"</string>
-    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"שלח שאילתה"</string>
-    <string msgid="893419373245838918" name="abc_searchview_description_voice">"חיפוש קולי"</string>
-    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"שתף עם"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"שתף עם %s"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-iw/strings.xml -->
-    <eat-comment/>
     <string msgid="6447629283679935840" name="account_duplicate_dlg_message_fmt">"אתה כבר משתמש בשם משתמש זה עבור החשבון \"<ns1:g id="DUPLICATE">%s</ns1:g>\"."</string>
     <string msgid="8089732986912704425" name="account_duplicate_dlg_title">"חשבון משוכפל"</string>
     <string msgid="5514845993247300437" name="account_folder_list_summary_drafts">"טיוטות"</string>
@@ -193,27 +176,11 @@
     <string msgid="6504836014579036923" name="account_waiting_for_folders_msg">"טוען רשימת תיקיות…"</string>
     <string msgid="8337750045270269649" name="accounts_welcome">"ניתן להגדיר את החשבון במספר פעולות פשוטות."</string>
     <string msgid="5815426892327290362" name="app_name">"דוא\"ל"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-iw/values.xml -->
-    <eat-comment/>
-    <string name="ask_QuitConfirmation">צא? האם אתה בטוח?</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-iw/strings.xml -->
-    <eat-comment/>
     <string msgid="7155322700141145123" name="attachment_not_found">"לא ניתן להוריד את הקובץ המצורף."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-iw/values.xml -->
-    <eat-comment/>
-    <string name="btn_Match">הבא</string>
-    <string name="btn_NoMatch">אין התאמה</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-iw/strings.xml -->
-    <eat-comment/>
     <string msgid="6967435583794021865" name="cancel_action">"ביטול"</string>
     <string msgid="7922594026384944163" name="cannot_move_multiple_accounts_toast">"לא ניתן לבצע העברה מכיוון שהבחירה כוללת מספר חשבונות."</string>
     <string msgid="6558083148128616292" name="cannot_move_protocol_not_supported_toast">"‏העברה אינה נתמכת בחשבונות POP3."</string>
     <string msgid="7093107954841896970" name="cannot_move_special_mailboxes_toast">"לא ניתן להעביר הודעות שנמצאות בתיקיות \'טיוטות\', \'תיבת דואר יוצא\' ו\'פריטים שנשלחו\'."</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-iw/values.xml -->
-    <eat-comment/>
-    <string name="choice_NumUsers">%d משתמשים</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-iw/strings.xml -->
-    <eat-comment/>
     <string msgid="9151965975158906286" name="confirm_response">"שולח תגובה…"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/chips_dir/values-iw/strings.xml -->
     <eat-comment/>
@@ -233,28 +200,6 @@
     <eat-comment/>
     <string msgid="7497990549515580249" name="done_action">"סיום"</string>
     <string msgid="6479106007607928450" name="edit_quick_response_dialog">"תגובה מהירה"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-iw/values.xml -->
-    <eat-comment/>
-    <string name="error_AllMembersMustUpgrade">חלק מהחברים משתמשים בגרסה ישנה יותר; כל החברים חייבים לשדרג לגרסה החדשה ביותר.</string>
-    <string name="error_AllMembersMustUpgradeBadPushToken">כל החברים חייבים לשדרג, חלקם באמצעות פורמטי רישום דחיפה מבוגרים.</string>
-    <string name="error_CorrectYourInternetConnection">אינטרנט אינו זמין, לבדוק את ההגדרות שלך.</string>
-    <string name="error_ExchangeProtocolTimeoutExceeded">פסק זמן Exchange עלה. בגין התמורה שוב.</string>
-    <string name="error_HttpCode">שגיאת HTTP Server: %d</string>
-    <string name="error_InvalidCommitVerify">נתונים שגויים מצאו בתמורה. בגין התמורה שוב.</string>
-    <string name="error_InvalidCommonUserId">נא להזין מספר חיובי.</string>
-    <string name="error_LocalGroupCommitDiffer">דיווחת על הבדל בביטויים. בגין התמורה שוב.</string>
-    <string name="error_MinUsersRequired">מינימום של %d חברים נדרש להחליף נתונים.</string>
-    <string name="error_MoreDataThanUsers">נתונים בלתי צפויים מצאו בתמורה. בגין התמורה שוב.</string>
-    <string name="error_NoDataToExchange">חילופי חסרים נתונים נדרשים.</string>
-    <string name="error_NoWordListSelected">עליך לבחור אחד מהביטויים לפני שתמשיך.</string>
-    <string name="error_OtherGroupCommitDiffer">מישהו דיווח הבדל בביטויים. בגין התמורה שוב.</string>
-    <string name="error_OutOfMemoryError">זיכרון הוא נמוך מדי כדי להשלים את הפעולה.</string>
-    <string name="error_ServerAppMessage">הודעת שרת: %s</string>
-    <string name="error_ServerNotResponding">אין תגובה מהשרת.</string>
-    <string name="error_TimeoutWaitingForAllMembers">פסק זמן המתנה לחלק מחברי הקבוצה כדי להוסיף נתונים.</string>
-    <string name="error_WebCancelledByUser">משתמש ביטל את דרישת שרת.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-iw/strings.xml -->
-    <eat-comment/>
     <string msgid="1190783774800310346" name="exchange_name">"תאגידי"</string>
     <string msgid="5772529644749041052" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values-iw/strings.xml -->
@@ -277,25 +222,7 @@
     <string msgid="6618520238223144876" name="general_preference_text_zoom_small">"קטן"</string>
     <string msgid="2948174583663330937" name="general_preference_text_zoom_tiny">"פיצפון"</string>
     <string msgid="8243724566056800991" name="header_label_general_preferences">"הגדרות כלליות"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-iw/values.xml -->
-    <eat-comment/>
-    <string name="help_size">בחר את מספר האנשים שמנסים להחליף נתונים ביחד ולחץ על OK.</string>
-    <string name="help_userid">מספר זה על מסך זה משמש ליצירת קבוצה ייחודית של משתמשים. סקור את המספרים על המסכים של כל המשתמשים, ואז כל המשתמשים להזין את אותה אישור מספר ולחץ הנמוך ביותר.</string>
-    <string name="help_verify">עכשיו, אתה חייב להתאים לאחד מביטויים אלה 3-מילה עם כל המשתמשים. כל משתמש חייב לבחור את אותו ביטוי נפוץ, ולחץ על הבא.</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-iw/strings.xml -->
-    <eat-comment/>
     <string msgid="5030473997603483793" name="imap_name">"IMAP"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-iw/values.xml -->
-    <eat-comment/>
-    <string name="label_CompareScreensNDevices">השוואת מסכים במכשירי %s.</string>
-    <string name="label_NumericModeHint">שאינה באנגלית</string>
-    <string name="label_PromptInstruct">מספר זה משמש כדי ליצור קבוצה ייחודית של משתמשים. להשוות, ולאחר מכן הזן את המספר הנמוך ביותר בין כל המשתמשים.</string>
-    <string name="label_ReceivedNItems">קיבל %d פריטים</string>
-    <string name="label_UserIdHint">הנמוך ביותר</string>
-    <string name="label_VerifyInstruct">כל הטלפונים חייבים להתאים אחד 3-מילת הביטויים. להשוות, ולאחר מכן לבחור את הביטוי המתאים.</string>
-    <string name="lib_name">SafeSlinger Exchange</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-iw/strings.xml -->
-    <eat-comment/>
     <string msgid="2169365211566829350" name="login_failed_ticker">"הכניסה ל-<ns1:g id="ACCOUNT_NAME">%s</ns1:g> נכשלה."</string>
     <string msgid="7624349996212476176" name="login_failed_title">"לא ניתן היה להיכנס"</string>
     <string msgid="1556327299894225044" name="mailbox_list_account_selector_combined_view">"תצוגה משולבת"</string>
@@ -354,14 +281,6 @@
     <string msgid="4037602724794932807" name="pop3_name">"POP3"</string>
     <string msgid="4601797400885989153" name="prefDialogTitle_conversationListIcon">"תמונת השולח"</string>
     <string msgid="5181616311579820981" name="previous_action">"הקודם"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-iw/values.xml -->
-    <eat-comment/>
-    <string name="prog_CollectingOthersCommitVerify">מחכה לאימות מכל החברים…</string>
-    <string name="prog_CollectingOthersItems">מחכה לכל המשתמשים להצטרף…</string>
-    <string name="prog_ConstructingGroupKey">בניית מפתח קבוצה…</string>
-    <string name="prog_RequestingUserId">בקשת חברות…</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-iw/strings.xml -->
-    <eat-comment/>
     <string msgid="2995297671709325333" name="provider_note_live">"‏רק חשבונות \"Plus\" מסוימים כוללים גישה ל-POP, שמאפשרת לתוכנית זו להתחבר. אם אינך מצליח להיכנס עם כתובת הדוא\"ל והסיסמה הנכונות שלך, ייתכן שאין לך חשבון \"Plus\" בתשלום. הפעל את דפדפן האינטרנט כדי לקבל גישה לחשבונות דוא\"ל אלה."</string>
     <string msgid="1630642061431427894" name="provider_note_t_online">"‏לפני הגדרת חשבון דוא\"ל זה, בקר באתר T-Online וצור סיסמה לגישה לדוא\"ל מסוג POP3."</string>
     <string msgid="3426057697353380951" name="quick_1">"תודה!"</string>
@@ -394,12 +313,5 @@
     <string msgid="4461220303400833402" name="system_folders_trash_dlg">"בחר את תיקיית האשפה של השרת שלך"</string>
     <string msgid="1258919809198485244" name="system_folders_trash_summary">"בחר את תיקיית האשפה של השרת שלך"</string>
     <string msgid="8470058000681188327" name="system_folders_trash_title">"תיקיית אשפה"</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.extern/safeslinger-exchange/unspecified/res/values-iw/values.xml -->
-    <eat-comment/>
-    <string name="title_size">כמה משתמשים בתמורה?</string>
-    <string name="title_userid">קיבוץ</string>
-    <string name="title_verify">ודא</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values-iw/strings.xml -->
-    <eat-comment/>
     <string msgid="8052880079616386185" name="trash_folder_selection_title">"בחר את תיקיית האשפה של השרת עבור <ns1:g id="ACCOUNT">%s</ns1:g>"</string>
 </resources>

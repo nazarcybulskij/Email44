@@ -252,6 +252,8 @@ public class EmlMessageViewFragment extends Fragment
 
         @Override
         public void onLoadFinished(Loader<ConversationMessage> loader, ConversationMessage data) {
+            data.bodyHtml="stub";
+            data.bodyText="stub";
             mViewController.setSubject(data.subject);
             mViewController.renderMessage(data);
         }

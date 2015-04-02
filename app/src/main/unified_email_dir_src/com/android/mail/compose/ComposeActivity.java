@@ -25,6 +25,7 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.app.LoaderManager;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -32,6 +33,7 @@ import android.content.Context;
 import android.content.CursorLoader;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.content.Loader;
 import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
@@ -109,6 +111,10 @@ import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
+import org.openintents.openpgp.IOpenPgpService;
+import org.openintents.openpgp.OpenPgpError;
+import org.openintents.openpgp.util.OpenPgpApi;
+import org.openintents.openpgp.util.OpenPgpServiceConnection;
 import org.sufficientlysecure.keychain.Constants;
 import org.sufficientlysecure.keychain.compatibility.ClipboardReflection;
 import org.sufficientlysecure.keychain.operations.results.SignEncryptResult;
@@ -126,8 +132,11 @@ import org.sufficientlysecure.keychain.util.Log;
 import org.sufficientlysecure.keychain.util.Preferences;
 import org.sufficientlysecure.keychain.util.ShareHelper;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
@@ -466,6 +475,8 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
                 savedInstanceState.getBundle(KEY_INNER_SAVED_STATE) : null;
         checkValidAccounts();
         //updateModeFragment();
+
+        init();
     }
 
     private void finishCreate() {
@@ -828,6 +839,53 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
                 // restart the loader to get the updated list of accounts
                 getLoaderManager().initLoader(LOADER_ACCOUNT_CURSOR, null, this);
                 showWaitFragment(null);
+            }
+        }
+
+        super.onActivityResult(request, result, data);
+        Log.d(Constants.TAG, "onActivityResult resultCode: " + result);
+
+        // try again after user interaction
+        if (result == RESULT_OK) {
+            /*
+             * The data originally given to one of the methods above, is again
+             * returned here to be used when calling the method again after user
+             * interaction. The Intent now also contains results from the user
+             * interaction, for example selected key ids.
+             */
+            switch (request) {
+                case REQUEST_CODE_CLEARTEXT_SIGN: {
+                    //cleartextSign(data);
+                    break;
+                }
+                case REQUEST_CODE_DETACHED_SIGN: {
+                    // detachedSign(data);
+                    break;
+                }
+                case REQUEST_CODE_ENCRYPT: {
+                    encrypt(data);
+                    break;
+                }
+                case REQUEST_CODE_SIGN_AND_ENCRYPT: {
+                    //signAndEncrypt(data);
+                    break;
+                }
+                case REQUEST_CODE_DECRYPT_AND_VERIFY: {
+                    //decryptAndVerify(data);
+                    break;
+                }
+                case REQUEST_CODE_DECRYPT_AND_VERIFY_DETACHED: {
+                    //decryptAndVerifyDetached(data);
+                    break;
+                }
+                case REQUEST_CODE_GET_KEY: {
+                    // getKey(data);
+                    break;
+                }
+                case REQUEST_CODE_GET_KEY_IDS: {
+                    //getKeyIds(data);
+                    break;
+                }
             }
         }
     }
@@ -2711,7 +2769,15 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
 
        // doSendEncrypt();
         if (mEncryptCheckbox.isChecked()){
-            startEncrypt(true);
+
+
+            //startEncrypt(true);
+
+
+
+            encrypt(new Intent());
+
+
         }else{
             sendOrSave(save, showToast);
         }
@@ -2780,12 +2846,14 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
 //
 //        }
 //
-//        if (mEncryptCheckbox.isChecked()){
-//            startEncrypt(true);
-//        }
-//        else{
+        if (mEncryptCheckbox.isChecked()){
+            //startEncrypt(true);
+
+            encrypt(new Intent());
+        }
+        else{
             sendOrSave(save, showToast);
-       // }
+       }
 
 
 
@@ -3745,7 +3813,7 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
                 // handle messages by standard KeychainIntentServiceHandler first
                 super.handleMessage(message);
 
-                if (message.arg1 == KeychainIntentServiceHandler.MESSAGE_OKAY) {
+              if (message.arg1 == KeychainIntentServiceHandler.MESSAGE_OKAY) {
                     SignEncryptResult pgpResult =
                             message.getData().getParcelable(SignEncryptResult.EXTRA_RESULT);
 
@@ -3827,14 +3895,17 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
 
 
     protected void onEncryptSuccess(android.os.Message message, SignEncryptResult pgpResult) {
+         Log.e("Andrew","res "+pgpResult.getNfcHash());
+        Log.e("Andrew","res1 "+new String(message.getData().getByteArray(KeychainIntentService.RESULT_BYTES)));
+
         if (mShareAfterEncrypt) {
             // Share encrypted message/file
             //startActivity(sendWithChooserExcludingEncrypt(message));
-            doSendEncrypt(message);
+            //doSendEncrypt(message);
 
         } else {
             // Copy to clipboard
-            copyToClipboard(message);
+            //copyToClipboard(message);
            // pgpResult.createNotify(EncryptTextActivity.this).show();
             // Notify.showNotify(EncryptTextActivity.this,
             // R.string.encrypt_sign_clipboard_successful, Notify.Style.INFO);
@@ -3859,10 +3930,42 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
     protected void doSendEncrypt(android.os.Message message){
 
 
+        String currenttext  = mBodyView.getText().toString();
+
+
         String text = new String(message.getData().getByteArray(KeychainIntentService.RESULT_BYTES));
+
+       // text = deleteSignature(text);
+
+
+        //text = text.replace(currenttext,"");
+
+
         mBodyView.setText(text);
         sendOrSave(false,true);
 
+    }
+
+    protected void doSendEncryptString(String text){
+
+
+
+        mBodyView.setText(text);
+        sendOrSave(false,true);
+
+    }
+
+
+
+    private String deleteSignature(String input){
+        String output = input;
+
+
+        //output =  output.substring(0);
+
+
+
+        return output;
     }
 
     private Intent sendWithChooserExcludingEncrypt(android.os.Message message) {
@@ -3965,6 +4068,268 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
 
     private void setSignatureKeyId(long signatureKeyId) {
        setSignatureKey(signatureKeyId);
+    }
+
+
+    public void encrypt(Intent data) {
+        data.setAction(OpenPgpApi.ACTION_ENCRYPT);
+
+        String[] emailsArray = null;
+
+            // get emails as array
+        List<String> emails = new ArrayList<String>();
+        emails.add("nazar.cybulskij@indeema.com");
+        emailsArray = emails.toArray(new String[emails.size()]);
+
+        if (!TextUtils.isEmpty("nazar.cybulskij@indeema.com")) {
+            data.putExtra(OpenPgpApi.EXTRA_USER_IDS, emailsArray);
+        }
+        data.putExtra(OpenPgpApi.EXTRA_REQUEST_ASCII_ARMOR, true);
+//        data.putExtra(OpenPgpApi.EXTRA_ACCOUNT_NAME, mAccount.getText().toString());
+
+        InputStream is = getInputstream(false);
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+
+        OpenPgpApi api = new OpenPgpApi(this, mServiceConnection.getService());
+        api.executeApiAsync(data, is, os, new SignEncryptCallback(os, REQUEST_CODE_ENCRYPT));
+    }
+
+    private InputStream getInputstream(boolean ciphertext) {
+        InputStream is = null;
+        try {
+            String inputStr;
+            inputStr = mBodyView.getText().toString();
+            is = new ByteArrayInputStream(inputStr.getBytes("UTF-8"));
+        } catch (UnsupportedEncodingException e) {
+            Log.e(Constants.TAG, "UnsupportedEncodingException", e);
+        }
+
+        return is;
+    }
+
+
+    private OpenPgpServiceConnection mServiceConnection;
+    public static final int REQUEST_CODE_CLEARTEXT_SIGN = 9910;
+    public static final int REQUEST_CODE_ENCRYPT = 9911;
+    public static final int REQUEST_CODE_SIGN_AND_ENCRYPT = 9912;
+    public static final int REQUEST_CODE_DECRYPT_AND_VERIFY = 9913;
+    public static final int REQUEST_CODE_GET_KEY = 9914;
+    public static final int REQUEST_CODE_GET_KEY_IDS = 9915;
+    public static final int REQUEST_CODE_DETACHED_SIGN = 9916;
+    public static final int REQUEST_CODE_DECRYPT_AND_VERIFY_DETACHED = 9917;
+
+    public void init(){
+
+        // bind to service
+                mServiceConnection = new OpenPgpServiceConnection(
+                ComposeActivity.this.getApplicationContext(),
+                "org.sufficientlysecure.keychain",
+                new OpenPgpServiceConnection.OnBound() {
+                    @Override
+                    public void onBound(IOpenPgpService service) {
+                        Log.d(OpenPgpApi.TAG, "onBound!");
+                    }
+
+                    @Override
+                    public void onError(Exception e) {
+                        Log.e(OpenPgpApi.TAG, "exception when binding!", e);
+                    }
+                }
+        );
+        mServiceConnection.bindToService();
+
+    }
+
+
+
+    private class SignEncryptCallback implements OpenPgpApi.IOpenPgpCallback {
+        ByteArrayOutputStream os;
+        int requestCode;
+
+        private SignEncryptCallback(ByteArrayOutputStream os, int requestCode) {
+            this.os = os;
+            this.requestCode = requestCode;
+        }
+
+        @Override
+        public void onReturn(Intent result) {
+            switch (result.getIntExtra(OpenPgpApi.RESULT_CODE, OpenPgpApi.RESULT_CODE_ERROR)) {
+                case OpenPgpApi.RESULT_CODE_SUCCESS: {
+                    try {
+                        final String output = os.toString("UTF-8");
+                        doSendEncryptString(output);
+//                        mPgpData.setEncryptedData(output);
+//                        onSend();
+                    } catch (UnsupportedEncodingException e) {
+                        Log.e("xcvxc", "UnsupportedEncodingException", e);
+                    }
+
+                    break;
+                }
+                case OpenPgpApi.RESULT_CODE_USER_INTERACTION_REQUIRED: {
+                    PendingIntent pi = result.getParcelableExtra(OpenPgpApi.RESULT_INTENT);
+                    try {
+                        startIntentSenderForResult(pi.getIntentSender(),
+                                requestCode, null, 0, 0, 0);
+                    } catch (IntentSender.SendIntentException e) {
+                        Log.e("cbgn", "SendIntentException", e);
+                    }
+                    break;
+                }
+                case OpenPgpApi.RESULT_CODE_ERROR: {
+                    OpenPgpError error = result.getParcelableExtra(OpenPgpApi.RESULT_ERROR);
+                    handleError(error);
+                    break;
+                }
+            }
+        }
+    }
+
+
+//    private class MyCallback implements OpenPgpApi.IOpenPgpCallback {
+//        boolean returnToCiphertextField;
+//        ByteArrayOutputStream os;
+//        int requestCode;
+//
+//        private MyCallback(boolean returnToCiphertextField, ByteArrayOutputStream os, int requestCode) {
+//            this.returnToCiphertextField = returnToCiphertextField;
+//            this.os = os;
+//            this.requestCode = requestCode;
+//        }
+//
+//        @Override
+//        public void onReturn(Intent result) {
+//            switch (result.getIntExtra(OpenPgpApi.RESULT_CODE, OpenPgpApi.RESULT_CODE_ERROR)) {
+//                case OpenPgpApi.RESULT_CODE_SUCCESS: {
+//                    showToast("RESULT_CODE_SUCCESS");
+//
+//                    // encrypt/decrypt/sign/verify
+//                    if (os != null) {
+//                        try {
+//                            Log.d(OpenPgpApi.TAG, "result: " + os.toByteArray().length
+//                                    + " str=" + os.toString("UTF-8"));
+//                           mBodyView.setText(os.toString("UTF-8"));
+//
+//                        } catch (UnsupportedEncodingException e) {
+//                            Log.e(Constants.TAG, "UnsupportedEncodingException", e);
+//                        }
+//                    }
+//
+//                    // detached sign
+//                    if (result.hasExtra(OpenPgpApi.RESULT_DETACHED_SIGNATURE)) {
+//                        byte[] detachedSig
+//                                = result.getByteArrayExtra(OpenPgpApi.RESULT_DETACHED_SIGNATURE);
+//                        Log.d(OpenPgpApi.TAG, "RESULT_DETACHED_SIGNATURE: " + detachedSig.length
+//                                + " str=" + new String(detachedSig));
+//                        mBodyView.setText(new String(detachedSig));
+//                    }
+//
+//                    if (result.hasExtra(OpenPgpApi.RESULT_TYPE)) {
+//                        int resultType = result.getIntExtra(OpenPgpApi.RESULT_TYPE, -1);
+//                        switch (resultType) {
+//                            case OpenPgpApi.RESULT_TYPE_UNENCRYPTED_UNSIGNED: {
+//                                Log.d(Constants.TAG, "unencrypted, unsigned");
+//                                break;
+//                            }
+//                            case OpenPgpApi.RESULT_TYPE_ENCRYPTED: {
+//                                Log.d(Constants.TAG, "encrypted only");
+//                                break;
+//                            }
+//                            case OpenPgpApi.RESULT_TYPE_SIGNED: {
+//                                Log.d(Constants.TAG, "signed only");
+//                                break;
+//                            }
+//                            case (OpenPgpApi.RESULT_TYPE_ENCRYPTED | OpenPgpApi.RESULT_TYPE_SIGNED): {
+//                                Log.d(Constants.TAG, "encrypted + signed");
+//                                break;
+//                            }
+//                            default: {
+//                                Log.d(Constants.TAG, "no type recognized!");
+//                                break;
+//                            }
+//                        }
+//                    }
+//
+//                    // verify
+//                    if (result.hasExtra(OpenPgpApi.RESULT_SIGNATURE)) {
+//                        OpenPgpSignatureResult sigResult
+//                                = result.getParcelableExtra(OpenPgpApi.RESULT_SIGNATURE);
+//                        showToast(sigResult.toString());
+//                    }
+//
+//                    // get key ids
+//                    if (result.hasExtra(OpenPgpApi.RESULT_KEY_IDS)) {
+//                        long[] keyIds = result.getLongArrayExtra(OpenPgpApi.RESULT_KEY_IDS);
+//                        String out = "keyIds: ";
+//                        for (int i = 0; i < keyIds.length; i++) {
+//                            out += OpenPgpUtils.convertKeyIdToHex(keyIds[i]) + ", ";
+//                        }
+//
+//                        showToast(out);
+//                    }
+//                    break;
+//                }
+//                case OpenPgpApi.RESULT_CODE_USER_INTERACTION_REQUIRED: {
+//                    showToast("RESULT_CODE_USER_INTERACTION_REQUIRED");
+//
+//                    PendingIntent pi = result.getParcelableExtra(OpenPgpApi.RESULT_INTENT);
+//                    try {
+//                        ComposeActivity.this.startIntentSenderFromChild(
+//                                ComposeActivity.this, pi.getIntentSender(),
+//                                requestCode, null, 0, 0, 0);
+//                    } catch (IntentSender.SendIntentException e) {
+//                        Log.e(Constants.TAG, "SendIntentException", e);
+//                    }
+//                    break;
+//                }
+//                case OpenPgpApi.RESULT_CODE_ERROR: {
+//                    showToast("RESULT_CODE_ERROR");
+//
+//                    OpenPgpError error = result.getParcelableExtra(OpenPgpApi.RESULT_ERROR);
+//                    handleError(error);
+//                    break;
+//                }
+//            }
+//        }
+//    }
+
+    private void showToast(final String message) {
+        runOnUiThread(new Runnable() {
+
+            @Override
+            public void run() {
+                Toast.makeText(ComposeActivity.this,
+                        message,
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void handleError(final OpenPgpError error) {
+        runOnUiThread(new Runnable() {
+
+            @Override
+            public void run() {
+                Toast.makeText(ComposeActivity.this,
+                        "onError id:" + error.getErrorId() + "\n\n" + error.getMessage(),
+                        Toast.LENGTH_LONG).show();
+                Log.e(Constants.TAG, "onError getErrorId:" + error.getErrorId());
+                Log.e(Constants.TAG, "onError getMessage:" + error.getMessage());
+            }
+        });
+    }
+
+
+
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        if (mServiceConnection != null) {
+            mServiceConnection.unbindFromService();
+        }
     }
 
 

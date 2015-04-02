@@ -37,7 +37,15 @@
             android:paddingRight="16dip"
             android:fadingEdgeLength="16dip" />
 
+
+
+
+
+
         <include layout="@layout/one_button_button_bar"/>
+
+
+
 
     </LinearLayout>
 </FrameLayout>
