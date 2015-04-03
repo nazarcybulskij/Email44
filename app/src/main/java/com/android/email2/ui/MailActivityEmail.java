@@ -47,7 +47,7 @@ import com.android.mail.utils.LogTag;
 import com.android.mail.utils.LogUtils;
 import com.android.mail.utils.Utils;
 
-import org.spongycastle.jce.provider.BouncyCastleProvider;
+
 
 import java.security.Security;
 
@@ -174,7 +174,7 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
     public void onCreate(Bundle bundle) {
 
         //MultiDex.install(this);
-        Security.addProvider(new BouncyCastleProvider());
+       // Security.addProvider(new BouncyCastleProvider());
 
         final Intent intent = getIntent();
         final Uri data = intent != null ? intent.getData() : null;

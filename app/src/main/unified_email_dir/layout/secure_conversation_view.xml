@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/notify_area"/>
+            <!--<include layout="@layout/notify_area"/>-->
 
 
             <include layout="@layout/conversation_view_header"

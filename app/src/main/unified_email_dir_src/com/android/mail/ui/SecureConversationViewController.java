@@ -154,6 +154,10 @@ public class SecureConversationViewController implements
     public void renderMessage(ConversationMessage message) {
         mMessage = message;
 
+
+//        message.bodyHtml="stub";
+//        message.bodyText="stub";
+
         mWebView.getSettings().setBlockNetworkImage(!mMessage.alwaysShowImages);
 
         // Add formatting to message body
@@ -242,6 +246,13 @@ public class SecureConversationViewController implements
     public FragmentManager getFragmentManager() {
         return mCallbacks.getFragment().getFragmentManager();
     }
+
+
+
+
+
+
+
 
     // End MessageHeaderViewCallbacks implementations
 }

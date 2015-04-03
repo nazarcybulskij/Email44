@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 19
     buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "com.android.email_ee"
         minSdkVersion 14
-        targetSdkVersion 21
+        targetSdkVersion 19
 
        // multiDexEnabled true
 
@@ -41,6 +41,12 @@ android {
     compile 'com.android.support:support-v13:19.0.0'
     compile 'com.beetstra.jutf7:jutf7:1.0.0'
 
+    compile 'com.android.support:support-v4:19.0.0'
+    compile 'com.android.support:appcompat-v7:19.0.0'
+//    compile project(':extern:openpgp-api-lib')
+    compile project(':extern:openkeychain-api-lib')
+
+     compile project(':openpgp-api-library')
 
 
 

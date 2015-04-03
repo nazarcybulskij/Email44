@@ -71,7 +71,7 @@ import com.google.android.mail.common.html.parser.HtmlTreeBuilder;
 import com.google.common.collect.Maps;
 
 import org.json.JSONObject;
-import org.sufficientlysecure.keychain.ui.KeyListActivity;
+
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
@@ -798,9 +798,9 @@ public class Utils {
 
 
     public static void showKeychain(Context context, Account account, String fromWhere) {
-        Intent intent = new Intent(context,KeyListActivity.class);
-        context.startActivity(intent);
-        Toast.makeText(context, "ssh  Utils", Toast.LENGTH_LONG).show();
+//        Intent intent = new Intent(context,KeyListActivity.class);
+//        context.startActivity(intent);
+//        Toast.makeText(context, "ssh  Utils", Toast.LENGTH_LONG).show();
     }
 
 
