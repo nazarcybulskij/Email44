@@ -17,7 +17,7 @@ android {
     sourceSets {
         main {
             java.srcDirs = ['src/main/java','src/main/unified_email_dir_src']
-            res.srcDirs = ['src/main/res','src/main/chips_dir','src/main/unified_email_dir','src/main/photo_dir','src/main/emailcommon_dir','src/main/gridlayout_dir']
+            res.srcDirs = ['src/main/res','src/main/chips_dir','src/main/unified_email_dir','src/main/photo_dir','src/main/emailcommon_dir','src/main/gridlayout_dir','src/main/res_k9']
         }
     }
 
@@ -43,6 +43,7 @@ android {
 
     compile 'com.android.support:support-v4:19.0.0'
     compile 'com.android.support:appcompat-v7:19.0.0'
+    compile 'com.android.support:gridlayout-v7:13.0.0'
 //    compile project(':extern:openpgp-api-lib')
     compile project(':extern:openkeychain-api-lib')
 

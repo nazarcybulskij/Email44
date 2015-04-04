@@ -130,6 +130,14 @@ public class AccountSetupOutgoingFragment extends AccountServerBaseFragment
         securityTypesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mSecurityTypeView.setAdapter(securityTypesAdapter);
 
+        mSecurityTypeView.post(new Runnable() {
+            @Override
+            public void run() {
+                mSecurityTypeView.setSelection(1);
+            }
+        });
+
+
         // Updates the port when the user changes the security type. This allows
         // us to show a reasonable default which the user can change.
         mSecurityTypeView.post(new Runnable() {

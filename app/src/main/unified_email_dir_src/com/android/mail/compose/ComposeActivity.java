@@ -2836,7 +2836,6 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
 //        }
 //
         if (mEncryptCheckbox.isChecked()){
-            //startEncrypt(true);
 
             encrypt(new Intent());
         }
@@ -3738,19 +3737,6 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
         return MODE_SYMMETRIC == mCurrentMode;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     public void encrypt(Intent data) {
         data.setAction(OpenPgpApi.ACTION_ENCRYPT);
 
@@ -3758,10 +3744,15 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
 
         // get emails as array
         List<String> emails = new ArrayList<String>();
-        emails.add("nazar.cybulskij@indeema.com");
+
+
+        String tempEmail = mTo.getText().toString();
+
+        emails.add(tempEmail.substring(tempEmail.indexOf("<") + 1, tempEmail.indexOf(">")));
+
         emailsArray = emails.toArray(new String[emails.size()]);
 
-        if (!TextUtils.isEmpty("nazar.cybulskij@indeema.com")) {
+        if (!TextUtils.isEmpty(mTo.getText())) {
             data.putExtra(OpenPgpApi.EXTRA_USER_IDS, emailsArray);
         }
         data.putExtra(OpenPgpApi.EXTRA_REQUEST_ASCII_ARMOR, true);
@@ -3821,7 +3812,6 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
         mServiceConnection = new OpenPgpServiceConnection(this, "org.sufficientlysecure.keychain");
         mServiceConnection.bindToService();
 
-
         mServiceConnection.bindToService();
 
     }
@@ -3844,6 +3834,7 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
                     try {
                         final String output = os.toString("UTF-8");
                         doSendEncryptString(output);
+
 //                        mPgpData.setEncryptedData(output);
 //                        onSend();
                     } catch (UnsupportedEncodingException e) {

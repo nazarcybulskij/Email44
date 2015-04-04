@@ -302,9 +302,9 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
 
 
 
-        decryptAndVerify(data);
+         //decryptAndVerify(data);
 
-         mViewController.renderMessage(data);
+         mViewController.renderMessage(data,getActivity());
     }
 
     // model
@@ -422,7 +422,7 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
 
         //Identity identity = IdentityHelper.getRecipientIdentityFromMessage(mAccount, mMessage);
         //String accName = OpenPgpApiHelper.buildAccountName(identity);
-        intent.putExtra(OpenPgpApi.EXTRA_ACCOUNT_NAME, "nazar.cybulskij@indeema.com");
+        intent.putExtra(OpenPgpApi.EXTRA_ACCOUNT_NAME, mAccount.getEmailAddress());
 
         InputStream is = null;
 
@@ -531,16 +531,6 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
             });
         }
     }
-
-
-
-
-
-
-
-
-
-
 
 
     //nazarko zipolino

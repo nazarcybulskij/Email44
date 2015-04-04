@@ -12,7 +12,7 @@ public final class R {
 		public static final int ic_action_cancel_launchersize_light = 0x7f02007a;
 	}
 	public static final class string {
-		public static final int openpgp_install_openkeychain_via = 0x7f0f01bc;
-		public static final int openpgp_list_preference_none = 0x7f0f01bd;
+		public static final int openpgp_install_openkeychain_via = 0x7f0f01c3;
+		public static final int openpgp_list_preference_none = 0x7f0f01c4;
 	}
 }

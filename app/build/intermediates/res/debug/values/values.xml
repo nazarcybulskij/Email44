@@ -373,7 +373,18 @@
     <color name="message_border_gradient_color">#ebebeb</color>
     <color name="message_header_background_color">@android:color/white</color>
     <color name="message_info_text_color">@color/gray_text_color</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res_k9/values/colors.xml -->
+    <eat-comment/>
+    <color name="message_list_item_footer_background">#eeeeee</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/colors.xml -->
+    <eat-comment/>
     <color name="notification_template_icon_low_bg">#0cffffff</color>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res_k9/values/colors.xml -->
+    <eat-comment/>
+    <color name="openpgp_blue">#336699</color>
+    <color name="openpgp_green">#669900</color>
+    <color name="openpgp_orange">#FF8800</color>
+    <color name="openpgp_red">#CC0000</color>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/photo_dir/values/colors.xml -->
     <eat-comment/>
     <color name="photo_crop_dim_color">#cc000000</color>
@@ -412,15 +423,18 @@
     <declare-styleable name="ButteryProgressBar"><attr format="color" name="barColor"/><attr format="dimension" name="barHeight"/><attr format="dimension" name="detentWidth"/></declare-styleable>
     <declare-styleable name="CompatTextView"><attr format="reference|boolean" name="textAllCaps"/></declare-styleable>
     <declare-styleable name="EmailServiceInfo"><attr format="string" name="protocol"/><attr format="string" name="name"/><attr format="boolean" name="hide"/><attr format="string" name="accountType"/><attr format="string" name="serviceClass"/><attr format="string" name="intent"/><attr format="string" name="intentPackage"/><attr format="integer" name="port"/><attr format="integer" name="portSsl"/><attr format="boolean" name="defaultSsl"/><attr format="boolean" name="offerTls"/><attr format="boolean" name="offerCerts"/><attr format="boolean" name="offerLocalDeletes"/><attr format="integer" name="defaultLocalDeletes"/><attr format="boolean" name="offerPrefix"/><attr format="boolean" name="usesSmtp"/><attr format="boolean" name="syncChanges"/><attr format="boolean" name="syncContacts"/><attr format="boolean" name="syncCalendar"/><attr format="boolean" name="usesAutodiscover"/><attr format="boolean" name="offerLookback"/><attr format="boolean" name="offerLoadMore"/><attr format="boolean" name="offerMoveTo"/><attr name="defaultLookback"><enum name="auto" value="-2"/><enum name="days1" value="1"/><enum name="days3" value="2"/><enum name="weeks1" value="3"/><enum name="weeks2" value="4"/><enum name="months1" value="5"/><enum name="all" value="6"/></attr><attr format="boolean" name="offerAttachmentPreload"/><attr format="reference" name="syncIntervalStrings"/><attr format="reference" name="syncIntervals"/><attr name="defaultSyncInterval"><enum name="push" value="-2"/><enum name="never" value="-1"/><enum name="mins5" value="5"/><enum name="mins10" value="10"/><enum name="mins15" value="15"/><enum name="mins30" value="30"/><enum name="mins60" value="60"/></attr><attr format="string" name="inferPrefix"/><attr format="boolean" name="requiresSetup"/></declare-styleable>
+    <declare-styleable name="FoldableLinearLayout"><attr format="string" name="foldedLabel"/><attr format="string" name="unFoldedLabel"/></declare-styleable>
     <declare-styleable name="FolderItemViewDrawableState"><attr format="boolean" name="state_drag_mode"/></declare-styleable>
     <declare-styleable name="GridLayout"><attr name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr format="integer" name="rowCount"/><attr format="integer" name="columnCount"/><attr format="boolean" name="useDefaultMargins"/><attr name="alignmentMode"><enum name="alignBounds" value="0"/><enum name="alignMargins" value="1"/></attr><attr format="boolean" name="rowOrderPreserved"/><attr format="boolean" name="columnOrderPreserved"/></declare-styleable>
     <declare-styleable name="GridLayout_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_margin"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginRight"/><attr name="android:layout_marginBottom"/><attr format="integer" name="layout_row"/><attr format="integer" min="1" name="layout_rowSpan"/><attr format="integer" name="layout_column"/><attr format="integer" min="1" name="layout_columnSpan"/><attr name="layout_gravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
+    <declare-styleable name="K9Styles"><attr format="reference" name="iconFolder"/><attr format="reference" name="iconListItemMenu"/><attr format="reference" name="iconMenuInfoDetails"/><attr format="reference" name="iconActionAddAttachment"/><attr format="reference" name="iconActionAddCcBcc"/><attr format="reference" name="iconActionArchive"/><attr format="reference" name="iconActionCompose"/><attr format="reference" name="iconActionDelete"/><attr format="reference" name="iconActionMove"/><attr format="reference" name="iconActionCopy"/><attr format="reference" name="iconActionNextMessage"/><attr format="reference" name="iconActionPreviousMessage"/><attr format="reference" name="iconActionRefresh"/><attr format="reference" name="iconActionSearch"/><attr format="reference" name="iconActionSearchFolder"/><attr format="reference" name="iconActionSend"/><attr format="reference" name="iconActionSettings"/><attr format="reference" name="iconActionSingleMessageOptions"/><attr format="reference" name="iconActionSort"/><attr format="reference" name="iconActionSpam"/><attr format="reference" name="iconActionFlag"/><attr format="reference" name="iconActionUnflag"/><attr format="reference" name="iconActionMarkAsRead"/><attr format="reference" name="iconActionMarkAsUnread"/><attr format="reference" name="iconActionRemoteSearch"/><attr format="reference" name="iconActionAbout"/><attr format="reference" name="iconActionAdd"/><attr format="reference" name="iconActionImportExport"/><attr format="reference" name="iconActionUpload"/><attr format="reference" name="iconActionSelectAll"/><attr format="reference" name="iconActionSave"/><attr format="reference" name="iconActionCancel"/><attr format="reference" name="iconActionRequestReadReceipt"/><attr format="reference" name="iconActionExpand"/><attr format="reference" name="iconActionCollapse"/><attr format="reference" name="textColorPrimaryRecipientDropdown"/><attr format="reference" name="textColorSecondaryRecipientDropdown"/><attr format="color" name="backgroundColorChooseAccountHeader"/><attr format="reference|color" name="messageListSelectedBackgroundColor"/><attr format="reference|color" name="messageListReadItemBackgroundColor"/><attr format="reference|color" name="messageListUnreadItemBackgroundColor"/><attr format="reference|color" name="messageListThreadCountForegroundColor"/><attr format="reference|color" name="messageListThreadCountBackground"/><attr format="reference|color" name="messageListActiveItemBackgroundColor"/><attr format="reference|color" name="messageListDividerColor"/><attr format="reference" name="messageListCheckbox"/><attr format="reference|color" name="messageViewHeaderBackgroundColor"/><attr format="reference" name="messageViewAttachmentBackground"/><attr format="reference" name="messageComposeAddContactImage"/><attr format="color" name="composerBackgroundColor"/><attr format="reference" name="compatDividerVertical"/><attr format="reference" name="compatSelectableItemBackground"/><attr format="reference|color" name="contactPictureFallbackDefaultBackgroundColor"/></declare-styleable>
     <declare-styleable name="LinearLayoutICS"><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction"><flag name="never" value="0"/><flag name="ifRoom" value="1"/><flag name="always" value="2"/><flag name="withText" value="4"/><flag name="collapseActionView" value="8"/></attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr name="android:preserveIconSpacing"/></declare-styleable>
     <declare-styleable name="RecipientEditTextView"><attr format="reference" name="invalidChipBackground"/><attr format="reference" name="chipBackground"/><attr format="reference" name="chipBackgroundPressed"/><attr format="reference" name="chipDelete"/><attr format="reference" name="chipAlternatesLayout"/><attr format="reference" name="chipPadding"/><attr format="reference" name="chipHeight"/><attr format="reference" name="chipFontSize"/></declare-styleable>
     <declare-styleable name="SearchView"><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/></declare-styleable>
+    <declare-styleable name="SliderPreference"><attr name="android:summary"/></declare-styleable>
     <declare-styleable name="Spinner"><attr format="reference" name="prompt"/><attr format="enum" name="spinnerMode"><enum name="dialog" value="0"/><enum name="dropdown" value="1"/></attr><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr format="reference" name="popupPromptView"/><attr name="android:gravity"/><attr format="boolean" name="disableChildrenWhenDisabled"/></declare-styleable>
     <declare-styleable name="Theme"><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="popupMenuStyle"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
@@ -619,6 +633,14 @@
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/ids.xml -->
     <eat-comment/>
     <item name="contact_image" type="id"/>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res_k9/values/ids.xml -->
+    <eat-comment/>
+    <item name="dialog_account_setup_error" type="id"/>
+    <item name="dialog_attachment_progress" type="id"/>
+    <item name="dialog_confirm_delete" type="id"/>
+    <item name="dialog_confirm_spam" type="id"/>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/ids.xml -->
+    <eat-comment/>
     <item name="folder" type="id"/>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/values/values.xml -->
     <eat-comment/>
@@ -1098,9 +1120,18 @@
     <string name="all_folders_heading">All folders</string>
     <string name="always_show_images">Always show pictures from this sender</string>
     <string name="always_show_images_toast">Pictures from this sender will be shown automatically.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res_k9/values/constants.xml -->
+    <eat-comment/>
+    <string name="app_htmlcleaner_license">&lt;p>HtmlCleaner is distributed under BSD License. It gives the freedom for anyone to use, explore, modify, and distribute HtmlCleaner, but without any warranty.&lt;/p>&lt;p>Copyright © 2006–2011, HtmlCleaner team.&lt;br>All rights reserved.&lt;/p>&lt;p>Redistribution and use of this software in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&lt;/p>&lt;p>&lt;ul>&lt;li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&lt;/li>&lt;li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.&lt;/li>&lt;li>The name of HtmlCleaner may not be used to endorse or promote products derived from this software without specific prior written permission.&lt;/li>&lt;/ul>&lt;/p>&lt;p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p></string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Email</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res_k9/values/constants.xml -->
+    <eat-comment/>
+    <string name="app_revision_url">https://github.com/k9mail/k-9/wiki/ReleaseNotes</string>
+    <string name="app_webpage_url">http://code.google.com/p/k9mail/</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="application_mime_type" translatable="false">application/email-ls</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
     <eat-comment/>
@@ -1464,6 +1495,11 @@
     <eat-comment/>
     <string name="message_details_title">Message details</string>
     <string name="message_discarded">Message discarded.</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res_k9/values/constants.xml -->
+    <eat-comment/>
+    <string name="message_header_mua">K-9 Mail for Android</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/values/strings.xml -->
+    <eat-comment/>
     <string name="message_invite_accept">Yes</string>
     <string name="message_invite_calendar_view">View in Calendar</string>
     <string name="message_invite_decline">No</string>
@@ -1520,10 +1556,27 @@
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="okay_action">OK</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res_k9/values/strings.xml -->
+    <eat-comment/>
+    <string name="openpgp_decrypting_verifying">Decrypting/Verifying…</string>
+    <string name="openpgp_error">OpenPGP Error:</string>
+    <string name="openpgp_get_key">Lookup missing key</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/openpgp-api-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="openpgp_install_openkeychain_via">Install OpenKeychain via %s</string>
     <string name="openpgp_list_preference_none">None</string>
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res_k9/values/strings.xml -->
+    <eat-comment/>
+    <string name="openpgp_signature_invalid">Invalid signature</string>
+    <string name="openpgp_signature_unknown">Unknown signer</string>
+    <string name="openpgp_signature_unknown_text">Missing public key for this signature</string>
+    <string name="openpgp_signature_valid_certified">Valid signature (certified)</string>
+    <string name="openpgp_signature_valid_uncertified">Valid signature but uncertified</string>
+    <string name="openpgp_successful_decryption">Successful decryption</string>
+    <string name="openpgp_successful_decryption_unknown_signature">Successful decryption but missing public key</string>
+    <string name="openpgp_successful_decryption_valid_signature_certified">Successful decryption and valid signature (certified)</string>
+    <string name="openpgp_successful_decryption_valid_signature_uncertified">Successful decryption and valid signature but uncertified</string>
+    <string name="openpgp_user_id">User Id</string>
     <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="password_expire_warning_content_title">Lock screen password expiring</string>

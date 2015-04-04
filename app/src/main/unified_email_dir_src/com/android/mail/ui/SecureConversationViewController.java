@@ -17,8 +17,13 @@
 
 package com.android.mail.ui;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentSender;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -26,6 +31,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.android.email_ee.R;
 import com.android.mail.FormattedDateBuilder;
@@ -40,6 +46,16 @@ import com.android.mail.browse.MessageScrollView;
 import com.android.mail.browse.MessageWebView;
 import com.android.mail.providers.Message;
 import com.android.mail.utils.ConversationViewUtils;
+
+import org.openintents.openpgp.OpenPgpError;
+import org.openintents.openpgp.OpenPgpSignatureResult;
+import org.openintents.openpgp.util.OpenPgpApi;
+import org.openintents.openpgp.util.OpenPgpServiceConnection;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 
 /**
  * Controller to do most of the heavy lifting for {@link SecureConversationViewFragment}
@@ -61,6 +77,7 @@ public class SecureConversationViewController implements
     private ConversationMessage mMessage;
     private MessageScrollView mScrollView;
     private Button mDecrypt;
+    private TextView mText = null;
 
     private ConversationViewProgressController mProgressController;
     private FormattedDateBuilder mDateBuilder;
@@ -78,6 +95,9 @@ public class SecureConversationViewController implements
         mConversationHeaderView = (ConversationViewHeader) rootView.findViewById(R.id.conv_header);
         mMessageHeaderView = (MessageHeaderView) rootView.findViewById(R.id.message_header);
         mMessageFooterView = (MessageFooterView) rootView.findViewById(R.id.message_footer);
+        mText = (TextView)rootView.findViewById(R.id.openpgp_text);
+        mText.setVisibility(View.VISIBLE);
+
 
 
         // Add color backgrounds to the header and footer.
@@ -146,6 +166,9 @@ public class SecureConversationViewController implements
                 R.dimen.conversation_message_content_margin_side) / r.getDisplayMetrics().density);
     }
 
+
+    //Nazarko Zipolino    add RenderMessagewithContext()
+
     /**
      * Populate the adapter with overlay views (message headers, super-collapsed
      * blocks, a conversation header), and return an HTML document with spacer
@@ -153,11 +176,6 @@ public class SecureConversationViewController implements
      */
     public void renderMessage(ConversationMessage message) {
         mMessage = message;
-
-
-//        message.bodyHtml="stub";
-//        message.bodyText="stub";
-
         mWebView.getSettings().setBlockNetworkImage(!mMessage.alwaysShowImages);
 
         // Add formatting to message body
@@ -165,12 +183,7 @@ public class SecureConversationViewController implements
         StringBuilder dataBuilder = new StringBuilder(
                 String.format(BEGIN_HTML, mSideMarginInWebPx));
 
-
         String body = mMessage.getBodyAsHtml();
-
-
-
-
         dataBuilder.append(body);
 
         dataBuilder.append(END_HTML);
@@ -187,6 +200,245 @@ public class SecureConversationViewController implements
             mMessageFooterView.bind(item, mCallbacks.getAccountUri(), false);
         }
     }
+
+
+    private Context mContext;
+
+    public void renderMessage(ConversationMessage message,Context context) {
+        mContext=context;
+        mMessage = message;
+        mWebView.getSettings().setBlockNetworkImage(!mMessage.alwaysShowImages);
+
+        // Add formatting to message body
+        // At this point, only adds margins.
+        StringBuilder dataBuilder = new StringBuilder(
+                String.format(BEGIN_HTML, mSideMarginInWebPx));
+
+        String body = mMessage.getBodyAsHtml();
+        dataBuilder.append(body);
+
+        dataBuilder.append(END_HTML);
+
+        mWebView.loadDataWithBaseURL(mCallbacks.getBaseUri(), dataBuilder.toString(),
+                "text/html", "utf-8", null);
+        final MessageHeaderItem item = ConversationViewAdapter.newMessageHeaderItem(
+                null, mDateBuilder, mMessage, true, mMessage.alwaysShowImages);
+        // Clear out the old info from the header before (re)binding
+        mMessageHeaderView.unbind();
+        mMessageHeaderView.bind(item, false);
+        if (mMessage.hasAttachments) {
+            mMessageFooterView.setVisibility(View.VISIBLE);
+            mMessageFooterView.bind(item, mCallbacks.getAccountUri(), false);
+        }
+
+
+
+
+
+        if (mOpenPgpProvider != null) {
+            mOpenPgpServiceConnection = new OpenPgpServiceConnection(mContext,
+                    mOpenPgpProvider);
+            mOpenPgpServiceConnection.bindToService();
+        }
+
+        mData=message.bodyText;
+
+        decryptAndVerify(mMessage);
+
+
+
+    }
+ //-----------------------------------------------------------
+
+    private OpenPgpServiceConnection mOpenPgpServiceConnection;
+    private OpenPgpApi mOpenPgpApi;
+
+    private String mOpenPgpProvider = "org.sufficientlysecure.keychain";
+    String mData;
+    private static final int REQUEST_CODE_DECRYPT_VERIFY = 12;
+    private PendingIntent mMissingKeyPI;
+
+
+    private void decryptAndVerify(final Message message) {
+
+        mText.setText(R.string.openpgp_decrypting_verifying);
+//        this.setVisibility(View.VISIBLE);
+//        mProgress.setVisibility(View.VISIBLE);
+//        MessageOpenPgpView.this.setBackgroundColor(mFragment.getResources().getColor(
+//                R.color.openpgp_orange));
+//        mText.setText(R.string.openpgp_decrypting_verifying);
+
+        // waiting in a new thread
+        Runnable r = new Runnable() {
+
+            @Override
+            public void run() {
+
+                // wait for service to be bound
+                while (!mOpenPgpServiceConnection.isBound()) {
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                    }
+                }
+
+
+
+                mOpenPgpApi = new OpenPgpApi(mContext,
+                        mOpenPgpServiceConnection.getService());
+
+                decryptVerify(new Intent());
+
+
+
+            }
+        };
+
+        new Thread(r).start();
+    }
+
+
+    private void decryptVerify(Intent intent) {
+
+        intent.setAction(OpenPgpApi.ACTION_DECRYPT_VERIFY);
+        intent.putExtra(OpenPgpApi.EXTRA_REQUEST_ASCII_ARMOR, true);
+
+        //Identity identity = IdentityHelper.getRecipientIdentityFromMessage(mAccount, mMessage);
+        //String accName = OpenPgpApiHelper.buildAccountName(identity);
+
+        String tempEmail = getMessage().getTo();
+        if (tempEmail!=null) {
+            String email = null;
+
+            if (tempEmail.indexOf("<")==-1){
+                email = tempEmail;
+            }else{
+                email = tempEmail.substring(tempEmail.indexOf("<") + 1, tempEmail.indexOf(">"));
+            }
+
+
+
+
+            intent.putExtra(OpenPgpApi.EXTRA_ACCOUNT_NAME,email);
+        }
+
+        InputStream is = null;
+
+        try {
+            if (mData!=null) {
+                is = new ByteArrayInputStream(mData.getBytes("UTF-8"));
+
+            }else{
+                return;
+            }
+
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        final ByteArrayOutputStream os = new ByteArrayOutputStream();
+
+        DecryptVerifyCallback callback = new DecryptVerifyCallback(os, REQUEST_CODE_DECRYPT_VERIFY);
+
+        mOpenPgpApi.executeApiAsync(intent, is, os, callback);
+    }
+
+
+    /**
+     * Called on successful decrypt/verification
+     */
+    private class DecryptVerifyCallback implements OpenPgpApi.IOpenPgpCallback {
+        ByteArrayOutputStream os;
+        int requestCode;
+
+        private DecryptVerifyCallback(ByteArrayOutputStream os, int requestCode) {
+            this.os = os;
+            this.requestCode = requestCode;
+        }
+
+        @Override
+        public void onReturn(Intent result) {
+            switch (result.getIntExtra(OpenPgpApi.RESULT_CODE, OpenPgpApi.RESULT_CODE_ERROR)) {
+                case OpenPgpApi.RESULT_CODE_SUCCESS: {
+                    try {
+                        final String output = os.toString("UTF-8");
+
+                        OpenPgpSignatureResult sigResult = null;
+                        if (result.hasExtra(OpenPgpApi.RESULT_SIGNATURE)) {
+                            sigResult = result.getParcelableExtra(OpenPgpApi.RESULT_SIGNATURE);
+                        }
+//
+//                        if (K9.DEBUG)
+//                            Log.d(K9.LOG_TAG, "result: " + os.toByteArray().length
+//                                    + " str=" + output);
+
+                        // missing key -> PendingIntent to get keys
+                        mMissingKeyPI = result.getParcelableExtra(OpenPgpApi.RESULT_INTENT);
+
+                        //Toast.makeText(mContext, output, Toast.LENGTH_SHORT).show();
+                        mMessage.bodyText = output;
+                        renderMessage(mMessage);
+                        mText.setText(R.string.openpgp_successful_decryption);
+
+
+
+//                        mProgress.setVisibility(View.GONE);
+//                        mFragment.setMessageWithOpenPgp(output, sigResult);
+                    } catch (UnsupportedEncodingException e) {
+//                        Log.e(K9.LOG_TAG, "UnsupportedEncodingException", e);
+                    }
+                    break;
+                }
+                case OpenPgpApi.RESULT_CODE_USER_INTERACTION_REQUIRED: {
+                    PendingIntent pi = result.getParcelableExtra(OpenPgpApi.RESULT_INTENT);
+                    try {
+                        Activity activity= (Activity)mContext;
+                        activity.startIntentSenderForResult(
+                                pi.getIntentSender(),
+                                requestCode, null, 0, 0, 0);
+                    } catch (IntentSender.SendIntentException e) {
+                        // Log.e(K9.LOG_TAG, "SendIntentException", e);
+                    }
+                    break;
+                }
+                case OpenPgpApi.RESULT_CODE_ERROR: {
+                    OpenPgpError error = result.getParcelableExtra(OpenPgpApi.RESULT_ERROR);
+                    handleError(error);
+                    break;
+                }
+            }
+        }
+
+        private void handleError(final OpenPgpError error) {
+            final Activity activity = (Activity)mContext;
+            if (activity == null) {
+                return;
+            }
+            activity.runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+
+                    mText.setText(activity.getString(R.string.openpgp_error) + " "
+                            + error.getMessage());
+//                    mProgress.setVisibility(View.GONE);
+//
+//                    if (K9.DEBUG) {
+//                        Log.d(K9.LOG_TAG, "OpenPGP Error ID:" + error.getErrorId());
+//                        Log.d(K9.LOG_TAG, "OpenPGP Error Message:" + error.getMessage());
+//                    }
+//
+//                    mText.setText(mFragment.getString(R.string.openpgp_error) + " "
+//                            + error.getMessage());
+//                    MessageOpenPgpView.this.setBackgroundColor(mFragment.getResources().getColor(
+//                            R.color.openpgp_red));
+                }
+            });
+        }
+    }
+
+
+//--------------------------------------------------Nazarko Zipolino
 
     public ConversationMessage getMessage() {
         return mMessage;

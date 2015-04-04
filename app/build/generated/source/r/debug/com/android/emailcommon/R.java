@@ -8,14 +8,14 @@ package com.android.emailcommon;
 
 public final class R {
 	public static final class string {
-		public static final int email_package_name = 0x7f0f0125;
-		public static final int mailbox_name_server_all_unread = 0x7f0f016f;
-		public static final int mailbox_name_server_drafts = 0x7f0f0170;
-		public static final int mailbox_name_server_inbox = 0x7f0f0171;
-		public static final int mailbox_name_server_junk = 0x7f0f0172;
-		public static final int mailbox_name_server_outbox = 0x7f0f0173;
-		public static final int mailbox_name_server_sent = 0x7f0f0174;
-		public static final int mailbox_name_server_starred = 0x7f0f0175;
-		public static final int mailbox_name_server_trash = 0x7f0f0176;
+		public static final int email_package_name = 0x7f0f0128;
+		public static final int mailbox_name_server_all_unread = 0x7f0f0172;
+		public static final int mailbox_name_server_drafts = 0x7f0f0173;
+		public static final int mailbox_name_server_inbox = 0x7f0f0174;
+		public static final int mailbox_name_server_junk = 0x7f0f0175;
+		public static final int mailbox_name_server_outbox = 0x7f0f0176;
+		public static final int mailbox_name_server_sent = 0x7f0f0177;
+		public static final int mailbox_name_server_starred = 0x7f0f0178;
+		public static final int mailbox_name_server_trash = 0x7f0f0179;
 	}
 }

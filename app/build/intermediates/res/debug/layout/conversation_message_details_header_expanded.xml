@@ -15,7 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/details_expanded_content"
     android:layout_width="match_parent"
@@ -149,5 +149,5 @@
         android:visibility="gone"
         style="@style/MessageDetailsValueStyle" />
 
-</android.support.v7.widget.GridLayout>
+</TableLayout>
 <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/src/main/unified_email_dir/layout/conversation_message_details_header_expanded.xml -->

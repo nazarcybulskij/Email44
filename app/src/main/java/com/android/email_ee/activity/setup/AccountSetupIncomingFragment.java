@@ -233,6 +233,14 @@ public class AccountSetupIncomingFragment extends AccountServerBaseFragment
                 context, android.R.layout.simple_spinner_item, securityTypes);
         securityTypesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mSecurityTypeView.setAdapter(securityTypesAdapter);
+
+        mSecurityTypeView.post(new Runnable() {
+            @Override
+            public void run() {
+                mSecurityTypeView.setSelection(1);
+            }
+        });
+
     }
 
     /**

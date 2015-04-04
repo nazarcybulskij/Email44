@@ -11,9 +11,9 @@ public final class R {
 		public static final int force_thumbnail_no_scaling = 0x7f090008;
 	}
 	public static final class color {
-		public static final int photo_crop_dim_color = 0x7f0a0039;
-		public static final int photo_crop_highlight_color = 0x7f0a003a;
-		public static final int solid_black = 0x7f0a0041;
+		public static final int photo_crop_dim_color = 0x7f0a003e;
+		public static final int photo_crop_highlight_color = 0x7f0a003f;
+		public static final int solid_black = 0x7f0a0046;
 	}
 	public static final class dimen {
 		public static final int photo_crop_stroke_width = 0x7f0b006a;
@@ -28,17 +28,17 @@ public final class R {
 		public static final int ic_menu_refresh_holo_dark = 0x7f0200c8;
 	}
 	public static final class id {
-		public static final int determinate_progress = 0x7f0c015d;
-		public static final int empty_text = 0x7f0c015e;
-		public static final int indeterminate_progress = 0x7f0c015c;
-		public static final int photo_activity_background = 0x7f0c0156;
-		public static final int photo_activity_root_view = 0x7f0c0155;
-		public static final int photo_activity_temporary_image = 0x7f0c0157;
-		public static final int photo_preview = 0x7f0c015a;
-		public static final int photo_preview_image = 0x7f0c015b;
-		public static final int photo_view = 0x7f0c0159;
-		public static final int photo_view_pager = 0x7f0c0158;
-		public static final int retry_button = 0x7f0c015f;
+		public static final int determinate_progress = 0x7f0c0161;
+		public static final int empty_text = 0x7f0c0162;
+		public static final int indeterminate_progress = 0x7f0c0160;
+		public static final int photo_activity_background = 0x7f0c015a;
+		public static final int photo_activity_root_view = 0x7f0c0159;
+		public static final int photo_activity_temporary_image = 0x7f0c015b;
+		public static final int photo_preview = 0x7f0c015e;
+		public static final int photo_preview_image = 0x7f0c015f;
+		public static final int photo_view = 0x7f0c015d;
+		public static final int photo_view_pager = 0x7f0c015c;
+		public static final int retry_button = 0x7f0c0163;
 	}
 	public static final class integer {
 		public static final int reenter_fullscreen_delay_time_in_millis = 0x7f0d002d;
@@ -49,9 +49,9 @@ public final class R {
 		public static final int photo_retry_button = 0x7f040073;
 	}
 	public static final class string {
-		public static final int failed = 0x7f0f0130;
-		public static final int photo_view_count = 0x7f0f01cc;
-		public static final int retry = 0x7f0f020d;
+		public static final int failed = 0x7f0f0133;
+		public static final int photo_view_count = 0x7f0f01dd;
+		public static final int retry = 0x7f0f021e;
 	}
 	public static final class style {
 		public static final int Holo_ActionBar = 0x7f100029;
