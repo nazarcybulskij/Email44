@@ -88,6 +88,7 @@ public class ConversationPagerController {
             ActivityController controller) {
         mFragmentManager = activity.getFragmentManager();
         mPager = (ViewPager) activity.findViewById(R.id.conversation_pane);
+        mPager.setOffscreenPageLimit(1);
         mActivityController = controller;
         setupPageMargin(activity.getActivityContext());
     }

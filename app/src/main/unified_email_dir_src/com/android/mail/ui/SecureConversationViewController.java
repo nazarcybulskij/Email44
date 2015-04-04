@@ -243,7 +243,12 @@ public class SecureConversationViewController implements
 
         mData=message.bodyText;
 
+
         decryptAndVerify(mMessage);
+
+
+
+
 
 
 
@@ -315,10 +320,6 @@ public class SecureConversationViewController implements
             }else{
                 email = tempEmail.substring(tempEmail.indexOf("<") + 1, tempEmail.indexOf(">"));
             }
-
-
-
-
             intent.putExtra(OpenPgpApi.EXTRA_ACCOUNT_NAME,email);
         }
 

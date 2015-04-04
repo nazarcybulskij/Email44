@@ -188,6 +188,8 @@ public class ConversationPagerAdapter extends FragmentStatePagerAdapter2
             c = cursor.getConversation();
             c.position = position;
         }
+
+
         final AbstractConversationViewFragment f = getConversationViewFragment(c);
         LogUtils.d(LOG_TAG, "IN PagerAdapter.getItem, frag=%s conv=%s this=%s", f, c, this);
         return f;
@@ -231,6 +233,7 @@ public class ConversationPagerAdapter extends FragmentStatePagerAdapter2
 
         final AbstractConversationViewFragment fragment = (AbstractConversationViewFragment) item;
         return getConversationPosition(fragment.getConversation());
+       // return POSITION_NONE;
     }
 
     @Override
