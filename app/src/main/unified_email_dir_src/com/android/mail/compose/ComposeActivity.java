@@ -35,6 +35,7 @@ import android.content.Intent;
 import android.content.IntentSender;
 import android.content.Loader;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.net.Uri;
@@ -69,6 +70,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -1288,7 +1290,38 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
                 //updateMessageFormat();
             }
         });
+
+
+
+       if (appInstalledOrNot("org.sufficientlysecure.keychain")){
+           LinearLayout layout=(LinearLayout)findViewById(R.id.layout_encrypt);
+           layout.setVisibility(View.VISIBLE);
+       }else{
+           LinearLayout layout=(LinearLayout)findViewById(R.id.layout_encrypt);
+           layout.setVisibility(View.INVISIBLE);
+           ViewGroup.LayoutParams params = layout.getLayoutParams();
+           // Changes the height and width to the specified *pixels*
+           params.height = 10;
+
+       }
+
+        //layout_encrypt
     }
+
+
+    private boolean appInstalledOrNot(String uri) {
+        PackageManager pm = getPackageManager();
+        boolean app_installed;
+        try {
+            pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+            app_installed = true;
+        }
+        catch (PackageManager.NameNotFoundException e) {
+            app_installed = false;
+        }
+        return app_installed;
+    }
+
 
     @Override
     public boolean onEditorAction(TextView view, int action, KeyEvent keyEvent) {
