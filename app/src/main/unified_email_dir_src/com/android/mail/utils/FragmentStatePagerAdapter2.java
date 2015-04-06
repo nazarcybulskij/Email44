@@ -61,7 +61,7 @@ public abstract class FragmentStatePagerAdapter2 extends PagerAdapter {
 
     public FragmentStatePagerAdapter2(FragmentManager fm, boolean enableSavedStates) {
         mFragmentManager = fm;
-        mEnableSavedStates = enableSavedStates;
+        mEnableSavedStates = false;
     }
 
     /**

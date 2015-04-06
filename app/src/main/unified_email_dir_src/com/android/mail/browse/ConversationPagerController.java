@@ -23,7 +23,9 @@ import android.content.res.TypedArray;
 import android.database.DataSetObservable;
 import android.database.DataSetObserver;
 import android.graphics.drawable.Drawable;
+import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.View;
 
 import com.android.email_ee.R;
@@ -34,6 +36,7 @@ import com.android.mail.providers.Folder;
 import com.android.mail.ui.AbstractActivityController;
 import com.android.mail.ui.ActivityController;
 import com.android.mail.ui.RestrictedActivity;
+import com.android.mail.ui.SecureConversationViewFragment;
 import com.android.mail.utils.LogUtils;
 import com.android.mail.utils.Utils;
 
@@ -55,7 +58,7 @@ import com.android.mail.utils.Utils;
  * lifetime.
  *
  */
-public class ConversationPagerController {
+public class ConversationPagerController implements  ViewPager.OnPageChangeListener{
 
     private ViewPager mPager;
     private ConversationPagerAdapter mPagerAdapter;
@@ -83,9 +86,11 @@ public class ConversationPagerController {
      * zero (with the fragment visibility hint ON) when the adapter is initially set.
      */
     private static final boolean ENABLE_SINGLETON_INITIAL_LOAD = false;
+    Context mContext;
 
     public ConversationPagerController(RestrictedActivity activity,
             ActivityController controller) {
+        mContext =(Context) activity;
         mFragmentManager = activity.getFragmentManager();
         mPager = (ViewPager) activity.findViewById(R.id.conversation_pane);
         mPager.setOffscreenPageLimit(1);
@@ -129,6 +134,10 @@ public class ConversationPagerController {
         LogUtils.d(LOG_TAG, "init pager adapter, count=%d initialConv=%s adapter=%s",
                 mPagerAdapter.getCount(), initialConversation, mPagerAdapter);
         mPager.setAdapter(mPagerAdapter);
+
+        mPager.setOnPageChangeListener(this);
+
+
 
         if (!ENABLE_SINGLETON_INITIAL_LOAD) {
             // FIXME: unnecessary to do this on restore. setAdapter will restore current position
@@ -225,4 +234,36 @@ public class ConversationPagerController {
         mPager.setPageMarginDrawable(gutterDrawable);
     }
 
+
+    int state;
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+        Log.v("mPagerListener","scrolled "+position+":" +positionOffset+":"+positionOffsetPixels+" state="+state);
+
+        if (state == 0) {
+            PagerAdapter adapter = mPager.getAdapter();
+            SecureConversationViewFragment fragment = (SecureConversationViewFragment) adapter.instantiateItem(mPager, position);
+            fragment.getmViewController().renderMessage(mContext);
+        }
+
+
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        Log.v("mPagerListener","PageSelected "+position+"");
+
+
+
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+        this.state=state;
+        Log.v("mPagerListener","StateChanged "+state+"");
+
+    }
 }

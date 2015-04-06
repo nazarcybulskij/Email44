@@ -290,4 +290,13 @@ public class EmlMessageViewFragment extends Fragment
         }
     }
 
+
+//    @Override
+//    public void onDestroy() {
+//        super.onDestroy();
+//        if (mViewController.mOpenPgpServiceConnection != null) {
+//            mViewController.mOpenPgpServiceConnection.unbindFromService();
+//        }
+//    }
+
 }

@@ -205,6 +205,7 @@ public class ConversationPagerAdapter extends FragmentStatePagerAdapter2
 
     @Override
     public int getCount() {
+
         if (mStopListeningMode) {
             if (LogUtils.isLoggable(LOG_TAG, LogUtils.DEBUG)) {
                 final Cursor cursor = getCursor();

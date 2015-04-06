@@ -65,7 +65,15 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
         implements SecureConversationViewControllerCallbacks {
     private static final String LOG_TAG = LogTag.getLogTag();
 
+
     private SecureConversationViewController mViewController;
+
+    public SecureConversationViewController getmViewController() {
+        return mViewController;
+    }
+
+
+
 
     private class SecureConversationWebViewClient extends AbstractConversationWebViewClient {
         public SecureConversationWebViewClient(Account account) {
@@ -304,7 +312,7 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
 
          //decryptAndVerify(data);
 
-         mViewController.renderMessage(data,getActivity());
+         mViewController.renderMessage(data);
     }
 
     // model

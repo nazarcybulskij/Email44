@@ -204,36 +204,13 @@ public class SecureConversationViewController implements
 
     private Context mContext;
 
-    public void renderMessage(ConversationMessage message,Context context) {
+    public void renderMessage(Context context) {
+
+        if (mMessage==null)
+            return;
+
         mContext=context;
-        mMessage = message;
-        mWebView.getSettings().setBlockNetworkImage(!mMessage.alwaysShowImages);
-
-        // Add formatting to message body
-        // At this point, only adds margins.
-        StringBuilder dataBuilder = new StringBuilder(
-                String.format(BEGIN_HTML, mSideMarginInWebPx));
-
-        String body = mMessage.getBodyAsHtml();
-        dataBuilder.append(body);
-
-        dataBuilder.append(END_HTML);
-
-        mWebView.loadDataWithBaseURL(mCallbacks.getBaseUri(), dataBuilder.toString(),
-                "text/html", "utf-8", null);
-        final MessageHeaderItem item = ConversationViewAdapter.newMessageHeaderItem(
-                null, mDateBuilder, mMessage, true, mMessage.alwaysShowImages);
-        // Clear out the old info from the header before (re)binding
-        mMessageHeaderView.unbind();
-        mMessageHeaderView.bind(item, false);
-        if (mMessage.hasAttachments) {
-            mMessageFooterView.setVisibility(View.VISIBLE);
-            mMessageFooterView.bind(item, mCallbacks.getAccountUri(), false);
-        }
-
-
-
-
+        renderMessage(mMessage);
 
         if (mOpenPgpProvider != null) {
             mOpenPgpServiceConnection = new OpenPgpServiceConnection(mContext,
@@ -241,10 +218,10 @@ public class SecureConversationViewController implements
             mOpenPgpServiceConnection.bindToService();
         }
 
-        mData=message.bodyText;
+        mData=mMessage.bodyText;
 
 
-        decryptAndVerify(mMessage);
+         decryptAndVerify(mMessage);
 
 
 
@@ -255,7 +232,7 @@ public class SecureConversationViewController implements
     }
  //-----------------------------------------------------------
 
-    private OpenPgpServiceConnection mOpenPgpServiceConnection;
+    public OpenPgpServiceConnection mOpenPgpServiceConnection;
     private OpenPgpApi mOpenPgpApi;
 
     private String mOpenPgpProvider = "org.sufficientlysecure.keychain";
