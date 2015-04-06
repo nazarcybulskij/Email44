@@ -1,7 +1,6 @@
 include ':OpenKeychain', ':k9mail-library', ':plugins:Android-PullToRefresh:library', ':k9mail', ':plugins:HoloColorPicker', ':plugins:openpgp-api-library'
 
-include ':extern_demo:openpgp-api-lib'
-include ':extern_demo:openkeychain-api-lib'
+
 include ':extern:html-textview'
 include ':extern:StickyListHeaders:library'
 include ':extern:zxing-qr-code'
@@ -19,3 +18,7 @@ include ':app', ':common'
 include ':emailcommon'
 include ':chips'
 include ':photoviewer'
+
+include ':extern_demo:openpgp-api-lib'
+include ':extern_demo:openkeychain-api-lib'
+include ':libs:openpgp-api-library'
