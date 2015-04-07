@@ -115,6 +115,7 @@ public class EmlMessageViewFragment extends Fragment
             final ContactLoaderCallbacks callbacks = getContactInfoSource();
             callbacks.setSenders(emailAddresses);
             getLoaderManager().restartLoader(CONTACT_LOADER, Bundle.EMPTY, callbacks);
+
         }
     };
 

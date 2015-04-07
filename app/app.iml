@@ -94,17 +94,18 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="support-v4-19.0.0" level="project" />
     <orderEntry type="library" exported="" name="support-v13-19.0.0" level="project" />
+    <orderEntry type="library" exported="" name="eventbus-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="jsr305-1.3.9" level="project" />
     <orderEntry type="library" exported="" name="jutf7-1.0.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-19.0.0" level="project" />
     <orderEntry type="library" exported="" name="guava-10.0" level="project" />
     <orderEntry type="library" exported="" name="gridlayout-v7-13.0.0" level="project" />
     <orderEntry type="module" module-name="chips" exported="" />
+    <orderEntry type="module" module-name="openpgp-api-library" exported="" />
     <orderEntry type="module" module-name="photoviewer" exported="" />
     <orderEntry type="module" module-name="emailcommon" exported="" />
     <orderEntry type="module" module-name="openkeychain-api-lib" exported="" />
     <orderEntry type="module" module-name="common" exported="" />
-    <orderEntry type="module" module-name="openpgp-api-library" exported="" />
   </component>
 </module>
 

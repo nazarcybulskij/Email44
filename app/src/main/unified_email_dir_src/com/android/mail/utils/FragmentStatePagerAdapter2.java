@@ -99,7 +99,9 @@ public abstract class FragmentStatePagerAdapter2 extends PagerAdapter {
         if (fragment != mCurrentPrimaryItem) {
             setItemVisible(fragment, false);
         }
+
         mFragments.put(position, fragment);
+
         mCurTransaction.add(container.getId(), fragment);
 
         return fragment;

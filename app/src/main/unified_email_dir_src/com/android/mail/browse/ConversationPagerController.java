@@ -40,6 +40,9 @@ import com.android.mail.ui.SecureConversationViewFragment;
 import com.android.mail.utils.LogUtils;
 import com.android.mail.utils.Utils;
 
+import de.greenrobot.event.EventBus;
+import ua.indeema.nazar.MessageEvent;
+
 /**
  * A simple controller for a {@link ViewPager} of conversations.
  * <p>
@@ -90,6 +93,8 @@ public class ConversationPagerController implements  ViewPager.OnPageChangeListe
 
     public ConversationPagerController(RestrictedActivity activity,
             ActivityController controller) {
+
+
         mContext =(Context) activity;
         mFragmentManager = activity.getFragmentManager();
         mPager = (ViewPager) activity.findViewById(R.id.conversation_pane);
@@ -241,12 +246,12 @@ public class ConversationPagerController implements  ViewPager.OnPageChangeListe
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
         Log.v("mPagerListener","scrolled "+position+":" +positionOffset+":"+positionOffsetPixels+" state="+state);
-
-        if (state == 0) {
-            PagerAdapter adapter = mPager.getAdapter();
-            SecureConversationViewFragment fragment = (SecureConversationViewFragment) adapter.instantiateItem(mPager, position);
-            fragment.getmViewController().renderMessage(mContext);
-        }
+//
+//        if (state == 0) {
+//
+//            SecureConversationViewFragment fragment = (SecureConversationViewFragment) mPagerAdapter.instantiateItem(mPager, position);
+//            fragment.getmViewController().renderMessage(null,mContext);
+//        }
 
 
 
@@ -266,4 +271,6 @@ public class ConversationPagerController implements  ViewPager.OnPageChangeListe
         Log.v("mPagerListener","StateChanged "+state+"");
 
     }
+
+
 }

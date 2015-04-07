@@ -25,6 +25,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,6 +57,9 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+
+import de.greenrobot.event.EventBus;
+import ua.indeema.nazar.MessageEvent;
 
 /**
  * Controller to do most of the heavy lifting for {@link SecureConversationViewFragment}
@@ -199,18 +203,38 @@ public class SecureConversationViewController implements
             mMessageFooterView.setVisibility(View.VISIBLE);
             mMessageFooterView.bind(item, mCallbacks.getAccountUri(), false);
         }
+
+         if (mCallbacks.isViewVisibleToUser() ){
+             EventBus.getDefault().post(new MessageEvent(message,"Nazar"));
+         }
+
+
+
+
     }
 
 
     private Context mContext;
 
-    public void renderMessage(Context context) {
+    public void renderMessage(ConversationMessage message ,Context context) {
 
         if (mMessage==null)
             return;
 
         mContext=context;
-        renderMessage(mMessage);
+
+
+        StringBuilder dataBuilder = new StringBuilder(
+                String.format(BEGIN_HTML, mSideMarginInWebPx));
+
+        String body = mMessage.getBodyAsHtml();
+        dataBuilder.append(body);
+
+        dataBuilder.append(END_HTML);
+
+        mWebView.loadDataWithBaseURL(mCallbacks.getBaseUri(), dataBuilder.toString(),
+                "text/html", "utf-8", null);
+
 
         if (mOpenPgpProvider != null) {
             mOpenPgpServiceConnection = new OpenPgpServiceConnection(mContext,
@@ -221,7 +245,7 @@ public class SecureConversationViewController implements
         mData=mMessage.bodyText;
 
 
-         decryptAndVerify(mMessage);
+        decryptAndVerify(mMessage);
 
 
 
@@ -244,6 +268,8 @@ public class SecureConversationViewController implements
     private void decryptAndVerify(final Message message) {
 
         mText.setText(R.string.openpgp_decrypting_verifying);
+        mText.setBackgroundColor(Color.YELLOW);
+        mText.setTextColor(Color.BLACK);
 //        this.setVisibility(View.VISIBLE);
 //        mProgress.setVisibility(View.VISIBLE);
 //        MessageOpenPgpView.this.setBackgroundColor(mFragment.getResources().getColor(
@@ -264,8 +290,11 @@ public class SecureConversationViewController implements
                     }
                 }
 
-
-
+//
+                if (mOpenPgpApi!=null){
+                    mOpenPgpApi=null;
+                    return;
+                }
                 mOpenPgpApi = new OpenPgpApi(mContext,
                         mOpenPgpServiceConnection.getService());
 
@@ -357,6 +386,8 @@ public class SecureConversationViewController implements
                         mMessage.bodyText = output;
                         renderMessage(mMessage);
                         mText.setText(R.string.openpgp_successful_decryption);
+                        mText.setBackgroundColor(Color.GREEN);
+                        mText.setTextColor(Color.BLACK);
 
 
 
@@ -381,6 +412,8 @@ public class SecureConversationViewController implements
                 }
                 case OpenPgpApi.RESULT_CODE_ERROR: {
                     OpenPgpError error = result.getParcelableExtra(OpenPgpApi.RESULT_ERROR);
+                    mText.setBackgroundColor(Color.RED);
+                    mText.setTextColor(Color.BLACK);
                     handleError(error);
                     break;
                 }
@@ -397,8 +430,11 @@ public class SecureConversationViewController implements
                 @Override
                 public void run() {
 
-                    mText.setText(activity.getString(R.string.openpgp_error) + " "
-                            + error.getMessage());
+                    if (mText.getText().toString().equals(R.string.openpgp_successful_decryption)) {
+
+                        mText.setText(activity.getString(R.string.openpgp_error) + " "
+                                + error.getMessage());
+                    }
 //                    mProgress.setVisibility(View.GONE);
 //
 //                    if (K9.DEBUG) {

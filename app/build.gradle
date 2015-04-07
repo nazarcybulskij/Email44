@@ -40,14 +40,16 @@ android {
    // compile 'com.android.support:gridlayout-v7:19.0.0'
     compile 'com.android.support:support-v13:19.0.0'
     compile 'com.beetstra.jutf7:jutf7:1.0.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
 
-    compile 'com.android.support:support-v4:19.0.0'
+
+        compile 'com.android.support:support-v4:19.0.0'
     compile 'com.android.support:appcompat-v7:19.0.0'
     compile 'com.android.support:gridlayout-v7:13.0.0'
 //    compile project(':extern:openpgp-api-lib')
-    compile project(':extern:openkeychain-api-lib')
+    compile project(':extern_demo:openkeychain-api-lib')
 
-     compile project(':openpgp-api-library')
+     compile project(':libs:openpgp-api-library')
 
 
 

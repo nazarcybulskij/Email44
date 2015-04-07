@@ -1561,7 +1561,7 @@
     <string name="openpgp_decrypting_verifying">Decrypting/Verifying…</string>
     <string name="openpgp_error">OpenPGP Error:</string>
     <string name="openpgp_get_key">Lookup missing key</string>
-    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email/openpgp-api-library/unspecified/res/values/values.xml -->
+    <!-- From: file:/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/exploded-aar/platform_packages_apps_email.libs/openpgp-api-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="openpgp_install_openkeychain_via">Install OpenKeychain via %s</string>
     <string name="openpgp_list_preference_none">None</string>

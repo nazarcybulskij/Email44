@@ -26,6 +26,7 @@ import android.content.Loader;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,6 +61,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import de.greenrobot.event.EventBus;
+import ua.indeema.nazar.CryptEvent;
+import ua.indeema.nazar.MessageEvent;
 
 public class SecureConversationViewFragment extends AbstractConversationViewFragment
         implements SecureConversationViewControllerCallbacks {
@@ -135,6 +140,7 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
     public void onCreate(Bundle savedState) {
         super.onCreate(savedState);
 
+
         mWebViewClient = new SecureConversationWebViewClient(mAccount);
         mViewController = new SecureConversationViewController(this);
     }
@@ -145,12 +151,13 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
 
         Activity activity = this.getActivity();
 
-        // bind to service if a OpenPGP Provider is available
-        if (mOpenPgpProvider != null) {
-            mOpenPgpServiceConnection = new OpenPgpServiceConnection(getActivity(),
-                    mOpenPgpProvider);
-            mOpenPgpServiceConnection.bindToService();
-        }
+//        // bind to service if a OpenPGP Provider is available
+//        if (mOpenPgpProvider != null) {
+//            mOpenPgpServiceConnection = new OpenPgpServiceConnection(getActivity(),
+//                    mOpenPgpProvider);
+//            mOpenPgpServiceConnection.bindToService();
+//        }
+
 
 
 
@@ -161,6 +168,8 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mViewController.onActivityCreated(savedInstanceState);
+        EventBus.getDefault().register(this);
+
     }
 
     // Start implementations of SecureConversationViewControllerCallbacks
@@ -307,13 +316,47 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
 
         //Toast.makeText(getContext(), sharedText, Toast.LENGTH_SHORT).show();
         mData = data.bodyText;
+        mMessage = data;
 
 
 
          //decryptAndVerify(data);
-
-         mViewController.renderMessage(data);
+//        if (this.isVisible())
+//            mViewController.renderMessage(data,getActivity());
+//        else
+           mViewController.renderMessage(data);
     }
+
+    ConversationMessage mMessage;
+
+
+
+    public void onEvent(MessageEvent event) {
+
+
+//        if (this.isVisible()) {
+//            Log.v("mPagerListener1", "Event  " );
+//        }
+        if (isAdded() && !isDetached() && !isRemoving() && isUserVisible()){
+
+            Log.v("mPagerListener1", "Event  "+event.i.id+":"+event.i.bodyText.equals(mData));
+            mViewController.renderMessage(event.i,getActivity());
+        }
+
+    };
+    public void onEvent(CryptEvent event) {
+        if (isAdded() && !isDetached() && !isRemoving() && isUserVisible()){
+
+
+            mViewController.renderMessage(mMessage,getActivity());
+        };
+
+
+
+
+
+
+    };
 
     // model
     public  String mCiphertex;
@@ -333,7 +376,11 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
         return false;
     }
 
-
+    @Override
+    public void onDestroyView() {
+        EventBus.getDefault().unregister(this);
+        super.onDestroyView();
+    }
 
 
     private String fixPgpMessage(String message) {

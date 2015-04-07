@@ -47,9 +47,8 @@ import com.android.mail.utils.LogTag;
 import com.android.mail.utils.LogUtils;
 import com.android.mail.utils.Utils;
 
-
-
-import java.security.Security;
+import de.greenrobot.event.EventBus;
+import ua.indeema.nazar.CryptEvent;
 
 public class MailActivityEmail extends com.android.mail.ui.MailActivity {
     /**
@@ -168,6 +167,55 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
         } else {
             context.stopService(intent);
         }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode==-1){
+            EventBus.getDefault().post(new CryptEvent(1));
+        }
+
+
+//        switch (data.getIntExtra(OpenPgpApi.RESULT_CODE, OpenPgpApi.RESULT_CODE_ERROR)) {
+//            case OpenPgpApi.RESULT_CODE_SUCCESS: {
+//                Log.v("TAG","RESULT_CODE_SUCCESS");
+//
+//                break;
+//            }
+//            case OpenPgpApi.RESULT_CODE_USER_INTERACTION_REQUIRED: {
+//                Log.v("TAG","RESULT_CODE_USER_INTERACTION_REQUIRED");
+//
+//                break;
+//            }
+//            case OpenPgpApi.RESULT_CODE_ERROR: {
+//                Log.v("TAG", "RESULT_CODE_ERROR");
+//
+//                break;
+//            }
+//        }
+//        switch (resultCode) {
+//            case OpenPgpApi.RESULT_CODE_SUCCESS: {
+//                Log.v("TAG","RESULT_CODE_SUCCESS");
+//
+//                break;
+//            }
+//            case OpenPgpApi.RESULT_CODE_USER_INTERACTION_REQUIRED: {
+//                Log.v("TAG","RESULT_CODE_USER_INTERACTION_REQUIRED");
+//
+//                break;
+//            }
+//            case OpenPgpApi.RESULT_CODE_ERROR: {
+//                Log.v("TAG", "RESULT_CODE_ERROR");
+//
+//                break;
+//            }
+//        }
+
+
+
+
     }
 
     @Override

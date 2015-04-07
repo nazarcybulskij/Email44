@@ -96,8 +96,8 @@ MERGED from platform_packages_apps_email:chips:unspecified:21:5
 MERGED from platform_packages_apps_email:photoviewer:unspecified:22:5
 MERGED from com.android.support:appcompat-v7:19.0.0:18:5
 MERGED from com.android.support:gridlayout-v7:13.0.0:7:5
-MERGED from platform_packages_apps_email.extern:openkeychain-api-lib:unspecified:7:5
-MERGED from platform_packages_apps_email:openpgp-api-library:unspecified:7:5
+MERGED from platform_packages_apps_email.extern_demo:openkeychain-api-lib:unspecified:7:5
+MERGED from platform_packages_apps_email.libs:openpgp-api-library:unspecified:7:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:44:15
 		INJECTED from AndroidManifest.xml:0:0
@@ -143,8 +143,8 @@ ADDED from AndroidManifest.xml:65:5
 application
 ADDED from AndroidManifest.xml:73:5
 MERGED from com.android.support:appcompat-v7:19.0.0:19:5
-MERGED from platform_packages_apps_email.extern:openkeychain-api-lib:unspecified:11:5
-MERGED from platform_packages_apps_email:openpgp-api-library:unspecified:11:5
+MERGED from platform_packages_apps_email.extern_demo:openkeychain-api-lib:unspecified:11:5
+MERGED from platform_packages_apps_email.libs:openpgp-api-library:unspecified:11:5
 	android:requiredAccountType
 		ADDED from AndroidManifest.xml:79:9
 	android:label
