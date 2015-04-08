@@ -26,7 +26,11 @@ import android.content.Intent;
 import android.content.IntentSender;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -379,15 +383,32 @@ public class SecureConversationViewController implements
 //                            Log.d(K9.LOG_TAG, "result: " + os.toByteArray().length
 //                                    + " str=" + output);
 
+
                         // missing key -> PendingIntent to get keys
                         mMissingKeyPI = result.getParcelableExtra(OpenPgpApi.RESULT_INTENT);
 
                         //Toast.makeText(mContext, output, Toast.LENGTH_SHORT).show();
                         mMessage.bodyText = output;
                         renderMessage(mMessage);
-                        mText.setText(R.string.openpgp_successful_decryption);
-                        mText.setBackgroundColor(Color.GREEN);
-                        mText.setTextColor(Color.BLACK);
+                        if (sigResult==null) {
+                            mText.setText(R.string.openpgp_successful_decryption);
+                            mText.setBackgroundColor(Color.GREEN);
+                            mText.setTextColor(Color.BLACK);
+                        }else {
+
+                            String str = mContext.getResources().getString(R.string.openpgp_successful_decryption);
+                            str = str+ "\r\n"+System.getProperty ("line.separator")+sigResult.getUserId().toString();
+                            String html = Html.fromHtml("![CDATA[sdfsfs <br> bgfn]]").toString();
+                            //mText.setSingleLine(true);
+                            mText.setEllipsize(TextUtils.TruncateAt.END);
+                            mText.setMaxLines(2);
+
+                            mText.setText(str);
+                            mText.setBackgroundColor(Color.GREEN);
+                            mText.setTextColor(Color.BLACK);
+
+
+                        }
 
 
 
@@ -412,8 +433,7 @@ public class SecureConversationViewController implements
                 }
                 case OpenPgpApi.RESULT_CODE_ERROR: {
                     OpenPgpError error = result.getParcelableExtra(OpenPgpApi.RESULT_ERROR);
-                    mText.setBackgroundColor(Color.RED);
-                    mText.setTextColor(Color.BLACK);
+
                     handleError(error);
                     break;
                 }
@@ -429,8 +449,15 @@ public class SecureConversationViewController implements
 
                 @Override
                 public void run() {
+                    Drawable buttonBackground = mText.getBackground();
+                    ColorDrawable buttonColor = (ColorDrawable) mText.getBackground();
+                    int idcolor = buttonColor.getColor();
 
-                    if (mText.getText().toString().equals(R.string.openpgp_successful_decryption)) {
+
+
+                    if (idcolor != Color.GREEN) {
+                        mText.setBackgroundColor(Color.RED);
+                        mText.setTextColor(Color.BLACK);
 
                         mText.setText(activity.getString(R.string.openpgp_error) + " "
                                 + error.getMessage());

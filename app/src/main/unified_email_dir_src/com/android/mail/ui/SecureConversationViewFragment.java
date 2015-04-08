@@ -352,10 +352,6 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
         };
 
 
-
-
-
-
     };
 
     // model

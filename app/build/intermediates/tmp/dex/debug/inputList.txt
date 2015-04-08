@@ -1,5 +1,5 @@
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/classes/debug
-/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-6050641bc4baa129d6018ee9bc06cb30747e20ec.jar
+/home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-1775e3b8783f0013b0c4f7ab2873cb318addf21f.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/jutf7-1.0.0-b1c2e66f9b4d00b16a5c4631461b0f712a3e3c82.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/support-v13-19.0.0-9e863192c74f2afb9eecab983e020ce723fe780d.jar
 /home/nazar/Androidproject/krypto_email/platform_packages_apps_email/app/build/intermediates/pre-dexed/debug/classes-944aecc34d91946b8e69bb79ea27e5d76fee0b5c.jar

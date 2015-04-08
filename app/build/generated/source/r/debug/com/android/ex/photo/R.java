@@ -24,8 +24,8 @@ public final class R {
 	}
 	public static final class drawable {
 		public static final int actionbar_translucent = 0x7f020059;
-		public static final int default_image = 0x7f02006d;
-		public static final int ic_menu_refresh_holo_dark = 0x7f0200c8;
+		public static final int default_image = 0x7f02006e;
+		public static final int ic_menu_refresh_holo_dark = 0x7f0200c9;
 	}
 	public static final class id {
 		public static final int determinate_progress = 0x7f0c0161;

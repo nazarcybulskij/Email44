@@ -3771,7 +3771,12 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
     }
 
     public void encrypt(Intent data) {
-        data.setAction(OpenPgpApi.ACTION_ENCRYPT);
+
+        if (mEncryptCheckbox.isChecked()  && !(mCryptoSignatureCheckbox.isChecked()))
+            data.setAction(OpenPgpApi.ACTION_ENCRYPT);
+
+        if (mEncryptCheckbox.isChecked()  && mCryptoSignatureCheckbox.isChecked())
+            data.setAction(OpenPgpApi.ACTION_SIGN_AND_ENCRYPT);
 
         String[] emailsArray = null;
 
@@ -3793,6 +3798,16 @@ public class ComposeActivity extends FragmentActivity implements OnClickListener
 
         InputStream is = getInputstream(false);
         ByteArrayOutputStream os = new ByteArrayOutputStream();
+
+
+
+//
+//        if (OpenPgpApi!=null){
+//            OpenPgpApi=null;
+//            return;
+//        }
+
+
 
         OpenPgpApi api = new OpenPgpApi(this, mServiceConnection.getService());
         api.executeApiAsync(data, is, os, new SignEncryptCallback(os, REQUEST_CODE_ENCRYPT));
