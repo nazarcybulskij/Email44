@@ -108,9 +108,6 @@ public class SecureConversationViewController implements
 
         mSignature = (CheckBox)rootView.findViewById(R.id.cb_crypto_signature);
 
-
-
-
         // Add color backgrounds to the header and footer.
         // Otherwise the backgrounds are grey. They can't
         // be set in xml because that would add more overdraw
@@ -141,11 +138,7 @@ public class SecureConversationViewController implements
         settings.setBuiltInZoomControls(true);
         settings.setDisplayZoomControls(false);
 
-
-
         mScrollView.setInnerScrollableView(mWebView);
-
-
 
         return rootView;
     }
@@ -176,9 +169,6 @@ public class SecureConversationViewController implements
         mSideMarginInWebPx = (int) (r.getDimensionPixelOffset(
                 R.dimen.conversation_message_content_margin_side) / r.getDisplayMetrics().density);
     }
-
-
-    //Nazarko Zipolino    add RenderMessagewithContext()
 
     /**
      * Populate the adapter with overlay views (message headers, super-collapsed
@@ -211,22 +201,19 @@ public class SecureConversationViewController implements
             mMessageFooterView.bind(item, mCallbacks.getAccountUri(), false);
         }
 
-
-         if (mCallbacks.isViewVisibleToUser() ) {
-             EventBus.getDefault().post(new MessageEvent(message, "Nazar"));
-         }
+        if (mCallbacks.isViewVisibleToUser() ) {
+            EventBus.getDefault().post(new MessageEvent(message, "Nazar"));
+        }
     }
-
 
     private Context mContext;
 
     public void renderMessage(ConversationMessage message ,Context context) {
-
-        if (mMessage==null)
+        if (mMessage == null) {
             return;
+        }
 
-        mContext=context;
-
+        mContext = context;
 
         StringBuilder dataBuilder = new StringBuilder(
                 String.format(BEGIN_HTML, mSideMarginInWebPx));
@@ -239,25 +226,17 @@ public class SecureConversationViewController implements
         mWebView.loadDataWithBaseURL(mCallbacks.getBaseUri(), dataBuilder.toString(),
                 "text/html", "utf-8", null);
 
-
         if (mOpenPgpProvider != null) {
             mOpenPgpServiceConnection = new OpenPgpServiceConnection(mContext,
                     mOpenPgpProvider);
             mOpenPgpServiceConnection.bindToService();
         }
 
-        mData=mMessage.bodyText;
-
+        mData = mMessage.bodyText;
 
         decryptAndVerify(mMessage);
-
-
-
-
-
-
-
     }
+    
  //-----------------------------------------------------------
 
     public OpenPgpServiceConnection mOpenPgpServiceConnection;
@@ -291,7 +270,6 @@ public class SecureConversationViewController implements
                     }
                 }
 
-//
                 if (mOpenPgpApi!=null){
                     mOpenPgpApi=null;
                     return;
@@ -300,68 +278,58 @@ public class SecureConversationViewController implements
                         mOpenPgpServiceConnection.getService());
 
                 decryptVerify(new Intent());
-
-
-
             }
         };
 
         new Thread(r).start();
     }
 
-
     private void decryptVerify(Intent intent) {
-
-
         intent.setAction(OpenPgpApi.ACTION_DECRYPT_VERIFY);
         intent.putExtra(OpenPgpApi.EXTRA_REQUEST_ASCII_ARMOR, true);
 
         //Identity identity = IdentityHelper.getRecipientIdentityFromMessage(mAccount, mMessage);
         //String accName = OpenPgpApiHelper.buildAccountName(identity);
 
-        String tempEmail = getMessage().getTo();
-        if (tempEmail!=null) {
-            String email = null;
+        String tempEmailString = getMessage().getTo();
+        if (tempEmailString != null) {
+            String emailString = null;
 
-            if (tempEmail.indexOf("<")==-1){
-                email = tempEmail;
-            }else{
-                email = tempEmail.substring(tempEmail.indexOf("<") + 1, tempEmail.indexOf(">"));
+            if (tempEmailString.indexOf("<") == -1) {
+                emailString = tempEmailString;
+            } else {
+                emailString = tempEmailString.substring(tempEmailString.indexOf("<") + 1, tempEmailString.indexOf(">"));
             }
-            intent.putExtra(OpenPgpApi.EXTRA_ACCOUNT_NAME,email);
+            intent.putExtra(OpenPgpApi.EXTRA_ACCOUNT_NAME,emailString);
         }
 
-        InputStream is = null;
+        InputStream inputStream = null;
 
         try {
-            if (mData!=null) {
-                is = new ByteArrayInputStream(mData.getBytes("UTF-8"));
-
-            }else{
+            if (mData != null) {
+                inputStream = new ByteArrayInputStream(mData.getBytes("UTF-8"));
+            } else {
                 return;
             }
-
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
+        } catch (UnsupportedEncodingException exception) {
+            exception.printStackTrace();
         }
 
         final ByteArrayOutputStream os = new ByteArrayOutputStream();
 
         DecryptVerifyCallback callback = new DecryptVerifyCallback(os, REQUEST_CODE_DECRYPT_VERIFY);
-
-        mOpenPgpApi.executeApiAsync(intent, is, os, callback);
+        mOpenPgpApi.executeApiAsync(intent, inputStream, os, callback);
     }
-
 
     /**
      * Called on successful decrypt/verification
      */
     private class DecryptVerifyCallback implements OpenPgpApi.IOpenPgpCallback {
-        ByteArrayOutputStream os;
+        ByteArrayOutputStream byteArrayOutputStream;
         int requestCode;
 
-        private DecryptVerifyCallback(ByteArrayOutputStream os, int requestCode) {
-            this.os = os;
+        private DecryptVerifyCallback(ByteArrayOutputStream outputStream, int requestCode) {
+            this.byteArrayOutputStream = outputStream;
             this.requestCode = requestCode;
         }
 
@@ -370,13 +338,12 @@ public class SecureConversationViewController implements
             switch (result.getIntExtra(OpenPgpApi.RESULT_CODE, OpenPgpApi.RESULT_CODE_ERROR)) {
                 case OpenPgpApi.RESULT_CODE_SUCCESS: {
                     try {
-                        final String output = os.toString("UTF-8");
+                        final String output = byteArrayOutputStream.toString("UTF-8");
 
                         OpenPgpSignatureResult sigResult = null;
                         if (result.hasExtra(OpenPgpApi.RESULT_SIGNATURE)) {
                             sigResult = result.getParcelableExtra(OpenPgpApi.RESULT_SIGNATURE);
                         }
-
 
                         // missing key -> PendingIntent to get keys
                         mMissingKeyPI = result.getParcelableExtra(OpenPgpApi.RESULT_INTENT);
@@ -384,25 +351,21 @@ public class SecureConversationViewController implements
                         //Toast.makeText(mContext, output, Toast.LENGTH_SHORT).show();
                         mMessage.bodyText = output;
                         renderMessage(mMessage);
-                        if (sigResult==null) {
+                        if (sigResult == null) {
                             mText.setText(R.string.openpgp_successful_decryption);
                             mText.setBackgroundColor(Color.GREEN);
                             mText.setTextColor(Color.BLACK);
                             mSignature.setChecked(false);
-                        }else {
-
+                        } else {
                             String str = mContext.getResources().getString(R.string.openpgp_successful_decryption);
                             mText.setEllipsize(TextUtils.TruncateAt.END);
                             mText.setMaxLines(2);
-
                             mText.setText(str);
                             mText.setBackgroundColor(Color.GREEN);
                             mText.setTextColor(Color.BLACK);
                             mSignature.setText(sigResult.getUserId().toString());
                             mSignature.setChecked(true);
-
                         }
-
 
                     } catch (UnsupportedEncodingException e) {
 
@@ -441,16 +404,13 @@ public class SecureConversationViewController implements
                 public void run() {
                     Drawable buttonBackground = mText.getBackground();
                     ColorDrawable buttonColor = (ColorDrawable) mText.getBackground();
-                    int idcolor = buttonColor.getColor();
+                    int buttonBackgroundColor = buttonColor.getColor();
 
-
-
-                    if (idcolor != Color.GREEN) {
+                    if (buttonBackgroundColor != Color.GREEN) {
                         mText.setBackgroundColor(Color.RED);
                         mText.setTextColor(Color.BLACK);
 
-                        mText.setText(activity.getString(R.string.openpgp_error) + " "
-                                + error.getMessage());
+                        mText.setText(activity.getString(R.string.openpgp_error) + " " + error.getMessage());
                         if ("No valid signature data found!".equals(error.getMessage())){
                             mText.setVisibility(View.INVISIBLE);
                             ViewGroup.LayoutParams params = mText.getLayoutParams();
@@ -469,8 +429,7 @@ public class SecureConversationViewController implements
         }
     }
 
-
-//--------------------------------------------------Nazarko Zipolino
+//--------------------------------------------------
 
     public ConversationMessage getMessage() {
         return mMessage;
@@ -530,6 +489,4 @@ public class SecureConversationViewController implements
     public FragmentManager getFragmentManager() {
         return mCallbacks.getFragment().getFragmentManager();
     }
-
-
 }

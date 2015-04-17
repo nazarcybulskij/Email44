@@ -30,7 +30,6 @@ import android.text.TextUtils;
 import android.text.util.Linkify;
 import android.text.util.Rfc822Token;
 import android.text.util.Rfc822Tokenizer;
-import android.util.Log;
 
 import com.android.emailcommon.internet.MimeMessage;
 import com.android.emailcommon.internet.MimeUtility;
@@ -411,7 +410,6 @@ public class Message implements Parcelable, HtmlMessage {
         }
     }
 
-    //nazarko zipolino  save contect
 
     private  Context pContext;
 

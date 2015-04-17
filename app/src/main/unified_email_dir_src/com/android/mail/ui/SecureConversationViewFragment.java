@@ -19,7 +19,6 @@ package com.android.mail.ui;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.PendingIntent;
 import android.content.Loader;
 import android.net.Uri;
 import android.os.Bundle;
@@ -43,9 +42,6 @@ import com.android.mail.utils.LogUtils;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Sets;
 
-import org.openintents.openpgp.util.OpenPgpApi;
-import org.openintents.openpgp.util.OpenPgpServiceConnection;
-
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -59,15 +55,10 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
         implements SecureConversationViewControllerCallbacks {
     private static final String LOG_TAG = LogTag.getLogTag();
 
-
     private SecureConversationViewController mViewController;
-
     public SecureConversationViewController getmViewController() {
         return mViewController;
     }
-
-
-
 
     private class SecureConversationWebViewClient extends AbstractConversationWebViewClient {
         public SecureConversationWebViewClient(Account account) {
@@ -129,7 +120,6 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
     public void onCreate(Bundle savedState) {
         super.onCreate(savedState);
 
-
         mWebViewClient = new SecureConversationWebViewClient(mAccount);
         mViewController = new SecureConversationViewController(this);
     }
@@ -150,6 +140,7 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
     }
 
     // Start implementations of SecureConversationViewControllerCallbacks
+    String mData;
 
     @Override
     public Fragment getFragment() {
@@ -261,14 +252,17 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
             LogUtils.i(LOG_TAG, "CONV RENDER: existing cursor is null, rendering from scratch");
             return;
         }
+
         if (mActivity == null || mActivity.isFinishing()) {
             // Activity is finishing, just bail.
             return;
         }
+
         if (!newCursor.moveToFirst()) {
             LogUtils.e(LOG_TAG, "unable to open message cursor");
             return;
         }
+
         ConversationMessage data = newCursor.getMessage();
         mData = data.bodyText;
         mMessage = data;
@@ -276,8 +270,6 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
     }
 
     ConversationMessage mMessage;
-
-
 
     public void onEvent(MessageEvent event) {
         if (isAdded() && !isDetached() && !isRemoving() && isUserVisible()){
@@ -291,8 +283,6 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
         if (isAdded() && !isDetached() && !isRemoving() && isUserVisible()){
             mViewController.renderMessage(mMessage,getActivity());
         };
-
-
     };
 
     // model
@@ -318,21 +308,4 @@ public class SecureConversationViewFragment extends AbstractConversationViewFrag
         EventBus.getDefault().unregister(this);
         super.onDestroyView();
     }
-
-    // State
-    protected String mPassphrase;
-    protected byte[] mNfcDecryptedSessionKey;
-
-
-
-    private OpenPgpServiceConnection mOpenPgpServiceConnection;
-    private OpenPgpApi mOpenPgpApi;
-
-    private String mOpenPgpProvider = "org.sufficientlysecure.keychain";
-    String mData;
-    private static final int REQUEST_CODE_DECRYPT_VERIFY = 12;
-
-
-    private PendingIntent mMissingKeyPI;
-
 }

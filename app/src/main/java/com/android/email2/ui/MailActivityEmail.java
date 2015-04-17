@@ -54,13 +54,13 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
     /**
      * If this is enabled there will be additional logging information sent to
      * LogUtils.d, including protocol dumps.
-     *
+     * <p/>
      * This should only be used for logs that are useful for debbuging user problems,
      * not for internal/development logs.
-     *
+     * <p/>
      * This can be enabled by typing "debug" in the AccountFolderList activity.
      * Changing the value to 'true' here will likely have no effect at all!
-     *
+     * <p/>
      * TODO: rename this to sUserDebug, and rename LOGD below to DEBUG.
      */
     public static boolean DEBUG;
@@ -92,6 +92,7 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
      * A matcher for data URI's that specify conversation list info.
      */
     private static final UriMatcher sUrlMatcher = new UriMatcher(UriMatcher.NO_MATCH);
+
     static {
         sUrlMatcher.addURI(
                 EmailProvider.LEGACY_AUTHORITY, "view/mailbox", MATCH_LEGACY_SHORTCUT_INTENT);
@@ -117,7 +118,7 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
      * Called throughout the application when the number of accounts has changed. This method
      * enables or disables the Compose activity, the boot receiver and the service based on
      * whether any accounts are configured.
-     *
+     * <p/>
      * Blocking call - do not call from UI/lifecycle threads.
      *
      * @param context
@@ -126,18 +127,18 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
     public static boolean setServicesEnabledSync(Context context) {
         // Make sure we're initialized
         EmailContent.init(context);
-        Cursor c = null;
+        Cursor cursorFromDB = null;
         try {
-            c = context.getContentResolver().query(
+            cursorFromDB = context.getContentResolver().query(
                     Account.CONTENT_URI,
                     Account.ID_PROJECTION,
                     null, null, null);
-            boolean enable = c.getCount() > 0;
+            boolean enable = cursorFromDB.getCount() > 0;
             setServicesEnabled(context, enable);
             return enable;
         } finally {
-            if (c != null) {
-                c.close();
+            if (cursorFromDB != null) {
+                cursorFromDB.close();
             }
         }
     }
@@ -147,7 +148,7 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
         pm.setComponentEnabledSetting(
                 new ComponentName(context, AttachmentDownloadService.class),
                 enabled ? PackageManager.COMPONENT_ENABLED_STATE_ENABLED :
-                    PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+                        PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
                 PackageManager.DONT_KILL_APP);
 
         // Start/stop the various services depending on whether there are any accounts
@@ -157,9 +158,10 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
 
     /**
      * Starts or stops the service as necessary.
+     *
      * @param enabled If {@code true}, the service will be started. Otherwise, it will be stopped.
      * @param context The context to manage the service with.
-     * @param intent The intent of the service to be managed.
+     * @param intent  The intent of the service to be managed.
      */
     private static void startOrStopService(boolean enabled, Context context, Intent intent) {
         if (enabled) {
@@ -172,57 +174,16 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-        if (resultCode==-1){
+        if (resultCode == -1) {
             EventBus.getDefault().post(new CryptEvent(1));
         }
-
-
-//        switch (data.getIntExtra(OpenPgpApi.RESULT_CODE, OpenPgpApi.RESULT_CODE_ERROR)) {
-//            case OpenPgpApi.RESULT_CODE_SUCCESS: {
-//                Log.v("TAG","RESULT_CODE_SUCCESS");
-//
-//                break;
-//            }
-//            case OpenPgpApi.RESULT_CODE_USER_INTERACTION_REQUIRED: {
-//                Log.v("TAG","RESULT_CODE_USER_INTERACTION_REQUIRED");
-//
-//                break;
-//            }
-//            case OpenPgpApi.RESULT_CODE_ERROR: {
-//                Log.v("TAG", "RESULT_CODE_ERROR");
-//
-//                break;
-//            }
-//        }
-//        switch (resultCode) {
-//            case OpenPgpApi.RESULT_CODE_SUCCESS: {
-//                Log.v("TAG","RESULT_CODE_SUCCESS");
-//
-//                break;
-//            }
-//            case OpenPgpApi.RESULT_CODE_USER_INTERACTION_REQUIRED: {
-//                Log.v("TAG","RESULT_CODE_USER_INTERACTION_REQUIRED");
-//
-//                break;
-//            }
-//            case OpenPgpApi.RESULT_CODE_ERROR: {
-//                Log.v("TAG", "RESULT_CODE_ERROR");
-//
-//                break;
-//            }
-//        }
-
-
-
-
     }
 
     @Override
     public void onCreate(Bundle bundle) {
 
         //MultiDex.install(this);
-       // Security.addProvider(new BouncyCastleProvider());
+        // Security.addProvider(new BouncyCastleProvider());
 
         final Intent intent = getIntent();
         final Uri data = intent != null ? intent.getData() : null;
@@ -272,14 +233,14 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
         Preferences prefs = Preferences.getPreferences(context);
         int debugLogging = prefs.getEnableDebugLogging() ? EmailServiceProxy.DEBUG_BIT : 0;
         int verboseLogging =
-            prefs.getEnableExchangeLogging() ? EmailServiceProxy.DEBUG_VERBOSE_BIT : 0;
+                prefs.getEnableExchangeLogging() ? EmailServiceProxy.DEBUG_VERBOSE_BIT : 0;
         int fileLogging =
-            prefs.getEnableExchangeFileLogging() ? EmailServiceProxy.DEBUG_FILE_BIT : 0;
+                prefs.getEnableExchangeFileLogging() ? EmailServiceProxy.DEBUG_FILE_BIT : 0;
         int enableStrictMode =
-            prefs.getEnableStrictMode() ? EmailServiceProxy.DEBUG_ENABLE_STRICT_MODE : 0;
+                prefs.getEnableStrictMode() ? EmailServiceProxy.DEBUG_ENABLE_STRICT_MODE : 0;
         int debugBits = debugLogging | verboseLogging | fileLogging | enableStrictMode;
         EmailServiceUtils.setRemoteServicesLogging(context, debugBits);
-     }
+    }
 
     /**
      * Internal, utility method for logging.
@@ -292,6 +253,7 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
     /**
      * Called by the accounts reconciler to notify that accounts have changed, or by  "Welcome"
      * to clear the flag.
+     *
      * @param setFlag true to set the notification flag, false to clear it
      */
     public static synchronized void setNotifyUiAccountsChanged(boolean setFlag) {
@@ -346,7 +308,6 @@ public class MailActivityEmail extends com.android.mail.ui.MailActivity {
         } finally {
             accountCursor.close();
         }
-
 
         final Cursor folderCursor = contentResolver.query(
                 EmailProvider.uiUri("uifolder", mailboxId),
