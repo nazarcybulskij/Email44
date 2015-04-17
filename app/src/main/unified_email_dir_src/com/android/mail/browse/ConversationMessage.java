@@ -20,7 +20,9 @@ package com.android.mail.browse;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
+import android.util.Log;
 
+import com.android.emailcommon.internet.MimeHeader;
 import com.android.emailcommon.internet.MimeMessage;
 import com.android.emailcommon.mail.MessagingException;
 import com.android.mail.browse.MessageCursor.ConversationController;
@@ -56,6 +58,8 @@ public final class ConversationMessage extends Message {
     public ConversationMessage(Context context, MimeMessage mimeMessage, Uri emlFileUri)
             throws MessagingException {
         super(context, mimeMessage, emlFileUri);
+        Log.v("mimeMessage", mimeMessage.getHeader(MimeHeader.HEADER_CONTENT_TYPE).toString());
+        //Log.v("mimeMessage", mExtendedHeader.toString());
     }
 
     public void setController(ConversationController controller) {
@@ -104,7 +108,9 @@ public final class ConversationMessage extends Message {
             new CursorCreator<ConversationMessage>() {
                 @Override
                 public ConversationMessage createFromCursor(Cursor c) {
-                    return new ConversationMessage(c);
+                    ConversationMessage message = new ConversationMessage(c);
+                    Log.v("Message from DB",message.toString());
+                    return message;
                 }
 
                 @Override

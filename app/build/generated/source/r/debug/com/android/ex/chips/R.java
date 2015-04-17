@@ -24,13 +24,13 @@ public final class R {
 		public static final int line_spacing_extra = 0x7f0b0054;
 	}
 	public static final class drawable {
-		public static final int chip_background = 0x7f020067;
-		public static final int chip_background_invalid = 0x7f020068;
-		public static final int chip_background_selected = 0x7f020069;
-		public static final int chip_delete = 0x7f02006a;
-		public static final int ic_contact_picture = 0x7f02008c;
-		public static final int list_item_font_primary = 0x7f0200ef;
-		public static final int list_item_font_secondary = 0x7f0200f0;
+		public static final int chip_background = 0x7f020068;
+		public static final int chip_background_invalid = 0x7f020069;
+		public static final int chip_background_selected = 0x7f02006a;
+		public static final int chip_delete = 0x7f02006b;
+		public static final int ic_contact_picture = 0x7f02008d;
+		public static final int list_item_font_primary = 0x7f0200f0;
+		public static final int list_item_font_secondary = 0x7f0200f1;
 	}
 	public static final class id {
 		public static final int text1 = 0x7f0c0150;

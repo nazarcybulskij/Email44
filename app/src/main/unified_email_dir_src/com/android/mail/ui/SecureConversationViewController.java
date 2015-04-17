@@ -29,13 +29,13 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.text.Html;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.android.email_ee.R;
@@ -86,6 +86,7 @@ public class SecureConversationViewController implements
     private MessageScrollView mScrollView;
     private Button mDecrypt;
     private TextView mText = null;
+    private CheckBox mSignature=null;
 
     private ConversationViewProgressController mProgressController;
     private FormattedDateBuilder mDateBuilder;
@@ -104,7 +105,9 @@ public class SecureConversationViewController implements
         mMessageHeaderView = (MessageHeaderView) rootView.findViewById(R.id.message_header);
         mMessageFooterView = (MessageFooterView) rootView.findViewById(R.id.message_footer);
         mText = (TextView)rootView.findViewById(R.id.openpgp_text);
-        mText.setVisibility(View.VISIBLE);
+
+        mSignature = (CheckBox)rootView.findViewById(R.id.cb_crypto_signature);
+
 
 
 
@@ -208,13 +211,10 @@ public class SecureConversationViewController implements
             mMessageFooterView.bind(item, mCallbacks.getAccountUri(), false);
         }
 
-         if (mCallbacks.isViewVisibleToUser() ){
-             EventBus.getDefault().post(new MessageEvent(message,"Nazar"));
+
+         if (mCallbacks.isViewVisibleToUser() ) {
+             EventBus.getDefault().post(new MessageEvent(message, "Nazar"));
          }
-
-
-
-
     }
 
 
@@ -274,11 +274,8 @@ public class SecureConversationViewController implements
         mText.setText(R.string.openpgp_decrypting_verifying);
         mText.setBackgroundColor(Color.YELLOW);
         mText.setTextColor(Color.BLACK);
-//        this.setVisibility(View.VISIBLE);
-//        mProgress.setVisibility(View.VISIBLE);
-//        MessageOpenPgpView.this.setBackgroundColor(mFragment.getResources().getColor(
-//                R.color.openpgp_orange));
-//        mText.setText(R.string.openpgp_decrypting_verifying);
+        mSignature.setVisibility(View.VISIBLE);
+        mText.setVisibility(View.VISIBLE);
 
         // waiting in a new thread
         Runnable r = new Runnable() {
@@ -314,6 +311,7 @@ public class SecureConversationViewController implements
 
 
     private void decryptVerify(Intent intent) {
+
 
         intent.setAction(OpenPgpApi.ACTION_DECRYPT_VERIFY);
         intent.putExtra(OpenPgpApi.EXTRA_REQUEST_ASCII_ARMOR, true);
@@ -378,10 +376,6 @@ public class SecureConversationViewController implements
                         if (result.hasExtra(OpenPgpApi.RESULT_SIGNATURE)) {
                             sigResult = result.getParcelableExtra(OpenPgpApi.RESULT_SIGNATURE);
                         }
-//
-//                        if (K9.DEBUG)
-//                            Log.d(K9.LOG_TAG, "result: " + os.toByteArray().length
-//                                    + " str=" + output);
 
 
                         // missing key -> PendingIntent to get keys
@@ -394,28 +388,24 @@ public class SecureConversationViewController implements
                             mText.setText(R.string.openpgp_successful_decryption);
                             mText.setBackgroundColor(Color.GREEN);
                             mText.setTextColor(Color.BLACK);
+                            mSignature.setChecked(false);
                         }else {
 
                             String str = mContext.getResources().getString(R.string.openpgp_successful_decryption);
-                            str = str+ "\r\n"+System.getProperty ("line.separator")+sigResult.getUserId().toString();
-                            String html = Html.fromHtml("![CDATA[sdfsfs <br> bgfn]]").toString();
-                            //mText.setSingleLine(true);
                             mText.setEllipsize(TextUtils.TruncateAt.END);
                             mText.setMaxLines(2);
 
                             mText.setText(str);
                             mText.setBackgroundColor(Color.GREEN);
                             mText.setTextColor(Color.BLACK);
-
+                            mSignature.setText(sigResult.getUserId().toString());
+                            mSignature.setChecked(true);
 
                         }
 
 
-
-//                        mProgress.setVisibility(View.GONE);
-//                        mFragment.setMessageWithOpenPgp(output, sigResult);
                     } catch (UnsupportedEncodingException e) {
-//                        Log.e(K9.LOG_TAG, "UnsupportedEncodingException", e);
+
                     }
                     break;
                 }
@@ -461,18 +451,19 @@ public class SecureConversationViewController implements
 
                         mText.setText(activity.getString(R.string.openpgp_error) + " "
                                 + error.getMessage());
+                        if ("No valid signature data found!".equals(error.getMessage())){
+                            mText.setVisibility(View.INVISIBLE);
+                            ViewGroup.LayoutParams params = mText.getLayoutParams();
+                            params.height = 0;
+                            mText.setLayoutParams(params);
+
+                            mSignature.setVisibility(View.INVISIBLE);
+                            params = mSignature.getLayoutParams();
+                            params.height = 0;
+                            mSignature.setLayoutParams(params);
+                        }
+
                     }
-//                    mProgress.setVisibility(View.GONE);
-//
-//                    if (K9.DEBUG) {
-//                        Log.d(K9.LOG_TAG, "OpenPGP Error ID:" + error.getErrorId());
-//                        Log.d(K9.LOG_TAG, "OpenPGP Error Message:" + error.getMessage());
-//                    }
-//
-//                    mText.setText(mFragment.getString(R.string.openpgp_error) + " "
-//                            + error.getMessage());
-//                    MessageOpenPgpView.this.setBackgroundColor(mFragment.getResources().getColor(
-//                            R.color.openpgp_red));
                 }
             });
         }
@@ -541,11 +532,4 @@ public class SecureConversationViewController implements
     }
 
 
-
-
-
-
-
-
-    // End MessageHeaderViewCallbacks implementations
 }

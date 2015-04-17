@@ -61,7 +61,7 @@ import ua.indeema.nazar.MessageEvent;
  * lifetime.
  *
  */
-public class ConversationPagerController implements  ViewPager.OnPageChangeListener{
+public class ConversationPagerController {
 
     private ViewPager mPager;
     private ConversationPagerAdapter mPagerAdapter;
@@ -139,10 +139,6 @@ public class ConversationPagerController implements  ViewPager.OnPageChangeListe
         LogUtils.d(LOG_TAG, "init pager adapter, count=%d initialConv=%s adapter=%s",
                 mPagerAdapter.getCount(), initialConversation, mPagerAdapter);
         mPager.setAdapter(mPagerAdapter);
-
-        mPager.setOnPageChangeListener(this);
-
-
 
         if (!ENABLE_SINGLETON_INITIAL_LOAD) {
             // FIXME: unnecessary to do this on restore. setAdapter will restore current position
@@ -240,37 +236,6 @@ public class ConversationPagerController implements  ViewPager.OnPageChangeListe
     }
 
 
-    int state;
-
-    @Override
-    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-        Log.v("mPagerListener","scrolled "+position+":" +positionOffset+":"+positionOffsetPixels+" state="+state);
-//
-//        if (state == 0) {
-//
-//            SecureConversationViewFragment fragment = (SecureConversationViewFragment) mPagerAdapter.instantiateItem(mPager, position);
-//            fragment.getmViewController().renderMessage(null,mContext);
-//        }
-
-
-
-    }
-
-    @Override
-    public void onPageSelected(int position) {
-        Log.v("mPagerListener","PageSelected "+position+"");
-
-
-
-    }
-
-    @Override
-    public void onPageScrollStateChanged(int state) {
-        this.state=state;
-        Log.v("mPagerListener","StateChanged "+state+"");
-
-    }
 
 
 }

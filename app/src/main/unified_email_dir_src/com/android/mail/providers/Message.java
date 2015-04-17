@@ -30,6 +30,7 @@ import android.text.TextUtils;
 import android.text.util.Linkify;
 import android.text.util.Rfc822Token;
 import android.text.util.Rfc822Tokenizer;
+import android.util.Log;
 
 import com.android.emailcommon.internet.MimeMessage;
 import com.android.emailcommon.internet.MimeUtility;
@@ -296,7 +297,42 @@ public class Message implements Parcelable, HtmlMessage {
 
     @Override
     public String toString() {
-        return "[message id=" + id + "]";
+        String  temp = "";
+        temp = temp+"message id=" + id +"\n";
+        temp = temp+"message serverId=" + serverId +"\n";
+        temp = temp+"message uri=" + uri +"\n";
+        temp = temp+"message conversationUri=" + conversationUri +"\n";
+        temp = temp+"message subject=" + subject +"\n";
+        temp = temp+"message snippet=" + snippet +"\n";
+        temp = temp+"message mFrom=" + mFrom +"\n";
+        temp = temp+"message mTo=" + mTo +"\n";
+        temp = temp+"message mCc=" + mCc +"\n";
+        temp = temp+"message mBcc=" + mBcc +"\n";
+        temp = temp+"message mReplyTo=" + mReplyTo +"\n";
+        temp = temp+"message dateReceivedMs=" + dateReceivedMs +"\n";
+        //temp = temp+"message bodyHtml=" + bodyHtml +"\n";
+        temp = temp+"message bodyText=" + bodyText +"\n";
+        temp = temp+"message embedsExternalResources=" + embedsExternalResources +"\n";
+        temp = temp+"message refMessageUri=" + refMessageUri +"\n";
+        temp = temp+"message draftType=" + draftType +"\n";
+        temp = temp+"message appendRefMessageContent=" + appendRefMessageContent +"\n";
+        temp = temp+"message hasAttachments=" + hasAttachments +"\n";
+        temp = temp+"message attachmentListUri=" + attachmentListUri +"\n";
+
+        temp = temp+"message messageFlags=" + messageFlags +"\n";
+        temp = temp+"message alwaysShowImages=" + alwaysShowImages +"\n";
+        temp = temp+"message quotedTextOffset=" + quotedTextOffset +"\n";
+        temp = temp+"message attachmentsJson=" + attachmentsJson +"\n";
+
+        temp = temp+"message accountUri=" + accountUri +"\n";
+        temp = temp+"message eventIntentUri=" + eventIntentUri +"\n";
+        temp = temp+"message spamWarningString=" + spamWarningString +"\n";
+        temp = temp+"message spamWarningLevel=" + spamWarningLevel +"\n";
+        temp = temp+"message spamLinkType=" + spamLinkType +"\n";
+        temp = temp+"message viaDomain=" + viaDomain +"\n";
+        temp = temp+"message isSending=" + isSending +"\n";
+
+        return temp;
     }
 
     public static final Creator<Message> CREATOR = new Creator<Message>() {

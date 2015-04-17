@@ -80,7 +80,16 @@
                 android:textColor="?android:textColorPrimaryInverse"
                 android:textIsSelectable="false" />
 
-            <!-- base WebView layer -->
+
+            <CheckBox
+                android:enabled="false"
+                android:button="@drawable/checkbox_sign"
+                android:id="@+id/cb_crypto_signature"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+           <!-- base WebView layer -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
