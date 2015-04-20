@@ -16,6 +16,8 @@
 
 package com.android.emailcommon.internet;
 
+import android.text.TextUtils;
+
 import com.android.emailcommon.mail.Address;
 import com.android.emailcommon.mail.Body;
 import com.android.emailcommon.mail.BodyPart;
@@ -23,7 +25,6 @@ import com.android.emailcommon.mail.Message;
 import com.android.emailcommon.mail.MessagingException;
 import com.android.emailcommon.mail.Multipart;
 import com.android.emailcommon.mail.Part;
-import com.android.mail.utils.LogUtils;
 
 import org.apache.james.mime4j.BodyDescriptor;
 import org.apache.james.mime4j.ContentHandler;
@@ -31,8 +32,6 @@ import org.apache.james.mime4j.EOLConvertingInputStream;
 import org.apache.james.mime4j.MimeStreamParser;
 import org.apache.james.mime4j.field.DateTimeField;
 import org.apache.james.mime4j.field.Field;
-
-import android.text.TextUtils;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -118,7 +117,9 @@ public class MimeMessage extends Message {
      * @throws MessagingException
      */
     public MimeMessage(InputStream in) throws IOException, MessagingException {
+
         parse(in);
+
     }
 
     private MimeStreamParser init() {

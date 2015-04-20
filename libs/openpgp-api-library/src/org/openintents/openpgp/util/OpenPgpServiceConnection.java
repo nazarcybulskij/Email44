@@ -16,13 +16,13 @@
 
 package org.openintents.openpgp.util;
 
-import org.openintents.openpgp.IOpenPgpService;
-
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
+
+import org.openintents.openpgp.IOpenPgpService;
 
 public class OpenPgpServiceConnection {
     private Context mApplicationContext;

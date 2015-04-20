@@ -1,4 +1,4 @@
-include ':OpenKeychain', ':k9mail-library', ':plugins:Android-PullToRefresh:library', ':k9mail', ':plugins:HoloColorPicker', ':plugins:openpgp-api-library'
+include ':OpenKeychain', ':k9mail-library', ':plugins:Android-PullToRefresh:library', ':k9mail', ':plugins:HoloColorPicker', ':plugins:openpgp-api-library', ':lib2'
 
 
 include ':extern:html-textview'
@@ -20,5 +20,5 @@ include ':chips'
 include ':photoviewer'
 
 include ':extern_demo:openpgp-api-lib'
-include ':extern_demo:openkeychain-api-lib'
+include ':extern:openkeychain-api-lib'
 include ':libs:openpgp-api-library'
